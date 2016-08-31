@@ -1,0 +1,909 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+	{BEGIN adminarea_link}
+	<a href="admin_rights_list.php" class="rnr-button" {$adminarealink_attrs}>Admin Area</a>
+	{END adminarea_link}
+
+	{BEGIN changepwd_link}
+	<a href="#" class="rnr-button" {$changepwdlink_attrs}>Change password</a>
+	{END changepwd_link}
+</div></div>
+{END security_block}
+
+
+{BEGIN asearch_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}">	<a href="calandar_search.php" class="rnr-button" {$advsearchlink_attrs}>Advanced search</a>
+</div>
+{END asearch_link}
+
+
+{BEGIN import_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_import {$brickclass_toplinks_import}">	<a href="calandar_import.php?{$crosstable_attrs}" class="rnr-button" {$importlink_attrs}>Import</a>
+</div>
+{END import_link}
+
+
+{BEGIN export_link}
+<div  class="style1 rnr-bl rnr-b-toplinks_export {$brickclass_toplinks_export}">	<a target="_blank" href="calandar_export.php" class="rnr-button" {$exportlink_attrs}>Export results</a>
+</div>
+{END export_link}
+
+
+
+
+<div  class="style1 rnr-bl rnr-b-printpanel {$brickclass_printpanel}">{BEGIN print_friendly}
+<div class="rnr-printpanelblock" id="printpanelblock{$id}">
+<div class="rnr-printtab">
+<a data-icon="printdown" class="rnr-printicon" id="print_friendly_togger{$id}" title="Print-friendly page"></a>
+</div>
+<div class="rnr-printpanel" >
+<table class="rnr-printscope" id="print_friendly_scope{$id}">
+	<tr>
+		<td class="rnr-printScopeCell">Scope:</td>
+		{BEGIN print_friendly_all}
+		<td class="rnr-printScopeCell"><input type="radio" id="printAll{$id}" data-href="calandar_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">&nbsp;<label for="printAll{$id}">Print all pages</label></td>
+		{END print_friendly_all}
+
+	</tr>
+	<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printPage{$id}" data-href="calandar_print.php?{$crosstable_attrs}" name="printScope" checked>&nbsp;<label for="printPage{$id}">Print this page</label></td>
+	</tr>
+		<tr>
+		<td></td>
+		<td class="rnr-printScopeCell"><input type="radio" id="printSelection{$id}" name="printScope" disabled="disabled">&nbsp;<label for="printSelection{$id}" style="color: gray;">Print selected</label></td>
+	</tr>
+</table>
+
+
+<div class="rnr-printdetails">
+<label for="printPerPage{$id}">
+	Records Per Page:
+</label>&nbsp;<input type=number id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">&nbsp;
+</div>
+
+<div class="rnr-printbutton">
+<a href=# class="rnr-button button" id="print_friendly_button{$id}" >Print</a>
+</div>
+</div>
+</div>
+{END print_friendly}
+</div>
+
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN menu_block}
+{$menu main horizontal}{END menu_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_hmenu}
+
+
+
+{BEGIN container_search}
+<div class="rnr-c rnr-ch rnr-c-search">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Show all</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+{BEGIN details_block}
+<div  class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>all</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>any</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Search</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_bigblock}
+<div class="rnr-c rnr-cv rnr-c-bigblock">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols">
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+<div class="rnr-hfiller"></div>
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-br rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="calandar_add.php{$addlink_getparams}" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+		{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Inline Add</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-br rnr-b-recordcontrol {$brickclass_recordcontrol}">	
+			{BEGIN editselected_link}
+		<a href="#" class="rnr-button" {$editselectedlink_attrs} {$editselectedlink_span}>Edit selected</a>
+	{END editselected_link}
+	{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Save all</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</a>
+	{END cancelall_link}
+
+		{BEGIN deleteselected_link}
+		<a href="#" class="rnr-button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a>
+	{END deleteselected_link}
+
+		{BEGIN exportselected_link}
+		<a href="#" class="rnr-button" {$exportselectedlink_attrs} {$exportselectedlink_span}>Export selected</a>
+	{END exportselected_link}
+
+</div>
+{END record_controls_block}
+
+
+</div>
+{END container_recordcontrols}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_message} rnr-wrapper rnr-cbw-message">
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid">
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																																			{BEGIN Jul_2_WK_27_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Jul_2_WK_27_class}">
+									{BEGIN Jul_2_WK_27_fieldheader}
+																				<span {$Jul_2_WK_27_orderlinkattrs}>
+											{$label calandar Jul_2_WK_27}
+										</span>
+									{END Jul_2_WK_27_fieldheader}
+									</th>
+									{END Jul_2_WK_27_fieldheadercolumn}
+
+																	{BEGIN Jul_9_WK_28_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Jul_9_WK_28_class}">
+									{BEGIN Jul_9_WK_28_fieldheader}
+																				<span {$Jul_9_WK_28_orderlinkattrs}>
+											{$label calandar Jul_9_WK_28}
+										</span>
+									{END Jul_9_WK_28_fieldheader}
+									</th>
+									{END Jul_9_WK_28_fieldheadercolumn}
+
+																	{BEGIN Jul_16_WK_29_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Jul_16_WK_29_class}">
+									{BEGIN Jul_16_WK_29_fieldheader}
+																				<span {$Jul_16_WK_29_orderlinkattrs}>
+											{$label calandar Jul_16_WK_29}
+										</span>
+									{END Jul_16_WK_29_fieldheader}
+									</th>
+									{END Jul_16_WK_29_fieldheadercolumn}
+
+																	{BEGIN Jul_23_WK_30_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Jul_23_WK_30_class}">
+									{BEGIN Jul_23_WK_30_fieldheader}
+																				<span {$Jul_23_WK_30_orderlinkattrs}>
+											{$label calandar Jul_23_WK_30}
+										</span>
+									{END Jul_23_WK_30_fieldheader}
+									</th>
+									{END Jul_23_WK_30_fieldheadercolumn}
+
+																	{BEGIN AutCalID_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$AutCalID_class}">
+									{BEGIN AutCalID_fieldheader}
+																				<span {$AutCalID_orderlinkattrs}>
+											{$label calandar AutCalID}
+										</span>
+									{END AutCalID_fieldheader}
+									</th>
+									{END AutCalID_fieldheadercolumn}
+
+																	{BEGIN Aug_6_WK_32_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Aug_6_WK_32_class}">
+									{BEGIN Aug_6_WK_32_fieldheader}
+																				<span {$Aug_6_WK_32_orderlinkattrs}>
+											{$label calandar Aug_6_WK_32}
+										</span>
+									{END Aug_6_WK_32_fieldheader}
+									</th>
+									{END Aug_6_WK_32_fieldheadercolumn}
+
+																	{BEGIN Aug_13_WK_33_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Aug_13_WK_33_class}">
+									{BEGIN Aug_13_WK_33_fieldheader}
+																				<span {$Aug_13_WK_33_orderlinkattrs}>
+											{$label calandar Aug_13_WK_33}
+										</span>
+									{END Aug_13_WK_33_fieldheader}
+									</th>
+									{END Aug_13_WK_33_fieldheadercolumn}
+
+																	{BEGIN Aug_20_WK_34_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Aug_20_WK_34_class}">
+									{BEGIN Aug_20_WK_34_fieldheader}
+																				<span {$Aug_20_WK_34_orderlinkattrs}>
+											{$label calandar Aug_20_WK_34}
+										</span>
+									{END Aug_20_WK_34_fieldheader}
+									</th>
+									{END Aug_20_WK_34_fieldheadercolumn}
+
+																	{BEGIN Aug_27_WK_35_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Aug_27_WK_35_class}">
+									{BEGIN Aug_27_WK_35_fieldheader}
+																				<span {$Aug_27_WK_35_orderlinkattrs}>
+											{$label calandar Aug_27_WK_35}
+										</span>
+									{END Aug_27_WK_35_fieldheader}
+									</th>
+									{END Aug_27_WK_35_fieldheadercolumn}
+
+																	{BEGIN Sep_3_WK_36_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Sep_3_WK_36_class}">
+									{BEGIN Sep_3_WK_36_fieldheader}
+																				<span {$Sep_3_WK_36_orderlinkattrs}>
+											{$label calandar Sep_3_WK_36}
+										</span>
+									{END Sep_3_WK_36_fieldheader}
+									</th>
+									{END Sep_3_WK_36_fieldheadercolumn}
+
+																	{BEGIN Sep_10_WK_37_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Sep_10_WK_37_class}">
+									{BEGIN Sep_10_WK_37_fieldheader}
+																				<span {$Sep_10_WK_37_orderlinkattrs}>
+											{$label calandar Sep_10_WK_37}
+										</span>
+									{END Sep_10_WK_37_fieldheader}
+									</th>
+									{END Sep_10_WK_37_fieldheadercolumn}
+
+																	{BEGIN Sep_17_WK_38_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Sep_17_WK_38_class}">
+									{BEGIN Sep_17_WK_38_fieldheader}
+																				<span {$Sep_17_WK_38_orderlinkattrs}>
+											{$label calandar Sep_17_WK_38}
+										</span>
+									{END Sep_17_WK_38_fieldheader}
+									</th>
+									{END Sep_17_WK_38_fieldheadercolumn}
+
+																	{BEGIN Sep_24_WK_39_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Sep_24_WK_39_class}">
+									{BEGIN Sep_24_WK_39_fieldheader}
+																				<span {$Sep_24_WK_39_orderlinkattrs}>
+											{$label calandar Sep_24_WK_39}
+										</span>
+									{END Sep_24_WK_39_fieldheader}
+									</th>
+									{END Sep_24_WK_39_fieldheadercolumn}
+
+																	{BEGIN Oct_1_WK_40_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Oct_1_WK_40_class}">
+									{BEGIN Oct_1_WK_40_fieldheader}
+																				<span {$Oct_1_WK_40_orderlinkattrs}>
+											{$label calandar Oct_1_WK_40}
+										</span>
+									{END Oct_1_WK_40_fieldheader}
+									</th>
+									{END Oct_1_WK_40_fieldheadercolumn}
+
+																	{BEGIN Oct_8_WK_41_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Oct_8_WK_41_class}">
+									{BEGIN Oct_8_WK_41_fieldheader}
+																				<span {$Oct_8_WK_41_orderlinkattrs}>
+											{$label calandar Oct_8_WK_41}
+										</span>
+									{END Oct_8_WK_41_fieldheader}
+									</th>
+									{END Oct_8_WK_41_fieldheadercolumn}
+
+																	{BEGIN Oct_15_WK_42_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Oct_15_WK_42_class}">
+									{BEGIN Oct_15_WK_42_fieldheader}
+																				<span {$Oct_15_WK_42_orderlinkattrs}>
+											{$label calandar Oct_15_WK_42}
+										</span>
+									{END Oct_15_WK_42_fieldheader}
+									</th>
+									{END Oct_15_WK_42_fieldheadercolumn}
+
+																	{BEGIN Oct_22_WK_43_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Oct_22_WK_43_class}">
+									{BEGIN Oct_22_WK_43_fieldheader}
+																				<span {$Oct_22_WK_43_orderlinkattrs}>
+											{$label calandar Oct_22_WK_43}
+										</span>
+									{END Oct_22_WK_43_fieldheader}
+									</th>
+									{END Oct_22_WK_43_fieldheadercolumn}
+
+																	{BEGIN Oct_29_WK_44_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Oct_29_WK_44_class}">
+									{BEGIN Oct_29_WK_44_fieldheader}
+																				<span {$Oct_29_WK_44_orderlinkattrs}>
+											{$label calandar Oct_29_WK_44}
+										</span>
+									{END Oct_29_WK_44_fieldheader}
+									</th>
+									{END Oct_29_WK_44_fieldheadercolumn}
+
+																	{BEGIN Nov_5_WK_45_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Nov_5_WK_45_class}">
+									{BEGIN Nov_5_WK_45_fieldheader}
+																				<span {$Nov_5_WK_45_orderlinkattrs}>
+											{$label calandar Nov_5_WK_45}
+										</span>
+									{END Nov_5_WK_45_fieldheader}
+									</th>
+									{END Nov_5_WK_45_fieldheadercolumn}
+
+																	{BEGIN Nov_12_WK_46_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Nov_12_WK_46_class}">
+									{BEGIN Nov_12_WK_46_fieldheader}
+																				<span {$Nov_12_WK_46_orderlinkattrs}>
+											{$label calandar Nov_12_WK_46}
+										</span>
+									{END Nov_12_WK_46_fieldheader}
+									</th>
+									{END Nov_12_WK_46_fieldheadercolumn}
+
+																	{BEGIN Nov_19_WK_47_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Nov_19_WK_47_class}">
+									{BEGIN Nov_19_WK_47_fieldheader}
+																				<span {$Nov_19_WK_47_orderlinkattrs}>
+											{$label calandar Nov_19_WK_47}
+										</span>
+									{END Nov_19_WK_47_fieldheader}
+									</th>
+									{END Nov_19_WK_47_fieldheadercolumn}
+
+																	{BEGIN Nov_26_WK_48_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Nov_26_WK_48_class}">
+									{BEGIN Nov_26_WK_48_fieldheader}
+																				<span {$Nov_26_WK_48_orderlinkattrs}>
+											{$label calandar Nov_26_WK_48}
+										</span>
+									{END Nov_26_WK_48_fieldheader}
+									</th>
+									{END Nov_26_WK_48_fieldheadercolumn}
+
+																	{BEGIN Dec_3_WK_49_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Dec_3_WK_49_class}">
+									{BEGIN Dec_3_WK_49_fieldheader}
+																				<span {$Dec_3_WK_49_orderlinkattrs}>
+											{$label calandar Dec_3_WK_49}
+										</span>
+									{END Dec_3_WK_49_fieldheader}
+									</th>
+									{END Dec_3_WK_49_fieldheadercolumn}
+
+																	{BEGIN Dec_10_WK_50_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Dec_10_WK_50_class}">
+									{BEGIN Dec_10_WK_50_fieldheader}
+																				<span {$Dec_10_WK_50_orderlinkattrs}>
+											{$label calandar Dec_10_WK_50}
+										</span>
+									{END Dec_10_WK_50_fieldheader}
+									</th>
+									{END Dec_10_WK_50_fieldheadercolumn}
+
+																	{BEGIN Dec_17_WK_51_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Dec_17_WK_51_class}">
+									{BEGIN Dec_17_WK_51_fieldheader}
+																				<span {$Dec_17_WK_51_orderlinkattrs}>
+											{$label calandar Dec_17_WK_51}
+										</span>
+									{END Dec_17_WK_51_fieldheader}
+									</th>
+									{END Dec_17_WK_51_fieldheadercolumn}
+
+																	{BEGIN Dec_24_WK_52_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Dec_24_WK_52_class}">
+									{BEGIN Dec_24_WK_52_fieldheader}
+																				<span {$Dec_24_WK_52_orderlinkattrs}>
+											{$label calandar Dec_24_WK_52}
+										</span>
+									{END Dec_24_WK_52_fieldheader}
+									</th>
+									{END Dec_24_WK_52_fieldheadercolumn}
+
+																	{BEGIN Dec_31_WK_53_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Dec_31_WK_53_class}">
+									{BEGIN Dec_31_WK_53_fieldheader}
+																				<span {$Dec_31_WK_53_orderlinkattrs}>
+											{$label calandar Dec_31_WK_53}
+										</span>
+									{END Dec_31_WK_53_fieldheader}
+									</th>
+									{END Dec_31_WK_53_fieldheadercolumn}
+
+																	{BEGIN Jul_30_WK_31_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$Jul_30_WK_31_class}">
+									{BEGIN Jul_30_WK_31_fieldheader}
+																				<span {$Jul_30_WK_31_orderlinkattrs}>
+											{$label calandar Jul_30_WK_31}
+										</span>
+									{END Jul_30_WK_31_fieldheader}
+									</th>
+									{END Jul_30_WK_31_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Edit"></a>
+									{END edit_link}
+									{END edit_column}
+
+																		{BEGIN inlineedit_column}
+									{BEGIN inlineedit_link}
+																			<a class="rnr-button-img" {$inlineeditlink_attrs} data-icon="inlineedit" title="Inline Edit"></a>
+									{END inlineedit_link}
+									{END inlineedit_column}
+
+									
+																		{BEGIN view_column}
+									{BEGIN view_link}
+																			<a class="rnr-button-img" {$viewlink_attrs} data-icon="view" title="View"></a>
+									{END view_link}
+									{END view_column}
+									</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+									
+										{BEGIN Jul_2_WK_27_fieldcolumn}
+	<td class="{$Jul_2_WK_27_class}" {$Jul_2_WK_27_style} {$recordattrs}>
+		{$Jul_2_WK_27_value}
+	</td>
+{END Jul_2_WK_27_fieldcolumn}
+
+	{BEGIN Jul_9_WK_28_fieldcolumn}
+	<td class="{$Jul_9_WK_28_class}" {$Jul_9_WK_28_style} {$recordattrs}>
+		{$Jul_9_WK_28_value}
+	</td>
+{END Jul_9_WK_28_fieldcolumn}
+
+	{BEGIN Jul_16_WK_29_fieldcolumn}
+	<td class="{$Jul_16_WK_29_class}" {$Jul_16_WK_29_style} {$recordattrs}>
+		{$Jul_16_WK_29_value}
+	</td>
+{END Jul_16_WK_29_fieldcolumn}
+
+	{BEGIN Jul_23_WK_30_fieldcolumn}
+	<td class="{$Jul_23_WK_30_class}" {$Jul_23_WK_30_style} {$recordattrs}>
+		{$Jul_23_WK_30_value}
+	</td>
+{END Jul_23_WK_30_fieldcolumn}
+
+	{BEGIN AutCalID_fieldcolumn}
+	<td class="{$AutCalID_class}" {$AutCalID_style} {$recordattrs}>
+		{$AutCalID_value}
+	</td>
+{END AutCalID_fieldcolumn}
+
+	{BEGIN Aug_6_WK_32_fieldcolumn}
+	<td class="{$Aug_6_WK_32_class}" {$Aug_6_WK_32_style} {$recordattrs}>
+		{$Aug_6_WK_32_value}
+	</td>
+{END Aug_6_WK_32_fieldcolumn}
+
+	{BEGIN Aug_13_WK_33_fieldcolumn}
+	<td class="{$Aug_13_WK_33_class}" {$Aug_13_WK_33_style} {$recordattrs}>
+		{$Aug_13_WK_33_value}
+	</td>
+{END Aug_13_WK_33_fieldcolumn}
+
+	{BEGIN Aug_20_WK_34_fieldcolumn}
+	<td class="{$Aug_20_WK_34_class}" {$Aug_20_WK_34_style} {$recordattrs}>
+		{$Aug_20_WK_34_value}
+	</td>
+{END Aug_20_WK_34_fieldcolumn}
+
+	{BEGIN Aug_27_WK_35_fieldcolumn}
+	<td class="{$Aug_27_WK_35_class}" {$Aug_27_WK_35_style} {$recordattrs}>
+		{$Aug_27_WK_35_value}
+	</td>
+{END Aug_27_WK_35_fieldcolumn}
+
+	{BEGIN Sep_3_WK_36_fieldcolumn}
+	<td class="{$Sep_3_WK_36_class}" {$Sep_3_WK_36_style} {$recordattrs}>
+		{$Sep_3_WK_36_value}
+	</td>
+{END Sep_3_WK_36_fieldcolumn}
+
+	{BEGIN Sep_10_WK_37_fieldcolumn}
+	<td class="{$Sep_10_WK_37_class}" {$Sep_10_WK_37_style} {$recordattrs}>
+		{$Sep_10_WK_37_value}
+	</td>
+{END Sep_10_WK_37_fieldcolumn}
+
+	{BEGIN Sep_17_WK_38_fieldcolumn}
+	<td class="{$Sep_17_WK_38_class}" {$Sep_17_WK_38_style} {$recordattrs}>
+		{$Sep_17_WK_38_value}
+	</td>
+{END Sep_17_WK_38_fieldcolumn}
+
+	{BEGIN Sep_24_WK_39_fieldcolumn}
+	<td class="{$Sep_24_WK_39_class}" {$Sep_24_WK_39_style} {$recordattrs}>
+		{$Sep_24_WK_39_value}
+	</td>
+{END Sep_24_WK_39_fieldcolumn}
+
+	{BEGIN Oct_1_WK_40_fieldcolumn}
+	<td class="{$Oct_1_WK_40_class}" {$Oct_1_WK_40_style} {$recordattrs}>
+		{$Oct_1_WK_40_value}
+	</td>
+{END Oct_1_WK_40_fieldcolumn}
+
+	{BEGIN Oct_8_WK_41_fieldcolumn}
+	<td class="{$Oct_8_WK_41_class}" {$Oct_8_WK_41_style} {$recordattrs}>
+		{$Oct_8_WK_41_value}
+	</td>
+{END Oct_8_WK_41_fieldcolumn}
+
+	{BEGIN Oct_15_WK_42_fieldcolumn}
+	<td class="{$Oct_15_WK_42_class}" {$Oct_15_WK_42_style} {$recordattrs}>
+		{$Oct_15_WK_42_value}
+	</td>
+{END Oct_15_WK_42_fieldcolumn}
+
+	{BEGIN Oct_22_WK_43_fieldcolumn}
+	<td class="{$Oct_22_WK_43_class}" {$Oct_22_WK_43_style} {$recordattrs}>
+		{$Oct_22_WK_43_value}
+	</td>
+{END Oct_22_WK_43_fieldcolumn}
+
+	{BEGIN Oct_29_WK_44_fieldcolumn}
+	<td class="{$Oct_29_WK_44_class}" {$Oct_29_WK_44_style} {$recordattrs}>
+		{$Oct_29_WK_44_value}
+	</td>
+{END Oct_29_WK_44_fieldcolumn}
+
+	{BEGIN Nov_5_WK_45_fieldcolumn}
+	<td class="{$Nov_5_WK_45_class}" {$Nov_5_WK_45_style} {$recordattrs}>
+		{$Nov_5_WK_45_value}
+	</td>
+{END Nov_5_WK_45_fieldcolumn}
+
+	{BEGIN Nov_12_WK_46_fieldcolumn}
+	<td class="{$Nov_12_WK_46_class}" {$Nov_12_WK_46_style} {$recordattrs}>
+		{$Nov_12_WK_46_value}
+	</td>
+{END Nov_12_WK_46_fieldcolumn}
+
+	{BEGIN Nov_19_WK_47_fieldcolumn}
+	<td class="{$Nov_19_WK_47_class}" {$Nov_19_WK_47_style} {$recordattrs}>
+		{$Nov_19_WK_47_value}
+	</td>
+{END Nov_19_WK_47_fieldcolumn}
+
+	{BEGIN Nov_26_WK_48_fieldcolumn}
+	<td class="{$Nov_26_WK_48_class}" {$Nov_26_WK_48_style} {$recordattrs}>
+		{$Nov_26_WK_48_value}
+	</td>
+{END Nov_26_WK_48_fieldcolumn}
+
+	{BEGIN Dec_3_WK_49_fieldcolumn}
+	<td class="{$Dec_3_WK_49_class}" {$Dec_3_WK_49_style} {$recordattrs}>
+		{$Dec_3_WK_49_value}
+	</td>
+{END Dec_3_WK_49_fieldcolumn}
+
+	{BEGIN Dec_10_WK_50_fieldcolumn}
+	<td class="{$Dec_10_WK_50_class}" {$Dec_10_WK_50_style} {$recordattrs}>
+		{$Dec_10_WK_50_value}
+	</td>
+{END Dec_10_WK_50_fieldcolumn}
+
+	{BEGIN Dec_17_WK_51_fieldcolumn}
+	<td class="{$Dec_17_WK_51_class}" {$Dec_17_WK_51_style} {$recordattrs}>
+		{$Dec_17_WK_51_value}
+	</td>
+{END Dec_17_WK_51_fieldcolumn}
+
+	{BEGIN Dec_24_WK_52_fieldcolumn}
+	<td class="{$Dec_24_WK_52_class}" {$Dec_24_WK_52_style} {$recordattrs}>
+		{$Dec_24_WK_52_value}
+	</td>
+{END Dec_24_WK_52_fieldcolumn}
+
+	{BEGIN Dec_31_WK_53_fieldcolumn}
+	<td class="{$Dec_31_WK_53_class}" {$Dec_31_WK_53_style} {$recordattrs}>
+		{$Dec_31_WK_53_value}
+	</td>
+{END Dec_31_WK_53_fieldcolumn}
+
+	{BEGIN Jul_30_WK_31_fieldcolumn}
+	<td class="{$Jul_30_WK_31_class}" {$Jul_30_WK_31_style} {$recordattrs}>
+		{$Jul_30_WK_31_value}
+	</td>
+{END Jul_30_WK_31_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pagination} rnr-wrapper rnr-cbw-pagination">
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+</div>
+
+
+</div>
+{END container_bigblock}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

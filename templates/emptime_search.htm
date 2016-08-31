@@ -1,0 +1,1186 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel emptime search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_FirstName}">
+	{BEGIN FirstName_fieldblock}		
+	<td>
+		{$label emptime FirstName}
+	</td>
+	<td>
+		<input type="checkbox" {$FirstName_notbox}>
+	</td>
+	<td>
+		{$searchtype_FirstName}
+	</td>
+	<td>
+		{$FirstName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$FirstName_editcontrol1}&nbsp;
+	</td>
+{END FirstName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_LastName}">
+	{BEGIN LastName_fieldblock}		
+	<td>
+		{$label emptime LastName}
+	</td>
+	<td>
+		<input type="checkbox" {$LastName_notbox}>
+	</td>
+	<td>
+		{$searchtype_LastName}
+	</td>
+	<td>
+		{$LastName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$LastName_editcontrol1}&nbsp;
+	</td>
+{END LastName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SupervisorName}">
+	{BEGIN SupervisorName_fieldblock}		
+	<td>
+		{$label emptime SupervisorName}
+	</td>
+	<td>
+		<input type="checkbox" {$SupervisorName_notbox}>
+	</td>
+	<td>
+		{$searchtype_SupervisorName}
+	</td>
+	<td>
+		{$SupervisorName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SupervisorName_editcontrol1}&nbsp;
+	</td>
+{END SupervisorName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EmployeeStatus}">
+	{BEGIN EmployeeStatus_fieldblock}		
+	<td>
+		{$label emptime EmployeeStatus}
+	</td>
+	<td>
+		<input type="checkbox" {$EmployeeStatus_notbox}>
+	</td>
+	<td>
+		{$searchtype_EmployeeStatus}
+	</td>
+	<td>
+		{$EmployeeStatus_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EmployeeStatus_editcontrol1}&nbsp;
+	</td>
+{END EmployeeStatus_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date1}">
+	{BEGIN Date1_fieldblock}		
+	<td>
+		{$label emptime Date1}
+	</td>
+	<td>
+		<input type="checkbox" {$Date1_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date1}
+	</td>
+	<td>
+		{$Date1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date1_editcontrol1}&nbsp;
+	</td>
+{END Date1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date2}">
+	{BEGIN Date2_fieldblock}		
+	<td>
+		{$label emptime Date2}
+	</td>
+	<td>
+		<input type="checkbox" {$Date2_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date2}
+	</td>
+	<td>
+		{$Date2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date2_editcontrol1}&nbsp;
+	</td>
+{END Date2_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date3}">
+	{BEGIN Date3_fieldblock}		
+	<td>
+		{$label emptime Date3}
+	</td>
+	<td>
+		<input type="checkbox" {$Date3_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date3}
+	</td>
+	<td>
+		{$Date3_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date3_editcontrol1}&nbsp;
+	</td>
+{END Date3_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date4}">
+	{BEGIN Date4_fieldblock}		
+	<td>
+		{$label emptime Date4}
+	</td>
+	<td>
+		<input type="checkbox" {$Date4_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date4}
+	</td>
+	<td>
+		{$Date4_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date4_editcontrol1}&nbsp;
+	</td>
+{END Date4_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date5}">
+	{BEGIN Date5_fieldblock}		
+	<td>
+		{$label emptime Date5}
+	</td>
+	<td>
+		<input type="checkbox" {$Date5_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date5}
+	</td>
+	<td>
+		{$Date5_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date5_editcontrol1}&nbsp;
+	</td>
+{END Date5_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date6}">
+	{BEGIN Date6_fieldblock}		
+	<td>
+		{$label emptime Date6}
+	</td>
+	<td>
+		<input type="checkbox" {$Date6_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date6}
+	</td>
+	<td>
+		{$Date6_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date6_editcontrol1}&nbsp;
+	</td>
+{END Date6_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date7}">
+	{BEGIN Date7_fieldblock}		
+	<td>
+		{$label emptime Date7}
+	</td>
+	<td>
+		<input type="checkbox" {$Date7_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date7}
+	</td>
+	<td>
+		{$Date7_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date7_editcontrol1}&nbsp;
+	</td>
+{END Date7_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date8}">
+	{BEGIN Date8_fieldblock}		
+	<td>
+		{$label emptime Date8}
+	</td>
+	<td>
+		<input type="checkbox" {$Date8_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date8}
+	</td>
+	<td>
+		{$Date8_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date8_editcontrol1}&nbsp;
+	</td>
+{END Date8_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date9}">
+	{BEGIN Date9_fieldblock}		
+	<td>
+		{$label emptime Date9}
+	</td>
+	<td>
+		<input type="checkbox" {$Date9_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date9}
+	</td>
+	<td>
+		{$Date9_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date9_editcontrol1}&nbsp;
+	</td>
+{END Date9_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date10}">
+	{BEGIN Date10_fieldblock}		
+	<td>
+		{$label emptime Date10}
+	</td>
+	<td>
+		<input type="checkbox" {$Date10_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date10}
+	</td>
+	<td>
+		{$Date10_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date10_editcontrol1}&nbsp;
+	</td>
+{END Date10_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date11}">
+	{BEGIN Date11_fieldblock}		
+	<td>
+		{$label emptime Date11}
+	</td>
+	<td>
+		<input type="checkbox" {$Date11_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date11}
+	</td>
+	<td>
+		{$Date11_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date11_editcontrol1}&nbsp;
+	</td>
+{END Date11_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date12}">
+	{BEGIN Date12_fieldblock}		
+	<td>
+		{$label emptime Date12}
+	</td>
+	<td>
+		<input type="checkbox" {$Date12_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date12}
+	</td>
+	<td>
+		{$Date12_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date12_editcontrol1}&nbsp;
+	</td>
+{END Date12_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date13}">
+	{BEGIN Date13_fieldblock}		
+	<td>
+		{$label emptime Date13}
+	</td>
+	<td>
+		<input type="checkbox" {$Date13_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date13}
+	</td>
+	<td>
+		{$Date13_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date13_editcontrol1}&nbsp;
+	</td>
+{END Date13_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date14}">
+	{BEGIN Date14_fieldblock}		
+	<td>
+		{$label emptime Date14}
+	</td>
+	<td>
+		<input type="checkbox" {$Date14_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date14}
+	</td>
+	<td>
+		{$Date14_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date14_editcontrol1}&nbsp;
+	</td>
+{END Date14_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date15}">
+	{BEGIN Date15_fieldblock}		
+	<td>
+		{$label emptime Date15}
+	</td>
+	<td>
+		<input type="checkbox" {$Date15_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date15}
+	</td>
+	<td>
+		{$Date15_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date15_editcontrol1}&nbsp;
+	</td>
+{END Date15_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date16}">
+	{BEGIN Date16_fieldblock}		
+	<td>
+		{$label emptime Date16}
+	</td>
+	<td>
+		<input type="checkbox" {$Date16_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date16}
+	</td>
+	<td>
+		{$Date16_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date16_editcontrol1}&nbsp;
+	</td>
+{END Date16_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date17}">
+	{BEGIN Date17_fieldblock}		
+	<td>
+		{$label emptime Date17}
+	</td>
+	<td>
+		<input type="checkbox" {$Date17_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date17}
+	</td>
+	<td>
+		{$Date17_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date17_editcontrol1}&nbsp;
+	</td>
+{END Date17_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date18}">
+	{BEGIN Date18_fieldblock}		
+	<td>
+		{$label emptime Date18}
+	</td>
+	<td>
+		<input type="checkbox" {$Date18_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date18}
+	</td>
+	<td>
+		{$Date18_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date18_editcontrol1}&nbsp;
+	</td>
+{END Date18_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date19}">
+	{BEGIN Date19_fieldblock}		
+	<td>
+		{$label emptime Date19}
+	</td>
+	<td>
+		<input type="checkbox" {$Date19_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date19}
+	</td>
+	<td>
+		{$Date19_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date19_editcontrol1}&nbsp;
+	</td>
+{END Date19_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date20}">
+	{BEGIN Date20_fieldblock}		
+	<td>
+		{$label emptime Date20}
+	</td>
+	<td>
+		<input type="checkbox" {$Date20_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date20}
+	</td>
+	<td>
+		{$Date20_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date20_editcontrol1}&nbsp;
+	</td>
+{END Date20_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date21}">
+	{BEGIN Date21_fieldblock}		
+	<td>
+		{$label emptime Date21}
+	</td>
+	<td>
+		<input type="checkbox" {$Date21_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date21}
+	</td>
+	<td>
+		{$Date21_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date21_editcontrol1}&nbsp;
+	</td>
+{END Date21_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date22}">
+	{BEGIN Date22_fieldblock}		
+	<td>
+		{$label emptime Date22}
+	</td>
+	<td>
+		<input type="checkbox" {$Date22_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date22}
+	</td>
+	<td>
+		{$Date22_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date22_editcontrol1}&nbsp;
+	</td>
+{END Date22_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date23}">
+	{BEGIN Date23_fieldblock}		
+	<td>
+		{$label emptime Date23}
+	</td>
+	<td>
+		<input type="checkbox" {$Date23_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date23}
+	</td>
+	<td>
+		{$Date23_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date23_editcontrol1}&nbsp;
+	</td>
+{END Date23_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date24}">
+	{BEGIN Date24_fieldblock}		
+	<td>
+		{$label emptime Date24}
+	</td>
+	<td>
+		<input type="checkbox" {$Date24_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date24}
+	</td>
+	<td>
+		{$Date24_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date24_editcontrol1}&nbsp;
+	</td>
+{END Date24_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date25}">
+	{BEGIN Date25_fieldblock}		
+	<td>
+		{$label emptime Date25}
+	</td>
+	<td>
+		<input type="checkbox" {$Date25_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date25}
+	</td>
+	<td>
+		{$Date25_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date25_editcontrol1}&nbsp;
+	</td>
+{END Date25_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date26}">
+	{BEGIN Date26_fieldblock}		
+	<td>
+		{$label emptime Date26}
+	</td>
+	<td>
+		<input type="checkbox" {$Date26_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date26}
+	</td>
+	<td>
+		{$Date26_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date26_editcontrol1}&nbsp;
+	</td>
+{END Date26_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date27}">
+	{BEGIN Date27_fieldblock}		
+	<td>
+		{$label emptime Date27}
+	</td>
+	<td>
+		<input type="checkbox" {$Date27_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date27}
+	</td>
+	<td>
+		{$Date27_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date27_editcontrol1}&nbsp;
+	</td>
+{END Date27_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date28}">
+	{BEGIN Date28_fieldblock}		
+	<td>
+		{$label emptime Date28}
+	</td>
+	<td>
+		<input type="checkbox" {$Date28_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date28}
+	</td>
+	<td>
+		{$Date28_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date28_editcontrol1}&nbsp;
+	</td>
+{END Date28_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date29}">
+	{BEGIN Date29_fieldblock}		
+	<td>
+		{$label emptime Date29}
+	</td>
+	<td>
+		<input type="checkbox" {$Date29_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date29}
+	</td>
+	<td>
+		{$Date29_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date29_editcontrol1}&nbsp;
+	</td>
+{END Date29_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date30}">
+	{BEGIN Date30_fieldblock}		
+	<td>
+		{$label emptime Date30}
+	</td>
+	<td>
+		<input type="checkbox" {$Date30_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date30}
+	</td>
+	<td>
+		{$Date30_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date30_editcontrol1}&nbsp;
+	</td>
+{END Date30_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date31}">
+	{BEGIN Date31_fieldblock}		
+	<td>
+		{$label emptime Date31}
+	</td>
+	<td>
+		<input type="checkbox" {$Date31_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date31}
+	</td>
+	<td>
+		{$Date31_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date31_editcontrol1}&nbsp;
+	</td>
+{END Date31_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date32}">
+	{BEGIN Date32_fieldblock}		
+	<td>
+		{$label emptime Date32}
+	</td>
+	<td>
+		<input type="checkbox" {$Date32_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date32}
+	</td>
+	<td>
+		{$Date32_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date32_editcontrol1}&nbsp;
+	</td>
+{END Date32_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date33}">
+	{BEGIN Date33_fieldblock}		
+	<td>
+		{$label emptime Date33}
+	</td>
+	<td>
+		<input type="checkbox" {$Date33_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date33}
+	</td>
+	<td>
+		{$Date33_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date33_editcontrol1}&nbsp;
+	</td>
+{END Date33_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date34}">
+	{BEGIN Date34_fieldblock}		
+	<td>
+		{$label emptime Date34}
+	</td>
+	<td>
+		<input type="checkbox" {$Date34_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date34}
+	</td>
+	<td>
+		{$Date34_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date34_editcontrol1}&nbsp;
+	</td>
+{END Date34_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date35}">
+	{BEGIN Date35_fieldblock}		
+	<td>
+		{$label emptime Date35}
+	</td>
+	<td>
+		<input type="checkbox" {$Date35_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date35}
+	</td>
+	<td>
+		{$Date35_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date35_editcontrol1}&nbsp;
+	</td>
+{END Date35_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date36}">
+	{BEGIN Date36_fieldblock}		
+	<td>
+		{$label emptime Date36}
+	</td>
+	<td>
+		<input type="checkbox" {$Date36_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date36}
+	</td>
+	<td>
+		{$Date36_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date36_editcontrol1}&nbsp;
+	</td>
+{END Date36_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date37}">
+	{BEGIN Date37_fieldblock}		
+	<td>
+		{$label emptime Date37}
+	</td>
+	<td>
+		<input type="checkbox" {$Date37_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date37}
+	</td>
+	<td>
+		{$Date37_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date37_editcontrol1}&nbsp;
+	</td>
+{END Date37_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date38}">
+	{BEGIN Date38_fieldblock}		
+	<td>
+		{$label emptime Date38}
+	</td>
+	<td>
+		<input type="checkbox" {$Date38_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date38}
+	</td>
+	<td>
+		{$Date38_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date38_editcontrol1}&nbsp;
+	</td>
+{END Date38_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date39}">
+	{BEGIN Date39_fieldblock}		
+	<td>
+		{$label emptime Date39}
+	</td>
+	<td>
+		<input type="checkbox" {$Date39_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date39}
+	</td>
+	<td>
+		{$Date39_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date39_editcontrol1}&nbsp;
+	</td>
+{END Date39_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date40}">
+	{BEGIN Date40_fieldblock}		
+	<td>
+		{$label emptime Date40}
+	</td>
+	<td>
+		<input type="checkbox" {$Date40_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date40}
+	</td>
+	<td>
+		{$Date40_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date40_editcontrol1}&nbsp;
+	</td>
+{END Date40_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date41}">
+	{BEGIN Date41_fieldblock}		
+	<td>
+		{$label emptime Date41}
+	</td>
+	<td>
+		<input type="checkbox" {$Date41_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date41}
+	</td>
+	<td>
+		{$Date41_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date41_editcontrol1}&nbsp;
+	</td>
+{END Date41_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date42}">
+	{BEGIN Date42_fieldblock}		
+	<td>
+		{$label emptime Date42}
+	</td>
+	<td>
+		<input type="checkbox" {$Date42_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date42}
+	</td>
+	<td>
+		{$Date42_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date42_editcontrol1}&nbsp;
+	</td>
+{END Date42_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date43}">
+	{BEGIN Date43_fieldblock}		
+	<td>
+		{$label emptime Date43}
+	</td>
+	<td>
+		<input type="checkbox" {$Date43_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date43}
+	</td>
+	<td>
+		{$Date43_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date43_editcontrol1}&nbsp;
+	</td>
+{END Date43_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date44}">
+	{BEGIN Date44_fieldblock}		
+	<td>
+		{$label emptime Date44}
+	</td>
+	<td>
+		<input type="checkbox" {$Date44_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date44}
+	</td>
+	<td>
+		{$Date44_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date44_editcontrol1}&nbsp;
+	</td>
+{END Date44_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date45}">
+	{BEGIN Date45_fieldblock}		
+	<td>
+		{$label emptime Date45}
+	</td>
+	<td>
+		<input type="checkbox" {$Date45_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date45}
+	</td>
+	<td>
+		{$Date45_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date45_editcontrol1}&nbsp;
+	</td>
+{END Date45_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date46}">
+	{BEGIN Date46_fieldblock}		
+	<td>
+		{$label emptime Date46}
+	</td>
+	<td>
+		<input type="checkbox" {$Date46_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date46}
+	</td>
+	<td>
+		{$Date46_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date46_editcontrol1}&nbsp;
+	</td>
+{END Date46_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date47}">
+	{BEGIN Date47_fieldblock}		
+	<td>
+		{$label emptime Date47}
+	</td>
+	<td>
+		<input type="checkbox" {$Date47_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date47}
+	</td>
+	<td>
+		{$Date47_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date47_editcontrol1}&nbsp;
+	</td>
+{END Date47_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date48}">
+	{BEGIN Date48_fieldblock}		
+	<td>
+		{$label emptime Date48}
+	</td>
+	<td>
+		<input type="checkbox" {$Date48_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date48}
+	</td>
+	<td>
+		{$Date48_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date48_editcontrol1}&nbsp;
+	</td>
+{END Date48_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date49}">
+	{BEGIN Date49_fieldblock}		
+	<td>
+		{$label emptime Date49}
+	</td>
+	<td>
+		<input type="checkbox" {$Date49_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date49}
+	</td>
+	<td>
+		{$Date49_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date49_editcontrol1}&nbsp;
+	</td>
+{END Date49_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date50}">
+	{BEGIN Date50_fieldblock}		
+	<td>
+		{$label emptime Date50}
+	</td>
+	<td>
+		<input type="checkbox" {$Date50_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date50}
+	</td>
+	<td>
+		{$Date50_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date50_editcontrol1}&nbsp;
+	</td>
+{END Date50_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date51}">
+	{BEGIN Date51_fieldblock}		
+	<td>
+		{$label emptime Date51}
+	</td>
+	<td>
+		<input type="checkbox" {$Date51_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date51}
+	</td>
+	<td>
+		{$Date51_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date51_editcontrol1}&nbsp;
+	</td>
+{END Date51_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date52}">
+	{BEGIN Date52_fieldblock}		
+	<td>
+		{$label emptime Date52}
+	</td>
+	<td>
+		<input type="checkbox" {$Date52_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date52}
+	</td>
+	<td>
+		{$Date52_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date52_editcontrol1}&nbsp;
+	</td>
+{END Date52_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Date53}">
+	{BEGIN Date53_fieldblock}		
+	<td>
+		{$label emptime Date53}
+	</td>
+	<td>
+		<input type="checkbox" {$Date53_notbox}>
+	</td>
+	<td>
+		{$searchtype_Date53}
+	</td>
+	<td>
+		{$Date53_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Date53_editcontrol1}&nbsp;
+	</td>
+{END Date53_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

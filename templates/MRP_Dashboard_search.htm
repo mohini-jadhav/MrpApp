@@ -1,0 +1,445 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel MRP_Dashboard search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_OracleID}">
+	{BEGIN customerallocation_OracleID_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_OracleID}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_OracleID_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_OracleID}
+	</td>
+	<td>
+		{$customerallocation_OracleID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_OracleID_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_OracleID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_CustomerName}">
+	{BEGIN customerallocation_CustomerName_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_CustomerName}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_CustomerName_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_CustomerName}
+	</td>
+	<td>
+		{$customerallocation_CustomerName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_CustomerName_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_CustomerName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_RSAName}">
+	{BEGIN customerallocation_RSAName_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_RSAName}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_RSAName_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_RSAName}
+	</td>
+	<td>
+		{$customerallocation_RSAName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_RSAName_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_RSAName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Supervisor}">
+	{BEGIN customerallocation_Supervisor_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Supervisor}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Supervisor_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Supervisor}
+	</td>
+	<td>
+		{$customerallocation_Supervisor_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Supervisor_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Supervisor_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_StartDate}">
+	{BEGIN customerallocation_StartDate_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_StartDate}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_StartDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_StartDate}
+	</td>
+	<td>
+		{$customerallocation_StartDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_StartDate_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_StartDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_EndDate}">
+	{BEGIN customerallocation_EndDate_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_EndDate}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_EndDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_EndDate}
+	</td>
+	<td>
+		{$customerallocation_EndDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_EndDate_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_EndDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Allocation}">
+	{BEGIN customerallocation_Allocation_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Allocation}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Allocation_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Allocation}
+	</td>
+	<td>
+		{$customerallocation_Allocation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Allocation_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Allocation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Override}">
+	{BEGIN customerallocation_Override_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Override}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Override_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Override}
+	</td>
+	<td>
+		{$customerallocation_Override_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Override_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Override_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Size}">
+	{BEGIN customerallocation_Size_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Size}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Size_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Size}
+	</td>
+	<td>
+		{$customerallocation_Size_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Size_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Size_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Contract_Start}">
+	{BEGIN customerallocation_Contract_Start_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Contract_Start}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Contract_Start_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Contract_Start}
+	</td>
+	<td>
+		{$customerallocation_Contract_Start_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Contract_Start_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Contract_Start_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_SteadyStateDate}">
+	{BEGIN customerallocation_SteadyStateDate_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_SteadyStateDate}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_SteadyStateDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_SteadyStateDate}
+	</td>
+	<td>
+		{$customerallocation_SteadyStateDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_SteadyStateDate_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_SteadyStateDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Contract_End}">
+	{BEGIN customerallocation_Contract_End_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Contract_End}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Contract_End_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Contract_End}
+	</td>
+	<td>
+		{$customerallocation_Contract_End_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Contract_End_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Contract_End_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_OnshoreSupportOnly}">
+	{BEGIN customerallocation_OnshoreSupportOnly_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_OnshoreSupportOnly}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_OnshoreSupportOnly_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_OnshoreSupportOnly}
+	</td>
+	<td>
+		{$customerallocation_OnshoreSupportOnly_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_OnshoreSupportOnly_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_OnshoreSupportOnly_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_PlatformName}">
+	{BEGIN customerallocation_PlatformName_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_PlatformName}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_PlatformName_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_PlatformName}
+	</td>
+	<td>
+		{$customerallocation_PlatformName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_PlatformName_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_PlatformName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Role}">
+	{BEGIN customerallocation_Role_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Role}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Role_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Role}
+	</td>
+	<td>
+		{$customerallocation_Role_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Role_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Role_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_TimeZone}">
+	{BEGIN customerallocation_TimeZone_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_TimeZone}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_TimeZone_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_TimeZone}
+	</td>
+	<td>
+		{$customerallocation_TimeZone_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_TimeZone_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_TimeZone_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Project}">
+	{BEGIN customerallocation_Project_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Project}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Project_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Project}
+	</td>
+	<td>
+		{$customerallocation_Project_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Project_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Project_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_customerallocation_Stage}">
+	{BEGIN customerallocation_Stage_fieldblock}		
+	<td>
+		{$label MRP_Dashboard customerallocation_Stage}
+	</td>
+	<td>
+		<input type="checkbox" {$customerallocation_Stage_notbox}>
+	</td>
+	<td>
+		{$searchtype_customerallocation_Stage}
+	</td>
+	<td>
+		{$customerallocation_Stage_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$customerallocation_Stage_editcontrol1}&nbsp;
+	</td>
+{END customerallocation_Stage_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to Dashboard</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

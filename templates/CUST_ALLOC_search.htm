@@ -1,0 +1,673 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel CUST_ALLOC search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_RSAName}">
+	{BEGIN RSAName_fieldblock}		
+	<td>
+		{$label CUST_ALLOC RSAName}
+	</td>
+	<td>
+		<input type="checkbox" {$RSAName_notbox}>
+	</td>
+	<td>
+		{$searchtype_RSAName}
+	</td>
+	<td>
+		{$RSAName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$RSAName_editcontrol1}&nbsp;
+	</td>
+{END RSAName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Location}">
+	{BEGIN Location_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Location}
+	</td>
+	<td>
+		<input type="checkbox" {$Location_notbox}>
+	</td>
+	<td>
+		{$searchtype_Location}
+	</td>
+	<td>
+		{$Location_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Location_editcontrol1}&nbsp;
+	</td>
+{END Location_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Supervisor}">
+	{BEGIN Supervisor_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Supervisor}
+	</td>
+	<td>
+		<input type="checkbox" {$Supervisor_notbox}>
+	</td>
+	<td>
+		{$searchtype_Supervisor}
+	</td>
+	<td>
+		{$Supervisor_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Supervisor_editcontrol1}&nbsp;
+	</td>
+{END Supervisor_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Jul_2_WK_27}">
+	{BEGIN Jul_2_WK_27_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Jul_2_WK_27}
+	</td>
+	<td>
+		<input type="checkbox" {$Jul_2_WK_27_notbox}>
+	</td>
+	<td>
+		{$searchtype_Jul_2_WK_27}
+	</td>
+	<td>
+		{$Jul_2_WK_27_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Jul_2_WK_27_editcontrol1}&nbsp;
+	</td>
+{END Jul_2_WK_27_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Jul_9_WK_28}">
+	{BEGIN Jul_9_WK_28_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Jul_9_WK_28}
+	</td>
+	<td>
+		<input type="checkbox" {$Jul_9_WK_28_notbox}>
+	</td>
+	<td>
+		{$searchtype_Jul_9_WK_28}
+	</td>
+	<td>
+		{$Jul_9_WK_28_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Jul_9_WK_28_editcontrol1}&nbsp;
+	</td>
+{END Jul_9_WK_28_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Jul_16_WK_29}">
+	{BEGIN Jul_16_WK_29_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Jul_16_WK_29}
+	</td>
+	<td>
+		<input type="checkbox" {$Jul_16_WK_29_notbox}>
+	</td>
+	<td>
+		{$searchtype_Jul_16_WK_29}
+	</td>
+	<td>
+		{$Jul_16_WK_29_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Jul_16_WK_29_editcontrol1}&nbsp;
+	</td>
+{END Jul_16_WK_29_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Jul_23_WK_30}">
+	{BEGIN Jul_23_WK_30_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Jul_23_WK_30}
+	</td>
+	<td>
+		<input type="checkbox" {$Jul_23_WK_30_notbox}>
+	</td>
+	<td>
+		{$searchtype_Jul_23_WK_30}
+	</td>
+	<td>
+		{$Jul_23_WK_30_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Jul_23_WK_30_editcontrol1}&nbsp;
+	</td>
+{END Jul_23_WK_30_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Jul_30_WK_31}">
+	{BEGIN Jul_30_WK_31_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Jul_30_WK_31}
+	</td>
+	<td>
+		<input type="checkbox" {$Jul_30_WK_31_notbox}>
+	</td>
+	<td>
+		{$searchtype_Jul_30_WK_31}
+	</td>
+	<td>
+		{$Jul_30_WK_31_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Jul_30_WK_31_editcontrol1}&nbsp;
+	</td>
+{END Jul_30_WK_31_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aug_6_WK_32}">
+	{BEGIN Aug_6_WK_32_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Aug_6_WK_32}
+	</td>
+	<td>
+		<input type="checkbox" {$Aug_6_WK_32_notbox}>
+	</td>
+	<td>
+		{$searchtype_Aug_6_WK_32}
+	</td>
+	<td>
+		{$Aug_6_WK_32_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aug_6_WK_32_editcontrol1}&nbsp;
+	</td>
+{END Aug_6_WK_32_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aug_13_WK_33}">
+	{BEGIN Aug_13_WK_33_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Aug_13_WK_33}
+	</td>
+	<td>
+		<input type="checkbox" {$Aug_13_WK_33_notbox}>
+	</td>
+	<td>
+		{$searchtype_Aug_13_WK_33}
+	</td>
+	<td>
+		{$Aug_13_WK_33_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aug_13_WK_33_editcontrol1}&nbsp;
+	</td>
+{END Aug_13_WK_33_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aug_20_WK_34}">
+	{BEGIN Aug_20_WK_34_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Aug_20_WK_34}
+	</td>
+	<td>
+		<input type="checkbox" {$Aug_20_WK_34_notbox}>
+	</td>
+	<td>
+		{$searchtype_Aug_20_WK_34}
+	</td>
+	<td>
+		{$Aug_20_WK_34_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aug_20_WK_34_editcontrol1}&nbsp;
+	</td>
+{END Aug_20_WK_34_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aug_27_WK_35}">
+	{BEGIN Aug_27_WK_35_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Aug_27_WK_35}
+	</td>
+	<td>
+		<input type="checkbox" {$Aug_27_WK_35_notbox}>
+	</td>
+	<td>
+		{$searchtype_Aug_27_WK_35}
+	</td>
+	<td>
+		{$Aug_27_WK_35_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aug_27_WK_35_editcontrol1}&nbsp;
+	</td>
+{END Aug_27_WK_35_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sep_3_WK_36}">
+	{BEGIN Sep_3_WK_36_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Sep_3_WK_36}
+	</td>
+	<td>
+		<input type="checkbox" {$Sep_3_WK_36_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sep_3_WK_36}
+	</td>
+	<td>
+		{$Sep_3_WK_36_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sep_3_WK_36_editcontrol1}&nbsp;
+	</td>
+{END Sep_3_WK_36_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sep_10_WK_37}">
+	{BEGIN Sep_10_WK_37_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Sep_10_WK_37}
+	</td>
+	<td>
+		<input type="checkbox" {$Sep_10_WK_37_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sep_10_WK_37}
+	</td>
+	<td>
+		{$Sep_10_WK_37_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sep_10_WK_37_editcontrol1}&nbsp;
+	</td>
+{END Sep_10_WK_37_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sep_17_WK_38}">
+	{BEGIN Sep_17_WK_38_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Sep_17_WK_38}
+	</td>
+	<td>
+		<input type="checkbox" {$Sep_17_WK_38_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sep_17_WK_38}
+	</td>
+	<td>
+		{$Sep_17_WK_38_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sep_17_WK_38_editcontrol1}&nbsp;
+	</td>
+{END Sep_17_WK_38_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Sep_24_WK_39}">
+	{BEGIN Sep_24_WK_39_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Sep_24_WK_39}
+	</td>
+	<td>
+		<input type="checkbox" {$Sep_24_WK_39_notbox}>
+	</td>
+	<td>
+		{$searchtype_Sep_24_WK_39}
+	</td>
+	<td>
+		{$Sep_24_WK_39_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Sep_24_WK_39_editcontrol1}&nbsp;
+	</td>
+{END Sep_24_WK_39_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Oct_1_WK_40}">
+	{BEGIN Oct_1_WK_40_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Oct_1_WK_40}
+	</td>
+	<td>
+		<input type="checkbox" {$Oct_1_WK_40_notbox}>
+	</td>
+	<td>
+		{$searchtype_Oct_1_WK_40}
+	</td>
+	<td>
+		{$Oct_1_WK_40_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Oct_1_WK_40_editcontrol1}&nbsp;
+	</td>
+{END Oct_1_WK_40_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Oct_8_WK_41}">
+	{BEGIN Oct_8_WK_41_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Oct_8_WK_41}
+	</td>
+	<td>
+		<input type="checkbox" {$Oct_8_WK_41_notbox}>
+	</td>
+	<td>
+		{$searchtype_Oct_8_WK_41}
+	</td>
+	<td>
+		{$Oct_8_WK_41_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Oct_8_WK_41_editcontrol1}&nbsp;
+	</td>
+{END Oct_8_WK_41_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Oct_15_WK_42}">
+	{BEGIN Oct_15_WK_42_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Oct_15_WK_42}
+	</td>
+	<td>
+		<input type="checkbox" {$Oct_15_WK_42_notbox}>
+	</td>
+	<td>
+		{$searchtype_Oct_15_WK_42}
+	</td>
+	<td>
+		{$Oct_15_WK_42_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Oct_15_WK_42_editcontrol1}&nbsp;
+	</td>
+{END Oct_15_WK_42_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Oct_22_WK_43}">
+	{BEGIN Oct_22_WK_43_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Oct_22_WK_43}
+	</td>
+	<td>
+		<input type="checkbox" {$Oct_22_WK_43_notbox}>
+	</td>
+	<td>
+		{$searchtype_Oct_22_WK_43}
+	</td>
+	<td>
+		{$Oct_22_WK_43_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Oct_22_WK_43_editcontrol1}&nbsp;
+	</td>
+{END Oct_22_WK_43_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Oct_29_WK_44}">
+	{BEGIN Oct_29_WK_44_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Oct_29_WK_44}
+	</td>
+	<td>
+		<input type="checkbox" {$Oct_29_WK_44_notbox}>
+	</td>
+	<td>
+		{$searchtype_Oct_29_WK_44}
+	</td>
+	<td>
+		{$Oct_29_WK_44_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Oct_29_WK_44_editcontrol1}&nbsp;
+	</td>
+{END Oct_29_WK_44_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Nov_5_WK_45}">
+	{BEGIN Nov_5_WK_45_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Nov_5_WK_45}
+	</td>
+	<td>
+		<input type="checkbox" {$Nov_5_WK_45_notbox}>
+	</td>
+	<td>
+		{$searchtype_Nov_5_WK_45}
+	</td>
+	<td>
+		{$Nov_5_WK_45_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Nov_5_WK_45_editcontrol1}&nbsp;
+	</td>
+{END Nov_5_WK_45_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Nov_12_WK_46}">
+	{BEGIN Nov_12_WK_46_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Nov_12_WK_46}
+	</td>
+	<td>
+		<input type="checkbox" {$Nov_12_WK_46_notbox}>
+	</td>
+	<td>
+		{$searchtype_Nov_12_WK_46}
+	</td>
+	<td>
+		{$Nov_12_WK_46_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Nov_12_WK_46_editcontrol1}&nbsp;
+	</td>
+{END Nov_12_WK_46_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Nov_19_WK_47}">
+	{BEGIN Nov_19_WK_47_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Nov_19_WK_47}
+	</td>
+	<td>
+		<input type="checkbox" {$Nov_19_WK_47_notbox}>
+	</td>
+	<td>
+		{$searchtype_Nov_19_WK_47}
+	</td>
+	<td>
+		{$Nov_19_WK_47_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Nov_19_WK_47_editcontrol1}&nbsp;
+	</td>
+{END Nov_19_WK_47_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Nov_26_WK_48}">
+	{BEGIN Nov_26_WK_48_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Nov_26_WK_48}
+	</td>
+	<td>
+		<input type="checkbox" {$Nov_26_WK_48_notbox}>
+	</td>
+	<td>
+		{$searchtype_Nov_26_WK_48}
+	</td>
+	<td>
+		{$Nov_26_WK_48_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Nov_26_WK_48_editcontrol1}&nbsp;
+	</td>
+{END Nov_26_WK_48_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Dec_3_WK_49}">
+	{BEGIN Dec_3_WK_49_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Dec_3_WK_49}
+	</td>
+	<td>
+		<input type="checkbox" {$Dec_3_WK_49_notbox}>
+	</td>
+	<td>
+		{$searchtype_Dec_3_WK_49}
+	</td>
+	<td>
+		{$Dec_3_WK_49_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Dec_3_WK_49_editcontrol1}&nbsp;
+	</td>
+{END Dec_3_WK_49_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Dec_10_WK_50}">
+	{BEGIN Dec_10_WK_50_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Dec_10_WK_50}
+	</td>
+	<td>
+		<input type="checkbox" {$Dec_10_WK_50_notbox}>
+	</td>
+	<td>
+		{$searchtype_Dec_10_WK_50}
+	</td>
+	<td>
+		{$Dec_10_WK_50_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Dec_10_WK_50_editcontrol1}&nbsp;
+	</td>
+{END Dec_10_WK_50_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Dec_17_WK_51}">
+	{BEGIN Dec_17_WK_51_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Dec_17_WK_51}
+	</td>
+	<td>
+		<input type="checkbox" {$Dec_17_WK_51_notbox}>
+	</td>
+	<td>
+		{$searchtype_Dec_17_WK_51}
+	</td>
+	<td>
+		{$Dec_17_WK_51_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Dec_17_WK_51_editcontrol1}&nbsp;
+	</td>
+{END Dec_17_WK_51_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Dec_24_WK_52}">
+	{BEGIN Dec_24_WK_52_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Dec_24_WK_52}
+	</td>
+	<td>
+		<input type="checkbox" {$Dec_24_WK_52_notbox}>
+	</td>
+	<td>
+		{$searchtype_Dec_24_WK_52}
+	</td>
+	<td>
+		{$Dec_24_WK_52_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Dec_24_WK_52_editcontrol1}&nbsp;
+	</td>
+{END Dec_24_WK_52_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Dec_31_WK_53}">
+	{BEGIN Dec_31_WK_53_fieldblock}		
+	<td>
+		{$label CUST_ALLOC Dec_31_WK_53}
+	</td>
+	<td>
+		<input type="checkbox" {$Dec_31_WK_53_notbox}>
+	</td>
+	<td>
+		{$searchtype_Dec_31_WK_53}
+	</td>
+	<td>
+		{$Dec_31_WK_53_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Dec_31_WK_53_editcontrol1}&nbsp;
+	</td>
+{END Dec_31_WK_53_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

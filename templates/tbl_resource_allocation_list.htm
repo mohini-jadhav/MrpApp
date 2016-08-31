@@ -1,0 +1,137 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+			<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+			<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+			<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<script type="text/javascript" src="include/runnerJS/events/globalevents.js"></script>
+	
+		<link rel="stylesheet" type="text/css" href="include/jquery-ui/smoothness/jquery-ui.css" />		 		 
+    	<link rel="stylesheet" href="css/pqgrid.min.css" />
+    	<link rel="stylesheet" href="css/themes/office/pqgrid.css" />
+    	 <!--pqSelect dependencies-->
+       <!--  <link rel="stylesheet" href="css/pqselect.dev.css" /> -->
+
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+	{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+		{BEGIN container_toplinks}
+		<div class="rnr-c rnr-ch rnr-c-toplinks">
+			{BEGIN security_block}
+			<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}">
+				<div id="login_block{$id}">
+					{BEGIN loggedas_message}
+						<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+					{END loggedas_message}
+					{BEGIN guestloginbutton}
+						<span>
+							<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+						</span>
+					{END guestloginbutton}
+					{BEGIN logoutbutton}
+						<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+					{END logoutbutton}
+					{BEGIN adminarea_link}
+						<a href="admin_rights_list.php" class="rnr-button" {$adminarealink_attrs}>Admin Area</a>
+					{END adminarea_link}
+					{BEGIN changepwd_link}
+						<a href="#" class="rnr-button" {$changepwdlink_attrs}>Change password</a>
+					{END changepwd_link}
+				</div>
+			</div>
+			{END security_block}
+			<div class="rnr-hfiller"></div>
+		</div>
+	{END container_toplinks}
+	{BEGIN container_hmenu}
+		<div class="rnr-c rnr-ch rnr-c-hmenu">
+		{BEGIN menu_block}{$menu main horizontal}{END menu_block}
+		<div class="rnr-hfiller"></div>
+		</div>
+	{END container_hmenu}
+</div>
+<div class="rnr-middle">
+
+<div class="rnr-center {$blockclass_center}"  style="width: 100%;">
+
+{BEGIN container_bigblock}
+<div class="rnr-c rnr-cv rnr-c-bigblock">
+
+<div id="div_allocation_filter" class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid  rnr-hiddencontainer">
+<div class="rnr-brickcontents style1 rnr-b-wrapper  {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols"  style="width: 100%;">
+		<FORM name="frm_show_allocation" id="frm_show_allocation" method="post" onsubmit="return false">
+			<table align="left">
+				<tbody>
+				<tr>
+				  <td>
+				    <FONT color="#FFFFFF"> 
+				    	<STRONG> Start Date </STRONG> :&nbsp; &nbsp;
+				    	<input type="text" id="startDate" name="value_StartDate_11" />
+				    </FONT>
+				  </td>
+				  <td>&nbsp; &nbsp;</td>
+				  <td>
+				    <FONT color="#FFFFFF"> 
+				    	<STRONG> End Date </STRONG> :&nbsp; &nbsp;
+				      	<input type="text" id="endDate" name="value_EndDate_11" /> 
+				    </FONT>
+				 </td>
+				<td>
+					<DIV class="bottomSearchButt">
+						<A class="rnr-button button" id="Show_Allocation3" href="#" typeid="ib">&nbsp;&nbsp;&nbsp;Show&nbsp;Allocation&nbsp;&nbsp;&nbsp;</A> 
+					</DIV>
+				</td>
+			</tr>
+			 </tbody>
+			</table>
+		</FORM>
+	</DIV>
+	<div id="message" class="rnr-brickcontents style1 rnr-b-wrapper  rnr-wrapper rnr-cbw-message rnr-hiddencontainer">
+		<div class="rnr-cw-message rnr-s-2 asbuttons FusionAqua">
+			<div class="rnr-c rnr-ch rnr-c-message">
+				<div class="style1 rnr-bc rnr-b-message ">
+					<div class="rnr-message">
+						<span name="notfound_message1">No records found</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{BEGIN container_grid}
+		{BEGIN grid_block}
+			<div id="div_allocation_details" class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable rnr-hiddencontainer  hoverable" cellpadding="0" >
+				
+			</div>
+		{END grid_block}
+	{END container_grid}
+</div>
+</div>
+{END container_bigblock}
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

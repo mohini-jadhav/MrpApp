@@ -1,0 +1,175 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}
+<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel customerallocation1 view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	
+	{BEGIN RSAName_fieldblock}
+<tr class="{$fielddispclass_RSAName}" data-fieldname="RSAName">
+	<td class="rnr-label">
+		{$label customerallocation1 RSAName}
+	</td>
+	<td class="rnr-control style3">
+		{$RSAName_value}&nbsp;
+	</td>
+</tr>
+{END RSAName_fieldblock}
+{BEGIN Supervisor_fieldblock}
+<tr class="{$fielddispclass_Supervisor}" data-fieldname="Supervisor">
+	<td class="rnr-label">
+		{$label customerallocation1 Supervisor}
+	</td>
+	<td class="rnr-control style3">
+		{$Supervisor_value}&nbsp;
+	</td>
+</tr>
+{END Supervisor_fieldblock}
+	{BEGIN Role_fieldblock}
+<tr class="{$fielddispclass_Role}" data-fieldname="Role">
+	<td class="rnr-label">
+		{$label customerallocation1 Role}
+	</td>
+	<td class="rnr-control style3">
+		{$Role_value}&nbsp;
+	</td>
+</tr>
+{END Role_fieldblock}
+	{BEGIN PlatformName_fieldblock}
+<tr class="{$fielddispclass_PlatformName}" data-fieldname="PlatformName">
+	<td class="rnr-label">
+		{$label customerallocation1 PlatformName}
+	</td>
+	<td class="rnr-control style3">
+		{$PlatformName_value}&nbsp;
+	</td>
+</tr>
+{END PlatformName_fieldblock}
+	{BEGIN StartDate_fieldblock}
+<tr class="{$fielddispclass_StartDate}" data-fieldname="StartDate">
+	<td class="rnr-label">
+		{$label customerallocation1 StartDate}
+	</td>
+	<td class="rnr-control style3">
+		{$StartDate_value}&nbsp;
+	</td>
+</tr>
+{END StartDate_fieldblock}
+	{BEGIN EndDate_fieldblock}
+<tr class="{$fielddispclass_EndDate}" data-fieldname="EndDate">
+	<td class="rnr-label">
+		{$label customerallocation1 EndDate}
+	</td>
+	<td class="rnr-control style3">
+		{$EndDate_value}&nbsp;
+	</td>
+</tr>
+{END EndDate_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

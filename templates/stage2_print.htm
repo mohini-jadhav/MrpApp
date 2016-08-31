@@ -1,0 +1,248 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel stage2 print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN PK1_fieldheadercolumn}
+<th class="runner-cc {$PK1_class}" {$PK1_style}>
+	{BEGIN PK1_fieldheader}
+	<b>{$label stage2 PK1}</b>
+	{END PK1_fieldheader}
+</th>
+{END PK1_fieldheadercolumn}
+	{BEGIN CategoryName_fieldheadercolumn}
+<th class="runner-cc {$CategoryName_class}" {$CategoryName_style}>
+	{BEGIN CategoryName_fieldheader}
+	<b>{$label stage2 CategoryName}</b>
+	{END CategoryName_fieldheader}
+</th>
+{END CategoryName_fieldheadercolumn}
+	{BEGIN Activity_fieldheadercolumn}
+<th class="runner-cc {$Activity_class}" {$Activity_style}>
+	{BEGIN Activity_fieldheader}
+	<b>{$label stage2 Activity}</b>
+	{END Activity_fieldheader}
+</th>
+{END Activity_fieldheadercolumn}
+	{BEGIN Duration__Weeks_fieldheadercolumn}
+<th class="runner-cc {$Duration__Weeks_class}" {$Duration__Weeks_style}>
+	{BEGIN Duration__Weeks_fieldheader}
+	<b>{$label stage2 Duration__Weeks}</b>
+	{END Duration__Weeks_fieldheader}
+</th>
+{END Duration__Weeks_fieldheadercolumn}
+	{BEGIN RSA_fieldheadercolumn}
+<th class="runner-cc {$RSA_class}" {$RSA_style}>
+	{BEGIN RSA_fieldheader}
+	<b>{$label stage2 RSA}</b>
+	{END RSA_fieldheader}
+</th>
+{END RSA_fieldheadercolumn}
+	{BEGIN PA_fieldheadercolumn}
+<th class="runner-cc {$PA_class}" {$PA_style}>
+	{BEGIN PA_fieldheader}
+	<b>{$label stage2 PA}</b>
+	{END PA_fieldheader}
+</th>
+{END PA_fieldheadercolumn}
+	{BEGIN TAM_fieldheadercolumn}
+<th class="runner-cc {$TAM_class}" {$TAM_style}>
+	{BEGIN TAM_fieldheader}
+	<b>{$label stage2 TAM}</b>
+	{END TAM_fieldheader}
+</th>
+{END TAM_fieldheadercolumn}
+	{BEGIN Other_fieldheadercolumn}
+<th class="runner-cc {$Other_class}" {$Other_style}>
+	{BEGIN Other_fieldheader}
+	<b>{$label stage2 Other}</b>
+	{END Other_fieldheader}
+</th>
+{END Other_fieldheadercolumn}
+	{BEGIN CategoryID_fieldheadercolumn}
+<th class="runner-cc {$CategoryID_class}" {$CategoryID_style}>
+	{BEGIN CategoryID_fieldheader}
+	<b>{$label stage2 CategoryID}</b>
+	{END CategoryID_fieldheader}
+</th>
+{END CategoryID_fieldheadercolumn}
+	{BEGIN AutRoleID_fieldheadercolumn}
+<th class="runner-cc {$AutRoleID_class}" {$AutRoleID_style}>
+	{BEGIN AutRoleID_fieldheader}
+	<b>{$label stage2 AutRoleID}</b>
+	{END AutRoleID_fieldheader}
+</th>
+{END AutRoleID_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN PK1_fieldcolumn}
+<td  class="runner-cc {$PK1_class}" {$PK1_style} {$recordattrs}>
+	{$PK1_value}
+</td>
+{END PK1_fieldcolumn}
+	{BEGIN CategoryName_fieldcolumn}
+<td  class="runner-cc {$CategoryName_class}" {$CategoryName_style} {$recordattrs}>
+	{$CategoryName_value}
+</td>
+{END CategoryName_fieldcolumn}
+	{BEGIN Activity_fieldcolumn}
+<td  class="runner-cc {$Activity_class}" {$Activity_style} {$recordattrs}>
+	{$Activity_value}
+</td>
+{END Activity_fieldcolumn}
+	{BEGIN Duration__Weeks_fieldcolumn}
+<td  class="runner-cc {$Duration__Weeks_class}" {$Duration__Weeks_style} {$recordattrs}>
+	{$Duration__Weeks_value}
+</td>
+{END Duration__Weeks_fieldcolumn}
+	{BEGIN RSA_fieldcolumn}
+<td  class="runner-cc {$RSA_class}" {$RSA_style} {$recordattrs}>
+	{$RSA_value}
+</td>
+{END RSA_fieldcolumn}
+	{BEGIN PA_fieldcolumn}
+<td  class="runner-cc {$PA_class}" {$PA_style} {$recordattrs}>
+	{$PA_value}
+</td>
+{END PA_fieldcolumn}
+	{BEGIN TAM_fieldcolumn}
+<td  class="runner-cc {$TAM_class}" {$TAM_style} {$recordattrs}>
+	{$TAM_value}
+</td>
+{END TAM_fieldcolumn}
+	{BEGIN Other_fieldcolumn}
+<td  class="runner-cc {$Other_class}" {$Other_style} {$recordattrs}>
+	{$Other_value}
+</td>
+{END Other_fieldcolumn}
+	{BEGIN CategoryID_fieldcolumn}
+<td  class="runner-cc {$CategoryID_class}" {$CategoryID_style} {$recordattrs}>
+	{$CategoryID_value}
+</td>
+{END CategoryID_fieldcolumn}
+	{BEGIN AutRoleID_fieldcolumn}
+<td  class="runner-cc {$AutRoleID_class}" {$AutRoleID_style} {$recordattrs}>
+	{$AutRoleID_value}
+</td>
+{END AutRoleID_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

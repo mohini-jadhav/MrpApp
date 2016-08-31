@@ -1,0 +1,85 @@
+<div {$pageattrs}>
+
+{BEGIN container_dcount}
+<div class="rnr-c rnr-cv rnr-c-dcount">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewheader {$brickclass_detailspreviewheader}">	<h1>{$pagetitlelabel customerallocation detailspreview}</h1>
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">Details found: <strong>{$row_count}.</strong>
+</div>
+
+
+{BEGIN display_first}
+<div  class="rnr-brickcontents style1 rnr-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">Displaying first: <strong>{$display_count}</strong>.
+</div>{END display_first}
+
+
+</div>
+{END container_dcount}
+
+
+
+{BEGIN container_detailspreviewgrid}
+
+
+{BEGIN details_data}
+<table class="rnr-c rnr-cont rnr-c--detailspreviewgrid rnr-b-detailspreviewgrid rnr-gridtable">
+{BEGIN details_row_header}
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$OracleID_class}">{$label customerallocation OracleID}</th>
+			<th class="{$CustomerName_class}">{$label customerallocation CustomerName}</th>
+			<th class="{$Stage_class}">{$label customerallocation Stage}</th>
+			<th class="{$Size_class}">{$label customerallocation Size}</th>
+			<th class="{$Contract_Start_class}">{$label customerallocation Contract_Start}</th>
+			<th class="{$SteadyStateDate_class}">{$label customerallocation SteadyStateDate}</th>
+			<th class="{$Contract_End_class}">{$label customerallocation Contract_End}</th>
+			<th class="{$Supervisor_class}">{$label customerallocation Supervisor}</th>
+			<th class="{$OnshoreSupportOnly_class}">{$label customerallocation OnshoreSupportOnly}</th>
+			<th class="{$RSAName_class}">{$label customerallocation RSAName}</th>
+			<th class="{$Role_class}">{$label customerallocation Role}</th>
+			<th class="{$PlatformName_class}">{$label customerallocation PlatformName}</th>
+			<th class="{$StartDate_class}">{$label customerallocation StartDate}</th>
+			<th class="{$EndDate_class}">{$label customerallocation EndDate}</th>
+			<th class="{$Allocation_class}">{$label customerallocation Allocation}</th>
+			<th class="{$Override_class}">{$label customerallocation Override}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+{END details_row_header}
+	<tbody>
+{BEGIN details_row}
+		<tr class="rnr-row style1">
+			<td class="{$OracleID_class}">{$OracleID_value}</td>
+			<td class="{$CustomerName_class}">{$CustomerName_value}</td>
+			<td class="{$Stage_class}">{$Stage_value}</td>
+			<td class="{$Size_class}">{$Size_value}</td>
+			<td class="{$Contract_Start_class}">{$Contract_Start_value}</td>
+			<td class="{$SteadyStateDate_class}">{$SteadyStateDate_value}</td>
+			<td class="{$Contract_End_class}">{$Contract_End_value}</td>
+			<td class="{$Supervisor_class}">{$Supervisor_value}</td>
+			<td class="{$OnshoreSupportOnly_class}">{$OnshoreSupportOnly_value}</td>
+			<td class="{$RSAName_class}">{$RSAName_value}</td>
+			<td class="{$Role_class}">{$Role_value}</td>
+			<td class="{$PlatformName_class}">{$PlatformName_value}</td>
+			<td class="{$StartDate_class}">{$StartDate_value}</td>
+			<td class="{$EndDate_class}">{$EndDate_value}</td>
+			<td class="{$Allocation_class}">{$Allocation_value}</td>
+			<td class="{$Override_class}">{$Override_value}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+{END details_row}	
+	</tbody>
+</table>
+
+{END details_data}
+
+
+
+{END container_detailspreviewgrid}
+
+</div>

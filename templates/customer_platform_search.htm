@@ -1,0 +1,274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel customer_platform search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Created_By}">
+	{BEGIN Created_By_fieldblock}		
+	<td>
+		{$label customer_platform Created_By}
+	</td>
+	<td>
+		<input type="checkbox" {$Created_By_notbox}>
+	</td>
+	<td>
+		{$searchtype_Created_By}
+	</td>
+	<td>
+		{$Created_By_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Created_By_editcontrol1}&nbsp;
+	</td>
+{END Created_By_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Created_date}">
+	{BEGIN Created_date_fieldblock}		
+	<td>
+		{$label customer_platform Created_date}
+	</td>
+	<td>
+		<input type="checkbox" {$Created_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_Created_date}
+	</td>
+	<td>
+		{$Created_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Created_date_editcontrol1}&nbsp;
+	</td>
+{END Created_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Updated_by}">
+	{BEGIN Updated_by_fieldblock}		
+	<td>
+		{$label customer_platform Updated_by}
+	</td>
+	<td>
+		<input type="checkbox" {$Updated_by_notbox}>
+	</td>
+	<td>
+		{$searchtype_Updated_by}
+	</td>
+	<td>
+		{$Updated_by_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Updated_by_editcontrol1}&nbsp;
+	</td>
+{END Updated_by_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_updated_date}">
+	{BEGIN updated_date_fieldblock}		
+	<td>
+		{$label customer_platform updated_date}
+	</td>
+	<td>
+		<input type="checkbox" {$updated_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_updated_date}
+	</td>
+	<td>
+		{$updated_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$updated_date_editcontrol1}&nbsp;
+	</td>
+{END updated_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Remarks}">
+	{BEGIN Remarks_fieldblock}		
+	<td>
+		{$label customer_platform Remarks}
+	</td>
+	<td>
+		<input type="checkbox" {$Remarks_notbox}>
+	</td>
+	<td>
+		{$searchtype_Remarks}
+	</td>
+	<td>
+		{$Remarks_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Remarks_editcontrol1}&nbsp;
+	</td>
+{END Remarks_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_OracleID}">
+	{BEGIN OracleID_fieldblock}		
+	<td>
+		{$label customer_platform OracleID}
+	</td>
+	<td>
+		<input type="checkbox" {$OracleID_notbox}>
+	</td>
+	<td>
+		{$searchtype_OracleID}
+	</td>
+	<td>
+		{$OracleID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$OracleID_editcontrol1}&nbsp;
+	</td>
+{END OracleID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Platform_lookup_id}">
+	{BEGIN Platform_lookup_id_fieldblock}		
+	<td>
+		{$label customer_platform Platform_lookup_id}
+	</td>
+	<td>
+		<input type="checkbox" {$Platform_lookup_id_notbox}>
+	</td>
+	<td>
+		{$searchtype_Platform_lookup_id}
+	</td>
+	<td>
+		{$Platform_lookup_id_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Platform_lookup_id_editcontrol1}&nbsp;
+	</td>
+{END Platform_lookup_id_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Count}">
+	{BEGIN Count_fieldblock}		
+	<td>
+		{$label customer_platform Count}
+	</td>
+	<td>
+		<input type="checkbox" {$Count_notbox}>
+	</td>
+	<td>
+		{$searchtype_Count}
+	</td>
+	<td>
+		{$Count_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Count_editcontrol1}&nbsp;
+	</td>
+{END Count_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Remarks1}">
+	{BEGIN Remarks1_fieldblock}		
+	<td>
+		{$label customer_platform Remarks1}
+	</td>
+	<td>
+		<input type="checkbox" {$Remarks1_notbox}>
+	</td>
+	<td>
+		{$searchtype_Remarks1}
+	</td>
+	<td>
+		{$Remarks1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Remarks1_editcontrol1}&nbsp;
+	</td>
+{END Remarks1_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterchartheader}
+<div class="rnr-c rnr-ch rnr-c-masterchartheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterchartheader {$brickclass_masterchartheader}">	<h1>{$pagetitlelabel Workload masterchart}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterchartheader}
+
+
+
+{BEGIN container_form}
+<div class="rnr-c rnr-ch rnr-c-form">
+
+
+<div  class="style1 rnr-bl rnr-b-masterchart {$brickclass_masterchart}">       {BEGIN chart_block}
+       <div id="chart_block{$id}">
+{$Workload_chart 500 320}
+        </div>
+        {END chart_block}</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_form}
+
+</div>

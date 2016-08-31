@@ -1,0 +1,293 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel stage2 search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_PK1}">
+	{BEGIN PK1_fieldblock}		
+	<td>
+		{$label stage2 PK1}
+	</td>
+	<td>
+		<input type="checkbox" {$PK1_notbox}>
+	</td>
+	<td>
+		{$searchtype_PK1}
+	</td>
+	<td>
+		{$PK1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PK1_editcontrol1}&nbsp;
+	</td>
+{END PK1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CategoryName}">
+	{BEGIN CategoryName_fieldblock}		
+	<td>
+		{$label stage2 CategoryName}
+	</td>
+	<td>
+		<input type="checkbox" {$CategoryName_notbox}>
+	</td>
+	<td>
+		{$searchtype_CategoryName}
+	</td>
+	<td>
+		{$CategoryName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CategoryName_editcontrol1}&nbsp;
+	</td>
+{END CategoryName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Activity}">
+	{BEGIN Activity_fieldblock}		
+	<td>
+		{$label stage2 Activity}
+	</td>
+	<td>
+		<input type="checkbox" {$Activity_notbox}>
+	</td>
+	<td>
+		{$searchtype_Activity}
+	</td>
+	<td>
+		{$Activity_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Activity_editcontrol1}&nbsp;
+	</td>
+{END Activity_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Duration__Weeks}">
+	{BEGIN Duration__Weeks_fieldblock}		
+	<td>
+		{$label stage2 Duration__Weeks}
+	</td>
+	<td>
+		<input type="checkbox" {$Duration__Weeks_notbox}>
+	</td>
+	<td>
+		{$searchtype_Duration__Weeks}
+	</td>
+	<td>
+		{$Duration__Weeks_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Duration__Weeks_editcontrol1}&nbsp;
+	</td>
+{END Duration__Weeks_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_RSA}">
+	{BEGIN RSA_fieldblock}		
+	<td>
+		{$label stage2 RSA}
+	</td>
+	<td>
+		<input type="checkbox" {$RSA_notbox}>
+	</td>
+	<td>
+		{$searchtype_RSA}
+	</td>
+	<td>
+		{$RSA_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$RSA_editcontrol1}&nbsp;
+	</td>
+{END RSA_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PA}">
+	{BEGIN PA_fieldblock}		
+	<td>
+		{$label stage2 PA}
+	</td>
+	<td>
+		<input type="checkbox" {$PA_notbox}>
+	</td>
+	<td>
+		{$searchtype_PA}
+	</td>
+	<td>
+		{$PA_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PA_editcontrol1}&nbsp;
+	</td>
+{END PA_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TAM}">
+	{BEGIN TAM_fieldblock}		
+	<td>
+		{$label stage2 TAM}
+	</td>
+	<td>
+		<input type="checkbox" {$TAM_notbox}>
+	</td>
+	<td>
+		{$searchtype_TAM}
+	</td>
+	<td>
+		{$TAM_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TAM_editcontrol1}&nbsp;
+	</td>
+{END TAM_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Other}">
+	{BEGIN Other_fieldblock}		
+	<td>
+		{$label stage2 Other}
+	</td>
+	<td>
+		<input type="checkbox" {$Other_notbox}>
+	</td>
+	<td>
+		{$searchtype_Other}
+	</td>
+	<td>
+		{$Other_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Other_editcontrol1}&nbsp;
+	</td>
+{END Other_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CategoryID}">
+	{BEGIN CategoryID_fieldblock}		
+	<td>
+		{$label stage2 CategoryID}
+	</td>
+	<td>
+		<input type="checkbox" {$CategoryID_notbox}>
+	</td>
+	<td>
+		{$searchtype_CategoryID}
+	</td>
+	<td>
+		{$CategoryID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CategoryID_editcontrol1}&nbsp;
+	</td>
+{END CategoryID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_AutRoleID}">
+	{BEGIN AutRoleID_fieldblock}		
+	<td>
+		{$label stage2 AutRoleID}
+	</td>
+	<td>
+		<input type="checkbox" {$AutRoleID_notbox}>
+	</td>
+	<td>
+		{$searchtype_AutRoleID}
+	</td>
+	<td>
+		{$AutRoleID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$AutRoleID_editcontrol1}&nbsp;
+	</td>
+{END AutRoleID_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

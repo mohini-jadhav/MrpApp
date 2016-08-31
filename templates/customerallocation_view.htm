@@ -1,0 +1,272 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel customerallocation view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	<TBODY>
+                                      {BEGIN Allocation_fieldblock}<tr class="{$fielddispclass_Allocation}" data-fieldname="Allocation">
+	<td class="rnr-label">
+		{$label customerallocation Allocation}
+	</td>
+	<td class="rnr-control style3">
+		{$Allocation_value}&nbsp;
+	</td>
+</tr>
+{END Allocation_fieldblock}
+	{BEGIN OracleID_fieldblock}<tr class="{$fielddispclass_OracleID}" data-fieldname="OracleID">
+	<td class="rnr-label">
+		{$label customerallocation OracleID}
+	</td>
+	<td class="rnr-control style3">
+		{$OracleID_value}&nbsp;
+	</td>
+</tr>
+{END OracleID_fieldblock}
+	{BEGIN CustomerName_fieldblock}<tr class="{$fielddispclass_CustomerName}" data-fieldname="CustomerName">
+	<td class="rnr-label">
+		{$label customerallocation CustomerName}
+	</td>
+	<td class="rnr-control style3">
+		{$CustomerName_value}&nbsp;
+	</td>
+</tr>
+{END CustomerName_fieldblock}
+	{BEGIN TimeZone_fieldblock}<tr class="{$fielddispclass_TimeZone}" data-fieldname="TimeZone">
+	<td class="rnr-label">
+		{$label customerallocation TimeZone}
+	</td>
+	<td class="rnr-control style3">
+		{$TimeZone_value}&nbsp;
+	</td>
+</tr>
+{END TimeZone_fieldblock}
+	{BEGIN Stage_fieldblock}<tr class="{$fielddispclass_Stage}" data-fieldname="Stage">
+	<td class="rnr-label">
+		{$label customerallocation Stage}
+	</td>
+	<td class="rnr-control style3">
+		{$Stage_value}&nbsp;
+	</td>
+</tr>
+{END Stage_fieldblock}
+	{BEGIN Size_fieldblock}<tr class="{$fielddispclass_Size}" data-fieldname="Size">
+	<td class="rnr-label">
+		{$label customerallocation Size}
+	</td>
+	<td class="rnr-control style3">
+		{$Size_value}&nbsp;
+	</td>
+</tr>
+{END Size_fieldblock}
+	{BEGIN Contract_Start_fieldblock}<tr class="{$fielddispclass_Contract_Start}" data-fieldname="Contract_Start">
+	<td class="rnr-label">
+		{$label customerallocation Contract_Start}
+	</td>
+	<td class="rnr-control style3">
+		{$Contract_Start_value}&nbsp;
+	</td>
+</tr>
+{END Contract_Start_fieldblock}
+	{BEGIN SteadyStateDate_fieldblock}<tr class="{$fielddispclass_SteadyStateDate}" data-fieldname="SteadyStateDate">
+	<td class="rnr-label">
+		{$label customerallocation SteadyStateDate}
+	</td>
+	<td class="rnr-control style3">
+		{$SteadyStateDate_value}&nbsp;
+	</td>
+</tr>
+{END SteadyStateDate_fieldblock}
+	{BEGIN Contract_End_fieldblock}<tr class="{$fielddispclass_Contract_End}" data-fieldname="Contract_End">
+	<td class="rnr-label">
+		{$label customerallocation Contract_End}
+	</td>
+	<td class="rnr-control style3">
+		{$Contract_End_value}&nbsp;
+	</td>
+</tr>
+{END Contract_End_fieldblock}
+	{BEGIN OnshoreSupportOnly_fieldblock}<tr class="{$fielddispclass_OnshoreSupportOnly}" data-fieldname="OnshoreSupportOnly">
+	<td class="rnr-label">
+		{$label customerallocation OnshoreSupportOnly}
+	</td>
+	<td class="rnr-control style3">
+		{$OnshoreSupportOnly_value}&nbsp;
+	</td>
+</tr>
+{END OnshoreSupportOnly_fieldblock}
+	{BEGIN Supervisor_fieldblock}<tr class="{$fielddispclass_Supervisor}" data-fieldname="Supervisor">
+	<td class="rnr-label">
+		{$label customerallocation Supervisor}
+	</td>
+	<td class="rnr-control style3">
+		{$Supervisor_value}&nbsp;
+	</td>
+</tr>
+{END Supervisor_fieldblock}
+	{BEGIN RSAName_fieldblock}<tr class="{$fielddispclass_RSAName}" data-fieldname="RSAName">
+	<td class="rnr-label">
+		{$label customerallocation RSAName}
+	</td>
+	<td class="rnr-control style3">
+		{$RSAName_value}&nbsp;
+	</td>
+</tr>
+{END RSAName_fieldblock}
+	{BEGIN Role_fieldblock}<tr class="{$fielddispclass_Role}" data-fieldname="Role">
+	<td class="rnr-label">
+		{$label customerallocation Role}
+	</td>
+	<td class="rnr-control style3">
+		{$Role_value}&nbsp;
+	</td>
+</tr>
+{END Role_fieldblock}
+	{BEGIN PlatformType_fieldblock}{END PlatformType_fieldblock}
+                                      {BEGIN PlatformName_fieldblock}<tr class="{$fielddispclass_PlatformName}" data-fieldname="PlatformName">
+	<td class="rnr-label">
+		{$label customerallocation PlatformName}
+	</td>
+	<td class="rnr-control style3">
+		{$PlatformName_value}&nbsp;
+	</td>
+</tr>
+{END PlatformName_fieldblock}
+	{BEGIN StartDate_fieldblock}<tr class="{$fielddispclass_StartDate}" data-fieldname="StartDate">
+	<td class="rnr-label">
+		{$label customerallocation StartDate}
+	</td>
+	<td class="rnr-control style3">
+		{$StartDate_value}&nbsp;
+	</td>
+</tr>
+{END StartDate_fieldblock}
+	{BEGIN EndDate_fieldblock}<tr class="{$fielddispclass_EndDate}" data-fieldname="EndDate">
+	<td class="rnr-label">
+		{$label customerallocation EndDate}
+	</td>
+	<td class="rnr-control style3">
+		{$EndDate_value}&nbsp;
+	</td>
+</tr>
+{END EndDate_fieldblock}
+	{BEGIN Override_fieldblock}<tr class="{$fielddispclass_Override}" data-fieldname="Override">
+	<td class="rnr-label">
+		{$label customerallocation Override}
+	</td>
+	<td class="rnr-control style3">
+		{$Override_value}&nbsp;
+	</td>
+</tr>
+{END Override_fieldblock}
+	{BEGIN Project_fieldblock}<tr class="{$fielddispclass_Project}" data-fieldname="Project">
+	<td class="rnr-label">
+		{$label customerallocation Project}
+	</td>
+	<td class="rnr-control style3">
+		{$Project_value}&nbsp;
+	</td>
+</tr>
+{END Project_fieldblock}
+</TBODY>
+                                  </table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-left">
+{BEGIN cancel_button}
+<A class="rnr-button" href="#" {$cancelbutton_attrs}>
+  Cancel
+</A>
+{END cancel_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Edit</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

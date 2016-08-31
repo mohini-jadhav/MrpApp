@@ -1,0 +1,488 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel CUST_ALLOC print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN RSAName_fieldheadercolumn}
+<th class="runner-cc {$RSAName_class}" {$RSAName_style}>
+	{BEGIN RSAName_fieldheader}
+	<b>{$label CUST_ALLOC RSAName}</b>
+	{END RSAName_fieldheader}
+</th>
+{END RSAName_fieldheadercolumn}
+	{BEGIN Location_fieldheadercolumn}
+<th class="runner-cc {$Location_class}" {$Location_style}>
+	{BEGIN Location_fieldheader}
+	<b>{$label CUST_ALLOC Location}</b>
+	{END Location_fieldheader}
+</th>
+{END Location_fieldheadercolumn}
+	{BEGIN Supervisor_fieldheadercolumn}
+<th class="runner-cc {$Supervisor_class}" {$Supervisor_style}>
+	{BEGIN Supervisor_fieldheader}
+	<b>{$label CUST_ALLOC Supervisor}</b>
+	{END Supervisor_fieldheader}
+</th>
+{END Supervisor_fieldheadercolumn}
+	{BEGIN Jul_2_WK_27_fieldheadercolumn}
+<th class="runner-cc {$Jul_2_WK_27_class}" {$Jul_2_WK_27_style}>
+	{BEGIN Jul_2_WK_27_fieldheader}
+	<b>{$label CUST_ALLOC Jul_2_WK_27}</b>
+	{END Jul_2_WK_27_fieldheader}
+</th>
+{END Jul_2_WK_27_fieldheadercolumn}
+	{BEGIN Jul_9_WK_28_fieldheadercolumn}
+<th class="runner-cc {$Jul_9_WK_28_class}" {$Jul_9_WK_28_style}>
+	{BEGIN Jul_9_WK_28_fieldheader}
+	<b>{$label CUST_ALLOC Jul_9_WK_28}</b>
+	{END Jul_9_WK_28_fieldheader}
+</th>
+{END Jul_9_WK_28_fieldheadercolumn}
+	{BEGIN Jul_16_WK_29_fieldheadercolumn}
+<th class="runner-cc {$Jul_16_WK_29_class}" {$Jul_16_WK_29_style}>
+	{BEGIN Jul_16_WK_29_fieldheader}
+	<b>{$label CUST_ALLOC Jul_16_WK_29}</b>
+	{END Jul_16_WK_29_fieldheader}
+</th>
+{END Jul_16_WK_29_fieldheadercolumn}
+	{BEGIN Jul_23_WK_30_fieldheadercolumn}
+<th class="runner-cc {$Jul_23_WK_30_class}" {$Jul_23_WK_30_style}>
+	{BEGIN Jul_23_WK_30_fieldheader}
+	<b>{$label CUST_ALLOC Jul_23_WK_30}</b>
+	{END Jul_23_WK_30_fieldheader}
+</th>
+{END Jul_23_WK_30_fieldheadercolumn}
+	{BEGIN Jul_30_WK_31_fieldheadercolumn}
+<th class="runner-cc {$Jul_30_WK_31_class}" {$Jul_30_WK_31_style}>
+	{BEGIN Jul_30_WK_31_fieldheader}
+	<b>{$label CUST_ALLOC Jul_30_WK_31}</b>
+	{END Jul_30_WK_31_fieldheader}
+</th>
+{END Jul_30_WK_31_fieldheadercolumn}
+	{BEGIN Aug_6_WK_32_fieldheadercolumn}
+<th class="runner-cc {$Aug_6_WK_32_class}" {$Aug_6_WK_32_style}>
+	{BEGIN Aug_6_WK_32_fieldheader}
+	<b>{$label CUST_ALLOC Aug_6_WK_32}</b>
+	{END Aug_6_WK_32_fieldheader}
+</th>
+{END Aug_6_WK_32_fieldheadercolumn}
+	{BEGIN Aug_13_WK_33_fieldheadercolumn}
+<th class="runner-cc {$Aug_13_WK_33_class}" {$Aug_13_WK_33_style}>
+	{BEGIN Aug_13_WK_33_fieldheader}
+	<b>{$label CUST_ALLOC Aug_13_WK_33}</b>
+	{END Aug_13_WK_33_fieldheader}
+</th>
+{END Aug_13_WK_33_fieldheadercolumn}
+	{BEGIN Aug_20_WK_34_fieldheadercolumn}
+<th class="runner-cc {$Aug_20_WK_34_class}" {$Aug_20_WK_34_style}>
+	{BEGIN Aug_20_WK_34_fieldheader}
+	<b>{$label CUST_ALLOC Aug_20_WK_34}</b>
+	{END Aug_20_WK_34_fieldheader}
+</th>
+{END Aug_20_WK_34_fieldheadercolumn}
+	{BEGIN Aug_27_WK_35_fieldheadercolumn}
+<th class="runner-cc {$Aug_27_WK_35_class}" {$Aug_27_WK_35_style}>
+	{BEGIN Aug_27_WK_35_fieldheader}
+	<b>{$label CUST_ALLOC Aug_27_WK_35}</b>
+	{END Aug_27_WK_35_fieldheader}
+</th>
+{END Aug_27_WK_35_fieldheadercolumn}
+	{BEGIN Sep_3_WK_36_fieldheadercolumn}
+<th class="runner-cc {$Sep_3_WK_36_class}" {$Sep_3_WK_36_style}>
+	{BEGIN Sep_3_WK_36_fieldheader}
+	<b>{$label CUST_ALLOC Sep_3_WK_36}</b>
+	{END Sep_3_WK_36_fieldheader}
+</th>
+{END Sep_3_WK_36_fieldheadercolumn}
+	{BEGIN Sep_10_WK_37_fieldheadercolumn}
+<th class="runner-cc {$Sep_10_WK_37_class}" {$Sep_10_WK_37_style}>
+	{BEGIN Sep_10_WK_37_fieldheader}
+	<b>{$label CUST_ALLOC Sep_10_WK_37}</b>
+	{END Sep_10_WK_37_fieldheader}
+</th>
+{END Sep_10_WK_37_fieldheadercolumn}
+	{BEGIN Sep_17_WK_38_fieldheadercolumn}
+<th class="runner-cc {$Sep_17_WK_38_class}" {$Sep_17_WK_38_style}>
+	{BEGIN Sep_17_WK_38_fieldheader}
+	<b>{$label CUST_ALLOC Sep_17_WK_38}</b>
+	{END Sep_17_WK_38_fieldheader}
+</th>
+{END Sep_17_WK_38_fieldheadercolumn}
+	{BEGIN Sep_24_WK_39_fieldheadercolumn}
+<th class="runner-cc {$Sep_24_WK_39_class}" {$Sep_24_WK_39_style}>
+	{BEGIN Sep_24_WK_39_fieldheader}
+	<b>{$label CUST_ALLOC Sep_24_WK_39}</b>
+	{END Sep_24_WK_39_fieldheader}
+</th>
+{END Sep_24_WK_39_fieldheadercolumn}
+	{BEGIN Oct_1_WK_40_fieldheadercolumn}
+<th class="runner-cc {$Oct_1_WK_40_class}" {$Oct_1_WK_40_style}>
+	{BEGIN Oct_1_WK_40_fieldheader}
+	<b>{$label CUST_ALLOC Oct_1_WK_40}</b>
+	{END Oct_1_WK_40_fieldheader}
+</th>
+{END Oct_1_WK_40_fieldheadercolumn}
+	{BEGIN Oct_8_WK_41_fieldheadercolumn}
+<th class="runner-cc {$Oct_8_WK_41_class}" {$Oct_8_WK_41_style}>
+	{BEGIN Oct_8_WK_41_fieldheader}
+	<b>{$label CUST_ALLOC Oct_8_WK_41}</b>
+	{END Oct_8_WK_41_fieldheader}
+</th>
+{END Oct_8_WK_41_fieldheadercolumn}
+	{BEGIN Oct_15_WK_42_fieldheadercolumn}
+<th class="runner-cc {$Oct_15_WK_42_class}" {$Oct_15_WK_42_style}>
+	{BEGIN Oct_15_WK_42_fieldheader}
+	<b>{$label CUST_ALLOC Oct_15_WK_42}</b>
+	{END Oct_15_WK_42_fieldheader}
+</th>
+{END Oct_15_WK_42_fieldheadercolumn}
+	{BEGIN Oct_22_WK_43_fieldheadercolumn}
+<th class="runner-cc {$Oct_22_WK_43_class}" {$Oct_22_WK_43_style}>
+	{BEGIN Oct_22_WK_43_fieldheader}
+	<b>{$label CUST_ALLOC Oct_22_WK_43}</b>
+	{END Oct_22_WK_43_fieldheader}
+</th>
+{END Oct_22_WK_43_fieldheadercolumn}
+	{BEGIN Oct_29_WK_44_fieldheadercolumn}
+<th class="runner-cc {$Oct_29_WK_44_class}" {$Oct_29_WK_44_style}>
+	{BEGIN Oct_29_WK_44_fieldheader}
+	<b>{$label CUST_ALLOC Oct_29_WK_44}</b>
+	{END Oct_29_WK_44_fieldheader}
+</th>
+{END Oct_29_WK_44_fieldheadercolumn}
+	{BEGIN Nov_5_WK_45_fieldheadercolumn}
+<th class="runner-cc {$Nov_5_WK_45_class}" {$Nov_5_WK_45_style}>
+	{BEGIN Nov_5_WK_45_fieldheader}
+	<b>{$label CUST_ALLOC Nov_5_WK_45}</b>
+	{END Nov_5_WK_45_fieldheader}
+</th>
+{END Nov_5_WK_45_fieldheadercolumn}
+	{BEGIN Nov_12_WK_46_fieldheadercolumn}
+<th class="runner-cc {$Nov_12_WK_46_class}" {$Nov_12_WK_46_style}>
+	{BEGIN Nov_12_WK_46_fieldheader}
+	<b>{$label CUST_ALLOC Nov_12_WK_46}</b>
+	{END Nov_12_WK_46_fieldheader}
+</th>
+{END Nov_12_WK_46_fieldheadercolumn}
+	{BEGIN Nov_19_WK_47_fieldheadercolumn}
+<th class="runner-cc {$Nov_19_WK_47_class}" {$Nov_19_WK_47_style}>
+	{BEGIN Nov_19_WK_47_fieldheader}
+	<b>{$label CUST_ALLOC Nov_19_WK_47}</b>
+	{END Nov_19_WK_47_fieldheader}
+</th>
+{END Nov_19_WK_47_fieldheadercolumn}
+	{BEGIN Nov_26_WK_48_fieldheadercolumn}
+<th class="runner-cc {$Nov_26_WK_48_class}" {$Nov_26_WK_48_style}>
+	{BEGIN Nov_26_WK_48_fieldheader}
+	<b>{$label CUST_ALLOC Nov_26_WK_48}</b>
+	{END Nov_26_WK_48_fieldheader}
+</th>
+{END Nov_26_WK_48_fieldheadercolumn}
+	{BEGIN Dec_3_WK_49_fieldheadercolumn}
+<th class="runner-cc {$Dec_3_WK_49_class}" {$Dec_3_WK_49_style}>
+	{BEGIN Dec_3_WK_49_fieldheader}
+	<b>{$label CUST_ALLOC Dec_3_WK_49}</b>
+	{END Dec_3_WK_49_fieldheader}
+</th>
+{END Dec_3_WK_49_fieldheadercolumn}
+	{BEGIN Dec_10_WK_50_fieldheadercolumn}
+<th class="runner-cc {$Dec_10_WK_50_class}" {$Dec_10_WK_50_style}>
+	{BEGIN Dec_10_WK_50_fieldheader}
+	<b>{$label CUST_ALLOC Dec_10_WK_50}</b>
+	{END Dec_10_WK_50_fieldheader}
+</th>
+{END Dec_10_WK_50_fieldheadercolumn}
+	{BEGIN Dec_17_WK_51_fieldheadercolumn}
+<th class="runner-cc {$Dec_17_WK_51_class}" {$Dec_17_WK_51_style}>
+	{BEGIN Dec_17_WK_51_fieldheader}
+	<b>{$label CUST_ALLOC Dec_17_WK_51}</b>
+	{END Dec_17_WK_51_fieldheader}
+</th>
+{END Dec_17_WK_51_fieldheadercolumn}
+	{BEGIN Dec_24_WK_52_fieldheadercolumn}
+<th class="runner-cc {$Dec_24_WK_52_class}" {$Dec_24_WK_52_style}>
+	{BEGIN Dec_24_WK_52_fieldheader}
+	<b>{$label CUST_ALLOC Dec_24_WK_52}</b>
+	{END Dec_24_WK_52_fieldheader}
+</th>
+{END Dec_24_WK_52_fieldheadercolumn}
+	{BEGIN Dec_31_WK_53_fieldheadercolumn}
+<th class="runner-cc {$Dec_31_WK_53_class}" {$Dec_31_WK_53_style}>
+	{BEGIN Dec_31_WK_53_fieldheader}
+	<b>{$label CUST_ALLOC Dec_31_WK_53}</b>
+	{END Dec_31_WK_53_fieldheader}
+</th>
+{END Dec_31_WK_53_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN RSAName_fieldcolumn}
+<td  class="runner-cc {$RSAName_class}" {$RSAName_style} {$recordattrs}>
+	{$RSAName_value}
+</td>
+{END RSAName_fieldcolumn}
+	{BEGIN Location_fieldcolumn}
+<td  class="runner-cc {$Location_class}" {$Location_style} {$recordattrs}>
+	{$Location_value}
+</td>
+{END Location_fieldcolumn}
+	{BEGIN Supervisor_fieldcolumn}
+<td  class="runner-cc {$Supervisor_class}" {$Supervisor_style} {$recordattrs}>
+	{$Supervisor_value}
+</td>
+{END Supervisor_fieldcolumn}
+	{BEGIN Jul_2_WK_27_fieldcolumn}
+<td  class="runner-cc {$Jul_2_WK_27_class}" {$Jul_2_WK_27_style} {$recordattrs}>
+	{$Jul_2_WK_27_value}
+</td>
+{END Jul_2_WK_27_fieldcolumn}
+	{BEGIN Jul_9_WK_28_fieldcolumn}
+<td  class="runner-cc {$Jul_9_WK_28_class}" {$Jul_9_WK_28_style} {$recordattrs}>
+	{$Jul_9_WK_28_value}
+</td>
+{END Jul_9_WK_28_fieldcolumn}
+	{BEGIN Jul_16_WK_29_fieldcolumn}
+<td  class="runner-cc {$Jul_16_WK_29_class}" {$Jul_16_WK_29_style} {$recordattrs}>
+	{$Jul_16_WK_29_value}
+</td>
+{END Jul_16_WK_29_fieldcolumn}
+	{BEGIN Jul_23_WK_30_fieldcolumn}
+<td  class="runner-cc {$Jul_23_WK_30_class}" {$Jul_23_WK_30_style} {$recordattrs}>
+	{$Jul_23_WK_30_value}
+</td>
+{END Jul_23_WK_30_fieldcolumn}
+	{BEGIN Jul_30_WK_31_fieldcolumn}
+<td  class="runner-cc {$Jul_30_WK_31_class}" {$Jul_30_WK_31_style} {$recordattrs}>
+	{$Jul_30_WK_31_value}
+</td>
+{END Jul_30_WK_31_fieldcolumn}
+	{BEGIN Aug_6_WK_32_fieldcolumn}
+<td  class="runner-cc {$Aug_6_WK_32_class}" {$Aug_6_WK_32_style} {$recordattrs}>
+	{$Aug_6_WK_32_value}
+</td>
+{END Aug_6_WK_32_fieldcolumn}
+	{BEGIN Aug_13_WK_33_fieldcolumn}
+<td  class="runner-cc {$Aug_13_WK_33_class}" {$Aug_13_WK_33_style} {$recordattrs}>
+	{$Aug_13_WK_33_value}
+</td>
+{END Aug_13_WK_33_fieldcolumn}
+	{BEGIN Aug_20_WK_34_fieldcolumn}
+<td  class="runner-cc {$Aug_20_WK_34_class}" {$Aug_20_WK_34_style} {$recordattrs}>
+	{$Aug_20_WK_34_value}
+</td>
+{END Aug_20_WK_34_fieldcolumn}
+	{BEGIN Aug_27_WK_35_fieldcolumn}
+<td  class="runner-cc {$Aug_27_WK_35_class}" {$Aug_27_WK_35_style} {$recordattrs}>
+	{$Aug_27_WK_35_value}
+</td>
+{END Aug_27_WK_35_fieldcolumn}
+	{BEGIN Sep_3_WK_36_fieldcolumn}
+<td  class="runner-cc {$Sep_3_WK_36_class}" {$Sep_3_WK_36_style} {$recordattrs}>
+	{$Sep_3_WK_36_value}
+</td>
+{END Sep_3_WK_36_fieldcolumn}
+	{BEGIN Sep_10_WK_37_fieldcolumn}
+<td  class="runner-cc {$Sep_10_WK_37_class}" {$Sep_10_WK_37_style} {$recordattrs}>
+	{$Sep_10_WK_37_value}
+</td>
+{END Sep_10_WK_37_fieldcolumn}
+	{BEGIN Sep_17_WK_38_fieldcolumn}
+<td  class="runner-cc {$Sep_17_WK_38_class}" {$Sep_17_WK_38_style} {$recordattrs}>
+	{$Sep_17_WK_38_value}
+</td>
+{END Sep_17_WK_38_fieldcolumn}
+	{BEGIN Sep_24_WK_39_fieldcolumn}
+<td  class="runner-cc {$Sep_24_WK_39_class}" {$Sep_24_WK_39_style} {$recordattrs}>
+	{$Sep_24_WK_39_value}
+</td>
+{END Sep_24_WK_39_fieldcolumn}
+	{BEGIN Oct_1_WK_40_fieldcolumn}
+<td  class="runner-cc {$Oct_1_WK_40_class}" {$Oct_1_WK_40_style} {$recordattrs}>
+	{$Oct_1_WK_40_value}
+</td>
+{END Oct_1_WK_40_fieldcolumn}
+	{BEGIN Oct_8_WK_41_fieldcolumn}
+<td  class="runner-cc {$Oct_8_WK_41_class}" {$Oct_8_WK_41_style} {$recordattrs}>
+	{$Oct_8_WK_41_value}
+</td>
+{END Oct_8_WK_41_fieldcolumn}
+	{BEGIN Oct_15_WK_42_fieldcolumn}
+<td  class="runner-cc {$Oct_15_WK_42_class}" {$Oct_15_WK_42_style} {$recordattrs}>
+	{$Oct_15_WK_42_value}
+</td>
+{END Oct_15_WK_42_fieldcolumn}
+	{BEGIN Oct_22_WK_43_fieldcolumn}
+<td  class="runner-cc {$Oct_22_WK_43_class}" {$Oct_22_WK_43_style} {$recordattrs}>
+	{$Oct_22_WK_43_value}
+</td>
+{END Oct_22_WK_43_fieldcolumn}
+	{BEGIN Oct_29_WK_44_fieldcolumn}
+<td  class="runner-cc {$Oct_29_WK_44_class}" {$Oct_29_WK_44_style} {$recordattrs}>
+	{$Oct_29_WK_44_value}
+</td>
+{END Oct_29_WK_44_fieldcolumn}
+	{BEGIN Nov_5_WK_45_fieldcolumn}
+<td  class="runner-cc {$Nov_5_WK_45_class}" {$Nov_5_WK_45_style} {$recordattrs}>
+	{$Nov_5_WK_45_value}
+</td>
+{END Nov_5_WK_45_fieldcolumn}
+	{BEGIN Nov_12_WK_46_fieldcolumn}
+<td  class="runner-cc {$Nov_12_WK_46_class}" {$Nov_12_WK_46_style} {$recordattrs}>
+	{$Nov_12_WK_46_value}
+</td>
+{END Nov_12_WK_46_fieldcolumn}
+	{BEGIN Nov_19_WK_47_fieldcolumn}
+<td  class="runner-cc {$Nov_19_WK_47_class}" {$Nov_19_WK_47_style} {$recordattrs}>
+	{$Nov_19_WK_47_value}
+</td>
+{END Nov_19_WK_47_fieldcolumn}
+	{BEGIN Nov_26_WK_48_fieldcolumn}
+<td  class="runner-cc {$Nov_26_WK_48_class}" {$Nov_26_WK_48_style} {$recordattrs}>
+	{$Nov_26_WK_48_value}
+</td>
+{END Nov_26_WK_48_fieldcolumn}
+	{BEGIN Dec_3_WK_49_fieldcolumn}
+<td  class="runner-cc {$Dec_3_WK_49_class}" {$Dec_3_WK_49_style} {$recordattrs}>
+	{$Dec_3_WK_49_value}
+</td>
+{END Dec_3_WK_49_fieldcolumn}
+	{BEGIN Dec_10_WK_50_fieldcolumn}
+<td  class="runner-cc {$Dec_10_WK_50_class}" {$Dec_10_WK_50_style} {$recordattrs}>
+	{$Dec_10_WK_50_value}
+</td>
+{END Dec_10_WK_50_fieldcolumn}
+	{BEGIN Dec_17_WK_51_fieldcolumn}
+<td  class="runner-cc {$Dec_17_WK_51_class}" {$Dec_17_WK_51_style} {$recordattrs}>
+	{$Dec_17_WK_51_value}
+</td>
+{END Dec_17_WK_51_fieldcolumn}
+	{BEGIN Dec_24_WK_52_fieldcolumn}
+<td  class="runner-cc {$Dec_24_WK_52_class}" {$Dec_24_WK_52_style} {$recordattrs}>
+	{$Dec_24_WK_52_value}
+</td>
+{END Dec_24_WK_52_fieldcolumn}
+	{BEGIN Dec_31_WK_53_fieldcolumn}
+<td  class="runner-cc {$Dec_31_WK_53_class}" {$Dec_31_WK_53_style} {$recordattrs}>
+	{$Dec_31_WK_53_value}
+</td>
+{END Dec_31_WK_53_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

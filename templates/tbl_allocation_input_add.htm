@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD> 
+<BODY class="{$stylename} function-add" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+{BEGIN container_add}
+<DIV class="rnr-c rnr-cv rnr-c-add">
+{BEGIN addheader}<DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><SPAN>
+<H1>
+{$pagetitlelabel tbl_allocation_input add}</H1></SPAN></DIV>
+{END addheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+<TABLE class="fieldGrid">
+  <TBODY>
+  {BEGIN Start_Date_fieldblock}<TR class="{$fielddispclass_Start_Date}" data-fieldname="Start_Date">
+    <TD class="rnr-label">{BEGIN Start_Date_label}
+      {$label tbl_allocation_input Start_Date}{END Start_Date_label} </TD>
+    <TD class="rnr-control style3">
+      {$Start_Date_editcontrol}&nbsp;</TD></TR>
+  {END Start_Date_fieldblock}{BEGIN Weeks_Interval_fieldblock}<TR class="{$fielddispclass_Weeks_Interval}" data-fieldname="Weeks_Interval">
+    <TD class="rnr-label">{BEGIN Weeks_Interval_label}
+      {$label tbl_allocation_input Weeks_Interval}{END Weeks_Interval_label} </TD>
+    <TD class="rnr-control style3">
+      {$Weeks_Interval_editcontrol}&nbsp;
+  </TD></TR>{END Weeks_Interval_fieldblock}</TBODY></TABLE></DIV><A class="rnr-button button" id="Show_Allocation1" href="#" typeid="ib">Show&nbsp;Allocation</A> </DIV>{END container_fields}</DIV></DIV> {END container_add}</DIV></DIV> 
+{END container_all}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

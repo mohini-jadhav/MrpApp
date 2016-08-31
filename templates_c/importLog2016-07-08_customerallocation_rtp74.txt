@@ -1,0 +1,6 @@
+Import into customerallocation
+07/08/16 11:21:20 AM
+
+1862 out of 1862 records processed successfully.
+0 records added.
+1862 records updated.

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18163">
+  </HEAD>
+  <BODY class="{$stylename} function-list" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_toplinks}
+            <DIV class="rnr-c rnr-ch rnr-c-toplinks">
+              {BEGIN security_block}
+                <DIV class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}">
+                  <DIV id="login_block{$id}">
+                    {BEGIN loggedas_message}
+                      <SPAN>
+                        Logged on as&nbsp;
+                        <B>
+                          {$username}
+                        </B>
+                        &nbsp;
+                      </SPAN>
+                    {END loggedas_message}
+                    {BEGIN guestloginbutton}
+                      <SPAN>
+                        <A class="rnr-button" href="#" {$guestloginlink_attrs}>
+                          Login
+                        </A>
+                      </SPAN>
+                    {END guestloginbutton}
+                    {BEGIN logoutbutton}
+                      <A class="rnr-button" href="#" {$logoutlink_attrs}>
+                        Log out
+                      </A>
+                    {END logoutbutton}
+                    {BEGIN adminarea_link}
+                      <A class="rnr-button" href="admin_rights_list.php" {$adminarealink_attrs}>
+                        Admin Area
+                      </A>
+                    {END adminarea_link}
+                    {BEGIN changepwd_link}
+                      <A class="rnr-button" href="#" {$changepwdlink_attrs}>
+                        Change password
+                      </A>
+                    {END changepwd_link}
+                  </DIV>
+                </DIV>
+              {END security_block}
+              {BEGIN asearch_link}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}">
+                  <A class="rnr-button" href="employee_header_search.php" {$advsearchlink_attrs}>
+                    Advanced search
+                  </A>
+                </DIV>
+              {END asearch_link}
+              {BEGIN import_link}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_import {$brickclass_toplinks_import}">
+                  <A class="rnr-button" href="employee_header_import.php?{$crosstable_attrs}" {$importlink_attrs}>
+                    Import
+                  </A>
+                </DIV>
+              {END import_link}
+              {BEGIN export_link}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_export {$brickclass_toplinks_export}">
+                  <A class="rnr-button" href="employee_header_export.php" target="_blank" {$exportlink_attrs}>
+                    Export results
+                  </A>
+                </DIV>
+              {END export_link}
+              <DIV class="rnr-hfiller">
+              </DIV>
+            </DIV>
+          {END container_toplinks}
+          {BEGIN container_hmenu}
+            <DIV class="rnr-c rnr-ch rnr-c-hmenu">
+              {BEGIN menu_block}
+                {$menu main horizontal}
+              {END menu_block}
+              <DIV class="rnr-hfiller">
+              </DIV>
+            </DIV>
+          {END container_hmenu}
+          {BEGIN container_search}
+            <DIV class="rnr-c rnr-ch rnr-c-search">
+              {BEGIN searchform_block}
+                <DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}">
+                  <SPAN>
+                    {BEGIN searchform_text}
+                      <INPUT type="text" size="25" {$searchfor_attrs}>
+                    {END searchform_text}
+                    {BEGIN searchform_search}
+                      <A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}>
+                      </A>
+                    {END searchform_search}
+                    {BEGIN searchform_showall}
+                      <A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>
+                        Show all
+                      </A>
+                    {END searchform_showall}
+                  </SPAN>
+                </DIV>
+              {END searchform_block}
+              {BEGIN searchformbuttons_block}
+                <DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">
+                  {BEGIN searchPanelTopButtons}
+                    <SPAN>
+                      <A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}>
+                      </A>
+                      <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}>
+                      </A>
+                    </SPAN>
+                  {END searchPanelTopButtons}
+                </DIV>
+              {END searchformbuttons_block}
+              {BEGIN searchsaving_block}
+                <DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}">
+                </DIV>
+              {END searchsaving_block}
+              <DIV class="rnr-hfiller">
+              </DIV>
+              {BEGIN details_block}
+                <DIV class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">
+                  <SPAN {$details_attrs}>
+                    Details found:
+                    <B>
+                      <SPAN class="rnr-details_found_count">
+                        {$records_found}
+                      </SPAN>
+                    </B>
+                  </SPAN>
+                </DIV>
+              {END details_block}
+              {BEGIN pages_block}
+                <DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">
+                  <SPAN {$pages_attrs}>
+                    Page
+                    <B>
+                      {$page}
+                    </B>
+                    of
+                    <B>
+                      {$maxpages}
+                    </B>
+                  </SPAN>
+                </DIV>
+              {END pages_block}
+              {BEGIN recordspp_block}
+                <DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">
+                  <SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">
+                    Records Per Page:&nbsp;{$recsPerPage}
+                  </SPAN>
+                </DIV>
+              {END recordspp_block}
+            </DIV>
+          {END container_search}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+            {BEGIN container_left}
+              <DIV class="rnr-c rnr-cv rnr-c-left">
+                {BEGIN searchPanel}
+                  <DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+                    <DIV class="searchPanelContainer">
+                      <DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+                        <DIV class="srchCritTop" style="display: none;">
+                          Criteria:&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$all_checkbox}>&nbsp;
+                          {BEGIN all_checkbox_label}
+                            <SPAN>
+                              all
+                            </SPAN>
+                          {END all_checkbox_label}
+                          &nbsp;&nbsp;&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$any_checkbox}>&nbsp;
+                          {BEGIN any_checkbox_label}
+                            <SPAN>
+                              any
+                            </SPAN>
+                          {END any_checkbox_label}
+                        </DIV>
+                        <DIV class="addOption">
+                          <SPAN class="rnr-buttons-group">
+                            <A class="rnr-button" id="showHideControlChooseMenu{$id}" href="#" {$showHideCtrls_attrs}>
+                              Add field
+                            </A>
+                          </SPAN>
+                          <A class="rnr-button" id="showHideSearchType{$id}" href="#" {$showHideCtrlsOpt_attrs}>
+                            {$showHideOpt_mess}
+                          </A>
+                        </DIV>
+                        <TABLE class="controlsBlock {$controls_block_class}">
+                          {BEGIN searchCtrlBlock}
+                            <TBODY>
+                              <TR class="srchPanelRow" {$filterRow_attrs}>
+                                <TD class="srchPanelCell">
+                                  {$delCtrlButt}
+                                </TD>
+                                <TD class="srchPanelCell">
+                                  {$fLabel}
+                                  :&nbsp;
+                                </TD>
+                                <TD class="srchPanelCell srchPanelCell2">
+                                  <DIV class="rnr-searchtype">
+                                    {$searchtype}
+                                  </DIV>
+                                  <DIV class="rnr-searchcontrol">
+                                    {$searchcontrol}
+                                  </DIV>
+                                  <DIV class="rnr-searchcontrol">
+                                    {$searchcontrol1}
+                                  </DIV>
+                                </TD>
+                              </TR>
+                            </TBODY>
+                          {END searchCtrlBlock}
+                        </TABLE>
+                        <DIV align="left" class="bottomSearchButt" {$bottomSearchButt_attrs}>
+                          <A class="rnr-button" id="searchButton{$id}" href="#" {$searchbutton_attrs}>
+                            Search
+                          </A>
+                        </DIV>
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                {END searchPanel}
+              </DIV>
+            {END container_left}
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+            {BEGIN container_bigblock}
+              <DIV class="rnr-c rnr-cv rnr-c-bigblock">
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols">
+                  <FONT color="#000000"></FONT>
+                  {BEGIN container_recordcontrols}
+                    <DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+                      <FONT color="#000000"></FONT>
+                      <DIV class="rnr-hfiller" style="width: 93.33%; height: 34px;">
+                        <FONT color="#000000"><STRONG>Filter By Supervisor Name</STRONG>:</FONT>{$event employee_header_snippet2}";
+                        <STRONG><FONT color="#000000">Filter By Employee Active:{$event employee_header_snippet}</FONT></STRONG>&nbsp;<STRONG><FONT 
+color="#000000">Filter By Role:{$event employee_header_snippet1}</FONT></STRONG>
+                      </DIV>
+                      {BEGIN newrecord_controls_block}
+                        <DIV class="style1 rnr-br rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">
+                          {BEGIN add_link}
+                            <A class="rnr-button" href="employee_header_add.php" {$addlink_attrs}>
+                              Add
+                            </A>
+                          {END add_link}
+                          <A id="edit_employee" class="rnr-button" href="#"> Edit </A>
+                          {BEGIN deleteselected_link}
+                            <A class="rnr-button" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>
+                              Delete
+                            </A>
+                          {END deleteselected_link}
+                        </DIV>
+                      {END newrecord_controls_block}
+                      {BEGIN record_controls_block}
+                        <DIV class="style1 rnr-br rnr-b-recordcontrol {$brickclass_recordcontrol}">
+                        	
+                          {BEGIN exportselected_link}
+                            <A class="rnr-button" href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>
+                              Export
+                            </A>
+                          {END exportselected_link}
+                          {BEGIN printselected_link}
+                            <A class="rnr-button" href="#" {$printselectedlink_attrs} {$printselectedlink_span}>
+                              Print
+                            </A>
+                          {END printselected_link}
+                        </DIV>
+                      {END record_controls_block}
+                    </DIV>
+                  {END container_recordcontrols}
+                </DIV>
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_message} rnr-wrapper rnr-cbw-message">
+                  {BEGIN container_message}
+                    <DIV class="rnr-c rnr-ch rnr-c-message">
+                      {BEGIN message_block}
+                        <DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+                          <DIV class="rnr-message">
+                            {$message}
+                          </DIV>
+                        </DIV>
+                      {END message_block}
+                    </DIV>
+                  {END container_message}
+                </DIV>
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid">
+                  {BEGIN container_grid}
+                    {BEGIN grid_block}
+                      <TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" cellpadding="0">
+                        <THEAD>
+                          {BEGIN grid_header}
+                            <TR class="rnr-toprow style1 {$gridHeader_class}">
+                              {BEGIN record_header}
+                                {BEGIN listIcons_column}
+                                  <TH ieditcont="all" style="display:none;">
+                                    &nbsp;
+                                  </TH>
+                                {END listIcons_column}
+                                {BEGIN checkbox_column}
+                                  <TH class="rnr-bc">
+                                    <INPUT type="checkbox" {$checkboxheader_attrs}>
+                                  </TH>
+                                {END checkbox_column}
+                                {BEGIN employee_header_dtable_column}
+                                  <TH style="display: none;" th>
+                                    &nbsp;
+                                  </TH>
+                                {END employee_header_dtable_column}
+                                {BEGIN EmployeeID_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$EmployeeID_class}">
+                                    {BEGIN EmployeeID_fieldheader}
+                                      <SPAN {$EmployeeID_orderlinkattrs}>
+                                        {$label employee_header EmployeeID}
+                                      </SPAN>
+                                    {END EmployeeID_fieldheader}
+                                  </TH>
+                                {END EmployeeID_fieldheadercolumn}
+                                {BEGIN FirstName_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$FirstName_class}">
+                                    {BEGIN FirstName_fieldheader}
+                                      <SPAN {$FirstName_orderlinkattrs}>
+                                        {$label employee_header FirstName}
+                                      </SPAN>
+                                    {END FirstName_fieldheader}
+                                  </TH>
+                                {END FirstName_fieldheadercolumn}
+                                {BEGIN LastName_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$LastName_class}">
+                                    {BEGIN LastName_fieldheader}
+                                      <SPAN {$LastName_orderlinkattrs}>
+                                        {$label employee_header LastName}
+                                      </SPAN>
+                                    {END LastName_fieldheader}
+                                  </TH>
+                                {END LastName_fieldheadercolumn}
+                                {BEGIN SupervisorTitle_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$SupervisorTitle_class}">
+                                    {BEGIN SupervisorTitle_fieldheader}
+                                      <SPAN {$SupervisorTitle_orderlinkattrs}>
+                                        {$label employee_header SupervisorTitle}
+                                      </SPAN>
+                                    {END SupervisorTitle_fieldheader}
+                                  </TH>
+                                {END SupervisorTitle_fieldheadercolumn}
+                                {BEGIN emailID_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$emailID_class}">
+                                    {BEGIN emailID_fieldheader}
+                                      <SPAN {$emailID_orderlinkattrs}>
+                                        {$label employee_header emailID}
+                                      </SPAN>
+                                    {END emailID_fieldheader}
+                                  </TH>
+                                {END emailID_fieldheadercolumn}
+                                {BEGIN Role_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Role_class}">
+                                    {BEGIN Role_fieldheader}
+                                      <SPAN {$Role_orderlinkattrs}>
+                                        {$label employee_header Role}
+                                      </SPAN>
+                                    {END Role_fieldheader}
+                                  </TH>
+                                {END Role_fieldheadercolumn}
+                                {BEGIN Type_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Type_class}">
+                                    {BEGIN Type_fieldheader}
+                                      <SPAN {$Type_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header Type}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END Type_fieldheader}
+                                  </TH>
+                                {END Type_fieldheadercolumn}
+                                {BEGIN Location_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Location_class}">
+                                    {BEGIN Location_fieldheader}
+                                      <SPAN {$Location_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header Location}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END Location_fieldheader}
+                                  </TH>
+                                {END Location_fieldheadercolumn}
+                                {BEGIN SupervisorName_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$SupervisorName_class}">
+                                    {BEGIN SupervisorName_fieldheader}
+                                      <SPAN {$SupervisorName_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header SupervisorName}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END SupervisorName_fieldheader}
+                                  </TH>
+                                {END SupervisorName_fieldheadercolumn}
+                                {BEGIN InactiveDate_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$InactiveDate_class}">
+                                    {BEGIN InactiveDate_fieldheader}
+                                      <SPAN {$InactiveDate_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header InactiveDate}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END InactiveDate_fieldheader}
+                                  </TH>
+                                {END InactiveDate_fieldheadercolumn}
+                                {BEGIN StartDate_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$StartDate_class}">
+                                    {BEGIN StartDate_fieldheader}
+                                      <SPAN {$StartDate_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header StartDate}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END StartDate_fieldheader}
+                                  </TH>
+                                {END StartDate_fieldheadercolumn}
+                                {BEGIN EmployeeStatus_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$EmployeeStatus_class}">
+                                    {BEGIN EmployeeStatus_fieldheader}
+                                      <SPAN {$EmployeeStatus_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header EmployeeStatus}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END EmployeeStatus_fieldheader}
+                                  </TH>
+                                {END EmployeeStatus_fieldheadercolumn}
+                                {BEGIN JobTitle_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$JobTitle_class}">
+                                    {BEGIN JobTitle_fieldheader}
+                                      <SPAN {$JobTitle_orderlinkattrs}>
+                                        {$label employee_header JobTitle}
+                                      </SPAN>
+                                    {END JobTitle_fieldheader}
+                                  </TH>
+                                {END JobTitle_fieldheadercolumn}
+                                <TH class="rnr-edge">
+                                  &nbsp;
+                                </TH>
+                                {BEGIN endrecordheader_block}
+                                  <TH class="rnr-cs">
+                                    &nbsp;
+                                  </TH>
+                                {END endrecordheader_block}
+                              {END record_header}
+                            </TR>
+                          {END grid_header}
+                        </THEAD>
+                        <TBODY>
+                          {BEGIN grid_row}
+                            <TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+                              {BEGIN grid_record}
+                                {BEGIN listIcons_column}
+                                  <TD style="display:none;" class="rnr-cc rnr-bc rnr-icons" ieditcont="all" {$rowstyle} {$recordattrs}>
+                                    {BEGIN edit_column}
+                                      {BEGIN edit_link}
+                                        <A class="rnr-button-img" data-icon="edit" title="Edit" href="employee_header_edit.php" {$editlink_attrs}>          
+                                        </A>
+                                      {END edit_link}
+                                    {END edit_column}
+                                  </TD>
+                                {END listIcons_column}
+                                {BEGIN checkbox_column}
+                                  <TD class="rnr-bc" ieditcont="checkBox" {$rowstyle} {$recordattrs}>
+                                    {BEGIN checkbox}
+                                      <INPUT type="checkbox" {$checkbox_attrs}>
+                                    {END checkbox}
+                                  </TD>
+                                {END checkbox_column}
+                                {BEGIN employee_header_dtable_column}
+                                  <TD class="rnr-nowrap" style="display: none;" {$rowstyle} {$recordattrs}>
+                                    {BEGIN employeeskills_dtable_link}
+                                      <SPAN>
+                                        <A {$employeeskills_dtablelink_attrs}><FONT color="#0000ff">Employee Skills</FONT>
+                                          <SPAN dir="ltr" {$employeeskills_childnumber_attr}>
+                                            {BEGIN employeeskills_childcount}
+                                              <FONT color="#0000ff">(</FONT>{$employeeskills_childnumber}<FONT color="#0000ff">)</FONT>
+                                            {END employeeskills_childcount}
+                                          </SPAN>
+                                          <FONT color="#0000ff"></FONT>
+                                        </A>
+                                        <FONT color="#0000ff"><BR></FONT>
+                                      </SPAN>
+                                    {END employeeskills_dtable_link}
+                                    <FONT color="#0000ff"></FONT>
+                                  </TD>
+                                {END employee_header_dtable_column}
+                                {BEGIN EmployeeID_fieldcolumn}
+                                  <TD class="{$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+                                    <FONT color="#0000ff"></FONT>
+                                    <DIV align="left">
+                                      <FONT color="#0000ff"></FONT>
+                                      <A style="text-decoration: none; display: block !important;" {$employeeskills_dtablelink_attrs}>
+                                        <FONT color="#0000ff"></FONT><FONT color="#0000ff">{$EmployeeID_value}</FONT>
+                                      </A>
+                                    </DIV>
+                                    <A style="display: block !important;" {$employeeskills_dtablelink_attrs}>
+                                    </A>
+                                  </TD>
+                                {END EmployeeID_fieldcolumn}
+                                {BEGIN FirstName_fieldcolumn}
+                                  <TD class="{$FirstName_class}" {$FirstName_style} {$recordattrs}>
+                                    <STRONG></STRONG><STRONG>{$FirstName_value}</STRONG>
+                                  </TD>
+                                {END FirstName_fieldcolumn}
+                                {BEGIN LastName_fieldcolumn}
+                                  <TD class="{$LastName_class}" {$LastName_style} {$recordattrs}>
+                                    <STRONG></STRONG><STRONG>{$LastName_value}</STRONG>
+                                  </TD>
+                                {END LastName_fieldcolumn}
+                                {BEGIN SupervisorTitle_fieldcolumn}
+                                  <TD class="{$SupervisorTitle_class}" {$SupervisorTitle_style} {$recordattrs}>
+                                    {$SupervisorTitle_value}
+                                  </TD>
+                                {END SupervisorTitle_fieldcolumn}
+                                {BEGIN emailID_fieldcolumn}
+                                  <TD class="{$emailID_class}" {$emailID_style} {$recordattrs}>
+                                    {$emailID_value}
+                                  </TD>
+                                {END emailID_fieldcolumn}
+                                {BEGIN Role_fieldcolumn}
+                                  <TD class="{$Role_class}" {$Role_style} {$recordattrs}>
+                                    {$Role_value}
+                                  </TD>
+                                {END Role_fieldcolumn}
+                                {BEGIN Type_fieldcolumn}
+                                  <TD class="{$Type_class}" {$Type_style} {$recordattrs}>
+                                    <DIV align="center">
+                                      {$Type_value}
+                                    </DIV>
+                                  </TD>
+                                {END Type_fieldcolumn}
+                                {BEGIN Location_fieldcolumn}
+                                  <TD class="{$Location_class}" {$Location_style} {$recordattrs}>
+                                    <DIV align="center">
+                                      {$Location_value}
+                                    </DIV>
+                                  </TD>
+                                {END Location_fieldcolumn}
+                                {BEGIN SupervisorName_fieldcolumn}
+                                  <TD class="{$SupervisorName_class}" {$SupervisorName_style} {$recordattrs}>
+                                    {$SupervisorName_value}
+                                  </TD>
+                                {END SupervisorName_fieldcolumn}
+                                {BEGIN InactiveDate_fieldcolumn}
+                                  <TD class="{$InactiveDate_class}" {$InactiveDate_style} {$recordattrs}>
+                                    {$InactiveDate_value}
+                                  </TD>
+                                {END InactiveDate_fieldcolumn}
+                                {BEGIN StartDate_fieldcolumn}
+                                  <TD class="{$StartDate_class}" {$StartDate_style} {$recordattrs}>
+                                    {$StartDate_value}
+                                  </TD>
+                                {END StartDate_fieldcolumn}
+                                {BEGIN EmployeeStatus_fieldcolumn}
+                                  <TD class="{$EmployeeStatus_class}" {$EmployeeStatus_style} {$recordattrs}>
+                                    <DIV align="center">
+                                      {$EmployeeStatus_value}
+                                    </DIV>
+                                  </TD>
+                                {END EmployeeStatus_fieldcolumn}
+                                {BEGIN JobTitle_fieldcolumn}
+                                  <TD class="{$JobTitle_class}" {$JobTitle_style} {$recordattrs}>
+                                    {$JobTitle_value}
+                                  </TD>
+                                {END JobTitle_fieldcolumn}
+                                <TD class="rnr-edge" {$recordattrs}>
+                                  &nbsp;
+                                </TD>
+                                {BEGIN endrecord_block}
+                                  <TD class="rnr-cs" {$endrecordblock_attrs}>
+                                    &nbsp;
+                                  </TD>
+                                {END endrecord_block}
+                              {END grid_record}
+                            </TR>
+                          {END grid_row}
+                        </TBODY>
+                      </TABLE>
+                    {END grid_block}
+                  {END container_grid}
+                </DIV>
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pagination} rnr-wrapper rnr-cbw-pagination">
+                  {BEGIN container_pagination}
+                    <DIV class="rnr-c rnr-ch rnr-c-pagination">
+                      {BEGIN pagination_block}
+                        <DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+                          {$pagination}
+                        </DIV>
+                      {END pagination_block}
+                    </DIV>
+                  {END container_pagination}
+                </DIV>
+              </DIV>
+            {END container_bigblock}
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+        </DIV>
+      </DIV>
+      {$footer}
+      
+      <P>
+        <BR>
+      </P>
+      <P>
+        <BR>
+      </P>
+      <P>
+        <BR>
+      </P>
+      <P>
+        <BR>
+      </P>
+    {END body}
+  </BODY>
+</HTML>

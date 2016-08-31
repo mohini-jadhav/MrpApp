@@ -1,0 +1,260 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfoprint {$brickclass_masterinfoprint}">{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel customerallocation1 print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN AutCustID_fieldheadercolumn}
+<th class="runner-cc {$AutCustID_class}" {$AutCustID_style}>
+	{BEGIN AutCustID_fieldheader}
+	<b>{$label customerallocation1 AutCustID}</b>
+	{END AutCustID_fieldheader}
+</th>
+{END AutCustID_fieldheadercolumn}
+	{BEGIN OracleID_fieldheadercolumn}
+<th class="runner-cc {$OracleID_class}" {$OracleID_style}>
+	{BEGIN OracleID_fieldheader}
+	<b>{$label customerallocation1 OracleID}</b>
+	{END OracleID_fieldheader}
+</th>
+{END OracleID_fieldheadercolumn}
+	{BEGIN CustomerName_fieldheadercolumn}
+<th class="runner-cc {$CustomerName_class}" {$CustomerName_style}>
+	{BEGIN CustomerName_fieldheader}
+	<b>{$label customerallocation1 CustomerName}</b>
+	{END CustomerName_fieldheader}
+</th>
+{END CustomerName_fieldheadercolumn}
+	{BEGIN Supervisor_fieldheadercolumn}
+<th class="runner-cc {$Supervisor_class}" {$Supervisor_style}>
+	{BEGIN Supervisor_fieldheader}
+	<b>{$label customerallocation1 Supervisor}</b>
+	{END Supervisor_fieldheader}
+</th>
+{END Supervisor_fieldheadercolumn}
+	{BEGIN Location_fieldheadercolumn}
+<th class="runner-cc {$Location_class}" {$Location_style}>
+	{BEGIN Location_fieldheader}
+	<b>{$label customerallocation1 Location}</b>
+	{END Location_fieldheader}
+</th>
+{END Location_fieldheadercolumn}
+	{BEGIN RSAName_fieldheadercolumn}
+<th class="runner-cc {$RSAName_class}" {$RSAName_style}>
+	{BEGIN RSAName_fieldheader}
+	<b>{$label customerallocation1 RSAName}</b>
+	{END RSAName_fieldheader}
+</th>
+{END RSAName_fieldheadercolumn}
+	{BEGIN Role_fieldheadercolumn}
+<th class="runner-cc {$Role_class}" {$Role_style}>
+	{BEGIN Role_fieldheader}
+	<b>{$label customerallocation1 Role}</b>
+	{END Role_fieldheader}
+</th>
+{END Role_fieldheadercolumn}
+	{BEGIN PlatformName_fieldheadercolumn}
+<th class="runner-cc {$PlatformName_class}" {$PlatformName_style}>
+	{BEGIN PlatformName_fieldheader}
+	<b>{$label customerallocation1 PlatformName}</b>
+	{END PlatformName_fieldheader}
+</th>
+{END PlatformName_fieldheadercolumn}
+	{BEGIN StartDate_fieldheadercolumn}
+<th class="runner-cc {$StartDate_class}" {$StartDate_style}>
+	{BEGIN StartDate_fieldheader}
+	<b>{$label customerallocation1 StartDate}</b>
+	{END StartDate_fieldheader}
+</th>
+{END StartDate_fieldheadercolumn}
+	{BEGIN EndDate_fieldheadercolumn}
+<th class="runner-cc {$EndDate_class}" {$EndDate_style}>
+	{BEGIN EndDate_fieldheader}
+	<b>{$label customerallocation1 EndDate}</b>
+	{END EndDate_fieldheader}
+</th>
+{END EndDate_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN AutCustID_fieldcolumn}
+<td  class="runner-cc {$AutCustID_class}" {$AutCustID_style} {$recordattrs}>
+	{$AutCustID_value}
+</td>
+{END AutCustID_fieldcolumn}
+	{BEGIN OracleID_fieldcolumn}
+<td  class="runner-cc {$OracleID_class}" {$OracleID_style} {$recordattrs}>
+	{$OracleID_value}
+</td>
+{END OracleID_fieldcolumn}
+	{BEGIN CustomerName_fieldcolumn}
+<td  class="runner-cc {$CustomerName_class}" {$CustomerName_style} {$recordattrs}>
+	{$CustomerName_value}
+</td>
+{END CustomerName_fieldcolumn}
+	{BEGIN Supervisor_fieldcolumn}
+<td  class="runner-cc {$Supervisor_class}" {$Supervisor_style} {$recordattrs}>
+	{$Supervisor_value}
+</td>
+{END Supervisor_fieldcolumn}
+	{BEGIN Location_fieldcolumn}
+<td  class="runner-cc {$Location_class}" {$Location_style} {$recordattrs}>
+	{$Location_value}
+</td>
+{END Location_fieldcolumn}
+	{BEGIN RSAName_fieldcolumn}
+<td  class="runner-cc {$RSAName_class}" {$RSAName_style} {$recordattrs}>
+	{$RSAName_value}
+</td>
+{END RSAName_fieldcolumn}
+	{BEGIN Role_fieldcolumn}
+<td  class="runner-cc {$Role_class}" {$Role_style} {$recordattrs}>
+	{$Role_value}
+</td>
+{END Role_fieldcolumn}
+	{BEGIN PlatformName_fieldcolumn}
+<td  class="runner-cc {$PlatformName_class}" {$PlatformName_style} {$recordattrs}>
+	{$PlatformName_value}
+</td>
+{END PlatformName_fieldcolumn}
+	{BEGIN StartDate_fieldcolumn}
+<td  class="runner-cc {$StartDate_class}" {$StartDate_style} {$recordattrs}>
+	{$StartDate_value}
+</td>
+{END StartDate_fieldcolumn}
+	{BEGIN EndDate_fieldcolumn}
+<td  class="runner-cc {$EndDate_class}" {$EndDate_style} {$recordattrs}>
+	{$EndDate_value}
+</td>
+{END EndDate_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}">	<h1>{$pagetitlelabel employee_header masterlist}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-mastergridfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$Address_class}">{$label employee_header Address}</th>
+			<th class="{$FullName_class}">{$label employee_header FullName}</th>
+			<th class="{$EmployeeID_class}">{$label employee_header EmployeeID}</th>
+			<th class="{$FirstName_class}">{$label employee_header FirstName}</th>
+			<th class="{$LastName_class}">{$label employee_header LastName}</th>
+			<th class="{$SupervisorTitle_class}">{$label employee_header SupervisorTitle}</th>
+			<th class="{$emailID_class}">{$label employee_header emailID}</th>
+			<th class="{$Role_class}">{$label employee_header Role}</th>
+			<th class="{$Type_class}">{$label employee_header Type}</th>
+			<th class="{$Location_class}">{$label employee_header Location}</th>
+			<th class="{$SupervisorName_class}">{$label employee_header SupervisorName}</th>
+			<th class="{$InactiveDate_class}">{$label employee_header InactiveDate}</th>
+			<th class="{$StartDate_class}">{$label employee_header StartDate}</th>
+			<th class="{$EmployeeStatus_class}">{$label employee_header EmployeeStatus}</th>
+			<th class="{$Country_class}">{$label employee_header Country}</th>
+			<th class="{$JobTitle_class}">{$label employee_header JobTitle}</th>
+			<th class="{$created_by_class}">{$label employee_header created_by}</th>
+			<th class="{$updated_by_class}">{$label employee_header updated_by}</th>
+			<th class="{$created_date_class}">{$label employee_header created_date}</th>
+			<th class="{$updated_date_class}">{$label employee_header updated_date}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$Address_class}">{$Address_mastervalue}</td>
+			<td class="{$FullName_class}">{$FullName_mastervalue}</td>
+			<td class="{$EmployeeID_class}">{$EmployeeID_mastervalue}</td>
+			<td class="{$FirstName_class}">{$FirstName_mastervalue}</td>
+			<td class="{$LastName_class}">{$LastName_mastervalue}</td>
+			<td class="{$SupervisorTitle_class}">{$SupervisorTitle_mastervalue}</td>
+			<td class="{$emailID_class}">{$emailID_mastervalue}</td>
+			<td class="{$Role_class}">{$Role_mastervalue}</td>
+			<td class="{$Type_class}">{$Type_mastervalue}</td>
+			<td class="{$Location_class}">{$Location_mastervalue}</td>
+			<td class="{$SupervisorName_class}">{$SupervisorName_mastervalue}</td>
+			<td class="{$InactiveDate_class}">{$InactiveDate_mastervalue}</td>
+			<td class="{$StartDate_class}">{$StartDate_mastervalue}</td>
+			<td class="{$EmployeeStatus_class}">{$EmployeeStatus_mastervalue}</td>
+			<td class="{$Country_class}">{$Country_mastervalue}</td>
+			<td class="{$JobTitle_class}">{$JobTitle_mastervalue}</td>
+			<td class="{$created_by_class}">{$created_by_mastervalue}</td>
+			<td class="{$updated_by_class}">{$updated_by_mastervalue}</td>
+			<td class="{$created_date_class}">{$created_date_mastervalue}</td>
+			<td class="{$updated_date_class}">{$updated_date_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

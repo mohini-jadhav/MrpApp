@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle}</TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"></HEAD> 
+<BODY class="{$stylename} function-add" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+{BEGIN container_add}
+<DIV class="rnr-c rnr-cv rnr-c-add">
+{BEGIN addheader}<DIV class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><SPAN>
+<H1>
+{$pagetitlelabel stage2 add}</H1></SPAN></DIV>
+{END addheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}">
+<TABLE class="fieldGrid">
+  <TBODY>
+  {BEGIN Duration__Weeks_fieldblock}<TR class="{$fielddispclass_Duration__Weeks}" data-fieldname="Duration__Weeks">
+    <TD class="rnr-label">{BEGIN Duration__Weeks_label}
+      {$label stage2 Duration__Weeks}{END Duration__Weeks_label} </TD>
+    <TD class="rnr-control style3">
+      {$Duration__Weeks_editcontrol}&nbsp;</TD></TR>
+  {END Duration__Weeks_fieldblock}{BEGIN TAM_fieldblock}<TR class="{$fielddispclass_TAM}" data-fieldname="TAM">
+    <TD class="rnr-label">{BEGIN TAM_label}
+      {$label stage2 TAM}{END TAM_label} 
+    </TD>
+    <TD class="rnr-control style3">
+      {$TAM_editcontrol}&nbsp;</TD></TR>
+  {END TAM_fieldblock}{BEGIN Other_fieldblock}<TR class="{$fielddispclass_Other}" data-fieldname="Other">
+    <TD class="rnr-label">{BEGIN Other_label}
+      {$label stage2 Other}{END Other_label} 
+    </TD>
+    <TD class="rnr-control style3">
+      {$Other_editcontrol}&nbsp;</TD></TR>
+  {END Other_fieldblock}{BEGIN CategoryName_fieldblock}<TR class="{$fielddispclass_CategoryName}" data-fieldname="CategoryName">
+    <TD class="rnr-label">{BEGIN CategoryName_label}
+      {$label stage2 CategoryName}{END CategoryName_label} </TD>
+    <TD class="rnr-control style3">
+      {$CategoryName_editcontrol}&nbsp;</TD></TR>
+  {END CategoryName_fieldblock}{BEGIN Activity_fieldblock}<TR class="{$fielddispclass_Activity}" data-fieldname="Activity">
+    <TD class="rnr-label">{BEGIN Activity_label}
+      {$label stage2 Activity}{END Activity_label} 
+    </TD>
+    <TD class="rnr-control style3">
+      {$Activity_editcontrol}&nbsp;</TD></TR>
+  {END Activity_fieldblock}{BEGIN CategoryID_fieldblock}<TR class="{$fielddispclass_CategoryID}" data-fieldname="CategoryID">
+    <TD class="rnr-label">{BEGIN CategoryID_label}
+      {$label stage2 CategoryID}{END CategoryID_label} </TD>
+    <TD class="rnr-control style3">
+      {$CategoryID_editcontrol}&nbsp;</TD></TR>
+  {END CategoryID_fieldblock}{BEGIN AutRoleID_fieldblock}<TR class="{$fielddispclass_AutRoleID}" data-fieldname="AutRoleID">
+    <TD class="rnr-label">{BEGIN AutRoleID_label}
+      {$label stage2 AutRoleID}{END AutRoleID_label} </TD>
+    <TD class="rnr-control style3">
+      {$AutRoleID_editcontrol}&nbsp;</TD></TR>
+  {END AutRoleID_fieldblock}{BEGIN RSA_fieldblock}<TR class="{$fielddispclass_RSA}" data-fieldname="RSA">
+    <TD class="rnr-label">{BEGIN RSA_label}
+      {$label stage2 RSA}{END RSA_label} 
+    </TD>
+    <TD class="rnr-control style3">
+      {$RSA_editcontrol}&nbsp;</TD></TR>
+  {END RSA_fieldblock}{BEGIN PA_fieldblock}<TR class="{$fielddispclass_PA}" data-fieldname="PA">
+    <TD class="rnr-label">{BEGIN PA_label}
+      {$label stage2 PA}{END PA_label} 
+    </TD>
+    <TD class="rnr-control style3">
+      {$PA_editcontrol}&nbsp;</TD></TR>{END PA_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN addbuttons}<DIV class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">
+<DIV class="rnr-buttons-left"> {BEGIN save_button}<A class="rnr-button main" id="saveButton{$id}" href="#" {$savebutton_attrs}>Save</A> 
+{END save_button}{BEGIN cancel_button}<A class="rnr-button" id="cancelButton{$id}" href="#">Cancel</A> 
+{END cancel_button}</DIV> </DIV>{END addbuttons}</DIV>{END container_fields}</DIV></DIV> 
+{END container_add}</DIV></DIV> {END container_all}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

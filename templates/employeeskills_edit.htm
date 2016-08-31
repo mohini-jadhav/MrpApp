@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle} </TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"> </HEAD> 
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel employeeskills edit} 
+</H1></SPAN> </DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class="rnr-message">
+{$message} </DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class="fieldGrid">
+  <TBODY>
+  {BEGIN PlatformType_fieldblock}<TR class="{$fielddispclass_PlatformType}" data-fieldname="PlatformType">
+    <TD class="rnr-label">{BEGIN PlatformType_label}
+      {$label employeeskills PlatformType}{END PlatformType_label} </TD>
+    <TD class="rnr-control style3">
+      {$PlatformType_editcontrol} &nbsp;</TD></TR>
+  {END PlatformType_fieldblock}{BEGIN PlatformName_fieldblock}<TR class="{$fielddispclass_PlatformName}" data-fieldname="PlatformName">
+    <TD class="rnr-label">{BEGIN PlatformName_label}
+      {$label employeeskills PlatformName}{END PlatformName_label} </TD>
+    <TD class="rnr-control style3">
+      {$PlatformName_editcontrol} &nbsp;</TD></TR>
+  {END PlatformName_fieldblock}{BEGIN SkillLevel_fieldblock}<TR class="{$fielddispclass_SkillLevel}" data-fieldname="SkillLevel">
+    <TD class="rnr-label">{BEGIN SkillLevel_label}
+      {$label employeeskills SkillLevel}{END SkillLevel_label} </TD>
+    <TD class="rnr-control style3">
+      {$SkillLevel_editcontrol} &nbsp;</TD></TR>
+  {END SkillLevel_fieldblock}{BEGIN Certificate_fieldblock}<TR class="{$fielddispclass_Certificate}" data-fieldname="Certificate">
+    <TD class="rnr-label">{BEGIN Certificate_label}
+      {$label employeeskills Certificate}{END Certificate_label} </TD>
+    <TD class="rnr-control style3">
+      {$Certificate_editcontrol} &nbsp;</TD></TR>
+  {END Certificate_fieldblock}{BEGIN Comments_fieldblock}<TR class="{$fielddispclass_Comments}" data-fieldname="Comments">
+    <TD class="rnr-label">{BEGIN Comments_label}
+      {$label employeeskills Comments}{END Comments_label} </TD>
+    <TD class="rnr-control style3">
+      {$Comments_editcontrol} &nbsp;</TD></TR>{END Comments_fieldblock}</TBODY></TABLE> 
+</DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class="rnr-buttons-left"> {BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}> Save </A> {END save_button}{BEGIN back_button}<A class="rnr-button" href="#" {$backbutton_attrs}> 
+Cancel </A> {END back_button}{BEGIN view_page_button}<A class="rnr-button" href="#" {$view_page_button_attrs}> View </A> 
+{END view_page_button}</DIV> </DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV> 
+{END container_edit}</DIV></DIV> {END container_all}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

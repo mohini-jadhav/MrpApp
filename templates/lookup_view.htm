@@ -1,0 +1,207 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}
+<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel lookup view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN Lookup_ID_fieldblock}
+<tr class="{$fielddispclass_Lookup_ID}" data-fieldname="Lookup_ID">
+	<td class="rnr-label">
+		{$label lookup Lookup_ID}
+	</td>
+	<td class="rnr-control style3">
+		{$Lookup_ID_value}&nbsp;
+	</td>
+</tr>
+{END Lookup_ID_fieldblock}
+	{BEGIN Category_fieldblock}
+<tr class="{$fielddispclass_Category}" data-fieldname="Category">
+	<td class="rnr-label">
+		{$label lookup Category}
+	</td>
+	<td class="rnr-control style3">
+		{$Category_value}&nbsp;
+	</td>
+</tr>
+{END Category_fieldblock}
+	{BEGIN Lookup_code_fieldblock}
+<tr class="{$fielddispclass_Lookup_code}" data-fieldname="Lookup_code">
+	<td class="rnr-label">
+		{$label lookup Lookup_code}
+	</td>
+	<td class="rnr-control style3">
+		{$Lookup_code_value}&nbsp;
+	</td>
+</tr>
+{END Lookup_code_fieldblock}
+	{BEGIN Lookup_value_fieldblock}
+<tr class="{$fielddispclass_Lookup_value}" data-fieldname="Lookup_value">
+	<td class="rnr-label">
+		{$label lookup Lookup_value}
+	</td>
+	<td class="rnr-control style3">
+		{$Lookup_value_value}&nbsp;
+	</td>
+</tr>
+{END Lookup_value_fieldblock}
+	{BEGIN created_by_fieldblock}
+<tr class="{$fielddispclass_created_by}" data-fieldname="created_by">
+	<td class="rnr-label">
+		{$label lookup created_by}
+	</td>
+	<td class="rnr-control style3">
+		{$created_by_value}&nbsp;
+	</td>
+</tr>
+{END created_by_fieldblock}
+	{BEGIN created_date_fieldblock}
+<tr class="{$fielddispclass_created_date}" data-fieldname="created_date">
+	<td class="rnr-label">
+		{$label lookup created_date}
+	</td>
+	<td class="rnr-control style3">
+		{$created_date_value}&nbsp;
+	</td>
+</tr>
+{END created_date_fieldblock}
+	{BEGIN updated_by_fieldblock}
+<tr class="{$fielddispclass_updated_by}" data-fieldname="updated_by">
+	<td class="rnr-label">
+		{$label lookup updated_by}
+	</td>
+	<td class="rnr-control style3">
+		{$updated_by_value}&nbsp;
+	</td>
+</tr>
+{END updated_by_fieldblock}
+	{BEGIN updated_date_fieldblock}
+<tr class="{$fielddispclass_updated_date}" data-fieldname="updated_date">
+	<td class="rnr-label">
+		{$label lookup updated_date}
+	</td>
+	<td class="rnr-control style3">
+		{$updated_date_value}&nbsp;
+	</td>
+</tr>
+{END updated_date_fieldblock}
+	{BEGIN Remarks_fieldblock}
+<tr class="{$fielddispclass_Remarks}" data-fieldname="Remarks">
+	<td class="rnr-label">
+		{$label lookup Remarks}
+	</td>
+	<td class="rnr-control style3">
+		{$Remarks_value}&nbsp;
+	</td>
+</tr>
+{END Remarks_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Edit</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

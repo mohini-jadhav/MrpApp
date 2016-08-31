@@ -1,0 +1,224 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel time print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN FirstName_fieldheadercolumn}
+<th class="runner-cc {$FirstName_class}" {$FirstName_style}>
+	{BEGIN FirstName_fieldheader}
+	<b>{$label time FirstName}</b>
+	{END FirstName_fieldheader}
+</th>
+{END FirstName_fieldheadercolumn}
+	{BEGIN LastName_fieldheadercolumn}
+<th class="runner-cc {$LastName_class}" {$LastName_style}>
+	{BEGIN LastName_fieldheader}
+	<b>{$label time LastName}</b>
+	{END LastName_fieldheader}
+</th>
+{END LastName_fieldheadercolumn}
+	{BEGIN EmployeeStatus_fieldheadercolumn}
+<th class="runner-cc {$EmployeeStatus_class}" {$EmployeeStatus_style}>
+	{BEGIN EmployeeStatus_fieldheader}
+	<b>{$label time EmployeeStatus}</b>
+	{END EmployeeStatus_fieldheader}
+</th>
+{END EmployeeStatus_fieldheadercolumn}
+	{BEGIN SupervisorName_fieldheadercolumn}
+<th class="runner-cc {$SupervisorName_class}" {$SupervisorName_style}>
+	{BEGIN SupervisorName_fieldheader}
+	<b>{$label time SupervisorName}</b>
+	{END SupervisorName_fieldheader}
+</th>
+{END SupervisorName_fieldheadercolumn}
+	{BEGIN WK_1_fieldheadercolumn}
+<th class="runner-cc {$WK_1_class}" {$WK_1_style}>
+	{BEGIN WK_1_fieldheader}
+	<b>{$label time WK_1}</b>
+	{END WK_1_fieldheader}
+</th>
+{END WK_1_fieldheadercolumn}
+	{BEGIN WK_2_fieldheadercolumn}
+<th class="runner-cc {$WK_2_class}" {$WK_2_style}>
+	{BEGIN WK_2_fieldheader}
+	<b>{$label time WK_2}</b>
+	{END WK_2_fieldheader}
+</th>
+{END WK_2_fieldheadercolumn}
+	{BEGIN WK_3_fieldheadercolumn}
+<th class="runner-cc {$WK_3_class}" {$WK_3_style}>
+	{BEGIN WK_3_fieldheader}
+	<b>{$label time WK_3}</b>
+	{END WK_3_fieldheader}
+</th>
+{END WK_3_fieldheadercolumn}
+	{BEGIN WK_4_fieldheadercolumn}
+<th class="runner-cc {$WK_4_class}" {$WK_4_style}>
+	{BEGIN WK_4_fieldheader}
+	<b>{$label time WK_4}</b>
+	{END WK_4_fieldheader}
+</th>
+{END WK_4_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN FirstName_fieldcolumn}
+<td  class="runner-cc {$FirstName_class}" {$FirstName_style} {$recordattrs}>
+	{$FirstName_value}
+</td>
+{END FirstName_fieldcolumn}
+	{BEGIN LastName_fieldcolumn}
+<td  class="runner-cc {$LastName_class}" {$LastName_style} {$recordattrs}>
+	{$LastName_value}
+</td>
+{END LastName_fieldcolumn}
+	{BEGIN EmployeeStatus_fieldcolumn}
+<td  class="runner-cc {$EmployeeStatus_class}" {$EmployeeStatus_style} {$recordattrs}>
+	{$EmployeeStatus_value}
+</td>
+{END EmployeeStatus_fieldcolumn}
+	{BEGIN SupervisorName_fieldcolumn}
+<td  class="runner-cc {$SupervisorName_class}" {$SupervisorName_style} {$recordattrs}>
+	{$SupervisorName_value}
+</td>
+{END SupervisorName_fieldcolumn}
+	{BEGIN WK_1_fieldcolumn}
+<td  class="runner-cc {$WK_1_class}" {$WK_1_style} {$recordattrs}>
+	{$WK_1_value}
+</td>
+{END WK_1_fieldcolumn}
+	{BEGIN WK_2_fieldcolumn}
+<td  class="runner-cc {$WK_2_class}" {$WK_2_style} {$recordattrs}>
+	{$WK_2_value}
+</td>
+{END WK_2_fieldcolumn}
+	{BEGIN WK_3_fieldcolumn}
+<td  class="runner-cc {$WK_3_class}" {$WK_3_style} {$recordattrs}>
+	{$WK_3_value}
+</td>
+{END WK_3_fieldcolumn}
+	{BEGIN WK_4_fieldcolumn}
+<td  class="runner-cc {$WK_4_class}" {$WK_4_style} {$recordattrs}>
+	{$WK_4_value}
+</td>
+{END WK_4_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

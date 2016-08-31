@@ -1,0 +1,366 @@
+body.page-chart5
+{
+padding-top:10px; padding-left:10px;
+}
+.page-chart5 .rnr-c-message,
+  .rnr-pagewrapper .page-chart5 .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-message
+{
+margin-bottom:5px;
+}
+.page-chart5 .rnr-c-message,
+  .rnr-pagewrapper .page-chart5 .rnr-c-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-message
+{
+min-width: 100px;
+}
+.page-chart5 .rnr-b-message,
+  .rnr-pagewrapper .page-chart5 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-message,
+  .rnr-pagewrapper .page-chart5 .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-message
+{
+text-align: center;
+}
+.page-chart5 .rnr-b-message > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-message > *
+{
+
+}
+.page-chart5 .rnr-c-form,
+  .rnr-pagewrapper .page-chart5 .rnr-c-form,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-form
+{
+margin-bottom:5px;
+}
+.page-chart5 .rnr-b-chart,
+  .rnr-pagewrapper .page-chart5 .rnr-b-chart,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-chart
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-chart,
+  .rnr-pagewrapper .page-chart5 .rnr-b-chart,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-chart
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-chart > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-chart > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-chart > *
+{
+
+}
+body.page-chart5  > * > * > .rnr-center
+{
+min-width:10px;
+}
+body.page-chart5 .rnr-center
+{
+padding-right: 5px;
+}
+.page-chart5 .rnr-c-left,
+  .rnr-pagewrapper .page-chart5 .rnr-c-left,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-left
+{
+margin-bottom:5px;
+}
+.page-chart5 .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-chart5 .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-searchpanel
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-searchpanel,
+  .rnr-pagewrapper .page-chart5 .rnr-b-searchpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-searchpanel
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-searchpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-searchpanel > *
+{
+
+}
+.page-chart5 .rnr-b-filterpanel,
+  .rnr-pagewrapper .page-chart5 .rnr-b-filterpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-filterpanel
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-filterpanel,
+  .rnr-pagewrapper .page-chart5 .rnr-b-filterpanel,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-filterpanel
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-filterpanel > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-filterpanel > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-filterpanel > *
+{
+
+}
+body.page-chart5  > * > * > .rnr-left
+{
+min-width:10px;
+}
+body.page-chart5 .rnr-left
+{
+padding-right: 5px;
+}
+.page-chart5 .rnr-c-master,
+  .rnr-pagewrapper .page-chart5 .rnr-c-master,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-master
+{
+margin-bottom:5px;
+}
+.page-chart5 .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-chart5 .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-masterinfo
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-masterinfo,
+  .rnr-pagewrapper .page-chart5 .rnr-b-masterinfo,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-masterinfo
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-masterinfo > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-masterinfo > *
+{
+
+}
+.page-chart5 .rnr-c-toplinks,
+  .rnr-pagewrapper .page-chart5 .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-toplinks
+{
+margin-bottom:5px;
+}
+.page-chart5 .rnr-c-toplinks,
+  .rnr-pagewrapper .page-chart5 .rnr-c-toplinks,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-toplinks
+{
+min-width: 100px;
+}
+.page-chart5 .rnr-b-loggedas,
+  .rnr-pagewrapper .page-chart5 .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-loggedas
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-loggedas,
+  .rnr-pagewrapper .page-chart5 .rnr-b-loggedas,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-loggedas
+{
+text-align: right;
+}
+.page-chart5 .rnr-b-loggedas > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-loggedas > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-loggedas > *
+{
+
+}
+.page-chart5 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-chart5 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-toplinks_advsearch
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .page-chart5 .rnr-b-toplinks_advsearch,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-toplinks_advsearch
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-toplinks_advsearch > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-toplinks_advsearch > *
+{
+
+}
+.page-chart5 .rnr-b-languages,
+  .rnr-pagewrapper .page-chart5 .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-languages
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-languages,
+  .rnr-pagewrapper .page-chart5 .rnr-b-languages,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-languages
+{
+text-align: right;
+}
+.page-chart5 .rnr-b-languages > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-languages > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-languages > *
+{
+
+}
+.page-chart5 .rnr-c-hmenu,
+  .rnr-pagewrapper .page-chart5 .rnr-c-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-hmenu
+{
+margin-bottom:0px;
+}
+.page-chart5 .rnr-c-hmenu.rnr-c-hmenu:before,
+  .rnr-pagewrapper .page-chart5 .rnr-c-hmenu.rnr-c-hmenu:before,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-hmenu.rnr-c-hmenu:before
+{
+display: none;
+}
+.page-chart5 .rnr-c-hmenu.rnr-c-hmenu:after,
+  .rnr-pagewrapper .page-chart5 .rnr-c-hmenu.rnr-c-hmenu:after,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-hmenu.rnr-c-hmenu:after
+{
+display: none;
+}
+.page-chart5 .rnr-b-hmenu,
+  .rnr-pagewrapper .page-chart5 .rnr-b-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-hmenu
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-hmenu,
+  .rnr-pagewrapper .page-chart5 .rnr-b-hmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-hmenu
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-hmenu > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-hmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-hmenu > *
+{
+
+}
+.page-chart5 .rnr-c-search,
+  .rnr-pagewrapper .page-chart5 .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-search
+{
+margin-bottom:5px;
+}
+.page-chart5 .rnr-c-search,
+  .rnr-pagewrapper .page-chart5 .rnr-c-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-c-search
+{
+min-width: 100px;
+}
+.page-chart5 .rnr-b-search,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-search,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-search > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search > *
+{
+
+}
+.page-chart5 .rnr-b-search_buttons,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search_buttons
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-search_buttons,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search_buttons
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-search_buttons > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search_buttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search_buttons > *
+{
+
+}
+.page-chart5 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search_saving_buttons
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search_saving_buttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search_saving_buttons
+{
+text-align: left;
+}
+.page-chart5 .rnr-b-search_saving_buttons > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-search_saving_buttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-search_saving_buttons > *
+{
+
+}
+.page-chart5 .rnr-b-details_found,
+  .rnr-pagewrapper .page-chart5 .rnr-b-details_found,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-details_found
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-details_found,
+  .rnr-pagewrapper .page-chart5 .rnr-b-details_found,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-details_found
+{
+text-align: right;
+}
+.page-chart5 .rnr-b-details_found > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-details_found > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-details_found > *
+{
+
+}
+.page-chart5 .rnr-b-page_of,
+  .rnr-pagewrapper .page-chart5 .rnr-b-page_of,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-page_of
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-page_of,
+  .rnr-pagewrapper .page-chart5 .rnr-b-page_of,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-page_of
+{
+text-align: right;
+}
+.page-chart5 .rnr-b-page_of > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-page_of > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-page_of > *
+{
+
+}
+.page-chart5 .rnr-b-recsperpage,
+  .rnr-pagewrapper .page-chart5 .rnr-b-recsperpage,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-recsperpage
+{
+white-space: nowrap;
+}
+.page-chart5 .rnr-b-recsperpage,
+  .rnr-pagewrapper .page-chart5 .rnr-b-recsperpage,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-recsperpage
+{
+text-align: right;
+}
+.page-chart5 .rnr-b-recsperpage > *,
+  .rnr-pagewrapper .page-chart5 .rnr-b-recsperpage > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-chart5 .rnr-b-recsperpage > *
+{
+
+}
+body.page-chart5 .rnr-top
+{
+padding-right: 5px;
+}

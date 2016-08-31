@@ -1,0 +1,248 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel employee_auth print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN Created_By_fieldheadercolumn}
+<th class="runner-cc {$Created_By_class}" {$Created_By_style}>
+	{BEGIN Created_By_fieldheader}
+	<b>{$label employee_auth Created_By}</b>
+	{END Created_By_fieldheader}
+</th>
+{END Created_By_fieldheadercolumn}
+	{BEGIN Created_date_fieldheadercolumn}
+<th class="runner-cc {$Created_date_class}" {$Created_date_style}>
+	{BEGIN Created_date_fieldheader}
+	<b>{$label employee_auth Created_date}</b>
+	{END Created_date_fieldheader}
+</th>
+{END Created_date_fieldheadercolumn}
+	{BEGIN Updated_by_fieldheadercolumn}
+<th class="runner-cc {$Updated_by_class}" {$Updated_by_style}>
+	{BEGIN Updated_by_fieldheader}
+	<b>{$label employee_auth Updated_by}</b>
+	{END Updated_by_fieldheader}
+</th>
+{END Updated_by_fieldheadercolumn}
+	{BEGIN updated_date_fieldheadercolumn}
+<th class="runner-cc {$updated_date_class}" {$updated_date_style}>
+	{BEGIN updated_date_fieldheader}
+	<b>{$label employee_auth updated_date}</b>
+	{END updated_date_fieldheader}
+</th>
+{END updated_date_fieldheadercolumn}
+	{BEGIN Remarks_fieldheadercolumn}
+<th class="runner-cc {$Remarks_class}" {$Remarks_style}>
+	{BEGIN Remarks_fieldheader}
+	<b>{$label employee_auth Remarks}</b>
+	{END Remarks_fieldheader}
+</th>
+{END Remarks_fieldheadercolumn}
+	{BEGIN employee_id_fieldheadercolumn}
+<th class="runner-cc {$employee_id_class}" {$employee_id_style}>
+	{BEGIN employee_id_fieldheader}
+	<b>{$label employee_auth employee_id}</b>
+	{END employee_id_fieldheader}
+</th>
+{END employee_id_fieldheadercolumn}
+	{BEGIN Password_encrypted_fieldheadercolumn}
+<th class="runner-cc {$Password_encrypted_class}" {$Password_encrypted_style}>
+	{BEGIN Password_encrypted_fieldheader}
+	<b>{$label employee_auth Password_encrypted}</b>
+	{END Password_encrypted_fieldheader}
+</th>
+{END Password_encrypted_fieldheadercolumn}
+	{BEGIN roles_allowed_fieldheadercolumn}
+<th class="runner-cc {$roles_allowed_class}" {$roles_allowed_style}>
+	{BEGIN roles_allowed_fieldheader}
+	<b>{$label employee_auth roles_allowed}</b>
+	{END roles_allowed_fieldheader}
+</th>
+{END roles_allowed_fieldheadercolumn}
+	{BEGIN password_last_changed_fieldheadercolumn}
+<th class="runner-cc {$password_last_changed_class}" {$password_last_changed_style}>
+	{BEGIN password_last_changed_fieldheader}
+	<b>{$label employee_auth password_last_changed}</b>
+	{END password_last_changed_fieldheader}
+</th>
+{END password_last_changed_fieldheadercolumn}
+	{BEGIN password_expiry_date_fieldheadercolumn}
+<th class="runner-cc {$password_expiry_date_class}" {$password_expiry_date_style}>
+	{BEGIN password_expiry_date_fieldheader}
+	<b>{$label employee_auth password_expiry_date}</b>
+	{END password_expiry_date_fieldheader}
+</th>
+{END password_expiry_date_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN Created_By_fieldcolumn}
+<td  class="runner-cc {$Created_By_class}" {$Created_By_style} {$recordattrs}>
+	{$Created_By_value}
+</td>
+{END Created_By_fieldcolumn}
+	{BEGIN Created_date_fieldcolumn}
+<td  class="runner-cc {$Created_date_class}" {$Created_date_style} {$recordattrs}>
+	{$Created_date_value}
+</td>
+{END Created_date_fieldcolumn}
+	{BEGIN Updated_by_fieldcolumn}
+<td  class="runner-cc {$Updated_by_class}" {$Updated_by_style} {$recordattrs}>
+	{$Updated_by_value}
+</td>
+{END Updated_by_fieldcolumn}
+	{BEGIN updated_date_fieldcolumn}
+<td  class="runner-cc {$updated_date_class}" {$updated_date_style} {$recordattrs}>
+	{$updated_date_value}
+</td>
+{END updated_date_fieldcolumn}
+	{BEGIN Remarks_fieldcolumn}
+<td  class="runner-cc {$Remarks_class}" {$Remarks_style} {$recordattrs}>
+	{$Remarks_value}
+</td>
+{END Remarks_fieldcolumn}
+	{BEGIN employee_id_fieldcolumn}
+<td  class="runner-cc {$employee_id_class}" {$employee_id_style} {$recordattrs}>
+	{$employee_id_value}
+</td>
+{END employee_id_fieldcolumn}
+	{BEGIN Password_encrypted_fieldcolumn}
+<td  class="runner-cc {$Password_encrypted_class}" {$Password_encrypted_style} {$recordattrs}>
+	{$Password_encrypted_value}
+</td>
+{END Password_encrypted_fieldcolumn}
+	{BEGIN roles_allowed_fieldcolumn}
+<td  class="runner-cc {$roles_allowed_class}" {$roles_allowed_style} {$recordattrs}>
+	{$roles_allowed_value}
+</td>
+{END roles_allowed_fieldcolumn}
+	{BEGIN password_last_changed_fieldcolumn}
+<td  class="runner-cc {$password_last_changed_class}" {$password_last_changed_style} {$recordattrs}>
+	{$password_last_changed_value}
+</td>
+{END password_last_changed_fieldcolumn}
+	{BEGIN password_expiry_date_fieldcolumn}
+<td  class="runner-cc {$password_expiry_date_class}" {$password_expiry_date_style} {$recordattrs}>
+	{$password_expiry_date_value}
+</td>
+{END password_expiry_date_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

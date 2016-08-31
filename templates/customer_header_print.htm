@@ -1,0 +1,502 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel customer_header print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN EmployeeID_fieldheadercolumn}
+<th class="runner-cc {$EmployeeID_class}" {$EmployeeID_style}>
+	{BEGIN EmployeeID_fieldheader}
+	<b>{$label customer_header EmployeeID}</b>
+	{END EmployeeID_fieldheader}
+</th>
+{END EmployeeID_fieldheadercolumn}
+	{BEGIN OracIeID_fieldheadercolumn}
+<th class="runner-cc {$OracIeID_class}" {$OracIeID_style}>
+	{BEGIN OracIeID_fieldheader}
+	<b>{$label customer_header OracIeID}</b>
+	{END OracIeID_fieldheader}
+</th>
+{END OracIeID_fieldheadercolumn}
+	{BEGIN Compre_String_fieldheadercolumn}
+<th class="runner-cc {$Compre_String_class}" {$Compre_String_style}>
+	{BEGIN Compre_String_fieldheader}
+	<b>{$label customer_header Compre_String}</b>
+	{END Compre_String_fieldheader}
+</th>
+{END Compre_String_fieldheadercolumn}
+	{BEGIN Name_fieldheadercolumn}
+<th class="runner-cc {$Name_class}" {$Name_style}>
+	{BEGIN Name_fieldheader}
+	<b>{$label customer_header Name}</b>
+	{END Name_fieldheader}
+</th>
+{END Name_fieldheadercolumn}
+	{BEGIN PrimaryTimeZone_fieldheadercolumn}
+<th class="runner-cc {$PrimaryTimeZone_class}" {$PrimaryTimeZone_style}>
+	{BEGIN PrimaryTimeZone_fieldheader}
+	<b>{$label customer_header PrimaryTimeZone}</b>
+	{END PrimaryTimeZone_fieldheader}
+</th>
+{END PrimaryTimeZone_fieldheadercolumn}
+	{BEGIN Size_fieldheadercolumn}
+<th class="runner-cc {$Size_class}" {$Size_style}>
+	{BEGIN Size_fieldheader}
+	<b>{$label customer_header Size}</b>
+	{END Size_fieldheader}
+</th>
+{END Size_fieldheadercolumn}
+	{BEGIN Onshore_Support_fieldheadercolumn}
+<th class="runner-cc {$Onshore_Support_class}" {$Onshore_Support_style}>
+	{BEGIN Onshore_Support_fieldheader}
+	<b>{$label customer_header Onshore_Support}</b>
+	{END Onshore_Support_fieldheader}
+</th>
+{END Onshore_Support_fieldheadercolumn}
+	{BEGIN Stage_fieldheadercolumn}
+<th class="runner-cc {$Stage_class}" {$Stage_style}>
+	{BEGIN Stage_fieldheader}
+	<b>{$label customer_header Stage}</b>
+	{END Stage_fieldheader}
+</th>
+{END Stage_fieldheadercolumn}
+	{BEGIN Overall_Temp_fieldheadercolumn}
+<th class="runner-cc {$Overall_Temp_class}" {$Overall_Temp_style}>
+	{BEGIN Overall_Temp_fieldheader}
+	<b>{$label customer_header Overall_Temp}</b>
+	{END Overall_Temp_fieldheader}
+</th>
+{END Overall_Temp_fieldheadercolumn}
+	{BEGIN Temperature_fieldheadercolumn}
+<th class="runner-cc {$Temperature_class}" {$Temperature_style}>
+	{BEGIN Temperature_fieldheader}
+	<b>{$label customer_header Temperature}</b>
+	{END Temperature_fieldheader}
+</th>
+{END Temperature_fieldheadercolumn}
+	{BEGIN Engagement_status_fieldheadercolumn}
+<th class="runner-cc {$Engagement_status_class}" {$Engagement_status_style}>
+	{BEGIN Engagement_status_fieldheader}
+	<b>{$label customer_header Engagement_status}</b>
+	{END Engagement_status_fieldheader}
+</th>
+{END Engagement_status_fieldheadercolumn}
+	{BEGIN Contract_Start_fieldheadercolumn}
+<th class="runner-cc {$Contract_Start_class}" {$Contract_Start_style}>
+	{BEGIN Contract_Start_fieldheader}
+	<b>{$label customer_header Contract_Start}</b>
+	{END Contract_Start_fieldheader}
+</th>
+{END Contract_Start_fieldheadercolumn}
+	{BEGIN SteadyState_fieldheadercolumn}
+<th class="runner-cc {$SteadyState_class}" {$SteadyState_style}>
+	{BEGIN SteadyState_fieldheader}
+	<b>{$label customer_header SteadyState}</b>
+	{END SteadyState_fieldheader}
+</th>
+{END SteadyState_fieldheadercolumn}
+	{BEGIN Contract_end_fieldheadercolumn}
+<th class="runner-cc {$Contract_end_class}" {$Contract_end_style}>
+	{BEGIN Contract_end_fieldheader}
+	<b>{$label customer_header Contract_end}</b>
+	{END Contract_end_fieldheader}
+</th>
+{END Contract_end_fieldheadercolumn}
+	{BEGIN Recovery_Center_fieldheadercolumn}
+<th class="runner-cc {$Recovery_Center_class}" {$Recovery_Center_style}>
+	{BEGIN Recovery_Center_fieldheader}
+	<b>{$label customer_header Recovery_Center}</b>
+	{END Recovery_Center_fieldheader}
+</th>
+{END Recovery_Center_fieldheadercolumn}
+	{BEGIN Total_MRR_fieldheadercolumn}
+<th class="runner-cc {$Total_MRR_class}" {$Total_MRR_style}>
+	{BEGIN Total_MRR_fieldheader}
+	<b>{$label customer_header Total_MRR}</b>
+	{END Total_MRR_fieldheader}
+</th>
+{END Total_MRR_fieldheadercolumn}
+	{BEGIN MRP_MRR_fieldheadercolumn}
+<th class="runner-cc {$MRP_MRR_class}" {$MRP_MRR_style}>
+	{BEGIN MRP_MRR_fieldheader}
+	<b>{$label customer_header MRP_MRR}</b>
+	{END MRP_MRR_fieldheader}
+</th>
+{END MRP_MRR_fieldheadercolumn}
+	{BEGIN ARS_MRR_fieldheadercolumn}
+<th class="runner-cc {$ARS_MRR_class}" {$ARS_MRR_style}>
+	{BEGIN ARS_MRR_fieldheader}
+	<b>{$label customer_header ARS_MRR}</b>
+	{END ARS_MRR_fieldheader}
+</th>
+{END ARS_MRR_fieldheadercolumn}
+	{BEGIN RS_MRR_fieldheadercolumn}
+<th class="runner-cc {$RS_MRR_class}" {$RS_MRR_style}>
+	{BEGIN RS_MRR_fieldheader}
+	<b>{$label customer_header RS_MRR}</b>
+	{END RS_MRR_fieldheader}
+</th>
+{END RS_MRR_fieldheadercolumn}
+	{BEGIN MS_MRR_fieldheadercolumn}
+<th class="runner-cc {$MS_MRR_class}" {$MS_MRR_style}>
+	{BEGIN MS_MRR_fieldheader}
+	<b>{$label customer_header MS_MRR}</b>
+	{END MS_MRR_fieldheader}
+</th>
+{END MS_MRR_fieldheadercolumn}
+	{BEGIN CS_MRR_fieldheadercolumn}
+<th class="runner-cc {$CS_MRR_class}" {$CS_MRR_style}>
+	{BEGIN CS_MRR_fieldheader}
+	<b>{$label customer_header CS_MRR}</b>
+	{END CS_MRR_fieldheader}
+</th>
+{END CS_MRR_fieldheadercolumn}
+	{BEGIN OTHER_MRR_fieldheadercolumn}
+<th class="runner-cc {$OTHER_MRR_class}" {$OTHER_MRR_style}>
+	{BEGIN OTHER_MRR_fieldheader}
+	<b>{$label customer_header OTHER_MRR}</b>
+	{END OTHER_MRR_fieldheader}
+</th>
+{END OTHER_MRR_fieldheadercolumn}
+	{BEGIN Created_date_fieldheadercolumn}
+<th class="runner-cc {$Created_date_class}" {$Created_date_style}>
+	{BEGIN Created_date_fieldheader}
+	<b>{$label customer_header Created_date}</b>
+	{END Created_date_fieldheader}
+</th>
+{END Created_date_fieldheadercolumn}
+	{BEGIN Comments_fieldheadercolumn}
+<th class="runner-cc {$Comments_class}" {$Comments_style}>
+	{BEGIN Comments_fieldheader}
+	<b>{$label customer_header Comments}</b>
+	{END Comments_fieldheader}
+</th>
+{END Comments_fieldheadercolumn}
+	{BEGIN created_by_fieldheadercolumn}
+<th class="runner-cc {$created_by_class}" {$created_by_style}>
+	{BEGIN created_by_fieldheader}
+	<b>{$label customer_header created_by}</b>
+	{END created_by_fieldheader}
+</th>
+{END created_by_fieldheadercolumn}
+	{BEGIN Updated_by_fieldheadercolumn}
+<th class="runner-cc {$Updated_by_class}" {$Updated_by_style}>
+	{BEGIN Updated_by_fieldheader}
+	<b>{$label customer_header Updated_by}</b>
+	{END Updated_by_fieldheader}
+</th>
+{END Updated_by_fieldheadercolumn}
+	{BEGIN Updated_date_fieldheadercolumn}
+<th class="runner-cc {$Updated_date_class}" {$Updated_date_style}>
+	{BEGIN Updated_date_fieldheader}
+	<b>{$label customer_header Updated_date}</b>
+	{END Updated_date_fieldheader}
+</th>
+{END Updated_date_fieldheadercolumn}
+	{BEGIN Address_fieldheadercolumn}
+<th class="runner-cc {$Address_class}" {$Address_style}>
+	{BEGIN Address_fieldheader}
+	<b>{$label customer_header Address}</b>
+	{END Address_fieldheader}
+</th>
+{END Address_fieldheadercolumn}
+	{BEGIN TransStartDate_fieldheadercolumn}
+<th class="runner-cc {$TransStartDate_class}" {$TransStartDate_style}>
+	{BEGIN TransStartDate_fieldheader}
+	<b>{$label customer_header TransStartDate}</b>
+	{END TransStartDate_fieldheader}
+</th>
+{END TransStartDate_fieldheadercolumn}
+	{BEGIN TransEndDate_fieldheadercolumn}
+<th class="runner-cc {$TransEndDate_class}" {$TransEndDate_style}>
+	{BEGIN TransEndDate_fieldheader}
+	<b>{$label customer_header TransEndDate}</b>
+	{END TransEndDate_fieldheader}
+</th>
+{END TransEndDate_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN EmployeeID_fieldcolumn}
+<td  class="runner-cc {$EmployeeID_class}" {$EmployeeID_style} {$recordattrs}>
+	{$EmployeeID_value}
+</td>
+{END EmployeeID_fieldcolumn}
+	{BEGIN OracIeID_fieldcolumn}
+<td  class="runner-cc {$OracIeID_class}" {$OracIeID_style} {$recordattrs}>
+	{$OracIeID_value}
+</td>
+{END OracIeID_fieldcolumn}
+	{BEGIN Compre_String_fieldcolumn}
+<td  class="runner-cc {$Compre_String_class}" {$Compre_String_style} {$recordattrs}>
+	{$Compre_String_value}
+</td>
+{END Compre_String_fieldcolumn}
+	{BEGIN Name_fieldcolumn}
+<td  class="runner-cc {$Name_class}" {$Name_style} {$recordattrs}>
+	{$Name_value}
+</td>
+{END Name_fieldcolumn}
+	{BEGIN PrimaryTimeZone_fieldcolumn}
+<td  class="runner-cc {$PrimaryTimeZone_class}" {$PrimaryTimeZone_style} {$recordattrs}>
+	{$PrimaryTimeZone_value}
+</td>
+{END PrimaryTimeZone_fieldcolumn}
+	{BEGIN Size_fieldcolumn}
+<td  class="runner-cc {$Size_class}" {$Size_style} {$recordattrs}>
+	{$Size_value}
+</td>
+{END Size_fieldcolumn}
+	{BEGIN Onshore_Support_fieldcolumn}
+<td  class="runner-cc {$Onshore_Support_class}" {$Onshore_Support_style} {$recordattrs}>
+	{$Onshore_Support_value}
+</td>
+{END Onshore_Support_fieldcolumn}
+	{BEGIN Stage_fieldcolumn}
+<td  class="runner-cc {$Stage_class}" {$Stage_style} {$recordattrs}>
+	{$Stage_value}
+</td>
+{END Stage_fieldcolumn}
+	{BEGIN Overall_Temp_fieldcolumn}
+<td  class="runner-cc {$Overall_Temp_class}" {$Overall_Temp_style} {$recordattrs}>
+	{$Overall_Temp_value}
+</td>
+{END Overall_Temp_fieldcolumn}
+	{BEGIN Temperature_fieldcolumn}
+<td  class="runner-cc {$Temperature_class}" {$Temperature_style} {$recordattrs}>
+	{$Temperature_value}
+</td>
+{END Temperature_fieldcolumn}
+	{BEGIN Engagement_status_fieldcolumn}
+<td  class="runner-cc {$Engagement_status_class}" {$Engagement_status_style} {$recordattrs}>
+	{$Engagement_status_value}
+</td>
+{END Engagement_status_fieldcolumn}
+	{BEGIN Contract_Start_fieldcolumn}
+<td  class="runner-cc {$Contract_Start_class}" {$Contract_Start_style} {$recordattrs}>
+	{$Contract_Start_value}
+</td>
+{END Contract_Start_fieldcolumn}
+	{BEGIN SteadyState_fieldcolumn}
+<td  class="runner-cc {$SteadyState_class}" {$SteadyState_style} {$recordattrs}>
+	{$SteadyState_value}
+</td>
+{END SteadyState_fieldcolumn}
+	{BEGIN Contract_end_fieldcolumn}
+<td  class="runner-cc {$Contract_end_class}" {$Contract_end_style} {$recordattrs}>
+	{$Contract_end_value}
+</td>
+{END Contract_end_fieldcolumn}
+	{BEGIN Recovery_Center_fieldcolumn}
+<td  class="runner-cc {$Recovery_Center_class}" {$Recovery_Center_style} {$recordattrs}>
+	{$Recovery_Center_value}
+</td>
+{END Recovery_Center_fieldcolumn}
+	{BEGIN Total_MRR_fieldcolumn}
+<td  class="runner-cc {$Total_MRR_class}" {$Total_MRR_style} {$recordattrs}>
+	{$Total_MRR_value}
+</td>
+{END Total_MRR_fieldcolumn}
+	{BEGIN MRP_MRR_fieldcolumn}
+<td  class="runner-cc {$MRP_MRR_class}" {$MRP_MRR_style} {$recordattrs}>
+	{$MRP_MRR_value}
+</td>
+{END MRP_MRR_fieldcolumn}
+	{BEGIN ARS_MRR_fieldcolumn}
+<td  class="runner-cc {$ARS_MRR_class}" {$ARS_MRR_style} {$recordattrs}>
+	{$ARS_MRR_value}
+</td>
+{END ARS_MRR_fieldcolumn}
+	{BEGIN RS_MRR_fieldcolumn}
+<td  class="runner-cc {$RS_MRR_class}" {$RS_MRR_style} {$recordattrs}>
+	{$RS_MRR_value}
+</td>
+{END RS_MRR_fieldcolumn}
+	{BEGIN MS_MRR_fieldcolumn}
+<td  class="runner-cc {$MS_MRR_class}" {$MS_MRR_style} {$recordattrs}>
+	{$MS_MRR_value}
+</td>
+{END MS_MRR_fieldcolumn}
+	{BEGIN CS_MRR_fieldcolumn}
+<td  class="runner-cc {$CS_MRR_class}" {$CS_MRR_style} {$recordattrs}>
+	{$CS_MRR_value}
+</td>
+{END CS_MRR_fieldcolumn}
+	{BEGIN OTHER_MRR_fieldcolumn}
+<td  class="runner-cc {$OTHER_MRR_class}" {$OTHER_MRR_style} {$recordattrs}>
+	{$OTHER_MRR_value}
+</td>
+{END OTHER_MRR_fieldcolumn}
+	{BEGIN Created_date_fieldcolumn}
+<td  class="runner-cc {$Created_date_class}" {$Created_date_style} {$recordattrs}>
+	{$Created_date_value}
+</td>
+{END Created_date_fieldcolumn}
+	{BEGIN Comments_fieldcolumn}
+<td  class="runner-cc {$Comments_class}" {$Comments_style} {$recordattrs}>
+	{$Comments_value}
+</td>
+{END Comments_fieldcolumn}
+	{BEGIN created_by_fieldcolumn}
+<td  class="runner-cc {$created_by_class}" {$created_by_style} {$recordattrs}>
+	{$created_by_value}
+</td>
+{END created_by_fieldcolumn}
+	{BEGIN Updated_by_fieldcolumn}
+<td  class="runner-cc {$Updated_by_class}" {$Updated_by_style} {$recordattrs}>
+	{$Updated_by_value}
+</td>
+{END Updated_by_fieldcolumn}
+	{BEGIN Updated_date_fieldcolumn}
+<td  class="runner-cc {$Updated_date_class}" {$Updated_date_style} {$recordattrs}>
+	{$Updated_date_value}
+</td>
+{END Updated_date_fieldcolumn}
+	{BEGIN Address_fieldcolumn}
+<td  class="runner-cc {$Address_class}" {$Address_style} {$recordattrs}>
+	{$Address_value}
+</td>
+{END Address_fieldcolumn}
+	{BEGIN TransStartDate_fieldcolumn}
+<td  class="runner-cc {$TransStartDate_class}" {$TransStartDate_style} {$recordattrs}>
+	{$TransStartDate_value}
+</td>
+{END TransStartDate_fieldcolumn}
+	{BEGIN TransEndDate_fieldcolumn}
+<td  class="runner-cc {$TransEndDate_class}" {$TransEndDate_style} {$recordattrs}>
+	{$TransEndDate_value}
+</td>
+{END TransEndDate_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+		{BEGIN details_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN details_record}
+		<td  class="rnr-edge" colspan="31">
+			{BEGIN details_table}
+			{$details}
+			{END details_table}
+		</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+		{END details_record}
+	</tr>
+	{END details_row}
+{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

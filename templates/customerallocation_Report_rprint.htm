@@ -1,0 +1,512 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #90EE90;}
+		td.nbgroup_1{background-color: #90EE90;}
+		td.header_1 {
+			background-color: #7ACA7A; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_2{background-color: #ADD8E6;}
+		td.nbgroup_2{background-color: #ADD8E6;}
+		td.header_2 {
+			background-color: #93B7C3; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_3{background-color: #FFB6C1;}
+		td.nbgroup_3{background-color: #FFB6C1;}
+		td.header_3 {
+			background-color: #D89AA4; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_4{background-color: #FFFACD;}
+		td.nbgroup_4{background-color: #FFFACD;}
+		td.header_4 {
+			background-color: #D8D4AE; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_5{background-color: #7FFFD4;}
+		td.nbgroup_5{background-color: #7FFFD4;}
+		td.header_5 {
+			background-color: #6BD8B4; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_6{background-color: #B0E0E6;}
+		td.nbgroup_6{background-color: #B0E0E6;}
+		td.header_6 {
+			background-color: #95BEC3; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_7{background-color: #FA8072;}
+		td.nbgroup_7{background-color: #FA8072;}
+		td.header_7 {
+			background-color: #D46C60; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_8{background-color: #FFF8DC;}
+		td.nbgroup_8{background-color: #FFF8DC;}
+		td.header_8 {
+			background-color: #D8D2BB; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.grouptotalsrow + :not(.grouptotalsrow) > * {
+		border-top:solid #808080 1px; 
+	}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel customerallocation_Report rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #90EE90;}
+		td.nbgroup_1{background-color: #90EE90;}
+		td.header_1 {
+			background-color: #7ACA7A; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_2{background-color: #ADD8E6;}
+		td.nbgroup_2{background-color: #ADD8E6;}
+		td.header_2 {
+			background-color: #93B7C3; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_3{background-color: #FFB6C1;}
+		td.nbgroup_3{background-color: #FFB6C1;}
+		td.header_3 {
+			background-color: #D89AA4; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_4{background-color: #FFFACD;}
+		td.nbgroup_4{background-color: #FFFACD;}
+		td.header_4 {
+			background-color: #D8D4AE; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_5{background-color: #7FFFD4;}
+		td.nbgroup_5{background-color: #7FFFD4;}
+		td.header_5 {
+			background-color: #6BD8B4; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_6{background-color: #B0E0E6;}
+		td.nbgroup_6{background-color: #B0E0E6;}
+		td.header_6 {
+			background-color: #95BEC3; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_7{background-color: #FA8072;}
+		td.nbgroup_7{background-color: #FA8072;}
+		td.header_7 {
+			background-color: #D46C60; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+
+		td.group_8{background-color: #FFF8DC;}
+		td.nbgroup_8{background-color: #FFF8DC;}
+		td.header_8 {
+			background-color: #D8D2BB; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.grouptotalsrow + :not(.grouptotalsrow) > * {
+		border-top:solid #808080 1px; 
+	}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-empty asbuttons {$pageStyleName}">		
+						<div class="rnr-c rnr-cv rnr-c-grid">
+		<div class="rnr-brickcontents style1 rnr-b-report">		
+			<table class="rnr-report" cellspacing=0 cellpadding=0 border=0>
+<tbody>
+			
+			
+			{BEGIN grid_row}
+
+			{BEGIN Allocation_newgroup}
+								<tr class="group-headers">
+					<td class="blackshade">{$label customerallocation_Report Allocation}</td>
+					<td class="blackshade">{$label customerallocation_Report Supervisor}</td>
+					<td class="blackshade">{$label customerallocation_Report StartDate}</td>
+					<td class="blackshade">{$label customerallocation_Report RSAName}</td>
+					<td class="blackshade">{$label customerallocation_Report Role}</td>
+					<td class="blackshade">{$label customerallocation_Report PlatformName}</td>
+					<td class="blackshade">{$label customerallocation_Report Stage}</td>
+					<td class="blackshade">{$label customerallocation_Report Location}</td>
+										<td class="blackshade">{$label customerallocation_Report AutCustID}</td>
+					<td class="blackshade">{$label customerallocation_Report OracleID}</td>
+					<td class="blackshade">{$label customerallocation_Report CustomerName}</td>
+					<td class="blackshade">{$label customerallocation_Report EndDate}</td>
+					<td class="blackshade">{$label customerallocation_Report Override}</td>
+					<td class="blackshade">{$label customerallocation_Report Compre_String}</td>
+					<td class="blackshade">{$label customerallocation_Report Temp}</td>
+					<td class="blackshade">{$label customerallocation_Report Size}</td>
+					<td class="blackshade">{$label customerallocation_Report Contract_Start}</td>
+					<td class="blackshade">{$label customerallocation_Report SteadyStateDate}</td>
+					<td class="blackshade">{$label customerallocation_Report Contract_End}</td>
+					<td class="blackshade">{$label customerallocation_Report OnshoreSupportOnly}</td>
+					<td class="blackshade">{$label customerallocation_Report PlatformType}</td>
+					<td class="blackshade">{$label customerallocation_Report TimeZone}</td>
+					<td class="blackshade">{$label customerallocation_Report Project}</td>
+				</tr>
+				<tr class="group-spliter-1" >
+																				<td colspan=23 class=header_1><font >{$Allocation_grval}</font></td>
+																																														</tr>
+			{END Allocation_newgroup}
+			{BEGIN Supervisor_newgroup}
+								<tr class="group-spliter-2" >
+													<td class=" group_1" >&nbsp;</td>
+																				<td colspan=22 class=header_2><font >{$Supervisor_grval}</font></td>
+																																								</tr>
+			{END Supervisor_newgroup}
+			{BEGIN StartDate_newgroup}
+								<tr class="group-spliter-3" >
+													<td class=" group_1" >&nbsp;</td>
+													<td class=" group_2" >&nbsp;</td>
+																				<td colspan=21 class=header_3><font >{$StartDate_grval}</font></td>
+																																		</tr>
+			{END StartDate_newgroup}
+			{BEGIN RSAName_newgroup}
+								<tr class="group-spliter-4" >
+													<td class=" group_1" >&nbsp;</td>
+													<td class=" group_2" >&nbsp;</td>
+													<td class=" group_3" >&nbsp;</td>
+																				<td colspan=20 class=header_4><font >{$RSAName_grval}</font></td>
+																												</tr>
+			{END RSAName_newgroup}
+			{BEGIN Role_newgroup}
+								<tr class="group-spliter-5" >
+													<td class=" group_1" >&nbsp;</td>
+													<td class=" group_2" >&nbsp;</td>
+													<td class=" group_3" >&nbsp;</td>
+													<td class=" group_4" >&nbsp;</td>
+																				<td colspan=19 class=header_5><font >{$Role_grval}</font></td>
+																						</tr>
+			{END Role_newgroup}
+			{BEGIN PlatformName_newgroup}
+								<tr class="group-spliter-6" >
+													<td class=" group_1" >&nbsp;</td>
+													<td class=" group_2" >&nbsp;</td>
+													<td class=" group_3" >&nbsp;</td>
+													<td class=" group_4" >&nbsp;</td>
+													<td class=" group_5" >&nbsp;</td>
+																				<td colspan=18 class=header_6><font >{$PlatformName_grval}</font></td>
+																</tr>
+			{END PlatformName_newgroup}
+			{BEGIN Stage_newgroup}
+								<tr class="group-spliter-7" >
+													<td class=" group_1" >&nbsp;</td>
+													<td class=" group_2" >&nbsp;</td>
+													<td class=" group_3" >&nbsp;</td>
+													<td class=" group_4" >&nbsp;</td>
+													<td class=" group_5" >&nbsp;</td>
+													<td class=" group_6" >&nbsp;</td>
+																				<td colspan=17 class=header_7><font >{$Stage_grval}</font></td>
+										</tr>
+			{END Stage_newgroup}
+			{BEGIN Location_newgroup}
+								<tr class="group-spliter-8" {$rowattrs}>
+													<td class=" group_1" >&nbsp;</td>
+													<td class=" group_2" >&nbsp;</td>
+													<td class=" group_3" >&nbsp;</td>
+													<td class=" group_4" >&nbsp;</td>
+													<td class=" group_5" >&nbsp;</td>
+													<td class=" group_6" >&nbsp;</td>
+													<td class=" group_7" >&nbsp;</td>
+													
+							<td colspan=16 class=header_8>
+								<font>
+									{$Location_grval} 
+
+								</font>
+							</td>
+				</tr>
+			{END Location_newgroup}
+						<!-------------------------------------  data ----------------------------------------->
+			{BEGIN row_data}
+				<tr >
+										<td class=" group_1" >&nbsp;</td>
+										<td class=" group_2" >&nbsp;</td>
+										<td class=" group_3" >&nbsp;</td>
+										<td class=" group_4" >&nbsp;</td>
+										<td class=" group_5" >&nbsp;</td>
+										<td class=" group_6" >&nbsp;</td>
+										<td class=" group_7" >&nbsp;</td>
+										<td class=" group_8" >&nbsp;</td>
+									<td class=data>{$AutCustID_value}</td>
+					<td class=data>{$OracleID_value}</td>
+					<td class=data>{$CustomerName_value}</td>
+					<td class=data>{$EndDate_value}</td>
+					<td class=data>{$Override_value}</td>
+					<td class=data>{$Compre_String_value}</td>
+					<td class=data>{$Temp_value}</td>
+					<td class=data>{$Size_value}</td>
+					<td class=data>{$Contract_Start_value}</td>
+					<td class=data>{$SteadyStateDate_value}</td>
+					<td class=data>{$Contract_End_value}</td>
+					<td class=data>{$OnshoreSupportOnly_value}</td>
+					<td class=data>{$PlatformType_value}</td>
+					<td class=data>{$TimeZone_value}</td>
+					<td class=data>{$Project_value}</td>
+				</tr>
+			{END row_data}
+			<!-------------------------------------  group summary ----------------------------------------->
+						{BEGIN Location_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+					<td class=group_2 style="border-top: none;"></td>
+					<td class=group_3 style="border-top: none;"></td>
+					<td class=group_4 style="border-top: none;"></td>
+					<td class=group_5 style="border-top: none;"></td>
+					<td class=group_6 style="border-top: none;"></td>
+					<td class=group_7 style="border-top: none;"></td>
+										<td  class="group_8" colspan=16 >
+				Summary for {$label customerallocation_Report Location} {$Location_grval}
+					- <span class="summary-8" data-type="summary" data-value="{$groupLocation_total_cnt}">{$groupLocation_total_cnt}</span> records total</td>
+				</tr>
+															{END Location_endgroup}
+						{BEGIN Stage_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+					<td class=group_2 style="border-top: none;"></td>
+					<td class=group_3 style="border-top: none;"></td>
+					<td class=group_4 style="border-top: none;"></td>
+					<td class=group_5 style="border-top: none;"></td>
+					<td class=group_6 style="border-top: none;"></td>
+										<td  class="group_7" colspan=17 >
+				Summary for {$label customerallocation_Report Stage} {$Stage_grval}
+					- <span class="summary-7" data-type="summary" data-value="{$groupStage_total_cnt}">{$groupStage_total_cnt}</span> records total</td>
+				</tr>
+															{END Stage_endgroup}
+						{BEGIN PlatformName_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+					<td class=group_2 style="border-top: none;"></td>
+					<td class=group_3 style="border-top: none;"></td>
+					<td class=group_4 style="border-top: none;"></td>
+					<td class=group_5 style="border-top: none;"></td>
+										<td  class="group_6" colspan=18 >
+				Summary for {$label customerallocation_Report PlatformName} {$PlatformName_grval}
+					- <span class="summary-6" data-type="summary" data-value="{$groupPlatformName_total_cnt}">{$groupPlatformName_total_cnt}</span> records total</td>
+				</tr>
+															{END PlatformName_endgroup}
+						{BEGIN Role_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+					<td class=group_2 style="border-top: none;"></td>
+					<td class=group_3 style="border-top: none;"></td>
+					<td class=group_4 style="border-top: none;"></td>
+										<td  class="group_5" colspan=19 >
+				Summary for {$label customerallocation_Report Role} {$Role_grval}
+					- <span class="summary-5" data-type="summary" data-value="{$groupRole_total_cnt}">{$groupRole_total_cnt}</span> records total</td>
+				</tr>
+															{END Role_endgroup}
+						{BEGIN RSAName_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+					<td class=group_2 style="border-top: none;"></td>
+					<td class=group_3 style="border-top: none;"></td>
+										<td  class="group_4" colspan=20 >
+				Summary for {$label customerallocation_Report RSAName} {$RSAName_grval}
+					- <span class="summary-4" data-type="summary" data-value="{$groupRSAName_total_cnt}">{$groupRSAName_total_cnt}</span> records total</td>
+				</tr>
+															{END RSAName_endgroup}
+						{BEGIN StartDate_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+					<td class=group_2 style="border-top: none;"></td>
+										<td  class="group_3" colspan=21 >
+				Summary for {$label customerallocation_Report StartDate} {$StartDate_grval}
+					- <span class="summary-3" data-type="summary" data-value="{$groupStartDate_total_cnt}">{$groupStartDate_total_cnt}</span> records total</td>
+				</tr>
+															{END StartDate_endgroup}
+						{BEGIN Supervisor_endgroup}
+				<tr class="summaryrow" >
+					<td class=group_1 style="border-top: none;"></td>
+										<td  class="group_2" colspan=22 >
+				Summary for {$label customerallocation_Report Supervisor} {$Supervisor_grval}
+					- <span class="summary-2" data-type="summary" data-value="{$groupSupervisor_total_cnt}">{$groupSupervisor_total_cnt}</span> records total</td>
+				</tr>
+															{END Supervisor_endgroup}
+						{BEGIN Allocation_endgroup}
+				<tr class="summaryrow" >
+										<td  class="group_1" colspan=23 >
+				Summary for {$label customerallocation_Report Allocation} {$Allocation_grval}
+					- <span class="summary-1" data-type="summary" data-value="{$groupAllocation_total_cnt}">{$groupAllocation_total_cnt}</span> records total</td>
+				</tr>
+															{END Allocation_endgroup}
+			{END grid_row}
+
+							</tbody>
+			</table>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

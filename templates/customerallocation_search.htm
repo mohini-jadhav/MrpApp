@@ -1,0 +1,445 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel customerallocation search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Allocation}">
+	{BEGIN Allocation_fieldblock}		
+	<td>
+		{$label customerallocation Allocation}
+	</td>
+	<td>
+		<input type="checkbox" {$Allocation_notbox}>
+	</td>
+	<td>
+		{$searchtype_Allocation}
+	</td>
+	<td>
+		{$Allocation_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Allocation_editcontrol1}&nbsp;
+	</td>
+{END Allocation_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_OracleID}">
+	{BEGIN OracleID_fieldblock}		
+	<td>
+		{$label customerallocation OracleID}
+	</td>
+	<td>
+		<input type="checkbox" {$OracleID_notbox}>
+	</td>
+	<td>
+		{$searchtype_OracleID}
+	</td>
+	<td>
+		{$OracleID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$OracleID_editcontrol1}&nbsp;
+	</td>
+{END OracleID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_CustomerName}">
+	{BEGIN CustomerName_fieldblock}		
+	<td>
+		{$label customerallocation CustomerName}
+	</td>
+	<td>
+		<input type="checkbox" {$CustomerName_notbox}>
+	</td>
+	<td>
+		{$searchtype_CustomerName}
+	</td>
+	<td>
+		{$CustomerName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$CustomerName_editcontrol1}&nbsp;
+	</td>
+{END CustomerName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TimeZone}">
+	{BEGIN TimeZone_fieldblock}		
+	<td>
+		{$label customerallocation TimeZone}
+	</td>
+	<td>
+		<input type="checkbox" {$TimeZone_notbox}>
+	</td>
+	<td>
+		{$searchtype_TimeZone}
+	</td>
+	<td>
+		{$TimeZone_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TimeZone_editcontrol1}&nbsp;
+	</td>
+{END TimeZone_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Stage}">
+	{BEGIN Stage_fieldblock}		
+	<td>
+		{$label customerallocation Stage}
+	</td>
+	<td>
+		<input type="checkbox" {$Stage_notbox}>
+	</td>
+	<td>
+		{$searchtype_Stage}
+	</td>
+	<td>
+		{$Stage_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Stage_editcontrol1}&nbsp;
+	</td>
+{END Stage_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Size}">
+	{BEGIN Size_fieldblock}		
+	<td>
+		{$label customerallocation Size}
+	</td>
+	<td>
+		<input type="checkbox" {$Size_notbox}>
+	</td>
+	<td>
+		{$searchtype_Size}
+	</td>
+	<td>
+		{$Size_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Size_editcontrol1}&nbsp;
+	</td>
+{END Size_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Contract_Start}">
+	{BEGIN Contract_Start_fieldblock}		
+	<td>
+		{$label customerallocation Contract_Start}
+	</td>
+	<td>
+		<input type="checkbox" {$Contract_Start_notbox}>
+	</td>
+	<td>
+		{$searchtype_Contract_Start}
+	</td>
+	<td>
+		{$Contract_Start_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Contract_Start_editcontrol1}&nbsp;
+	</td>
+{END Contract_Start_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SteadyStateDate}">
+	{BEGIN SteadyStateDate_fieldblock}		
+	<td>
+		{$label customerallocation SteadyStateDate}
+	</td>
+	<td>
+		<input type="checkbox" {$SteadyStateDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_SteadyStateDate}
+	</td>
+	<td>
+		{$SteadyStateDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SteadyStateDate_editcontrol1}&nbsp;
+	</td>
+{END SteadyStateDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Contract_End}">
+	{BEGIN Contract_End_fieldblock}		
+	<td>
+		{$label customerallocation Contract_End}
+	</td>
+	<td>
+		<input type="checkbox" {$Contract_End_notbox}>
+	</td>
+	<td>
+		{$searchtype_Contract_End}
+	</td>
+	<td>
+		{$Contract_End_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Contract_End_editcontrol1}&nbsp;
+	</td>
+{END Contract_End_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_OnshoreSupportOnly}">
+	{BEGIN OnshoreSupportOnly_fieldblock}		
+	<td>
+		{$label customerallocation OnshoreSupportOnly}
+	</td>
+	<td>
+		<input type="checkbox" {$OnshoreSupportOnly_notbox}>
+	</td>
+	<td>
+		{$searchtype_OnshoreSupportOnly}
+	</td>
+	<td>
+		{$OnshoreSupportOnly_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$OnshoreSupportOnly_editcontrol1}&nbsp;
+	</td>
+{END OnshoreSupportOnly_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Supervisor}">
+	{BEGIN Supervisor_fieldblock}		
+	<td>
+		{$label customerallocation Supervisor}
+	</td>
+	<td>
+		<input type="checkbox" {$Supervisor_notbox}>
+	</td>
+	<td>
+		{$searchtype_Supervisor}
+	</td>
+	<td>
+		{$Supervisor_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Supervisor_editcontrol1}&nbsp;
+	</td>
+{END Supervisor_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_RSAName}">
+	{BEGIN RSAName_fieldblock}		
+	<td>
+		{$label customerallocation RSAName}
+	</td>
+	<td>
+		<input type="checkbox" {$RSAName_notbox}>
+	</td>
+	<td>
+		{$searchtype_RSAName}
+	</td>
+	<td>
+		{$RSAName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$RSAName_editcontrol1}&nbsp;
+	</td>
+{END RSAName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Role}">
+	{BEGIN Role_fieldblock}		
+	<td>
+		{$label customerallocation Role}
+	</td>
+	<td>
+		<input type="checkbox" {$Role_notbox}>
+	</td>
+	<td>
+		{$searchtype_Role}
+	</td>
+	<td>
+		{$Role_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Role_editcontrol1}&nbsp;
+	</td>
+{END Role_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_PlatformName}">
+	{BEGIN PlatformName_fieldblock}		
+	<td>
+		{$label customerallocation PlatformName}
+	</td>
+	<td>
+		<input type="checkbox" {$PlatformName_notbox}>
+	</td>
+	<td>
+		{$searchtype_PlatformName}
+	</td>
+	<td>
+		{$PlatformName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$PlatformName_editcontrol1}&nbsp;
+	</td>
+{END PlatformName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_StartDate}">
+	{BEGIN StartDate_fieldblock}		
+	<td>
+		{$label customerallocation StartDate}
+	</td>
+	<td>
+		<input type="checkbox" {$StartDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_StartDate}
+	</td>
+	<td>
+		{$StartDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$StartDate_editcontrol1}&nbsp;
+	</td>
+{END StartDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_EndDate}">
+	{BEGIN EndDate_fieldblock}		
+	<td>
+		{$label customerallocation EndDate}
+	</td>
+	<td>
+		<input type="checkbox" {$EndDate_notbox}>
+	</td>
+	<td>
+		{$searchtype_EndDate}
+	</td>
+	<td>
+		{$EndDate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$EndDate_editcontrol1}&nbsp;
+	</td>
+{END EndDate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Override}">
+	{BEGIN Override_fieldblock}		
+	<td>
+		{$label customerallocation Override}
+	</td>
+	<td>
+		<input type="checkbox" {$Override_notbox}>
+	</td>
+	<td>
+		{$searchtype_Override}
+	</td>
+	<td>
+		{$Override_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Override_editcontrol1}&nbsp;
+	</td>
+{END Override_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Project}">
+	{BEGIN Project_fieldblock}		
+	<td>
+		{$label customerallocation Project}
+	</td>
+	<td>
+		<input type="checkbox" {$Project_notbox}>
+	</td>
+	<td>
+		{$searchtype_Project}
+	</td>
+	<td>
+		{$Project_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Project_editcontrol1}&nbsp;
+	</td>
+{END Project_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

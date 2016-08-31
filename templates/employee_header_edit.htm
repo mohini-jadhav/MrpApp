@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18163">
+  </HEAD>
+  <BODY class="{$stylename} function-edit" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_all}
+            <DIV class="rnr-c rnr-cv rnr-c-all">
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+                {BEGIN container_edit}
+                  <DIV class="rnr-c rnr-cv rnr-c-edit">
+                    {BEGIN editheader}
+                      <DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}">
+                        <SPAN>
+                          <H1>
+                            {$pagetitlelabel employee_header edit}
+                          </H1>
+                        </SPAN>
+                      </DIV>
+                    {END editheader}
+                    {BEGIN message_block}
+                      <DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+                        <DIV class="rnr-message">
+                          {$message}
+                        </DIV>
+                      </DIV>
+                    {END message_block}
+                    <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                      {BEGIN container_fields}
+                        <DIV class="rnr-c rnr-cv rnr-c-fields">
+                          <DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+                            <TABLE class="fieldGrid">
+                              {BEGIN EmployeeID_fieldblock}
+                                <TR class="{$fielddispclass_EmployeeID}" data-fieldname="EmployeeID">
+                                  <TD class="rnr-label">
+                                    {BEGIN EmployeeID_label}
+                                      {$label employee_header EmployeeID}
+                                    {END EmployeeID_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$EmployeeID_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END EmployeeID_fieldblock}
+                              {BEGIN FirstName_fieldblock}
+                                <TR class="{$fielddispclass_FirstName}" data-fieldname="FirstName">
+                                  <TD class="rnr-label">
+                                    {BEGIN FirstName_label}
+                                      {$label employee_header FirstName}
+                                    {END FirstName_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$FirstName_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END FirstName_fieldblock}
+                              {BEGIN LastName_fieldblock}
+                                <TR class="{$fielddispclass_LastName}" data-fieldname="LastName">
+                                  <TD class="rnr-label">
+                                    {BEGIN LastName_label}
+                                      {$label employee_header LastName}
+                                    {END LastName_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$LastName_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END LastName_fieldblock}
+                              {BEGIN SupervisorTitle_fieldblock}
+                                <TR class="{$fielddispclass_SupervisorTitle}" data-fieldname="SupervisorTitle">
+                                  <TD class="rnr-label">
+                                    {BEGIN SupervisorTitle_label}
+                                      {$label employee_header SupervisorTitle}
+                                    {END SupervisorTitle_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$SupervisorTitle_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END SupervisorTitle_fieldblock}
+                              {BEGIN emailID_fieldblock}
+                                <TR class="{$fielddispclass_emailID}" data-fieldname="emailID">
+                                  <TD class="rnr-label">
+                                    {BEGIN emailID_label}
+                                      {$label employee_header emailID}
+                                    {END emailID_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$emailID_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END emailID_fieldblock}
+                              {BEGIN Role_fieldblock}
+                                <TR class="{$fielddispclass_Role}" data-fieldname="Role">
+                                  <TD class="rnr-label">
+                                    {BEGIN Role_label}
+                                      {$label employee_header Role}
+                                    {END Role_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$Role_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END Role_fieldblock}
+                              {BEGIN Type_fieldblock}
+                                <TR class="{$fielddispclass_Type}" data-fieldname="Type">
+                                  <TD class="rnr-label">
+                                    {BEGIN Type_label}
+                                      {$label employee_header Type}
+                                    {END Type_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$Type_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END Type_fieldblock}
+                              {BEGIN Location_fieldblock}
+                                <TR class="{$fielddispclass_Location}" data-fieldname="Location">
+                                  <TD class="rnr-label">
+                                    {BEGIN Location_label}
+                                      {$label employee_header Location}
+                                    {END Location_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$Location_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END Location_fieldblock}
+                              {BEGIN SupervisorName_fieldblock}
+                                <TR class="{$fielddispclass_SupervisorName}" data-fieldname="SupervisorName">
+                                  <TD class="rnr-label">
+                                    {BEGIN SupervisorName_label}
+                                      {$label employee_header SupervisorName}
+                                    {END SupervisorName_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$SupervisorName_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END SupervisorName_fieldblock}
+                              {BEGIN InactiveDate_fieldblock}
+                                <TR class="{$fielddispclass_InactiveDate}" data-fieldname="InactiveDate">
+                                  <TD class="rnr-label">
+                                    {BEGIN InactiveDate_label}
+                                      {$label employee_header InactiveDate}
+                                    {END InactiveDate_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$InactiveDate_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END InactiveDate_fieldblock}
+                              {BEGIN StartDate_fieldblock}
+                                <TR class="{$fielddispclass_StartDate}" data-fieldname="StartDate">
+                                  <TD class="rnr-label">
+                                    {BEGIN StartDate_label}
+                                      {$label employee_header StartDate}
+                                    {END StartDate_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$StartDate_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END StartDate_fieldblock}
+                              {BEGIN EmployeeStatus_fieldblock}
+                                <TR class="{$fielddispclass_EmployeeStatus}" data-fieldname="EmployeeStatus">
+                                  <TD class="rnr-label">
+                                    {BEGIN EmployeeStatus_label}
+                                      {$label employee_header EmployeeStatus}
+                                    {END EmployeeStatus_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$EmployeeStatus_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END EmployeeStatus_fieldblock}
+                              {BEGIN Country_fieldblock}
+                                <TR class="{$fielddispclass_Country}" data-fieldname="Country">
+                                  <TD class="rnr-label">
+                                    {BEGIN Country_label}
+                                      {$label employee_header Country}
+                                    {END Country_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$Country_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END Country_fieldblock}
+                              {BEGIN JobTitle_fieldblock}
+                                <TR class="{$fielddispclass_JobTitle}" data-fieldname="JobTitle">
+                                  <TD class="rnr-label">
+                                    {BEGIN JobTitle_label}
+                                      {$label employee_header JobTitle}
+                                    {END JobTitle_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$JobTitle_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END JobTitle_fieldblock}
+                              {BEGIN Address_fieldblock}
+                                <TR class="{$fielddispclass_Address}" data-fieldname="Address">
+                                  <TD class="rnr-label">
+                                    {BEGIN Address_label}
+                                      {$label employee_header Address}
+                                    {END Address_label}
+                                  </td>
+                                  <TD class="rnr-control style3">
+                                    {$Address_editcontrol}
+                                    &nbsp;
+                                  </td>
+                                </tr>
+                              {END Address_fieldblock}
+                            </table>
+                          </div>
+                          {BEGIN editbuttons}
+                            <DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+                              {BEGIN save_button}
+                                <A class="rnr-button main" id="saveButton{$id}" href="#">
+                                  Save
+                                </A>
+                              {END save_button}
+                              {BEGIN cancel_button}
+                                <A class="rnr-button" id="cancelButton{$id}" href="#">
+                                  Cancel
+                                </A>
+                              {END cancel_button}
+                              {BEGIN back_button}
+                                <A class="rnr-button" id="backButton{$id}" href="#">
+                                  Cancel
+                                </A>
+                              {END back_button}
+                            </DIV>
+                          {END editbuttons}
+                        </DIV>
+                      {END container_fields}
+                    </DIV>
+                  </DIV>
+                {END container_edit}
+              </DIV>
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+                {BEGIN container_details}
+                  <DIV class="rnr-c rnr-cv rnr-c-details">
+                    {BEGIN detail_tables}
+                      {BEGIN details_employeeskills}
+                        <DIV class="rnr-cw-detailsemployeeskills rnr-s-empty aslinks {$pageStyleName}">
+                          <DIV class="rnr-c rnr-cv rnr-c-detailsemployeeskills rnr-c-details">
+                            <DIV class="rnr-brickcontents style1 rnr-b-adddetailsemployeeskills rnr-b-adddetails">
+                              <DIV class="rnr-dcaption">
+                                Employee Skills
+                              </DIV>
+                              {$displayDetailTable_employeeskills}
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                      {END details_employeeskills}
+                    {END detail_tables}
+                  </DIV>
+                {END container_details}
+              </DIV>
+            </DIV>
+          {END container_all}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

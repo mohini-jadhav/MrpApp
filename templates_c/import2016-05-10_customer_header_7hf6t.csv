@@ -1,0 +1,600 @@
+ ,Sales SVP,Client ID,Contract Status ,Cust Temp (MRP Transition),Stage,Gap Type ,Size,"Playbook Version (4.23, 5.0, CMDB or Customer Provided) ",# Platforms,# Hosts,# Backup ,# Database,# Apps,Contract Start Dt,Contract Expiry Dt,Contracted Recovery Ctr, Total MRR , MRP MRR (Included in RS MRR) , ARS MRR , RS MRR (Includes MRP MRR) ,MS MRR, CS MRR ,Other Svcs,"SME
+<Last, First>","RSA
+<Last, First>",Next MRP Test Dt,Total # of MRP Tests till Dt,Total # of Successful Tests till Dt,On MRP Service Transition DB tab?,Overall Customer Temp ,MRP Engagement Status ,"Estimated MRP Engagement  Start
+Date (ON HOLD)",Comments,Geography,Total MRR,"RSA
+Manager
+<Last, First>","TAM
+<Last, First>",Transition Date start,Transition Date end,RLCM Steady Date start
+AAA Life Insurance Company,"Toushan, Chris",13727,Active,G,RLCM,,Large,CMDB,3,"ESX -8 , Windows VM – 61, Windows Physical – 8, Linux VM – 5",Sungard RMBS - NetBackup Appliance,MSSQL,25,6/1/2015,10/31/2017,Philadelphia ,,"$9,639.62","$42,469.00","$18,859.00",,,,"BOOTH, CHARLES CHRISTOPHER",Abani Sarangi,,,,,1,Active,,,,"$70,967.62",Pankaj Wagh,,,,
+Accellent Incorporated,"Toushan, Chris",98866,Active,G,RLCM,,Small,4.23,2,13,NetBackup,,4,1/16/2016,1/15/2017,Philadelphia,"$64,166.00","$6,149.00",,"$8,000.00","$56,166.00",,,"ROACH, WILLIAM H",Kishor BalaSubramanyam,9/1/2015,3,,TRUE,0,Active,,,,"$134,481.00",Pankaj Wagh,,,,
+"Accolade, Inc",NA,78245,Terminated,D,NA,,,,,,,,,na,na,Philadelphia ,,,,,,,,#N/A,N/A,,,,,,Terminated,,,,$0.00,N/A,,,,
+ACCRETIVE HEALTH,"Toushan, Chris",76436,Active,G,RLCM,,Medium,,1,78 Windows Physical,NetBackup,MSSQL,2,5/1/2015,10/31/2016,Philadelphia,"$197,187.00","$12,771.00",,"$12,771.00","$184,416.00",,$0.00,"BORTOLOTTO, DINO",Ravi Sharma,,,,,,Active,,,,"$407,145.00",Pankaj Wagh,Jason Torres,,,
+ACE INA HOLDINGS INC. - Canada ,na,51450,Active,G,RLCM,,Medium,4.23,2,16,NetBackup,13,5,,,Toronto,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Venkatesh Iyer,9/2/2015,4,,TRUE,,Active,,,,#N/A,Thomas Webster ,,,,
+ACE INA HOLDINGS INC.- Latin ,,66345,Terminated,D,NA,,,,,,,,,na,na,Philadelphia ,,,,,,,,#N/A,N/A,,,,,,Terminated,,,,$0.00,N/A,,,,
+"AFC Enterprises, Inc","Cecconi, Tim",38902,Active,D,NA,Both,Small,4.23,,45,,,5,6/1/2013,5/31/2016,Philadelphia,"$36,047.00","$8,075.00","$17,166.00","$18,881.00",,,,0,Abani Sarangi,,,,TRUE,0,Terminated,,,,"$80,169.00",Pankaj Wagh,,,,
+AGL Services Company,"Cecconi, Tim",38772,Active,G,RLCM,,Large,CMDB,6,"Win Phy - 6
+Win VM - 557
+Lin VM - 44
+ESXi -  10 + 50
+AS400 - 2
+AIX - 5","SRM (client owned), TSM for AIX","SQL, Oracle",14,8/1/2014,7/31/2017,Philadelphia ,"$94,550.00","$17,222.00","$61,179.00","$26,591.00",,"$6,780.00",,"BOOTH, CHARLES CHRISTOPHER",Abani Sarangi,9/8/2015,6,,TRUE,0,Active,,,,"$206,322.00",Pankaj Wagh,,,,
+AHS Information Services,"Cecconi, Tim",13988,Active,G,RLCM,,Large,CMDB,4,"Win Phy - 10
+Win VM - 65
+Linux Phy - 2
+Linux VM - 1
+Solaris - 47
+ESXi - 26
+Mainframe - 1",NBU,SQL,51,10/1/2014,9/30/2017,Carlstadt ,"$62,523.00","$12,717.26","$38,710.00","$23,813.00",,,,"BOOTH, CHARLES CHRISTOPHER",Rob Weatherly,7/17/2015,,,TRUE,0,Active,,,,"$137,763.26",John Wilson ,,,,
+AIRLINES REPORTING CORP.,"Cecconi, Tim",13988,Active,G,RLCM,,Large,CMDB,4,"Win Phy - 10
+Win VM - 65
+Linux Phy - 2
+Linux VM - 1
+Solaris - 47
+ESXi - 26
+Mainframe - 1",NBU,SQL,51,10/1/2014,9/30/2015,Carlstadt,"$60,701.00","$12,717.00","$34,949.00","$23,813.00",,,"$1,939.00","JOHNSON, DONALD CRAIG",Keith Felder,7/17/2015,,,TRUE,0,Active,,,,"$132,180.00",John Wilson ,,,,
+Allied Building Products Corp,,13925,Terminated,D,NA,,Large,,21,7 + 600 VMs,NBU,,75,,,Scottsdale,,,,,,,,#N/A,N/A,,2,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+Allstate Insurance Company of Canada ... Markham Ontario Canada,"Toushan, Chris",14601,Active,G,RLCM,Both,Small,ADDM,4,"ESX -2, Windows VM – 18, Windows Physical – 3, Linux Physical -1",TSM and Netbackup,Oracle and MSSQL,12,1/1/2015,12/31/2016,Toronto,"$11,444.00","$6,504.24",,"$11,444.00",,,,"NIKFARDJAM, ATTILA",Soumit Basu,9/8/2015,,,TRUE,0,Active,,,,"$29,392.24",Pankaj Wagh,,,,
+"Allstream, Inc","Toushan, Chris",32269,Active,G,Trans 2.0,Both,Large,5,,142,R2C,,9,1/1/2015,12/31/2017,Toronto,"$993,856.00","$5,733.19","$18,703.00","$16,278.00","$944,463.00","$14,412.00",,"NIKFARDJAM, ATTILA",Richard Robbins / Mathew Haltunen,,2,,TRUE,1,Active,,"12/9/15 - PTG - No signed MRP SOW.  Solution design will be revisited, scope defined, then MRP PM assigned.",,"$1,993,445.19",Thomas Webster ,Rich Beutner / Rob Goodwin,,,
+American Honda Finance,"Pauly, Bradley",6662,Active,Y,Trans 2.0,,XL,5,5,260,TSM,2,45,3/5/2014,3/4/2017,Philadelphia,"$92,348.00",$0.00,"$47,627.00",$0.00,,"$41,288.00","$3,433.00","Bennett, Christopher",Dennis Anneken,,,,TRUE,1,Active,,,,"$181,263.00",Thomas Webster ,,,,
+Amerigroup Corporation (HealthPlus),,26810,Terminated,D,NA,,Medium,5,,,,,14,na,na,Carlstadt,,,,,,,,#N/A,NA,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+Ameripride Services Inc,"Pauly, Bradley",185700,Active,G,RLCM,,Medium,5,4,"ESXi - 4
+Linux Physical - 14
+Linux Virtual - 12
+Windows Physical - 9
+Windows Virtual - 24
+",HP Data Protector,Oracle,12,1/2/2014,4/1/2019,Wood Dale,"$26,941.00","$12,072.00","$7,416.00","$16,191.00",,"$3,334.00",,"BERTHOLD, ERWIN T",Piyush Mathiya,11/3/2015,3,,TRUE,0,Active,,,,"$65,954.00",Pankaj Wagh,,,,
+Amerisource Bergen Specialty Group Canada Corp,"Toushan, Chris",337125,Active,G,RLCM,,Small,Customer Provided,2,Windows VM – 45 (R2C),R2C SR,MSSQL,12,7/1/2014,3/31/2018,Toronto ,"$44,013.00","$3,081.96","$11,504.00","$8,193.00","$24,316.00",,,"BORTOLOTTO, DINO",Soumit Basu,,,,TRUE,0,Active,,,,"$91,107.96",Pankaj Wagh,Terry Bohaning,,,
+"ANCONNECT, LLC formerly Anderson Merchandisers","Pauly, Bradley",67381,Active,G,RLCM,,Medium,4.22,4,"ESX - 4, AIX - 2, AS400 - 3, Windows physical - 2, Windows VMs - 15, Linux VMs - 5","TSM, Evault",21,13,1/1/2016,12/31/2016,Philadelphia,"$53,351.00","$12,085.00","$9,450.00","$43,901.00",,,,"POOLE, DARRYL TODD",Ajay Singh,,4,,TRUE,0,Active,,,,"$118,787.00",Pankaj Wagh,,,,
+"ANHEUSER-BUSCH COMPANIES, LLC","Pauly, Bradley",6927,Active,G,RLCM,,Large,CMDB,5,165,2,2,94,10/1/2015,9/30/2017,Philadelphia,"$55,299.00","$26,134.00","$16,069.00","$39,230.00",,,,"JOHNSON, DONALD CRAIG",James Simons,,,,TRUE,0,Active,,,,"$136,732.00",Thomas Webster ,,,,
+ANHEUSER-BUSCH INBEV SA/NV,,386971,Active,G,Trans 2.0,,Large,,2,28,Legato Networker / Data Domain,,10,,,,"$36,509.00","$9,052.89","$11,343.00","$25,166.00",,,,"JOHNSON, ERIC MARTIN",James Simons,,,,,,Active,,,,"$82,070.89",Thomas Webster ,,,,
+Anixter Inc.,"Toushan, Chris",19779,Active,G,Trans 2.0,RPD,Large,4.23,4,"IBM Mainframe – 1
+Win VM’s - 210
+",RecoverPoint,SQL,62,7/4/2015,6/30/2018,Scottsdale,"$49,001.00","$8,299.70","$36,601.00","$12,400.00",,,,"VOSS, ANNEMARIE",Raja Datta,,6,,TRUE,1,ON HOLD,,,,"$106,301.70",Pankaj Wagh,,,,
+"Aramark SCM, Inc.","Daley, Courtney",1463,Active,G,Trans 2.0,,Medium,5,4,52+10 ESX,Data Domain and Luminex,DB2,11,1/1/2014,12/31/2016,Carlstadt,"$68,084.00","$11,864.00","$27,909.00","$40,175.00",,,,"TROMMELLO, ANTHONY F.",Raja Datta,11/30/2015,2,,TRUE,1,ON HOLD,,,,"$148,032.00",Pankaj Wagh,,,,
+ARES MANAGEMENT LLC,"Pauly, Bradley",38340,Active,G,RLCM,,Large,CMDB,4,"Win Phy - 18
+Win VM - 114
+Linux Phy - 0
+Linux VM - 3
+ESXi - 34
+",CommVault,"Oracle, SQL",50,5/1/2015,3/31/2019,ScottsDale ,"$71,903.00","$11,304.12","$26,933.00","$13,928.00","$31,042.00",,,"KIRKSEY, VERNETHIA ANGELA",Keith Felder,,,,,,Active,,,,"$155,110.12",John Wilson ,,,,
+"Argo Group US, Inc.","Pauly, Bradley",25277,Active,Y,Trans 2.0,,Large,CMDB,6,67,4,2,15,11/1/2014,9/30/2016,Philadelphia,"$168,168.00","$10,000.00","$61,217.00","$17,218.00","$88,008.00",,"$1,725.00","WITGEN, BRIAN R",Thomas Doublet,,1,,TRUE,0,ON HOLD,1/1/2016,,,"$344,611.00",Thomas Webster ,,,,
+"AstenJohnson, Inc.","Cecconi, Tim",52189,Active,G,RLCM,,Small,4.23,3,"Win Physical -7, Windows VM -19, Linux VM-1,ESX-3, AIX-4",NetBackup,31,25,2/1/2015,1/31/2018,Philadelphia,"$47,081.00","$3,562.00",,"$10,572.00","$36,509.00",,,"ROACH, WILLIAM H",Kishor BalaSubramanyam,8/4/2015,3,,TRUE,0,Active,,,,"$97,724.00",Pankaj Wagh,,,,
+"AT&T SERVICE, INC. (IMPERIAL PFS PROJECT)","Pauly, Bradley",376628,Active,G,RLCM,,Large,CMDB,3,,,,31,3/1/2015,2/28/2018,Philadelphia ,"$20,418.00","$11,840.00",,"$16,287.00",,,,"HALL, DWAYNE SCOTT",Dennis Anneken,9/2/2015,,,TRUE,0,Active,,,,"$48,545.00",Thomas Webster ,,,,
+AT&T Services (Valspar),"Pauly, Bradley",361404,Active,G,RLCM,,Small,CMDB,2,"Win Phy - 14
+Win VM - 34
+ESXi - 4
+HPUX - 13",NetBackup,Oracle,13,8/1/2014,12/31/2017,Philadelphia ,"$35,955.00","$10,500.00","$17,042.00","$18,531.00",$382.00,,,"KIRKSEY, VERNETHIA ANGELA",Ravi Sharma,1/4/2016,,,TRUE,0,Active,,,,"$82,410.00",Kaushik Ray ,,,,
+AT&T SERVICES INC. (AMERICO LIFE INSURANCE CO PROJECT),"Pauly, Bradley",364441,Active,G,Trans 2.0,,Large,CMDB,4,,,,34,1/1/2015,12/31/2017,Philadelphia ,"$33,818.00","$9,401.23","$4,426.00","$29,392.00",,,,"HALL, DWAYNE SCOTT",Dennis Anneken,11/9/2015,,,TRUE,0,Active,,,,"$77,037.23",Thomas Webster ,,,,
+"AT&T Services, Inc. (Allied Electronics Project)","Pauly, Bradley",333141,Active,G,RLCM,,Large,CMDB,3,"WIN VM - 120
+WIN PHY - 12
+LIN VM - 6
+ESXi - 5",3,2,96,10/1/2013,10/31/2016,Scottsdale ,"$70,206.00","$15,927.75","$39,541.00","$21,707.00",,"$8,958.00",,"BOOTH, CHARLES CHRISTOPHER",Thomas Doublet,,2,0,TRUE,0,Active,,,,"$156,339.75",Thomas Webster ,,,,
+"AT&T SERVICES, INC. (CLINICAL REFERENCE LABORATORY PROJECT)","Pauly, Bradley",375630,Active,G,Trans 2.0,,Large,CMDB,5,,1,,31,1/1/2015,12/31/2017,Philadelphia ,"$24,783.00","$12,136.00","$6,250.00","$18,533.00",,,,"HALL, DWAYNE SCOTT",Dennis Anneken,10/23/2015,,,TRUE,0,Active,,,,"$61,702.00",Thomas Webster ,,,,
+"AT&T SERVICES, INC. (COMPUWARE CORP. PROJECT)",,451041,Active,G,Trans 2.0,,,,4,12,,,7,3/1/2016,2/28/2017,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,,,,,,,,,,,,,,,,,
+"AT&T SERVICES, INC. (CSG SYSTEMS INTERNATIONAL PROJECT)","Cecconi, Tim",347280,Active,G,RLCM,,Large,CMDB,10,"AIX - 21
+ESX - 31
+Solaris - 111
+Win Phys - 12
+Win VM - 219
+Linux VM - 25","NetBackup (Legacy Division)
+EMC Networker (Mngd Services Division)","Oracle, SQL",24,5/1/2014,4/30/2017,Philadelphia,"$210,424.00","$24,180.79","$40,522.00","$169,902.00",,,,"MCKEOWN, STEPHEN C.",Justin Wolff,8/28/2015,2,3,TRUE,0,Active,,,,"$445,028.79",John Wilson ,,,,
+"AT&T SERVICES, INC. (FREEPORT-MCMORAN PROJECT)","Pauly, Bradley",370551,Active,G,RLCM,,Large,CMDB,2,"169 R2C-SR
+250 + VMs
+300 + 6 ESX",2,,40,12/1/2014,11/30/2019,Philadelphia ,"$62,767.00","$8,850.00","$53,091.00","$9,676.00",,,,"VOSS, ANNEMARIE",Joseph Panayiotou,,,,TRUE,0,Active,,,,"$134,384.00",John Wilson ,,,,
+"AT&T SERVICES, INC. (TRUEBLUE INC. PROJECT)","Pauly, Bradley",300475,Active,G,RLCM,,Medium,5,3,"ESXi - 6
+Windows Physical - 4
+Windows Virtual - 88
+","CommVault, vRanger",71,15,11/1/2015,4/30/2016,Philadelphia,"$27,222.00","$6,724.47","$13,713.00","$13,509.00",,,,"RANA, KALPESH C.",Piyush Mathiya,9/16/2015,5,,TRUE,1,Active,,,,"$61,168.47",Pankaj Wagh,,,,
+"AT&T SERVICES, INC.(MAGELLAN HEALTH SERVICES PROJECT)","Pauly, Bradley",383829,Active,G,Trans 2.0,,Large,,3,109,,,16,5/1/2015,4/30/2017,Philadelphia,"$52,038.00","$22,833.00",,"$52,038.00",,,,"MIRASOL, LUIS ENRIQUEZ",N/A,,,,,,Active,1/1/2016,,,"$126,909.00",N/A,,,,
+"AT&T SERVICES, INC.(PEABODY INVESTMENT CORPORATION PROJECT)","Pauly, Bradley",367535,Active,G,RLCM,,Large,4.23,3,105,Avamar,53,36,8/1/2014,7/31/2017,Philadelphia ,"$132,013.00","$19,912.44","$40,000.00","$40,060.00","$45,252.00","$6,701.00",,"BLACK, CHRISTOPHER WESLEY",Bhavesh Desai,11/30/2015,,,TRUE,0,Active,,,,"$283,938.44",Thomas Webster ,,,,
+"AT&T Services, Inc(For Boy Scouts of America, Project)",,216873,Terminated,D,NA,,Medium,,,17+4 ESX,,,3,na,na,Philadelphia,,,,,,,,#N/A,N/A,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+"AT&T Services, Inc(for Comprehensive Health/ WellCare, Project)","Cecconi, Tim",276187,Active,D,RLCM,Both,Medium,5,,68,,,59,7/1/2015,12/31/2017,Carlstadt,"$201,851.00","$18,514.79","$84,191.00","$112,431.00","$5,229.00",,,"TEKAMPE, JOHN C",Abani Sarangi,,1,,TRUE,3,Active,,,,"$422,216.79",Pankaj Wagh,,,,
+ATALAIT (SCONTINUIDAD LATAM S.A. DE C.V.) (INSTITUTO DEL FONDO NACIONAL DE LA VIVIENDA PARA LOS TRABAJADORES PROJECT),"Hogan, Mark",379678,Active,G,Trans 2.0,,Medium,,2,50,,,89,12/31/2015,6/30/2016,Scottsdale ,"$103,985.00","$27,987.00",,"$102,312.00",,,"$1,673.00","KIRKSEY, VERNETHIA ANGELA",Sagar Dhawan,,,,,,Active,,,,,Darpan Thaker,,,,
+"ATT Services, Inc. (Coca Cola Bottling Company United Project)","Cecconi, Tim",300479,Active,G,RLCM,,Medium,CMDB,1,95 R2C-SR,R2C,,33,12/1/2014,11/30/2017,Philadelphia,"$57,522.00","$8,293.58","$43,581.00","$13,941.00",,,,"MIRASOL, LUIS ENRIQUEZ",Venkatesh Iyer,,,,TRUE,1,Active,,,,"$123,337.58",Darpan Thaker,,,,
+Avaya,,5466,Terminated,D,NA,Both,Medium,,,53,,,5,na,na,Carlstadt,,,,,,,,#N/A,NA,,1,,TRUE,,Terminated,,,,$0.00,Thomas Webster ,,,,
+Avery Dennison,"Pauly, Bradley",300430,Active,G,RLCM,,XL,CMDB,5+,500+,Replicated,90,121,8/1/2015,12/31/2017,Philadelphia,"$91,507.00","$9,000.00","$51,053.00","$40,167.00",$287.00,,,"MUI, DANNY",Vinod Balakrishnan,9/21/2015,14,,TRUE,0,Active,,,,"$192,014.00",Manu Ramakrishnan,,,,
+Avon Products Inc.,"Daley, Courtney",53541,Active,Y,RLCM,Both,Large,4.22,6,300+,Avamar,35,145,12/1/2011,11/30/2016,Carlstadt ,"$169,832.00","$30,480.86","$67,383.00","$95,651.00",,"$4,532.00","$2,266.00","JOHNSON, ERIC MARTIN",James Simons,9/23/2015,8,,TRUE,0,Active,,,,"$367,878.86",Thomas Webster ,,,,
+B/E Aerospace,"Cecconi, Tim",18146,Active,R,RLCM,Both,Large,CMDB,8,"ESX - 3
+AS400 - 2
+Win Phys - 19
+Win VM - 59
+Linux Phys - 7
+Linux VM - 28
+AIX - 11",CommVault 10,"Oracle, SQL",18,9/1/2015,1/31/2017,Carlstadt ,"$24,960.00","$14,010.00","$9,352.00","$15,608.00",,,,"PICKENS, WILLIAM",Vincent Esposito,9/29/2015,8,,TRUE,2,Active,,,,"$63,930.00",John Wilson ,,,,
+"Bain Capital, LLC","Toushan, Chris",25469,Active,G,RLCM,,Large,,,174,,,45,12/1/2015,12/31/2017,Philadelphia,"$81,702.00","$7,693.00","$25,995.00","$16,122.00","$39,585.00",,,"TROMMELLO, ANTHONY F.",Richard Robbins,,,,TRUE,0,Active,,,,"$171,097.00",Shashank Khanolkar,,,,
+"Baker & Taylor, Inc.","Daley, Courtney",14435,Active,G,RLCM,,Medium,CMDB,4,"56                                ( ESxi -2, VM-16)",CommVault,2,9,1/1/2015,12/31/2017,Philadelphia and Carlstadt,"$12,456.00","$6,940.89",,"$11,622.00",,$834.00,,"MCKEOWN, STEPHEN C.",Rushikesh Patel,,5,,TRUE,0,Active,,,,"$31,852.89",Darpan Thaker,,,,
+Banco BHD,"Cecconi, Tim",13715,Active,G,Trans 2.0,Both,Small,4.23,3,Windows VMs - 18 (R2C),R2C-SR,MSSQL,17,11/15/2015,11/14/2018,Philadelphia,"$60,635.00","$7,641.62","$51,415.00","$9,220.00",,,,"BOOTH, CHARLES CHRISTOPHER",Hrushi Mahalathkar,,1,,TRUE,0,Active,,,,"$128,911.62",Pankaj Wagh,,,,
+Banco Bradesco,"Daley, Courtney",12260,Active,G,Trans 2.0,,Small,,2,4,,,6,8/1/2015,7/31/2019,Philadelphia,"$249,090.00","$4,358.85",,"$9,059.00","$239,716.00",$315.00,,"PEREZ, JOSE ROBERTO",Soumit Basu,,,,,,Active,,,,"$502,538.85",Pankaj Wagh,Amarnath Manjunath,,,
+BANCO DE RESERVAS DE LA REPUBLICA DOMINICANA,"Cecconi, Tim",326015,Active,G,Trans 2.0,,Medium,CMDB,5,7,R2C,1,1,9/30/2014,3/30/2018,Philadelphia ,"$35,812.00","$11,203.00","$20,229.00","$15,583.00",,,,"BOOTH, CHARLES CHRISTOPHER",Venkatesh Iyer,,1,,TRUE,0,Active,,,,"$82,827.00",Darpan Thaker,,,,
+"Baptist Health South Florida, Inc.","Cecconi, Tim",99692,Active,G,Trans 2.0,RPD,Large,5,5,"AIX-5
+LIN PHY- 12
+LIN VM - 4
+WIN PHY - 139
+WIN VM - 85",3,3,83,1/1/2015,12/31/2017,Philadelphia,"$193,491.00","$3,321.87","$156,251.00","$37,240.00",,,,"MCKEOWN, STEPHEN C.",James Luna,8/26/2015,4,,TRUE,0,Active,,,,"$390,303.87",Thomas Webster ,,,,
+BayCare Health System,"Cecconi, Tim",246022,Active,G,RLCM,,Medium,4.22,5,5 ESXi                       44 VM's                         12 AIX                                 4 Mainframe,ARS-Replicated,8,17,4/1/2015,1/31/2017,Carlstadt,"$76,794.00","$12,105.00","$60,235.00","$16,559.00",,,,"PREVETE, JOSEPH E.",Sachin Kalamkar,10/21/2015,8,,TRUE,0,Active,,,,"$165,693.00",Darpan Thaker,,,,
+Baylor Scott & White,"Cecconi, Tim",61910,Active,G,Trans 2.0,,Large,5,7,20+137VM's,2,2,1,2/1/2014,1/31/2017,Scottsdale ,"$89,525.00","$9,455.49","$60,093.00","$25,333.00","$4,099.00",,,"BLACK, CHRISTOPHER WESLEY",,,,,TRUE,0,ON HOLD,,,,"$188,505.49",Kaushik Ray ,,,,
+BCBS Minnesota,"Pauly, Bradley",344150,Active,G,RLCM,,XL,5,7,627,1,2,32,5/12/2014,12/31/2017,Philadelphia,"$166,309.00","$14,824.22","$88,626.00","$77,600.00",$83.00,,,"BERTHOLD, ERWIN T",Will Lewis,11/6/2015,,,TRUE,0,Active,,,,"$347,442.22",Thomas Webster ,,,,
+"Becton, Dickinson and Company","Daley, Courtney",13470,Active,G,RLCM,,Small,CMDB,2,39,NetBackup ,,29,1/1/2015,6/30/2016,Philadelphia,"$80,000.00","$11,500.00","$11,980.00","$68,020.00",,,,"HALL, DWAYNE SCOTT",Venkatesh Iyer,10/7/2015,6,,TRUE,0,Active,,,,"$171,500.00",Darpan Thaker,,,,
+"BJs Wholesale Club, Inc.","Toushan, Chris",65762,Active,G,RLCM,,Medium,CMDB,5,52,"TSM, vRanger",,18,9/1/2013,12/31/2016,Philadelphia,"$79,645.00","$23,287.64","$8,295.00","$71,350.00",,,,"PREVETE, JOSEPH E.",Ravindra Raghuvanshi,8/5/2015,2,,TRUE,0,Active,,,,"$182,577.64",Darpan Thaker,,,,
+"Blue Cross & Blue Shield of Mississippi, A Mutual Insurance Company","Cecconi, Tim",134440,Active,G,RLCM,,Small,CMDB,3,23,"ARS, SG Hotsite",0,15,8/1/2015,10/31/2018,Philadelphia,"$75,897.00","$14,330.80","$51,390.00","$24,007.00",,,$500.00,"TEKAMPE, JOHN C",Biju Thankappan,10/1/2015,7,,TRUE,0,Active,,,,"$165,624.80",Darpan Thaker,,,,
+Bluecross Blueshield of Tennessee,"Cecconi, Tim",69721,Active,D,Trans 2.0, ,Large,,,163,,,38,5/1/2016,12/31/2017,Philadelphia,"$98,694.00","$22,333.00","$19,225.00","$76,468.00",$886.00,,"$2,115.00","BLACK, CHRISTOPHER WESLEY",N/A,,,,TRUE,1,ON HOLD,,Customer will not go forward with any offshore resources. Cont executing MRS,,"$217,606.00",N/A,,,,
+"BP Lubricants, North America","Daley, Courtney",12183,Active,D,NA,,Small,,,10,,,2,7/1/2015,6/30/2017,Philadelphia,"$16,695.00","$8,394.37","$6,560.00","$9,970.00",$165.00,,,"VALOTTA, FRANCESCO",NA,10/16/2015,,,TRUE,3,Terminated,,,,"$41,784.37",N/A,,,,
+"BRIDGESTONE AMERICAS, INC","Cecconi, Tim",352241,Active,G,Trans 2.0,,XL,,,,,,,1/1/2016,12/31/2018,Philadelphia ,"$144,029.00","$21,223.00",,"$124,974.00","$19,055.00",,,"URBANSKI, KENNETH W",James Luna,,,,TRUE,,Active,,,,,Thomas Webster,,,,
+Brown-Forman Corporation,"Daley, Courtney",24274,Active,G,RLCM,,Small,5,4,"ESXi - 1
+Windows VM - 10
+Windows Physical - 2
+Solaris Physical - 4
+Solaris Virtual - 8
+","Netbackup, Avamar","SQL, Oracle",12,7/1/2015,8/31/2017,Philadelphia,"$24,388.00","$10,000.00","$4,250.00","$20,138.00",,,,"ALSUP, MICHAEL KEITH",Ajay Singh,,3,,TRUE,0,Active,,,,"$58,776.00",Pankaj Wagh,,,,
+Buckmann Laboratories,"Cecconi, Tim",13910,Active,G,RLCM,,Small,CMDB,,13,,,1,9/1/2014,8/31/2017,Carlstadt,"$13,906.00","$4,964.00","$1,401.00","$9,505.00",,,"$3,000.00","MCKEOWN, STEPHEN C.",Venkatesh Iyer,,1,,TRUE,0,Active,,,,"$29,776.00",Darpan Thaker,,,,
+Burlington Coat Factory Warehouse Corporation,"Daley, Courtney",317894,Active,G,Trans 2.0,,Medium,5,,79,,,25,2/15/2016,2/14/2018,Wood Dale,"$28,599.00","$17,499.00","$7,720.00","$20,879.00",,,,"BERTHOLD, ERWIN T",Samir Shukla,,3,,TRUE,0,Active,,,,"$74,697.00",Manu Ramakrishnan,,,,
+Cadence Design Systems ,"Pauly, Bradley",311651,Terminated,D,NA,,,,,,,,,6/1/2013,7/31/2016,Philadelphia ,"$114,906.00","$13,008.00","$99,776.00","$13,008.00","$2,122.00",,,"PROCTOR, WAYNE CHARLES",N/A,,,,,,Terminated,,,,"$242,820.00",N/A,,,,
+"Cambia Health Solutions, Inc","Pauly, Bradley",106224,Active,G,RLCM,,Medium,5,3,78,Netbackup,SQL,45,4/1/2015,3/31/2017,Philadelphia,"$109,724.00","$23,100.59","$48,279.00","$61,293.00",$152.00,,,"JOHNSON, DONALD CRAIG",Ravindra Raghuvanshi,9/14/2015,8,,TRUE,0,Active,,,,"$242,548.59",Darpan Thaker,,,,
+"Capital District Physicians Health Plan, Inc",,13452,Terminated,D,NA,,Medium,,,47,,,24,,,Carlstadt,,,,,,,,#N/A,NA,,,,TRUE,1,Terminated,,,,$0.00,N/A,,,,
+"Carlson Wagonlit Travel, Inc","Pauly, Bradley",134424,Active,Y,RLCM,,Large,5,2,300,2,1,5,1/1/2016,12/31/2016,Philadelphia ,"$83,455.00","$23,682.39","$5,912.00","$66,063.00","$11,481.00",,,"BERTHOLD, ERWIN T",Kostas Mantis,,3,,TRUE,0,Active,,,,"$190,593.39",Thomas Webster ,,,,
+"Carlson, Inc.",,56041,Terminated,G,NA,,Medium,No Playbook,,122,,,29,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Kostas Mantis,,1,,TRUE,0,Terminated,,,,#N/A,Thomas Webster ,,,,
+"Catalent Pharma Solutions, LLC.","Daley, Courtney",110009,Active,G,RLCM,Both,Medium,CMDB,4,"3 - ESX
+19 - Win Phys
+43 - Win VM
+2 - Linux VM
+5 - Solaris
+","NetBackup 6, NetBackup 7.1, NetBackup 7.5, veeam 6.5","Oracle, SQL",15,6/1/2015,5/31/2018,Philadelphia,"$21,642.00","$11,547.00","$5,327.00","$16,315.00",,,,"MCKEOWN, STEPHEN C.",Sachin Kalamkar,,2,0,TRUE,1,Active,,,,"$54,831.00",Darpan Thaker,,,,
+Celanese Corporation,"Pauly, Bradley",314840,Active,G,RLCM,,Medium,CMDB,2,72                              ESX-4               VM-56             Windows Physical-12,Evault,27,30,10/22/2012,10/21/2016,Philadelphia,"$16,150.00","$6,389.00","$6,809.00","$9,341.00",,,,"LOCKE, KENNETH ANDREW",Ravindra Raghuvanshi,12/14/2015,5,,TRUE,0,Active,,,,"$38,689.00",Darpan Thaker,,,,
+Celegene Corp,"Daley, Courtney",217878,Active,D,Trans 2.0,,Medium,,,16+4 ESX,,,20,10/19/2013,10/18/2016,Scottsdale ,"$45,500.00","$8,258.00","$35,851.00","$9,240.00",$409.00,,,"TRESCO, STEPHEN J",NA,,,,TRUE,3,ON HOLD,,,,"$99,258.00",N/A,,,,
+"CGB Enterprises, Inc.","Cecconi, Tim",15388,Active,G,Trans 2.0,,XL,,,,,,,1/1/2016,12/31/2017,,"$21,251.00","$1,635.59",,"$6,012.00","$15,239.00",,,,Vinod Balakrishnan,,,,FALSE,,Active,,,,,Manu Ramakrishnan,,,,
+CGI - AZ Procurement,"Toushan, Chris",23864,Terminated,D,NA,,XL,4.23,2,6,TSM,2,,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"POWER, RONALD",Dan Maloney,,28,,TRUE,,Terminated,,,,$0.00,John Wilson ,,,,
+CGI - Carefirst,"Toushan, Chris",23864,Terminated,D,NA,,XL,4.23,2,,CommVault,,,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,,28,,TRUE,,Terminated,,,,$0.00,John Wilson ,,,,
+CGI - DELL,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,2,"Lin Phys-9
+AIX/TSM-1",TSM,Oracle,4,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,8/19/2015,28,1,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - Federal,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,6,"
+ESX Host-7
+Win VMs-40
+Lin VMs-10
+Win Phy-7
+Lin Phy-1
+AIX-41",TSM/CommVault,Oracle,12,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,5/18/2015,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - Gateway360 (formally Net Credit),"Toushan, Chris",23864,Active,G,RLCM,,XL,5,3,"Netcredit Client:
+Win Phy-12
+XenCenter-1
+Xen Host-1
+Lin VM-1
+Lin Phy-3
+JPMC Client:",USB/CommVault,Oracle,16,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - IPOD ISG,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,2,"Win Phy-7
+Lin Phy-1
+Win VM-14
+Lin VM-2
+ESX Host-1",CommVault,Oracle,4,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,6/10/2015,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - Mi360,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,2,"
+ESX Host-1
+Win VM-2
+Win Phy-4
+AIX/TSM-1",TSM /CommVault,SQL,8,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,11/4/2015,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - Oil & Gas - BIA ,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,3,"
+AS400-1/ 2Lpars
+AIX/TSM-1
+Win Phy-13
+ESX Host-1
+Win VM-5",TSM /CommVault,"SQL
+DB2
+Actuate",7,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,9/10/2015,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - Oil & Gas - JPM,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,3,"Win Phy-16
+AIX-2
+AS400-1",TSM /CommVault,"SQL
+DB2
+Actuate
+Oracle",10,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,11/20/2015,28,1,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - Oil & Gas - Range,"Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,3,"AS400-1
+AIX-1
+ESX-1
+Win VM-9
+Win Phy-3",TSM /CommVault/ BRMS,DB2,4,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,8/11/2015,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI - PCI (JPMC & CNH),"Toushan, Chris",23864,Active,G,Trans 2.0,,XL,5,3,"Netcredit Client:
+Win Phy-12
+XenCenter-1
+Xen Host-1
+Lin VM-1
+Lin Phy-3
+JPMC Client:",USB/CommVault,Oracle,16,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,,28,,TRUE,,Terminated,,,,$0.00,John Wilson ,,,,
+"CGI - PDC - Maricopa Aetna, TAB","Toushan, Chris",23864,Active,G,RLCM,,XL,4.23,2,"16
+MF-1 / 3 LPARs
+Win Phy-1",FDR,DB2,9,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+"CGI - PSMAG - Colorado, Maine, Wyoming, Tucson, Wake & Norfolk","Toushan, Chris",23864,Active,G,RLCM,,XL,5,4,"Lin VM-26
+Win VM-15
+Lin Phy-4
+Win Phy-4
+ESX-2
+AIX/TSM-1",TSM /CommVault,Oracle,4,1/1/2013,12/31/2018,Philadelphia,,,,,,,,"Power, Ron",Dan Maloney,,28,,TRUE,,Active,,,,$0.00,John Wilson ,,,,
+CGI TECHNOLOGIES AND SOLUTIONS INC,"Toushan, Chris",23864,Active,G,RLCM,,XL,,,,,,,1/1/2013,12/31/2018,Philadelphia,"$259,059.00","$1,565.00","$22,835.00","$166,422.00","$67,927.00",,"$1,875.00","Power, Ron ",Dan Maloney,,28,,,,Active,,,,"$517,808.00",John Wilson ,,,,
+"Chanel,Inc.","Daley, Courtney",7018,Active,G,NA,,Small,4.23,,25,,,8,1/1/2015,12/31/2016,Philadelphia,"$19,641.00","$10,686.00",,"$19,641.00",,,,"MAGRO, FREDERICK WILLIAM",Subhabrata Biswas,,,,TRUE,,Terminated,,,,"$49,968.00",Pankaj Wagh,,,,
+Childrens Hospital Medical Center of Akron,"Cecconi, Tim",9011,Active,G,RLCM,,Large,5,7,"ESX - 11
+ AS/400 - 1
+ Linux V - 2
+ Win V - 70
+ Win P - 3
+ AIX - 2","NBU 1
+BRMS 1
+TSM 1",5,34,6/1/2015,5/31/2018,Philadelphia,"$39,142.00","$13,000.00",,"$39,142.00",,,,"PICKENS, WILLIAM",James Simons,10/8/2015,1,,TRUE,0,Active,,,,"$91,284.00",Thomas Webster ,,,,
+"CHSPSC, LLC",,135353,Active,G,RLCM,,Small,,1,,,,1,,,Philadelphia ,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Will Lewis,,,,,9,Active,,,,#N/A,Thomas Webster ,,,,
+Church Mutual Insurance,"Toushan, Chris",337153,Active,G,RLCM,,Large,5,4,29+107,2,1,54,4/1/2015,9/30/2016,WoodDale ,"$21,616.00","$14,200.00",,"$21,616.00",,,,"VOSS, ANNEMARIE",Thomas Doublet,,2,1,TRUE,0,Active,,,,"$57,432.00",Thomas Webster ,,,,
+"Coach, INC","Daley, Courtney",6812,Active,Y,RLCM,Both,Large,Customer Provided,5,192,1,2,74,1/1/2016,12/31/2017,Philadelphia ,"$61,052.00","$15,557.00","$16,391.00","$44,661.00",,,,"URBANSKI, KENNETH W",Dennis Anneken,,9,,TRUE,0,Active,,,,"$137,661.00",Thomas Webster ,,,,
+College of American Pathologists,"Toushan, Chris",13892,Active,G,Trans 2.0,,Large,,,18+6 ESX,,,28,10/1/2013,4/30/2016,WoodDale ,"$17,155.00","$7,782.70","$6,217.00","$10,938.00",,,,"KIRKSEY, VERNETHIA ANGELA",N/A,,,,TRUE,0,ON HOLD,,,,"$42,092.70",N/A,,,,
+COMMUNITY MEMORIAL HEALTH SYSTEM,,386911,Active,G,Trans 2.0,,Large,,,,,,,,,,"$71,962.00","$11,219.34","$52,706.00","$16,355.00","$2,901.00",,,"KIRKSEY, VERNETHIA ANGELA",Vincent Esposito,,,,,,Active,,,,"$155,143.34",N/A,,,,
+ConocoPhillips Company,"Pauly, Bradley",69914,Active,G,RLCM,,Medium,CMDB,5,69                                  ESX-5,NBU,9,14,1/1/2016,12/31/2017,Philadelphia,"$46,111.00","$13,022.00","$4,710.00","$41,167.00",$234.00,,,"BOOTH, CHARLES CHRISTOPHER",Ravindra Raghuvanshi,8/17/2015,6,2,TRUE,0,Active,,,,"$105,244.00",Darpan Thaker,,,,
+CSAA Insurance Exchange (formerly AAA Mid-Atlantic) ,"Daley, Courtney",6936,Active,G,Trans 2.0,,Medium,CMDB,3,WIn VM - 44,NetBackup,SQL,15,1/1/2015,6/30/2016,Philadelphia,"$17,401.00","$7,019.04","$1,895.00","$15,506.00",,,,"URBANSKI, KENNETH W",Hrushi Mahalathkar,,,,TRUE,0,ON HOLD,,,,"$41,821.04",Pankaj Wagh,,,,
+"CVS Pharmacy, Inc.","Toushan, Chris",5397,Active,G,Trans 2.0,Both,XL,CMDB,5,"WIN PHY - 5
+ESX - 6
+AIX - 6
+AS400 - 1
+400 + VMs","1 - TSM
+1 - BRMS",2,60,1/1/2015,12/31/2017,Carlstadt,"$528,923.00","$36,148.00","$53,458.00","$355,102.00","$59,363.00","$61,000.00",,"TRESCO, STEPHEN J",Thomas Doublet,,,,TRUE,0,ON HOLD,,"TSM Only, 49 Applications Remain",,"$1,093,994.00",Thomas Webster ,,,,
+Cytec Industries,"Daley, Courtney",18750,Active,G,RLCM,,Small,5,3,25,,,20,12/1/2015,11/30/2016,Carlstadt,"$25,095.00","$10,114.00",,"$22,428.00",,,"$2,667.00","HALL, DWAYNE SCOTT",Vinod Balakrishnan,8/11/2015,2,,TRUE,0,Active,,,,"$57,637.00",Manu Ramakrishnan,,,,
+"Decare Dental, LLC","Pauly, Bradley",14945,Active,G,RLCM,,Large,5,5,"WIN PHY - 7
+WIN VM - 84
+LIN PHY - 1
+LIN VM - 23
+ESXi - 9
+HP-UX - 24
+MF - 1",2,2,20,5/1/2016,10/31/2017,Carlstadt,"$48,560.00","$10,138.00","$7,144.00","$41,337.00",$79.00,,,"JOHNSON, DONALD CRAIG",Thomas Doublet,9/11/2015,3,,TRUE,1,Active,,,,"$107,258.00",Thomas Webster ,,,,
+Delmonte Foods/ Big Heart Pet Brands,,22854,Terminated,D,RLCM,,Small,4.23,1,2,BRMS,db2,20,,,Philadelphia,,,,,,,,#N/A,,,3,,TRUE,,Terminated,,,,$0.00,Pankaj Wagh ,,,,
+"Depomed, Inc.","Pauly, Bradley",346299,Active,G,RLCM,,Small,,,8,,,3,1/1/2014,12/31/2016,Philadelphia,"$16,962.00","$5,500.00",,"$5,500.00","$11,462.00",,,"BAKAS, JOSEPH EARL",Sagar Dhawan,,,,TRUE,1,Active,,,,"$39,424.00",Darpan Thaker,,,,
+DHL Supply Chain,"Toushan, Chris",93686,Active,G,RLCM,,XL,CMDB,9,"Win Phy- 47
+Win VM - 448
+Lin Phy - 77
+Lin VM - 12
+ESXi - 52
+AS400 - 17
+HPUX - 27
+AIX - 5","Commvault, Dash Copy","Oracle, SQL, Sybase",250,7/1/2012,7/31/2016,Philadelphia,"$142,014.00","$67,000.00",,"$113,549.00","$20,266.00",,"$8,199.00","JOHNSON, ERIC MARTIN",Sreeram Potluri,7/23/2015,11,1,TRUE,1,Active,,,,"$342,829.00",John Wilson ,,,,
+Dicks Sporting Goods Inc.,"Daley, Courtney",7024,Active,G,Trans 2.0,RPD,Small,5,,32,,,1,6/1/2014,4/30/2016,Philadelphia,"$41,711.00","$7,207.00","$9,489.00","$26,588.00",$714.00,,"$4,920.00","PARTON, STEVEN TROY",N/A,,,,TRUE,0,Terminated,,,,"$85,709.00",N/A,,,,
+Dollar Bank,"Daley, Courtney",15623,Active,G,RLCM,,Large,4.23,4,"Windows VM-226, Mainframe-1 LPAR",R2C,SQl,10,4/1/2014,6/30/2017,Philadelphia,"$131,074.00","$10,816.00","$98,648.00","$29,611.00",,,"$2,815.00","GARRICK, IAN ANTHONY MARK",Kishor BalaSubramanyam,4/12/2016,1,,TRUE,0,Active,,,,"$270,149.00",Pankaj Wagh ,,,,
+Dollar General Corp.,"Cecconi, Tim",9859,Active,G,RLCM,Both,Large,4.23,6,"ARS-LINUX-PHYS - 8
+LINUX VMs- 41
+WINDOWS VMs - 60
+HP-UX - 1
+AIX - 5
+iSERIES - 1",5,2,60,7/1/2015,6/30/2018,Philadelphia,"$114,021.00","$22,801.00","$78,431.00","$33,590.00",,,"$2,000.00","TROMMELLO, ANTHONY F.",Kostas Mantis,10/12/2015,10,,TRUE,0,Active,,,,"$248,843.00",Thomas Webster ,,,,
+"Dow Jones & Co., Inc",,6293,Terminated,D,NA,,Small,,,3,,,,,,Philadelphia,,,,,,,,#N/A,Pankaj Wagh,,4,,TRUE,,Terminated,,,,$0.00,Manu Ramakrishnan,,,,
+DYNEGY ADMINISTRATIVE SERVICES COMPANY,"Pauly, Bradley",369472,Active,G,RLCM,,Medium,,2,67,Evault,,,10/1/2014,12/31/2017,Carlstadt,"$26,629.00","$7,500.00","$14,976.00","$11,653.00",,,,"BLACK, CHRISTOPHER WESLEY",Rob Weatherly,8/31/2015,,,TRUE,1,Active,,,,"$60,758.00",John Wilson ,,,,
+Edwards Life Sciences,"Pauly, Bradley",14876,Active,G,Trans 2.0,,Large,,3,163,,,60,,,Scottsdale,"$34,629.00","$20,730.00","$6,393.00","$27,854.00",$382.00,,,"CERNA, PATRICIA",Matt Andres,,,,,,Active,,,,"$89,988.00",John Wilson ,,,,
+Embry Riddle,,65953,Terminated,D,NA,,,,,,,,,na,na,Philadelphia ,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,N/A,,,,,,Terminated,,,,#N/A,N/A,,,,
+EMC Corporation (Cablevision Project),"Daley, Courtney",62043,Active,D,Trans 2.0,Both,Small,5,,28,,,1,1/1/2015,12/31/2016,Carlstadt,"$76,211.00","$9,541.00","$31,728.00","$44,483.00",$0.00,,,"TRESCO, STEPHEN J",N/A,10/26/2015,,,TRUE,0,ON HOLD,,,,"$161,963.00",N/A,,,,
+"EMC Corporation (SEI Global Services, Inc. Project)","Daley, Courtney",109999,Active,G,RLCM,,Small,CMDB,4,32,Networker,,10,12/1/2015,11/30/2016,Carlstadt,"$108,399.00","$8,733.26",,"$62,954.00","$45,445.00",,,"TROMMELLO, ANTHONY F.",Biju Thankappan,10/9/2015,,,TRUE,0,Active,,,,"$225,531.26",Darpan Thaker,,,,
+EMC CORPORATION (TRUSTMARK PROJECT),,146514,Active,D,Trans 2.0,,Small,,3,32,,,3,,,Scottsdale ,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,N/A,,,,TRUE,0,Inactive,,,,#N/A,N/A,,,,
+Enabil Solutions,,108892,Terminated,D,NA,,Small,4.23,1,10,Netbackup,Oracle,13,,,Toronto ,,,,,,,,#N/A,Ravi Sharma,,6,,TRUE,0,Terminated,,,,$0.00,Pankaj Wagh ,Terry Bohaning,,,
+Erie Indemnity Company,"Daley, Courtney",13663,Active,G,Trans 2.0,,Large,CMDB,4,"Windows 1
+Linux 14 
+AIX 2
+SunOS 2",CommVault,"Oracle, SQL",1,12/1/2015,11/30/2017,Philadelphia,"$175,576.00","$13,574.00","$135,182.00","$39,303.00",,,"$1,091.00","MCKEOWN, STEPHEN C.",,8/3/2015,,,TRUE,0,ON HOLD,,,,"$363,635.00",,,,,
+ESAB,"Pauly, Bradley",133196,Active,G,Trans 2.0,,Small,,2,4,BMRS,,4,6/1/2015,5/31/2017,Scottsdale ,"$10,521.00","$4,054.14",$458.00,"$8,609.00","$1,454.00",,,"KIRKSEY, VERNETHIA ANGELA",N/A,,,,,,ON HOLD,,Customer reviewing revised SOW - does not want MRP,,"$25,096.14",N/A,,,,
+"Everyday Health, Inc.","Daley, Courtney",87046,Active,G,RLCM,Both,Small,5,,2,,,5,1/1/2016,12/31/2017,Scottsdale ,"$125,900.00","$5,911.00","$54,243.00","$5,911.00","$65,746.00",,,"PERKINS, MATTHEW J",N/A,,,0,TRUE,0,Active,,,,"$257,711.00",N/A,Sagar Acharekar,,,
+Factory Mutual Insurance Company ... Atwood,"Toushan, Chris",18873,Active,G,RLCM,,Small,CMDB,5,14,TSM,"Oracl, SQL",44,1/1/2014,12/31/2016,WoodDale ,"$30,777.00","$10,918.00",,"$28,977.00",,,"$1,800.00","PICKENS, WILLIAM",Awinish Vishwakarma,10/5/2015,2,,TRUE,0,Active,,,,"$70,672.00",Darpan Thaker,,,,
+Fallon Community Health Plan,"Toushan, Chris",23998,Active,G,RLCM,,Small,5,,ESX - 3                   VM - 22,,,7,12/1/2013,12/31/2016,Carlstadt,"$15,512.00","$5,105.00","$1,700.00","$13,812.00",,,,"PREVETE, JOSEPH E.",Biju Thankappan,8/17/2015,,,TRUE,0,Active,,,,"$36,129.00",Darpan Thaker,,,,
+FBL Financial Group Inc. and Its Affiliated Companies,"Pauly, Bradley",13999,Active,G,GC,,Large,5,4,46+548VM's,2,,65,2/29/2012,3/28/2018,Carlstadt,"$77,178.00","$12,291.39","$39,586.00","$37,592.00",$0.00,,,"JOHNSON, DONALD CRAIG",Mathew Haltunen,2/8/2016,5,,TRUE,0,Active,11/1/2015,,,"$166,647.39",N/A,,,,
+"Filemaker, Inc.",,5965,Terminated,D,NA,Both,Small,,,34,,,12,na,na,Scottsdale,,,,,,,,#N/A,NA,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+First Citizens Bank and Trust Co. ... Raleigh,,34408,Terminated,D,NA,,,,,,,,,na,na,,,,,,,,,#N/A,N/A,,,,,,Terminated,,,,$0.00,N/A,,,,
+Fiserv Inc,"Daley, Courtney",18292,Active,G,RLCM,,Small,4.23,1,AS400 - 13,BRMS,5,2,1/1/2016,12/31/2016,Carlstadt,"$80,271.00","$14,630.56",,"$69,601.00",,,"$10,670.00","RANA, KALPESH C.",Alison Froschle,8/7/2015,7,4,TRUE,,Active,,,,"$164,502.56",Jennifer Brennan,Nick Thielen,,,
+Florida Hospital,"Cecconi, Tim",38792,Active,G,RLCM,,Medium,CMDB,4,12,Avamar,12,20,8/1/2014,7/31/2017,Philadelphia,"$153,799.00","$11,452.00","$121,781.00","$31,060.00",,,$958.00,"PICKENS, WILLIAM",Sachin Kalamkar,11/10/2015,6,,TRUE,0,Active,,,,"$318,092.00",Darpan Thaker,,,,
+Four Points Technology (CMS Project),,347376,Terminated,D,NA,,,,,,,,,na,na,,,,,,,,,#N/A,N/A,,,,,,Terminated,,,,$0.00,N/A,,,,
+"FTI Consulting, Inc.","Daley, Courtney",27804,Active,G,RLCM,,Small,5,2,"Windows VM – 87
+ESXI - 40
+",VNX and recover point,SQL,1,8/1/2015,7/31/2016,Philadelphia,"$73,828.00","$13,750.00",,"$28,676.00","$45,152.00",,,"PICKENS, WILLIAM",Ravi Sharma,9/30/2015,2,,TRUE,0,Active,,,,"$161,406.00",Pankaj Wagh ,,,,
+"G&K Services, Inc.","Pauly, Bradley",15547,Active,G,RLCM,,Large,Customer Provided,,27+12 ESX,,,28,11/15/2015,9/30/2016,Philadelphia,"$49,770.00","$10,000.00","$33,802.00","$13,500.00",$718.00,,"$1,750.00","URBANSKI, KENNETH W",Kostas Mantis,,,,TRUE,1,Active,,SME escalating to AE & Customer who is not coming to table to be MRP,,"$107,790.00",Kaushik Ray ,,,,
+"GAMESTOP, INC.","Pauly, Bradley",15029,Active,G,Trans 2.0,,Large,,3,80,,,40,3/31/2015,5/30/2018,Philadelphia ,"$32,164.00","$14,717.00","$8,664.00","$23,500.00",,,,"POOLE, DARRYL TODD",Bhavesh Desai,,,,,,Active,,,,"$79,045.00",Thomas Webster ,,,,
+"GATE GOURMET SWITZERLAND, GMBH","Daley, Courtney",360423,Active,G,Trans 2.0,,Large,CMDB,4,"Win VM- 218
+OVM's- 65
+Oracle- 5
+SQL- 3
+SAP- 22","ECS, DataGuard ","Oracle, SQL",39,4/1/2014,3/31/2017,Philadelphia,$0.00,$0.00,,$0.00,$0.00,$0.00,,"MCKEOWN, STEPHEN C.",Adam Burtt,,,,TRUE,1,Active,,Customer is Dark,,$0.00,John Wilson ,Vijay Ganesh,,,
+GERBER LIFE INSURANCE COMPANY,,107752,Active,G,Trans 2.0,,Large,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Rushikesh Patel,,,,,,Active,,,,,,,,,
+Germania Farm Mutual Insurance Association,"Pauly, Bradley",10961,Active,G,RLCM,,Small,4.23,4,"ESXi - 2
+Linux Physical - 11
+Windws Phy - 5
+Windws VM - 3
+",commvault,MSSQL,27,7/1/2013,12/31/2016,Scottsdale,"$17,990.00","$10,995.00",,"$17,990.00",,,,"BLACK, CHRISTOPHER WESLEY",Ravi Sharma,10/7/2015,2,,TRUE,0,Active,,,,"$46,975.00",Pankaj Wagh ,,,,
+GLOBAL DMS,"Hogan, Mark",305780,Active,G,RLCM,,Small,ADDM,2,"VM – 10 ( R2C)
+Win Phy - 3
+",R2C,MSSQL,6,4/1/2015,9/30/2016,Philadelphia,"$32,500.00","$5,013.89",,"$5,014.00","$27,486.00",,,"POOLE, DARRYL TODD",Soumit Basu,7/30/2015,,,,0,Active,,,,"$70,013.89",John Wilson ,Deep Dasani,,,
+Greater Hudson Valley Health System,"Cecconi, Tim",329075,Active,G,Trans 2.0,Both,Medium,4.23,2,63,Avamar,,15,2/1/2013,1/31/2017,Philadelphia,"$38,600.00","$11,830.00","$21,258.00","$17,342.00",,,,"PREVETE, JOSEPH E.",Venkatesh Iyer,10/20/2015,2,,TRUE,0,Active,,,,"$89,030.00",Darpan Thaker,,,,
+"Grupo Ramos, S.A.","Cecconi, Tim",325008,Active,G,RLCM,,Small,CMDB,1,HPUX Physical -3 ,ARS netapp,Oracle,5,1/1/2014,4/30/2016,Philadelphia,"$14,114.00","$5,956.00","$5,832.00","$8,282.00",,,,"BOOTH, CHARLES CHRISTOPHER",Kishor BalaSubramanyam,,3,,TRUE,0,Active,,,,"$34,184.00",Pankaj Wagh ,,,,
+H. LEE MOFFITT CANCER CENTER INC,"Cecconi, Tim",34219,Active,G,Trans 2.0,,Large,CMDB,4,"Win Phy - 200
+Win VM - 577
+Linux Phy - 29
+Linux VM - 60
+AIX Phy - 21
+Solaris Phy - 4
+ESXi - 37",TSM,"Oracle, SQL",150,3/31/2015,3/30/2018,Philadelphia,"$136,955.00","$14,038.00","$73,399.00","$59,390.00",,"$4,166.00",,"BLACK, CHRISTOPHER WESLEY",Vincent Esposito,,,,,,Active,,,,"$287,948.00",John Wilson ,,,,
+H.B. Fuller,,6072,Terminated,D,NA,Both,Small,,,48,,,27,na,na,Philadelphia,,,,,,,,#N/A,NA,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+Hancock Bank,"Cecconi, Tim",6255,Terminated,D,NA,Both,Medium,,,69,,,35,9/1/2015,8/31/2017,Wood Dale,"$71,153.00","$14,266.30",,"$22,661.00","$48,492.00",,,"BLACK, CHRISTOPHER WESLEY",NA,,,,TRUE,3,Terminated,,,,"$156,572.30",Thomas Webster ,,,,
+Hanesbrands Inc.,"Cecconi, Tim",62575,Active,G,RLCM,,Medium,CMDB,4,HP-UX - 22                        Linux - 02                          AS/400 - 07         Windows -22,"Veeam, TSM",,4,1/1/2016,12/31/2017,Philadelphia,"$50,754.00","$28,647.00",,"$48,750.00","$2,004.00",,,"ROACH, WILLIAM H",Awinish Vishwakarma,9/9/2015,1,,TRUE,0,Active,,,,"$130,155.00",John Wilson ,,,,
+HARLEY-DAVIDSON INC.,,5759,Terminated,D,NA,,XL,CMDB,6,"Windows Phys - 55
+Windows VM - 1186
+AS400 - 20
+AIX - 151",TSM,"Oracle, SQL",150,,,Carlstadt ,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,"Urbanski, Ken ",Vincent Esposito,,,,TRUE,1,Terminated,,End of contract,,#N/A,Thomas Webster ,,,,
+Hartford Fire Insurance Company,,6703,Terminated,D,NA,,Small,,,12,,,6,,,Philadelphia,,,,,,,,#N/A,NA,,3,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+HCL AMERICA INC.,"Cecconi, Tim",60670,Active,G,Trans 2.0,,Large,,5,87,"Recovery point replication
+/DataDomain","SQL, Oracle",9,1/1/2015,9/30/2018,Philadelphia ,"$1,205,124.00","$39,570.00","$36,007.00","$306,818.00","$862,300.00",,,"RANA, KALPESH C.",Will Lewis,,,,,0,Active,,Relaunched Transition project on 11/6/15.  Customer not looking to start transition efforts until after Dec'15 IR test,,"$2,449,819.00",Thomas Webster ,,,,
+"Hospira, Inc.","Daley, Courtney",40356,Active,G,Trans 2.0,,Large,,4,"SUN or Subsystems - 17
+Windows - 102
+Linux - 2
+ESX - 6  ",2,,30,1/1/2015,12/31/2017,Philadelphia,"$123,967.00","$25,000.00","$23,912.00","$100,055.00",,,,"PREVETE, JOSEPH E.",Bhavesh Desai,11/4/2015,,,TRUE,0,ON HOLD,,Customer's has decided not to move forward with MRP transition at this time,,"$272,934.00",Thomas Webster ,,,,
+HUB INTERNATIONAL LIMITED,"Toushan, Chris",347164,Active,G,RLCM,,XL,CMDB,2,"ESXi - 57
+WIN VM - 2000",2,2,60,9/1/2014,8/31/2017,Philadelphia ,"$56,504.00","$13,284.15","$27,427.00","$28,000.00","$1,077.00",,,"KIRKSEY, VERNETHIA ANGELA",James Luna,,,,TRUE,0,Active,,,,"$126,292.15",Thomas Webster ,,,,
+Hubbell Incorporated,"Daley, Courtney",24119,Active,G,RLCM,RPD,Large,5,3,"ESX - 4, Windows Physical - 3, Windows VMs - 102, Linux VM -1",Backup Exec,MSSQL,77,2/1/2016,1/31/2017,Philadelphia,"$31,321.00","$16,056.00",,"$31,321.00",,,,"PREVETE, JOSEPH E.",Subhabrata Biswas,9/3/2015,9,,TRUE,0,Active,,,,"$78,698.00",Pankaj Wagh,,,,
+Hudsons Bay Company,"Toushan, Chris",14626,Active,G,Trans 2.0,Both,Medium,5,5,62,"CommVault, TSM",,10,9/1/2009,4/30/2016,Philadelphia,"$37,581.00","$12,654.97",,"$37,581.00",,,,"KIRKSEY, VERNETHIA ANGELA",,12/15/2015,4,,TRUE,0,Terminated,,Internal decision and discussions between Hudson Bay and Saks 5th Avenue IT teams. Contract to terminate 12/2014 and customer will RFP. Past test issues.  Executive Management involved to aid in contractual renewal.,,"$87,816.97",Thomas Webster ,,,,
+Huntington Ingalls Incorporated,"Daley, Courtney",14377,Active,G,Trans 2.0,,Medium,5,6,"AIX-15
+MF-1
+Lin Phy-7
+Win Phy-21
+Solaris-3",TSM / FDR for MF,"Oracle,
+SQL",25,10/1/2015,1/31/2017,Philadelphia,"$184,259.00","$16,575.00","$41,155.00","$143,104.00",,,,"TROMMELLO, ANTHONY F.",Dan Maloney,,2,,TRUE,0,Active,,,,"$385,093.00",John Wilson ,,,,
+IKAsystems Corporation,,78063,Active,G,NA,Both,Large,,,175 R2C SR,,,11,,,Scottsdale,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,,,,,TRUE,1,ON HOLD,,customer would not commit to MRP,,#N/A,Shashank Khanolkar,,,,
+IMS Health,"Daley, Courtney",6800,Terminated,D,NA,Both,Small,,,27,,,15,1/1/2010,6/30/2020,Philadelphia,"$459,626.00","$8,548.00",,"$66,475.00","$386,467.00","$6,684.00",,"KIRKSEY, VERNETHIA ANGELA",NA,,,,TRUE,3,Terminated,,,,"$927,800.00",N/A,,,,
+Infinity Property and Casualty Corporation,"Cecconi, Tim",6114,Active,G,Trans 2.0,Both,Small,,,,,,,7/1/2015,9/30/2016,Philadelphia,"$92,745.00","$5,632.33","$23,124.00","$64,138.00",,"$5,483.00",,#N/A,NA,,1,,TRUE,1,Inactive,,,,"$191,122.33",N/A,,,,
+"Information Technology Shared Services, A Division of Johnson & Johnson Services, Inc.","Daley, Courtney",58284,Active,G,Trans 2.0,Both,Medium,4.22,,50,,,,1/1/2015,12/31/2017,Carlstadt,"$635,867.00","$8,740.00","$55,173.00","$580,694.00",,,,"TROMMELLO, ANTHONY F.",NA,5/2/2016,2,,TRUE,1,ON HOLD,,,,"$1,280,474.00",N/A,,,,
+INFOSYS LIMITED - MCD Lawson App,,322000,Active,G,,,,,3,6,,,1,,,,,,,,,,,,Piyush Khare,,,,,,,,,,,Pankaj Wagh,,,,
+"Ingram Book Group, Inc.","Cecconi, Tim",310719,Active,Y,RLCM,,Small,4.22,2,"
+  AIX - 3
+  mainframe - 1
+
+","MKSysB, Tape for AIX, 1 for Mainframe",Informix and Adabase,10,1/1/2016,12/31/2016,Philadelphia,"$8,500.00","$5,570.00",,"$8,500.00",,,,"PICKENS, WILLIAM",Ravi Sharma,10/9/2015,4,,TRUE,0,Active,,,,"$22,570.00",Pankaj Wagh ,,,,
+INGRAM MICRO,"Pauly NL, Brad",134719,Active,G,Trans 2.0,,XL,,,,,,,1/15/2016,4/14/2021,Philadelphia,"$164,941.00","$19,888.00","$134,974.00","$29,967.00",,,,,James Simons,,,,,,,,,,,Thomas Webster ,,,,
+Iris Data Services,"Pauly, Bradley",357354,Active,G,RLCM,,Large,CMDB,2,VMs - 307              ESXi-6,,,4,7/1/2014,1/31/2019,Philadelphia ,"$425,826.00","$7,247.00","$265,422.00","$9,018.00","$124,239.00","$27,147.00",,"HOLBROOK, SAMUEL BRYSON",Awinish Vishwakarma,,,,TRUE,0,Active,,,,"$858,899.00",Darpan Thaker,Deep Dasani ,,,
+Israel Discount Bank of New York,"Daley, Courtney",39053,Active,G,RLCM,,Small,5,2,Windows VM-37,,,38,11/15/2015,11/14/2018,Carlstadt,"$45,230.00","$8,363.00","$11,289.00","$26,039.00","$3,811.00",,"$4,091.00","PREVETE, JOSEPH E.",Kishor BalaSubramanyam,,5,,TRUE,0,Active,,,,"$94,732.00",Pankaj Wagh,,,,
+IVARI,"Toushan, Chris",20945,Active,G,Trans 2.0,,Large,,,,,,,10/1/2015,11/30/2018,Philadelphia ,"$63,574.00","$5,432.43","$45,742.00","$13,409.00","$4,423.00",,,"PREVETE, JOSEPH E.",Keith Felder,,,,TRUE,,Active,,,,,John Wilson,,,,
+"Jonas Fitness, Inc.","Pauly, Bradley",76179,Active,G,RLCM,RPD,Small,No Playbook,1,Windows - 6 Windows VM - 10,Netbackup,MSSQL,12,1/2/2014,1/1/2018,Philadelphia,"$124,588.00","$10,241.00","$4,780.00","$10,241.00","$109,567.00",,,"LOCKE, KENNETH ANDREW",Hrushi Mahalathkar,,,,TRUE,1,Active,,,,"$259,417.00",Pankaj Wagh ,Mike Tu,,,
+Just Energy,,396666,Active,G,Trans 2.0,,Large,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,,Abani Sarangi,,,,,,Active,,,,,,,,,
+Kelloggs,"Toushan, Chris",134724,Active,G,Trans 2.0,Both,Medium,CMDB,4,83,Storage Replication using Recover Point & Netbackup,Oracle ,25,8/1/2015,1/31/2017,Philadelphia,"$164,982.00","$12,662.00",,"$17,932.00","$142,050.00",$0.00,"$5,000.00","URBANSKI, KENNETH W",Abani Sarangi,,,,TRUE,1,Active,,,,"$337,626.00",N/A,,,,
+"KERING AMERICAS INC formerly Gucci America, Inc. ",,25323,Active,G,RLCM,,Small,5,2,"ESX - 4, Windows Physical - 7, Windows VMs - 16",CA Arc Serve,SQL,12,,,Carlstadt,,,,,,,,#N/A,Hrushi Mahalathkar,,1,,TRUE,1,Active,,,,$0.00,Pankaj Wagh ,,,,
+KFORCE INC.,"Cecconi, Tim",323933,Active,G,Trans 2.0,,Medium,CMDB,4,"ESXi=8, Linux Phy =2, Win VM= 37, Linux VM=5",Actifio & Netbackup,Oracle & MSSQL,21,2/1/2016,3/31/2019,Philadelphia ,"$22,515.00","$7,270.00","$14,154.00","$8,361.00",,,,"TEKAMPE, JOHN C",Piyush Khare,5/10/2016,,,TRUE,,Active,,,,,Pankaj Wagh,,,,
+"Kindred Healthcare, Inc.",,13714,Terminated,D,NA,Both,Small,,,22,,,2,na,na,Philadelphia,,,,,,,,#N/A,NA,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+"KNOWLEDGEBASE MARKETING INC. AKA WUNDERMAN DATA MANAGEMENT LLC
+","Pauly, Bradley",23642,Active,G,RLCM,,Medium,ADDM,2,"Win VM – 32
+Phy ESXi – 5
+Solaris ( Include Phy and VM ) - 18
+",Netbackup,Oracle and MSSQL,8,12/1/2014,11/30/2017,Carlstadt ,"$79,317.00","$8,165.00",,"$64,831.00","$9,087.00","$4,257.00","$1,142.00","BOOTH, CHARLES CHRISTOPHER",Raja Datta,10/27/2015,,,,0,Active,,,,"$165,657.00",Pankaj Wagh,,,,
+Kohls Corporation,"Toushan, Chris",107464,Active,G,RLCM,,Large,5,2,AIX - 196,,,33,4/1/2015,9/30/2017,Philadelphia,"$174,221.00","$25,670.00","$114,124.00","$48,838.00",,"$5,689.00","$5,570.00","BLACK, CHRISTOPHER WESLEY",Danny Beeson,8/24/2015,13,,TRUE,0,Active,,,,"$368,542.00",John Wilson ,,,,
+KPMG LLP,"Daley, Courtney",18714,Active,D,Trans 2.0,Both,Medium,5,4,35,NeBackup,,,7/20/2012,4/30/2016,Carlstadt,"$71,088.00","$19,895.00",,"$68,472.00","$2,616.00",,,"GARRICK, IAN ANTHONY MARK",NA,,,,TRUE,3,ON HOLD,,,,"$162,071.00",N/A,,,,
+Kruger Products L.P.,"Toushan, Chris",78604,Active,G,RLCM,Both,Small,CMDB,2,16,NetBackup,36,15,11/1/2014,6/30/2017,Toronto ,"$109,980.00","$6,231.37",,"$12,926.00","$96,094.00",$961.00,,"PATEL, YUSUF",Venkatesh Iyer,9/15/2015,6,0,TRUE,0,Active,,,,"$226,192.37",Darpan Thaker,Terry Bohaning,,,
+Levi Strauss & Company,,11198,Terminated,D,NA,,Medium,,,50,,,20,na,na,Philadelphia,,,,,,,,#N/A,NA,,1,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+"Lifelock, Inc. ","Pauly, Bradley",60786,Active,G,NA,,Large,CMDB,1,R2C-SRM-132,1,,42,5/1/2014,1/31/2018,Philadelphia ,"$124,475.00","$8,282.42","$55,413.00","$11,182.00","$54,795.00",,"$3,085.00","GARRICK, IAN ANTHONY MARK",Matthew Ziegler,7/21/2015,,,TRUE,1,ON HOLD,,ON HOLD - customer does not have resources to work with us so we can access the addm server to get discovery fixed since 9/2015.,,"$254,147.42",Thomas Webster ,,,,
+Liquor Control Board Ontario,"Toushan, Chris",20865,Active,Y,RLCM,,Small,4.23,2,"AIX - 7
+R2C - 37
+",TSM,67,30,4/1/2010,4/30/2016,Toronto,"$75,343.00","$10,304.22","$41,307.00","$33,111.00",$925.00,,,"NIKFARDJAM, ATTILA",Piyush Mathiya,10/7/2015,8,1,TRUE,0,Active,,,,"$160,990.22",Pankaj Wagh,,,,
+"Marsh & McLennan Companies, Inc.","Daley, Courtney",27632,Active,Y,RLCM,Both,Large,4.23,4,"Win Phy - 52
+Win VM - 10
+Lin Phy - 26
+Solaris Phy - 3",NetBackup,"SQL
+Oracle",49,1/1/2016,12/31/2017,Carlstadt,"$111,803.00","$13,074.00","$5,428.00","$106,375.00",,,,"PREVETE, JOSEPH E.",Bhavesh Desai,8/3/2015,1,,TRUE,0,Active,,,,"$236,680.00",Thomas Webster ,,,,
+Mass Mutual Life Insurance Company,"Toushan, Chris",334076,Active,Y,RLCM,,Large,CMDB,5,"WIN PHY - 27
+WIN VM - 45
+SUN PHY - 13
+SUN VM - 10
+LIN PHY - 4
+LIN VM - 1
+HP-UX - 2
+ESX - 10",2,2,90,8/12/2013,8/11/2016,Philadelphia,"$91,758.00","$22,744.00","$37,969.00","$53,789.00",,,,"DINICOLA, MARIA T.",Matt Andres,,1,,TRUE,0,Active,,,,"$206,260.00",John Wilson ,,,,
+McKesson Medical-Surgical Inc.,"Pauly, Bradley",230928,Active,G,Trans 2.0,,Large,5,4,643,2,1,13,10/31/2015,7/30/2017,Philadelphia,"$60,053.00","$12,176.00","$13,453.00","$46,600.00",,,,"BOOTH, CHARLES CHRISTOPHER",Kostas Mantis,12/7/2015,,,TRUE,0,Active,,,,"$132,282.00",Thomas Webster ,,,,
+McLane Company Inc.,"Pauly, Bradley",15398,Active,G,RLCM,,Large,4.23,5,250,ARS - Replicated,14,29,3/1/2014,12/31/2016,Philadelphia,"$82,063.00","$9,542.00","$32,639.00","$47,299.00",,,"$2,125.00","RANA, KALPESH C.",Bhavesh Desai,10/22/2015,7,,TRUE,0,Active,,,,"$171,543.00",Thomas Webster ,,,,
+"MEDICAL PROFESSIONAL MUTUAL INSURANCE COMPANY (""COVERYS"")","Toushan, Chris",18910,Active,G,RLCM,,Medium,CMDB,5,"ESX – 7, Windows VM - 54, Windows Physical – 6 , Linux Physical – 3, Linux VM -1 , AIX – 3",NetBackup,"SQL, Oracle",25,2/1/2014,1/31/2017,Carlstadt ,"$59,942.00","$10,000.00","$21,713.00","$25,291.00","$10,689.00",,"$2,250.00","TROMMELLO, ANTHONY F.",Abani Sarangi,12/2/2015,,,TRUE,0,Active,,,,"$127,635.00",Pankaj Wagh,,,,
+Micron Technologies Inc,"Pauly, Bradley",61314,Active,Y,RLCM,,Small,CMDB,4,"ESXi - 4
+Vcenter -1
+Windows Physical - 2
+Windows VM - 20
+Solaris Physical - 6
+Solaris Virtual  - 1
+",ARS - Replicated,"SQL, Oracle",9,7/1/2015,8/31/2018,Carlstadt ,"$43,702.00","$8,376.00","$23,152.00","$16,204.00",,,"$4,346.00","JOHNSON, DONALD CRAIG",Piyush Mathiya,8/10/2015,1,,TRUE,0,Active,,,,"$91,434.00",Pankaj Wagh,,,,
+MillerCoors,"Toushan, Chris",155547,Active,Y,Trans 2.0,,XL,4.23,,301,,,351,10/1/2015,9/30/2018,Philadelphia ,"$301,775.00","$45,052.83","$232,587.00","$69,188.00",,,,"MAGRO, FREDERICK WILLIAM",Adam Burtt,,,,TRUE,0,Active,,Initiated prior to creation of GST team,,"$648,602.83",John Wilson ,,,,
+MOS Holdings,,24339,Terminated,D,NA,,Large,,,231,,,20,na,na,Wood Dale ,,,,,,,,#N/A,N/A,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+Motion Industries,"Cecconi, Tim",11168,Active,G,RLCM,,Small,4.23,2,1 AS400 & 1 Mainframe DB2,,,106,2/1/2015,10/31/2016,Philadelphia,"$30,838.00","$4,246.26","$13,075.00","$17,763.00",,,,"RANA, KALPESH C.",Jitendra Kumar ,8/10/2015,8,,TRUE,0,Active,,,,"$65,922.26",Pankaj Wagh,,,,
+MOUNT SINAI ENTITIES,"Cecconi, Tim",62708,Active,G,RLCM,Both,Large,Customer Provided,4,"P-Win - 49
+ 
+ ESXi - 20
+ 
+ VMs - 326
+ 
+ AIX -23",1,,30,11/1/2015,10/31/2020,Carlstadt ,"$96,474.00","$16,525.00","$49,902.00","$46,572.00",,,,"MAGRO, FREDERICK WILLIAM",Bhavesh Desai,,5,,TRUE,1,Active,,new project initiated 11/18/15 in conjunction with the new addendum.  Beth Isreal is now a component of MT Sinai and has been completed and in RLCM,,"$209,473.00",Thomas Webster ,,,,
+MTS Systems Corporation,,312804,Active,G,Trans 2.0,,Large,4.23,,ESXi - 17               VM's - 513,,,79,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,,,1,,TRUE,0,ON HOLD,,,,#N/A,Thomas Webster ,,,,
+MULLEN GROUP LTD,"Toushan, Chris",382802,Active,G,Trans 2.0,,Large,,,,,,,2/1/2016,1/31/2019,Toronto,"$18,930.00","$9,744.44","$9,185.00","$9,744.00",,,,"NIKFARDJAM, ATTILA",Bhavesh Desai,,,,TRUE,,Active,,,,,Thomas Webster,,,,
+"NCO Financial Systems, Inc.",,6788,Active,D,Trans 2.0,Both,Large,4.22,,174,,,50,,,Philadelphia,,,,,,,,#N/A,,,,,TRUE,1,Terminated,,"Phased transition, 95% of servers discovered to onboard 20 of 50 apps per MRP SOW",,$0.00,,,,,
+NEBCO Inc,"Pauly, Bradley",70930,Active,G,RLCM,Both,Small,5,1,AIX - 2,EVolt,Oracle,9,10/1/2011,9/30/2017,Wood Dale,"$10,047.00","$3,756.00","$2,348.00","$7,423.00",$276.00,,,"AJA, DENISE A.",Ravi Sharma,10/3/2015,4,,TRUE,0,Active,,,,"$23,850.00",Pankaj Wagh,,,,
+New Jersey Manufacturers Insurance Company,"Daley, Courtney",58390,Active,G,RLCM,,Small,Customer Provided,1,Mainframe Only - 1 LPAR,,,,5/31/2015,5/30/2018,Philadelphia,"$12,561.00","$3,614.59",,"$10,600.00",,,"$1,961.00","HALL, DWAYNE SCOTT",Kishor BalaSubramanyam,12/1/2015,7,,TRUE,0,Active,,,,"$26,775.59",Pankaj Wagh ,,,,
+NEW YORK CITY HOUSING AUTHORITY,"Daley, Courtney",18627,Active,G,Trans 2.0,,Large,CMDB,5,130,NBU,,15,1/1/2016,12/31/2016,Carlstadt ,"$28,700.00","$18,265.00",,"$28,700.00",,,,"TROMMELLO, ANTHONY F.",Ravi Sharma,,,,TRUE,,Active,,,,,Pankaj Wagh,,,,
+New York University,,19640,Terminated,D,NA,,Large,,,120,,,27,na,na,Philadelphia ,,,,,,,,#N/A,N/A,,3,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+New York-Presbyterian Hospital,"Cecconi, Tim",56367,Active,G,Trans 2.0,Both,Medium,5,,,,,,9/1/2012,8/31/2016,Carlstadt,"$395,532.00","$11,022.00",,"$64,150.00","$329,466.00",,"$1,916.00","MAGRO, FREDERICK WILLIAM",N/A,,2,,TRUE,1,ON HOLD,,,,"$800,170.00",N/A,,,,
+"News America Marketing in Store Services, LLC","Toushan, Chris",149538,Active,D,Trans 2.0,Both,Large,5,,100+,,,10,7/1/2015,6/30/2016,Carlstadt,"$36,281.00","$11,990.00","$12,760.00","$23,521.00",,,,"PICKENS, WILLIAM",N/A,,1,,TRUE,1,ON HOLD,,,,"$84,552.00",N/A,,,,
+Nexus (Mattress Firm),"Pauly, Bradley",347359,Active,G,Trans 2.0,,Medium,4.23,,60 R2C,,,10,2/1/2014,5/31/2017,Scottsdale,"$18,500.00","$4,500.00","$14,000.00","$4,500.00",,,,"LOCKE, KENNETH ANDREW",,,,,TRUE,0,ON HOLD,,,,"$41,500.00",Shashank Khanolkar,,,,
+"NINE WEST HOLDINGS, INC , Formerly The Jones Group","Daley, Courtney",6350,Active,D,NA,Both,Medium,,,93,,,19,9/1/2015,8/31/2016,Philadelphia,"$37,242.00","$23,565.00",,"$37,242.00",,,,"HALL, DWAYNE SCOTT",N/A,,,,TRUE,3,Terminated,,,,"$98,049.00",N/A,,,,
+NORDDEUTSCHE LANDESBANK,"Daley, Courtney",19482,Active,G,Trans 2.0,,Small,,4,"1 - iSeries
+3 - ESX hosts",Net App ,,30,5/1/2015,12/31/2018,Philadelphia ,"$39,197.00","$10,064.00","$18,000.00","$21,197.00",,,,"HOARD, MICHAEL PATRICK",N/A,,,,,,ON HOLD,10/1/2015,Initially slated fo Aug start. Custmoer unavail. Waiting update,,"$88,458.00",N/A,,,,
+Nordstrom ,,20040,Terminated,D,NA,Both,Large,4.23,9,"Mainframe -1
+AS400 - 2
+WIn Phys - 2
+Win VM - 157
+Linux Phys - 1
+Linux VM - 121
+Solaris - 48
+ESX - 11","NetBackup,
+SRDF Replication","SQL, Oracle",116,,,Philadelphia ,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,,10/16/2015,3,,TRUE,1,Terminated,,,,#N/A,,,,,
+NYK Business Systems,,12216,Terminated,D,NA,Both,Small,,,8,,,10,,,Carlstadt,,,,,,,,#N/A,NA,,,,TRUE,3,Terminated,,,,$0.00,N/A,,,,
+"ONEOK, Inc","Pauly, Bradley",15641,Active,G,RLCM,,Large,5,7,"ESX 5.5 - 15
+Win VMs - 839
+AIX - 19
+","Netapp/EMC replication
+Vmware SRM, Boot from SAN","Oracle, SQL",10,1/1/2012,1/31/2018,Philadelphia ,"$71,088.00","$9,967.58","$50,688.00","$19,611.00",$789.00,,,"BLACK, CHRISTOPHER WESLEY",Jeremy Zuniga,8/11/2015,,,TRUE,0,Active,,,,"$152,143.58",John Wilson ,,,,
+OnPoint Community Credit Union,"Pauly, Bradley",6125,Active,G,Trans 2.0,,Large,,2,13,,,14,,,,"$18,383.00","$9,032.00","$4,745.00","$13,638.00",,,,"MUI, DANNY",Greg Risi,,,,,,Active,," During 11/18 weekly meeting client informed SgAS citing their own time constraints with personnel and commitment to production migration projects, they no longer will commit time to MRP transition and want test canceled. Jim Armstrong Exec Spnsr approved, and wants to start up in the new year. PM requested time frame commitment to new target but client has not yet responded.",,"$45,798.00",Thomas Webster ,,,,
+Open Solutions,,58424,Terminated,D,NA,Both,Small,,,26,,,6,,,Philadelphia,,,,,,,,#N/A,N/A,,,,TRUE,,Terminated,,,,$0.00,N/A,,,,
+"Orchard Supply Hardware, LLC",,10452,Terminated,D,NA,,Small,5,,28,,,36,na,na,Scottsdale,,,,,,,,#N/A,Samir Shukla,,3,,TRUE,,Terminated,,,,$0.00,Manu Ramakrishnan,,,,
+Parker Hannifin Corporation,,14836,Active,G,NA,,Large,5,9,"AIX-62
+Lin Phy-4
+AS400-4
+MF-3
+HPUX-1",TSM,"DB2
+Oracle
+SQL (30 SQL DBs)",88,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Dan Maloney,11/10/2015,3,,TRUE,0,Terminated,,,,#N/A,John Wilson ,,,,
+Paul Weiss Rifkind Wharton & Garrison,"Daley, Courtney",23352,Active,G,Trans 2.0,,Medium,CMDB,1,90 - VMs,"BMR, SRM",SQL,8,6/1/2015,7/31/2018,WoodDale ,"$167,228.00","$16,835.00",,"$18,041.00","$149,187.00",,,"JOHNSON, ERIC MARTIN",Joseph Panayiotou,,,,,,Active,,,,"$351,291.00",John Wilson ,,,,
+Pfizer Inc,"Daley, Courtney",18431,Terminated,G,RLCM,Both,Small,Customer Provided,,,,,22,1/1/2015,4/30/2016,Carlstadt,"$24,954.00",$0.09,,"$24,954.00",,,,"PREVETE, JOSEPH E.",,,4,,TRUE,0,Terminated,,,,"$49,908.09",Pankaj Wagh ,,,,
+PHYSIO,"Daley, Courtney",52211,Active,G,Trans 2.0,,Large,,,,,,,12/1/2015,1/31/2019,Scottsdale ,"$52,727.00","$12,008.10","$20,319.00","$12,008.00","$20,401.00",,,"HALL, DWAYNE SCOTT",Will Lewis,,,,TRUE,,Active,,,,,Thomas Webster,,,,
+"Pinnacle Foods Group, LLC","Daley, Courtney",108152,Active,G,RLCM,,Medium,CMDB,3,"55 (11 ESX, 44 VM's)",NetBackup,130,23,9/1/2014,6/30/2016,Philadelphia ,"$79,076.00","$8,823.78","$32,432.00","$18,917.00","$27,726.00",,,"MCKEOWN, STEPHEN C.",,10/12/2015,4,,TRUE,1,Active,,,,"$166,974.78",Darpan Thaker,,,,
+"PSS World Medical, Inc.",,13141,Active,G,RLCM,Both,Large,5,7,"ESX - 24+8 
+RS6 - 7
+HP-UX - 1
+LINUX PHYS - 7
+WIN PHYS - 1
+LINUX VM - 6
+WIN VM - 39",5,2,10,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Kostas Mantis,6/24/2015,1,,TRUE,0,Active,,,,#N/A,Thomas Webster ,,,,
+"PST Services, Inc.",,25360,Terminated,D,NA,Both,Medium,,,,,,,,,Philadelphia,,,,,,,,#N/A,NA,,1,0,TRUE,1,Terminated,,,,$0.00,N/A,,,,
+"QBE Americas, Inc.",,53980,Terminated,D,NA,,Large,5,4,163,1,13,30,,,Wood Dale,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,James Simons,9/15/2015,2,,TRUE,0,Terminated,,,,#N/A,Thomas Webster ,,,,
+QVC INC.,"Daley, Courtney",6798,Active,G,RLCM,Both,Large,5,2,"
+
+AIX - 6
+HP-UX - 1
+
+","SAN Boot, SRDF - Replicated",Oracle,1,7/1/2014,6/30/2016,Philadelphia,"$79,894.00","$18,229.00","$33,904.00","$45,990.00",,,,"PICKENS, WILLIAM",Adam Burtt,10/14/2015,5,,TRUE,0,Active,,,,"$178,017.00",John Wilson ,,,,
+"R+L CARRIERS, INC","Toushan, Chris",381755,Active,G,RLCM,,Large,,5,,,,121,5/1/2015,4/30/2017,Philadelphia ,"$45,000.00","$44,536.28",,"$45,000.00",,,,"TROMMELLO, ANTHONY F.",James Luna,,,,,,Active,,,,"$134,536.28",Thomas Webster ,,,,
+Reading Hospital Medical Center ,"Cecconi, Tim",51889,Active,G,RLCM,Both,Medium,4.23,4,"Win Physical -4, Windows VM -06, ESX-3, AIX-3",,,2,12/15/2014,6/14/2016,Philadelphia ,"$36,268.00","$15,290.40","$3,007.00","$33,261.00",,,,"RANA, KALPESH C.",Kishor BalaSubramanyam,10/19/2015,5,,TRUE,1,Active,,,,"$87,826.40",Pankaj Wagh,,,,
+Realogy Services Group LLC,"Daley, Courtney",62531,Active,G,RLCM,,Large,4.23,6,202 +,Commvault,"SQL , Oracle",25,12/15/2015,12/15/2017,Carlstadt,"$64,000.00","$12,043.00","$8,500.00","$55,500.00",,,,"MAGRO, FREDERICK WILLIAM",Danny Beeson,7/27/2015,18,,TRUE,1,Active,,,,"$140,043.00",John Wilson ,,,,
+Reliance Standard Life,"Daley, Courtney",10178,Active,D,Trans 2.0,Both,Medium,5,,,R2C - SRM,,,1/1/2015,3/31/2018,Philadelphia,"$29,762.00","$8,471.81","$12,896.00","$15,198.00",,,"$1,668.00","MCKEOWN, STEPHEN C.",N/A,,2,,TRUE,1,ON HOLD,,,,"$66,327.81",N/A,,,,
+"Reply!, Inc.","Pauly, Bradley",281212,Active,Y,Trans 2.0,,Medium,4.23,,50,,,10,6/1/2015,5/31/2018,Scottsdale,,,,,,,,"MUI, DANNY",N/A,,,,TRUE,2,ON HOLD,,Customer is filing bankruptcy,,$0.00,N/A,,,,
+Reyes Holdings LLC,"Toushan, Chris",25672,Active,G,RLCM,,Medium,Customer Provided,,57,,,6,12/1/2013,11/30/2016,Philadelphia,"$135,775.00","$14,900.00",,"$14,900.00","$120,875.00",,,"LUCCHESI, MARGARET JO",Ravindra Raghuvanshi,,,,TRUE,1,Active,,,,"$286,450.00",Darpan Thaker,,,,
+RITCHIE BROS. AUCTIONEERS,"Toushan, Chris",365456,Active,G,Trans 2.0,,Large,,,,,,,,,Toronto ,"$39,519.00","$11,342.86","$28,176.00","$11,343.00",,,,"BERTHOLD, ERWIN T",James Luna,,,,,,Active,,,,"$90,380.86",Thomas Webster ,,,,
+Rite Aid Hdqtrs. Corp.,"Daley, Courtney",5482,Active,G,RLCM,,Small,CMDB,2,"5- AS/400
+8- Mainframe",1,,10,7/1/2014,6/30/2017,Philadelphia,"$129,796.00","$9,916.00",$0.00,"$49,522.00","$43,155.00","$37,119.00",,"HALL, DWAYNE SCOTT",Venkatesh Iyer,9/28/2015,,,TRUE,0,Active,,,,"$269,508.00",Darpan Thaker,,,,
+Rolls-Royce Engine Services-Oakland,"Pauly, Bradley",62416,Active,G,RLCM,Both,Small,5,2,"ESX - 5, Windows Physical - 6, Windows VMs - 14",BackupExec,MSSQL,59,3/1/2015,2/28/2018,Scottsdale,"$20,104.00","$9,636.00","$2,505.00","$17,598.00",,,,"VOSS, ANNEMARIE",Sayak Sarkar,11/5/2015,4,,TRUE,1,Active,,,,"$49,843.00",Pankaj Wagh,,,,
+Ross Stores,"Pauly, Bradley",5424,Active,G,RLCM,,Large,4.23,6,"Win Phy - 80
+Win VM - 108
+Lin Phy - 34
+Solaris Phy - 26
+Netezza - 2 
+Tendem - 1",NetBackup,"SQL 
+Oracle
+Netezza",46,2/1/2016,1/31/2019,Philadelphia,"$174,475.00","$33,649.86","$74,475.00","$59,068.00",,"$40,932.00",,"WITGEN, BRIAN R",Dennis Anneken,8/7/2015,7,,TRUE,0,Active,,,,"$382,599.86",Thomas Webster ,,,,
+ROTECH HEALTHCARE,"Cecconi, Tim",134386,Active,G,Trans 2.0,,Large,,,,,,,3/1/2016,2/28/2019,Philadelphia ,"$66,400.00","$10,517.76","$51,822.00","$14,578.00",,,,"GARRICK, IAN ANTHONY MARK",Venkatesh Iyer,,,,TRUE,,Active,,,,,Darpan Thaker,,,,
+RSA-Internal Projects,,999999999,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,,N/A,,,,,,,,,,#N/A,N/A,,,,
+S&C Electric Company,"Toushan, Chris",312788,Active,G,RLCM,,Large,CMDB,4,"ESXi – 7
+Linux Phy – 6
+HP-UX – 1
+Windows Phy – 7 
+Windows VM - 93
+NAS Celera -1",Avamar,"MYSQL, MSSQL & Oracle",52,1/1/2016,12/31/2018,Wood Dale,"$23,447.00","$7,813.62","$3,995.00","$19,452.00",,,,"JOHNSON, DONALD CRAIG",Soumit Basu,7/23/2015,,,TRUE,0,Active,,,,"$54,707.62",Pankaj Wagh ,,,,
+"Schulte, Roth and Zabel LLP","Daley, Courtney",27826,Terminated,D,NA,,Medium,4.23,,5 ESX,,,2,9/1/2013,10/31/2016,Carlstadt,"$31,000.00","$5,696.65",,"$6,297.00","$24,703.00",,,0,N/A,,,,TRUE,,Terminated,,,,"$67,696.65",N/A,,,,
+Sears Holdings Management Company,,14743,Terminated,D,NA,,Small,4.23,1,22 AS400,,,47,,,Wood Dale,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Piyush Mathiya,8/5/2015,4,,TRUE,0,Terminated,,,,#N/A,Pankaj Wagh,,,,
+SECURA INSURANCE,"Toushan, Chris",13611,Active,G,Trans 2.0,,Large,,3,179,,,50,1/1/2016,6/30/2016,Carlstadt ,"$48,390.00","$16,353.00",$0.00,"$48,390.00",,,,"PICKENS, WILLIAM",Justin Wolff,,,,TRUE,,Active,,,,,John Wilson,,,,
+"SEDGWICK CLAIMS MANAGEMENT SERVICES,INC","Toushan, Chris",5006,Active,G,Trans 2.0,,Large,CMDB,3,"ESXi-6
+VMs-100
+AIX-11
+Win Phy-4","TSM, Evault",Oracle,9,,,Philadelphia ,"$71,607.00","$7,168.00","$12,109.00","$59,498.00",,,,"LACI, MICHAEL JOHN",Soumit Basu,,,,,,Active,,,,"$150,382.00",Pankaj Wagh,,,,
+Selective Insurance Company of America,"Daley, Courtney",23805,Active,Y,RLCM,,Large,5,5,196,"Avamar, DataDomain, Platspin",SQL and Oracel,18,3/1/2015,2/28/2017,Carlstadt ,"$83,253.00","$13,256.81","$20,713.00","$62,540.00",,,,"PICKENS, WILLIAM",Matt Andres,12/1/2015,5,,TRUE,0,Active,,,,"$179,762.81",John Wilson ,,,,
+Sentara Helthcare,,62113,Active,G,RLCM,,Small,CMDB,,2 ESX,,,1,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Biju Thankappan,,1,,TRUE,0,Active,,,,#N/A,Darpan Thaker,,,,
+Shaklee Corporation,"Pauly, Bradley",68635,Active,G,RLCM,Both,Medium,CMDB,5,3 ESX                         63 VM's,2,9,14,12/21/2013,3/20/2017,Scottsdale,"$17,533.00","$7,500.00","$3,854.00","$13,679.00",,,,"MUI, DANNY",Rushikesh Patel,10/26/2015,1,,TRUE,0,Active,,,,"$42,566.00",Darpan Thaker,,,,
+"Six Continents Hotels, Inc.","Cecconi, Tim",14319,Active,Y,RLCM,,Medium,CMDB,5,"ESXi - 2
+Linux Physical - 6
+Linux VM - 7
+Windws Phy - 3
+Windws VM - 7
+Solaris - 2
+",Netbackup,"SQL, Oracle",4,11/1/2015,10/31/2016,Carlstadt,"$78,240.00","$21,955.99",,"$78,240.00",,,,"TEKAMPE, JOHN C",Ravi Sharma,9/2/2015,3,,TRUE,0,Active,,,,"$178,435.99",Pankaj Wagh ,,,,
+SKF USA INC.,"Daley, Courtney",1466,Active,D,Trans 2.0,,Small,,3,iSeries - 6 Lpars,,,3,11/1/2015,10/31/2016,Philadelphia ,"$23,580.00","$4,542.59",,"$23,580.00",,,,"PARTON, STEVEN TROY",N/A,,,,TRUE,0,Inactive,,,,"$51,702.59",N/A,,,,
+South Broward Hospital District D/B/A Memorial Healthcare System,,64938,Terminated,D,NA,Both,Small,5,,18,,,13,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,N/A,,,,TRUE,,Terminated,,,,#N/A,N/A,,,,
+"Southern California United Food & Commercial Workers Unions and Food Employers Joint Benefit Funds Administration, LLC","Hogan, Mark",188759,Active,G,RLCM,,Small,5,4,"Win VM - 26
+ESX - 3","Veaam 7, Datadomain",SQL,66,1/1/2015,6/30/2018,Scottsdale,"$20,473.00","$5,835.45","$3,770.00","$16,703.00",,,,"VOSS, ANNEMARIE",Joseph Panayiotou,9/28/2015,11,,TRUE,1,Active,,,,"$46,781.45",John Wilson ,,,,
+Southern States Cooperative,"Daley, Courtney",16548,Active,G,RLCM,Both,Small,CMDB,4,"2 ESXi - Phy
+7 - Win VM 
+7 Win VM for SRM","Networker, EMC EBR, SRM",SQL,7,11/1/2015,12/31/2018,Carlstadt,"$41,049.00","$9,857.00",$0.00,"$27,945.00","$13,104.00",,,"HALL, DWAYNE SCOTT",Raja Datta,7/7/2015,3,,TRUE,0,Active,,,,"$91,955.00",Pankaj Wagh ,,,,
+SOUTHWOOD SHARED RESOURCE CENTER,"Cecconi, Tim",134817,Active,G,RLCM,,Medium,5,1,"Solaris Physical - 8
+Solaris Virtual - 11
+",EMC,Oracle & MSSQL,,,,WoodDale ,"$30,537.00","$9,638.33","$5,595.00","$18,064.00","$6,878.00",,,"BERTHOLD, ERWIN T",Piyush Mathiya,,,,,,Active,,,,"$70,712.33",Pankaj Wagh ,,,,
+St. Josephs Healthcare Hamilton Division of St. Josephs Health System,,62206,Terminated,D,NA,Both,Small,4.23,,,,,,na,na,Toronto,,,,,,,,#N/A,,,1,,TRUE,,Terminated,,,,$0.00,Pankaj Wagh ,,,,
+ST. LUKE’S CORNWALL HOSPITAL,,304707,Terminated,D,NA,,Small,4.23,3,21,"EMC Networker, VEEAM",Magic,4,,,Carlstadt ,,,,,,,,#N/A,Biju Thankappan,,3,,TRUE,0,Terminated,,,,$0.00,Darpan Thaker,,,,
+"Staples, Inc.","Toushan, Chris",25854,Active,G,RLCM,,Small,4.23,3,34                            ESX - 2                   VM - 8,NetBackup,,16,6/1/2014,5/31/2016,Philadelphia,"$98,299.00","$12,500.00","$11,507.00","$79,372.00",,"$7,420.00",,"PREVETE, JOSEPH E.",Biju Thankappan,,9,,TRUE,0,Active,,,,"$209,098.00",Darpan Thaker,,,,
+State of Oregon MMIS,,296343,Terminated,D,NA,,Small,4.23,3,41,NetBackup,"SQL, Oracle",22,,,Philadelphia,,,,,,,,#N/A,Venkatesh Iyer,,3,,TRUE,2,Terminated,,,,$0.00,Darpan Thaker,,,,
+State of Rhode Island,"Daley, Courtney",50504,Active,G,Trans 2.0,,Large,,Large,,,,9,5/1/2015,4/30/2018,Carlstadt ,"$43,750.00","$9,580.80","$8,676.00","$35,074.00",,,,"TROMMELLO, ANTHONY F.",N/A,,,,TRUE,,ON HOLD,,Pending meeting w customer on 10/7/15,,"$97,080.80",N/A,,,,
+State of Washington Consolidated Technology Services,"Pauly, Bradley",5246,Active,G,RLCM,,Small,4.23,2,"MF - 1
+Unisys - 1
+",,,9,12/31/2013,12/30/2016,Philadelphia,"$74,801.00","$26,000.00","$17,615.00","$57,185.00",,,,"MUI, DANNY",,,1,,TRUE,0,Active,,,,"$175,601.00",Pankaj Wagh ,,,,
+"Subaru of America, Inc.","Daley, Courtney",31266,Active,G,RLCM,,Small,5,,16,,,,7/1/2008,9/30/2016,Philadelphia,"$86,922.00","$10,000.00",,"$15,900.00","$71,022.00",,,"POWER, RONALD",Vinod Balakrishnan,,20,,TRUE,1,Active,,,,"$183,844.00",Manu Ramakrishnan,Terry Bohaning,,,
+"TECHNICOLOR USA, INC.","Toushan, Chris",356357,Active,G,RLCM,,Medium,CMDB,3,ESX - 3              VM-29,Avamar,,12,1/1/2015,12/31/2017,Scottsdale ,"$46,500.00","$7,631.00","$34,236.00","$12,264.00",,,,"MUI, DANNY",Sayak Sarkar,7/7/2015,,,,0,Active,,,,"$100,631.00",Darpan Thaker,,,,
+Tellabs Inc,,288277,Active,G,RLCM,,Medium,4.23,4,"Win Physical -8, SRM Protected Windows VM -66, Solaris Physical-5","R2C-SRM, NetBackup",58,20,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Kishor BalaSubramanyam,,4,1,TRUE,2,Active,,,,#N/A,Pankaj Wagh ,,,,
+Texas Comptroller of Public Accounts,"Pauly, Bradley",310680,Active,G,RLCM,PB,Large,5,7,"
+
+
+ 
+  AIX = 74
+  Win Phy - 8 
+  Win VM - 97
+  Lin Phy - 6
+  Lin VM - 8
+  ESXi - 23
+  mainframe = 1
+ 
+
+
+","SOS for AIX, NBU for OS Sys, 1 for MF","DB2 - 1, Oracle - 29 and MS SQL - 14.",80,9/1/2014,8/31/2016,Philadelphia,"$74,279.00","$13,606.89",,"$74,279.00",,,,"VOSS, ANNEMARIE",Matt Andres,7/28/2015,5,,TRUE,0,Active,,,,"$162,164.89",John Wilson ,,,,
+"TEXAS EZPAWN, L.P. (EZCORP, INC.) ","Pauly, Bradley",53500,Active,G,RLCM,,Large,CMDB,,ESX - 4                    VM - 52,,,,5/1/2015,4/30/2018,Philadelphia ,"$40,051.00","$7,351.00","$21,580.00","$17,651.00",$821.00,,,"POOLE, DARRYL TODD",Biju Thankappan,,,,,,Active,,,,"$87,454.00",Darpan Thaker,,,,
+The Aldo Group Inc.,,83263,Active,G,RLCM,,Large,CMDB,7,"Win Phy - 26
+Win VM - 95
+Lin Phy - 44
+Lin VM - 4 
+ESXi - 9
+AIX - 14
+Solaris - 12",Sungard Remote managed backup with Netbackup,"Oracle, SQL, MySQL",52,,,Toronto,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,"NIKFARDJAM, ATTILA",Jeremy Zuniga,,,,FALSE,,Active,,,,#N/A,John Wilson ,,,,
+The Cleveland Clinic Foundation,"Cecconi, Tim",17781,Active,G,RLCM,,Medium,5,3,97                              ESX - 3                VM-47,,,80,10/1/2014,9/30/2017,Carlstadt ,"$153,249.00","$4,556.00","$41,816.00","$102,933.00",,"$1,500.00","$7,000.00","BOOTH, CHARLES CHRISTOPHER",Nilesh Gondane,10/5/2015,,,TRUE,0,Active,,,,"$304,054.00",Darpan Thaker,,,,
+THE GUARDIAN LIFE INSURANCE COMPANY OF AMERICA,"Daley, Courtney",50920,Active,D,NA,,,,,,,,,11/1/2015,10/31/2016,Philadelphia ,"$23,500.00","$7,500.00",,"$23,500.00",,,,0,,,,,FALSE,,Inactive,,NOT MRP -Staff Augmentation only - supported by Mike White/Dave Kling,,,,,,,
+The Irvine Company,"Pauly, Bradley",270155,Active,G,RLCM,,Medium,5,2,R2C - 55,R2C-SR and R2C-SRM,,,3/15/2013,6/14/2016,Scottsdale,"$56,447.00","$9,500.00","$34,010.00","$10,341.00","$12,096.00",,,"MUI, DANNY",Biju Thankappan,9/8/2015,4,,TRUE,0,Active,,,,"$122,394.00",Darpan Thaker,,,,
+The J. M. Smucker Company,"Toushan, Chris",14219,Active,G,RLCM,,Small,4.23,2,2,NetBackup,,1,5/1/2015,10/31/2016,Philadelphia,"$45,942.00","$3,430.00","$6,170.00","$39,772.00",,,,"JOHNSON, DONALD CRAIG",Biju Thankappan,,2,2,TRUE,0,Active,,,,"$95,314.00",Darpan Thaker,,,,
+THE NIELSEN COMPANY,"Toushan, Chris",19134,Active,G,NA,Both,Large,5,8,"Solaris - 21
+DEC - 1
+Linux VM - 1
+Linux Phys- 11
+ESX - 1
+Win VM - 6
+WIn Phys - 29",Netbackup,"SQL, Oracle",35,1/1/2014,12/31/2016,Philadelphia,"$186,649.00","$13,000.00","$30,199.00","$152,850.00",,,"$3,600.00","HALL, DWAYNE SCOTT",Adam Burtt,6/29/2015,,,TRUE,0,Inactive,,Was in RLCM however Customer has gone dark since 9/15/2015,,"$382,698.00",John Wilson ,,,,
+The TJX Companies,"Toushan, Chris",68900,Active,Y,Trans 2.0,,Large,Customer Provided,2,"AIX -22
+WIN PHY - 196",1,,57,2/1/2014,1/31/2017,Philadelphia ,"$118,139.00","$12,000.00","$45,413.00","$72,727.00",,,,"MAGRO, FREDERICK WILLIAM",James Luna,1/11/2016,,,TRUE,1,ON HOLD,,Consulting is running with this and customer has no interest in engaging with MRP,,"$248,279.00",Thomas Webster ,,,,
+Thermo Fisher Scientific Inc.,"Daley, Courtney",53807,Active,G,Trans 2.0,,Medium,,7,"10 - AS400
+1 - Mainframe  (10 applications)
+12 - SUN Solaris
+25 - VM Linux
+10 - Physical Windows
+25 - VM Windows
+",R2C SRM,"Orace, SQL",35,11/1/2015,3/31/2017,Philadelphia ,"$94,738.00","$36,620.00","$17,216.00","$69,722.00","$6,738.00",,"$1,062.00","MAGRO, FREDERICK WILLIAM",,,3,,TRUE,0,ON HOLD,,pending contract ,,"$225,034.00",,,,,
+THOMAS GALLAWAY CORPORATION DBA TECHNOLOGENT ,"Pauly, Bradley",387995,Active,G,Trans 2.0,,XL,,3,197,,,40,1/1/2016,12/31/2018,Philadelphia ,"$114,695.00","$23,742.00","$45,820.00","$62,724.00",,"$2,818.00","$3,333.00","TRESCO, STEPHEN J",Adam Burtt,,,,TRUE,,Active,,,,,John Wilson,,,,
+Tiffany and Company,"Daley, Courtney",246032,Active,Y,RLCM,,Large,4.23,4,"Win Phys - 152, ESXi - 4, iSeries - 13, AIX - 45","SG ARS, NBU, MBRMS, VIO",SQL,38,1/1/2015,12/31/2017,Philadelphia ,"$46,171.00","$8,947.00","$5,482.00","$40,689.00",,,,"JOHNSON, ERIC MARTIN",Gary Lu,,5,,TRUE,0,Active,,,,"$101,289.00",Thomas Webster ,,,,
+"Toll Brothers, Inc.","Daley, Courtney",57990,Active,Y,RLCM,,Medium,CMDB,2,53,Commvault,3,Mck,1/1/2016,12/31/2018,Philadelphia ,"$27,331.00","$12,087.00",,"$19,651.00","$6,180.00","$1,500.00",,"HALL, DWAYNE SCOTT",Vinod Balakrishnan,9/25/2015,8,0,TRUE,0,Active,,,,"$66,749.00",Manu Ramakrishnan,,,,
+TRAVELZOO INC,"Pauly, Bradley",355338,Active,G,Trans 2.0,,Medium,No Playbook,,,67 R2C - SR,,20,10/1/2015,9/30/2018,Philadelphia,"$35,000.00","$7,500.00","$27,500.00","$7,500.00",,,,"MUI, DANNY",Ravindra Raghuvanshi,,,,TRUE,3,Active,,,,"$77,500.00",Shashank Khanolkar,,,,
+Trinity Mother Frances Health System,"Cecconi, Tim",352294,Active,G,Trans 2.0,,Medium,5,,"104 (ESXi -20, VM-71)",,,4,7/1/2014,6/30/2017,Scottsdale ,"$65,675.00","$10,000.00","$46,884.00","$16,909.00",,,"$1,882.00","BLACK, CHRISTOPHER WESLEY",Sagar Dhawan,,,,TRUE,0,ON HOLD,,,,"$139,468.00",Darpan Thaker,,,,
+"Triple S Management, Corp.","Cecconi, Tim",18996,Active,Y,RLCM,,Large,CMDB,7,"Win R2C - 68
+Win VM - 41
+ESXi - 10 
+HPUX- 2 
+Solaris - 1 
+Mainframe - 16 Lpars","Netbackup, Luminex, R2C - SR","SQL, Sybase, Oracle",43,5/1/2013,7/31/2016,Philadelphia,"$98,338.00","$23,858.32","$54,858.00","$43,480.00",,,,"RANA, KALPESH C.",Greg Risi,9/1/2015,7,,TRUE,1,Active,,,,"$220,534.32",Thomas Webster ,,,,
+TRUPANION,"Pauly NL, Brad",395063,Active,G,Trans 2.0,,Medium,CMDB,1,ESXi - 4                      VM - 67,N/A,,10,1/15/2016,3/14/2019,Scottsdale ,"$14,004.00","$5,183.35","$6,582.00","$7,423.00",,,,"CERNA, PATRICIA",Sachin Kalamkar,,,,,,Active,,,,,Darpan Thaker,,,,
+"Tufts Associated Health Plans, Inc.","Toushan, Chris",14942,Active,Y,RLCM,,Large,4.23,4,207                                     ESX in cage              152 VM's,Netbackup,350,46,3/1/2016,3/31/2018,Philadelphia,"$162,300.00","$31,005.37","$32,706.00","$118,523.00",,"$2,146.00","$8,925.00","PICKENS, WILLIAM",Vincent Esposito,,3,,TRUE,0,Active,,,,"$346,680.37",John Wilson ,,,,
+Unisource Worldwide,"Cecconi, Tim",77635,Active,G,RLCM,Both,Large,CMDB,6,140,Netbackup,"SQL, Oracle",20,4/15/2015,10/31/2017,Philadelphia,"$60,498.00","$10,245.56","$10,349.00","$47,467.00",,"$2,681.00",,"TEKAMPE, JOHN C",Matt Andres,1/7/2016,,,TRUE,0,Active,,no MRP PM was needed per SME,,"$131,240.56",John Wilson ,,,,
+United Federation of Teachers Welfare Fund,"Daley, Courtney",16423,Active,G,RLCM,,Medium,5,4,57                                                                HyperV-4                     Windows VM-13                                                        RHEV-4                      Linux-29              Windows Physical-2                           AS/400-1,BackupExec,17,62,12/1/2015,2/28/2017,Carlstadt,"$18,000.00","$8,708.21",,"$18,000.00",,,,"PREVETE, JOSEPH E.",Ravindra Raghuvanshi,6/25/2015,1,,TRUE,0,Active,,,,"$44,708.21",Darpan Thaker,,,,
+"UPS Ground Freight, Inc.","Daley, Courtney",32329,Active,G,Trans 2.0,Both,Large,,,220,,,50,10/1/2015,6/30/2017,Philadelphia,"$48,184.00","$25,652.00","$3,537.00","$44,647.00",,,,"RANA, KALPESH C.",N/A,,,,TRUE,0,ON HOLD,,,,"$122,020.00",N/A,,,,
+US Foods,"Pauly, Bradley",34224,Active,G,RLCM,,Large,5,5,"Windows VMs - 170
+ESX Hosts - 8
+HPUX - 
+AS400
+MF",Netbackup and SAN Replication,"Oracle, SQL",41,1/1/2016,1/16/2017,Philadelphia,"$122,497.00","$17,423.07","$72,236.00","$49,418.00",$843.00,,,"VOSS, ANNEMARIE",Adam Burtt,8/15/2015,5,,TRUE,0,Active,,,,"$262,417.07",John Wilson ,,,,
+Utica Mutual Insurance Company,"Toushan, Chris",6613,Active,R,RLCM,,Large,5,,41+363 R2C/SR,,,31,2/1/2014,1/31/2017,Philadelphia,"$78,446.00","$10,404.00","$43,756.00","$29,949.00","$4,741.00",,,"JOHNSON, ERIC MARTIN",Mathew Haltunen,7/6/2015,,,TRUE,3,Active,,,,"$167,296.00",Thomas Webster ,,,,
+"Validus Holdings, LTD.","Toushan, Chris",241083,Active,R,RLCM,Both,Large,5,2,134                               ESXi-6                      VM-117           Windows physical-11,ARS NetApp Replicated,23,29,10/1/2014,9/30/2017,Toronto,"$44,805.00","$12,471.03","$24,093.00","$20,712.00",,,,"MAGRO, FREDERICK WILLIAM",Ravindra Raghuvanshi,8/10/2015,7,,TRUE,0,Active,,,,"$102,081.03",Darpan Thaker,,,,
+Vertex,"Daley, Courtney",59947,Active,D,Trans 2.0,Both,Medium,,,48,,,31,8/1/2015,8/31/2017,Philadelphia,"$30,249.00","$13,192.85",,"$30,249.00",,,,"JOHNSON, ERIC MARTIN",N/A,,,,TRUE,2,ON HOLD,,,,"$73,690.85",N/A,,,,
+Visiting Nurses,"Cecconi, Tim",18651,Active,G,RLCM,,Small,No Playbook,,6,,,20,1/1/2014,12/31/2018,Philadelphia,"$94,123.00","$9,506.00","$68,763.00","$25,360.00",,,,"KIRKSEY, VERNETHIA ANGELA",Sayak Sarkar,7/16/2015,,,TRUE,0,Active,,,,"$197,752.00",Darpan Thaker,,,,
+"W. L. GORE AND ASSOCIATES, INC.","Daley, Courtney",380682,Active,G,Trans 2.0,,Large,,4,107,,,20,12/1/2015,1/31/2019,Philadelphia ,"$67,075.00","$13,270.00","$40,445.00","$25,812.00",$818.00,,,"PREVETE, JOSEPH E.",Rob Weatherly,,,,TRUE,,Active,,,,,John Wilson,,,,
+Wakefern Food Corp.,"Daley, Courtney",13555,Active,G,RLCM,,Medium,CMDB,5,"Maniframe - 1, AIX - 40, ESX - 2, Windows Physical - 4, Windows VMs - 24",Backup Exec,"Oracle, SQL and Db2",,1/1/2014,12/31/2018,Philadelphia,"$50,556.00","$13,198.00","$26,075.00","$24,481.00",$0.00,,,"MCKEOWN, STEPHEN C.",Piyush Khare,7/7/2015,1,,TRUE,0,Active,,,,"$114,310.00",Pankaj Wagh,,,,
+WASHINGTON STATE LABOR AND INDUSTRY,"Pauly, Bradley",385917,Active,G,Trans 2.0,,,,,,,,,,,,,,,,,,,"CERNA, PATRICIA",N/A,,,,,,ON HOLD,,,,$0.00,N/A,,,,
+Weight Watchers International Inc,,12268,Terminated,D,NA,Both,Small,,,6,,,1,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,N/A,,,,TRUE,,Terminated,,,,#N/A,N/A,,,,
+Wescom Solutions Inc.,"Toushan, Chris",247058,Active,G,RLCM,,Large,5,3,"216 - VMs,
+26 - Phy Windows
+47 - ESX",Backup Exec,SQL,3,10/1/2015,9/30/2016,Toronto,"$31,403.00","$5,829.47","$4,012.00","$27,391.00",,,,"NIKFARDJAM, ATTILA",Justin Wolff,,5,,TRUE,0,Active,,,,"$68,635.47",John Wilson ,,,,
+West Penn Allegheny Health Systems,,19204,Terminated,D,NA,,Medium,,,69,,,3,,,Philadelphia,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Hrushi Mahalathkar,,,,TRUE,,Terminated,,,,#N/A,Pankaj Wagh,,,,
+"WHITNEY BANK ... Gulfport, MS","Cecconi, Tim",6255,Active,G,Trans 2.0,,,,,,,,,,,WoodDale,"$71,153.00","$14,266.30",,"$22,661.00","$48,492.00",,,"BLACK, CHRISTOPHER WESLEY",N/A,,,,,,ON HOLD,,,,"$156,572.30",N/A,,,,
+Wyckoff Heights Medical Center,"Cecconi, Tim",333082,Active,G,RLCM,,Small,5,3,"ESXi - 1
+Windows Physical - 15
+Windows Virtual - 2
+","Networker, Bridgehead Server with DD640 (Backup Device replication)",MSSQL,4,9/1/2013,1/31/2017,Carlstadt,"$15,249.00","$6,499.97","$5,879.00","$9,370.00",,,,"KIRKSEY, VERNETHIA ANGELA",Piyush Mathiya,9/8/2015,2,1,TRUE,0,Active,,,,"$36,997.97",Pankaj Wagh,,,,
+"WYNDHAM WORLDWIDE OPERATIONS, INC.","Daley, Courtney",312673,Active,G,RLCM,,Large,5,,,,,,3/1/2015,4/30/2019,Carlsradt ,"$45,986.00","$10,000.00","$5,502.00","$40,306.00",$177.00,,,"BOOTH, CHARLES CHRISTOPHER",Joseph Panayiotou,8/13/2015,,,TRUE,,Active,,,,"$101,971.00",John Wilson ,,,,
+"WALLENIUS WILHELMSEN LOGISTICS AMERICAS, LLC",,348174,Active,G,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,812 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel emptime print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Page <span class="rp-pageno">{$pageno}</span> of <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	<table class="rnr-c rnr-c-grid rnr-b-grid rnr-gridtable rp-maintable" cellpadding="0">
+	<thead>
+	{BEGIN grid_header}
+<tr class="rnr-toprow style1 {$gridHeader_class}" >
+{BEGIN record_header}
+		{BEGIN FirstName_fieldheadercolumn}
+<th class="runner-cc {$FirstName_class}" {$FirstName_style}>
+	{BEGIN FirstName_fieldheader}
+	<b>{$label emptime FirstName}</b>
+	{END FirstName_fieldheader}
+</th>
+{END FirstName_fieldheadercolumn}
+	{BEGIN LastName_fieldheadercolumn}
+<th class="runner-cc {$LastName_class}" {$LastName_style}>
+	{BEGIN LastName_fieldheader}
+	<b>{$label emptime LastName}</b>
+	{END LastName_fieldheader}
+</th>
+{END LastName_fieldheadercolumn}
+	{BEGIN SupervisorName_fieldheadercolumn}
+<th class="runner-cc {$SupervisorName_class}" {$SupervisorName_style}>
+	{BEGIN SupervisorName_fieldheader}
+	<b>{$label emptime SupervisorName}</b>
+	{END SupervisorName_fieldheader}
+</th>
+{END SupervisorName_fieldheadercolumn}
+	{BEGIN EmployeeStatus_fieldheadercolumn}
+<th class="runner-cc {$EmployeeStatus_class}" {$EmployeeStatus_style}>
+	{BEGIN EmployeeStatus_fieldheader}
+	<b>{$label emptime EmployeeStatus}</b>
+	{END EmployeeStatus_fieldheader}
+</th>
+{END EmployeeStatus_fieldheadercolumn}
+	{BEGIN Date1_fieldheadercolumn}
+<th class="runner-cc {$Date1_class}" {$Date1_style}>
+	{BEGIN Date1_fieldheader}
+	<b>{$label emptime Date1}</b>
+	{END Date1_fieldheader}
+</th>
+{END Date1_fieldheadercolumn}
+	{BEGIN Date2_fieldheadercolumn}
+<th class="runner-cc {$Date2_class}" {$Date2_style}>
+	{BEGIN Date2_fieldheader}
+	<b>{$label emptime Date2}</b>
+	{END Date2_fieldheader}
+</th>
+{END Date2_fieldheadercolumn}
+	{BEGIN Date3_fieldheadercolumn}
+<th class="runner-cc {$Date3_class}" {$Date3_style}>
+	{BEGIN Date3_fieldheader}
+	<b>{$label emptime Date3}</b>
+	{END Date3_fieldheader}
+</th>
+{END Date3_fieldheadercolumn}
+	{BEGIN Date4_fieldheadercolumn}
+<th class="runner-cc {$Date4_class}" {$Date4_style}>
+	{BEGIN Date4_fieldheader}
+	<b>{$label emptime Date4}</b>
+	{END Date4_fieldheader}
+</th>
+{END Date4_fieldheadercolumn}
+	{BEGIN Date5_fieldheadercolumn}
+<th class="runner-cc {$Date5_class}" {$Date5_style}>
+	{BEGIN Date5_fieldheader}
+	<b>{$label emptime Date5}</b>
+	{END Date5_fieldheader}
+</th>
+{END Date5_fieldheadercolumn}
+	{BEGIN Date6_fieldheadercolumn}
+<th class="runner-cc {$Date6_class}" {$Date6_style}>
+	{BEGIN Date6_fieldheader}
+	<b>{$label emptime Date6}</b>
+	{END Date6_fieldheader}
+</th>
+{END Date6_fieldheadercolumn}
+	{BEGIN Date7_fieldheadercolumn}
+<th class="runner-cc {$Date7_class}" {$Date7_style}>
+	{BEGIN Date7_fieldheader}
+	<b>{$label emptime Date7}</b>
+	{END Date7_fieldheader}
+</th>
+{END Date7_fieldheadercolumn}
+	{BEGIN Date8_fieldheadercolumn}
+<th class="runner-cc {$Date8_class}" {$Date8_style}>
+	{BEGIN Date8_fieldheader}
+	<b>{$label emptime Date8}</b>
+	{END Date8_fieldheader}
+</th>
+{END Date8_fieldheadercolumn}
+	{BEGIN Date9_fieldheadercolumn}
+<th class="runner-cc {$Date9_class}" {$Date9_style}>
+	{BEGIN Date9_fieldheader}
+	<b>{$label emptime Date9}</b>
+	{END Date9_fieldheader}
+</th>
+{END Date9_fieldheadercolumn}
+	{BEGIN Date10_fieldheadercolumn}
+<th class="runner-cc {$Date10_class}" {$Date10_style}>
+	{BEGIN Date10_fieldheader}
+	<b>{$label emptime Date10}</b>
+	{END Date10_fieldheader}
+</th>
+{END Date10_fieldheadercolumn}
+	{BEGIN Date11_fieldheadercolumn}
+<th class="runner-cc {$Date11_class}" {$Date11_style}>
+	{BEGIN Date11_fieldheader}
+	<b>{$label emptime Date11}</b>
+	{END Date11_fieldheader}
+</th>
+{END Date11_fieldheadercolumn}
+	{BEGIN Date12_fieldheadercolumn}
+<th class="runner-cc {$Date12_class}" {$Date12_style}>
+	{BEGIN Date12_fieldheader}
+	<b>{$label emptime Date12}</b>
+	{END Date12_fieldheader}
+</th>
+{END Date12_fieldheadercolumn}
+	{BEGIN Date13_fieldheadercolumn}
+<th class="runner-cc {$Date13_class}" {$Date13_style}>
+	{BEGIN Date13_fieldheader}
+	<b>{$label emptime Date13}</b>
+	{END Date13_fieldheader}
+</th>
+{END Date13_fieldheadercolumn}
+	{BEGIN Date14_fieldheadercolumn}
+<th class="runner-cc {$Date14_class}" {$Date14_style}>
+	{BEGIN Date14_fieldheader}
+	<b>{$label emptime Date14}</b>
+	{END Date14_fieldheader}
+</th>
+{END Date14_fieldheadercolumn}
+	{BEGIN Date15_fieldheadercolumn}
+<th class="runner-cc {$Date15_class}" {$Date15_style}>
+	{BEGIN Date15_fieldheader}
+	<b>{$label emptime Date15}</b>
+	{END Date15_fieldheader}
+</th>
+{END Date15_fieldheadercolumn}
+	{BEGIN Date16_fieldheadercolumn}
+<th class="runner-cc {$Date16_class}" {$Date16_style}>
+	{BEGIN Date16_fieldheader}
+	<b>{$label emptime Date16}</b>
+	{END Date16_fieldheader}
+</th>
+{END Date16_fieldheadercolumn}
+	{BEGIN Date17_fieldheadercolumn}
+<th class="runner-cc {$Date17_class}" {$Date17_style}>
+	{BEGIN Date17_fieldheader}
+	<b>{$label emptime Date17}</b>
+	{END Date17_fieldheader}
+</th>
+{END Date17_fieldheadercolumn}
+	{BEGIN Date18_fieldheadercolumn}
+<th class="runner-cc {$Date18_class}" {$Date18_style}>
+	{BEGIN Date18_fieldheader}
+	<b>{$label emptime Date18}</b>
+	{END Date18_fieldheader}
+</th>
+{END Date18_fieldheadercolumn}
+	{BEGIN Date19_fieldheadercolumn}
+<th class="runner-cc {$Date19_class}" {$Date19_style}>
+	{BEGIN Date19_fieldheader}
+	<b>{$label emptime Date19}</b>
+	{END Date19_fieldheader}
+</th>
+{END Date19_fieldheadercolumn}
+	{BEGIN Date20_fieldheadercolumn}
+<th class="runner-cc {$Date20_class}" {$Date20_style}>
+	{BEGIN Date20_fieldheader}
+	<b>{$label emptime Date20}</b>
+	{END Date20_fieldheader}
+</th>
+{END Date20_fieldheadercolumn}
+	{BEGIN Date21_fieldheadercolumn}
+<th class="runner-cc {$Date21_class}" {$Date21_style}>
+	{BEGIN Date21_fieldheader}
+	<b>{$label emptime Date21}</b>
+	{END Date21_fieldheader}
+</th>
+{END Date21_fieldheadercolumn}
+	{BEGIN Date22_fieldheadercolumn}
+<th class="runner-cc {$Date22_class}" {$Date22_style}>
+	{BEGIN Date22_fieldheader}
+	<b>{$label emptime Date22}</b>
+	{END Date22_fieldheader}
+</th>
+{END Date22_fieldheadercolumn}
+	{BEGIN Date23_fieldheadercolumn}
+<th class="runner-cc {$Date23_class}" {$Date23_style}>
+	{BEGIN Date23_fieldheader}
+	<b>{$label emptime Date23}</b>
+	{END Date23_fieldheader}
+</th>
+{END Date23_fieldheadercolumn}
+	{BEGIN Date24_fieldheadercolumn}
+<th class="runner-cc {$Date24_class}" {$Date24_style}>
+	{BEGIN Date24_fieldheader}
+	<b>{$label emptime Date24}</b>
+	{END Date24_fieldheader}
+</th>
+{END Date24_fieldheadercolumn}
+	{BEGIN Date25_fieldheadercolumn}
+<th class="runner-cc {$Date25_class}" {$Date25_style}>
+	{BEGIN Date25_fieldheader}
+	<b>{$label emptime Date25}</b>
+	{END Date25_fieldheader}
+</th>
+{END Date25_fieldheadercolumn}
+	{BEGIN Date26_fieldheadercolumn}
+<th class="runner-cc {$Date26_class}" {$Date26_style}>
+	{BEGIN Date26_fieldheader}
+	<b>{$label emptime Date26}</b>
+	{END Date26_fieldheader}
+</th>
+{END Date26_fieldheadercolumn}
+	{BEGIN Date27_fieldheadercolumn}
+<th class="runner-cc {$Date27_class}" {$Date27_style}>
+	{BEGIN Date27_fieldheader}
+	<b>{$label emptime Date27}</b>
+	{END Date27_fieldheader}
+</th>
+{END Date27_fieldheadercolumn}
+	{BEGIN Date28_fieldheadercolumn}
+<th class="runner-cc {$Date28_class}" {$Date28_style}>
+	{BEGIN Date28_fieldheader}
+	<b>{$label emptime Date28}</b>
+	{END Date28_fieldheader}
+</th>
+{END Date28_fieldheadercolumn}
+	{BEGIN Date29_fieldheadercolumn}
+<th class="runner-cc {$Date29_class}" {$Date29_style}>
+	{BEGIN Date29_fieldheader}
+	<b>{$label emptime Date29}</b>
+	{END Date29_fieldheader}
+</th>
+{END Date29_fieldheadercolumn}
+	{BEGIN Date30_fieldheadercolumn}
+<th class="runner-cc {$Date30_class}" {$Date30_style}>
+	{BEGIN Date30_fieldheader}
+	<b>{$label emptime Date30}</b>
+	{END Date30_fieldheader}
+</th>
+{END Date30_fieldheadercolumn}
+	{BEGIN Date31_fieldheadercolumn}
+<th class="runner-cc {$Date31_class}" {$Date31_style}>
+	{BEGIN Date31_fieldheader}
+	<b>{$label emptime Date31}</b>
+	{END Date31_fieldheader}
+</th>
+{END Date31_fieldheadercolumn}
+	{BEGIN Date32_fieldheadercolumn}
+<th class="runner-cc {$Date32_class}" {$Date32_style}>
+	{BEGIN Date32_fieldheader}
+	<b>{$label emptime Date32}</b>
+	{END Date32_fieldheader}
+</th>
+{END Date32_fieldheadercolumn}
+	{BEGIN Date33_fieldheadercolumn}
+<th class="runner-cc {$Date33_class}" {$Date33_style}>
+	{BEGIN Date33_fieldheader}
+	<b>{$label emptime Date33}</b>
+	{END Date33_fieldheader}
+</th>
+{END Date33_fieldheadercolumn}
+	{BEGIN Date34_fieldheadercolumn}
+<th class="runner-cc {$Date34_class}" {$Date34_style}>
+	{BEGIN Date34_fieldheader}
+	<b>{$label emptime Date34}</b>
+	{END Date34_fieldheader}
+</th>
+{END Date34_fieldheadercolumn}
+	{BEGIN Date35_fieldheadercolumn}
+<th class="runner-cc {$Date35_class}" {$Date35_style}>
+	{BEGIN Date35_fieldheader}
+	<b>{$label emptime Date35}</b>
+	{END Date35_fieldheader}
+</th>
+{END Date35_fieldheadercolumn}
+	{BEGIN Date36_fieldheadercolumn}
+<th class="runner-cc {$Date36_class}" {$Date36_style}>
+	{BEGIN Date36_fieldheader}
+	<b>{$label emptime Date36}</b>
+	{END Date36_fieldheader}
+</th>
+{END Date36_fieldheadercolumn}
+	{BEGIN Date37_fieldheadercolumn}
+<th class="runner-cc {$Date37_class}" {$Date37_style}>
+	{BEGIN Date37_fieldheader}
+	<b>{$label emptime Date37}</b>
+	{END Date37_fieldheader}
+</th>
+{END Date37_fieldheadercolumn}
+	{BEGIN Date38_fieldheadercolumn}
+<th class="runner-cc {$Date38_class}" {$Date38_style}>
+	{BEGIN Date38_fieldheader}
+	<b>{$label emptime Date38}</b>
+	{END Date38_fieldheader}
+</th>
+{END Date38_fieldheadercolumn}
+	{BEGIN Date39_fieldheadercolumn}
+<th class="runner-cc {$Date39_class}" {$Date39_style}>
+	{BEGIN Date39_fieldheader}
+	<b>{$label emptime Date39}</b>
+	{END Date39_fieldheader}
+</th>
+{END Date39_fieldheadercolumn}
+	{BEGIN Date40_fieldheadercolumn}
+<th class="runner-cc {$Date40_class}" {$Date40_style}>
+	{BEGIN Date40_fieldheader}
+	<b>{$label emptime Date40}</b>
+	{END Date40_fieldheader}
+</th>
+{END Date40_fieldheadercolumn}
+	{BEGIN Date41_fieldheadercolumn}
+<th class="runner-cc {$Date41_class}" {$Date41_style}>
+	{BEGIN Date41_fieldheader}
+	<b>{$label emptime Date41}</b>
+	{END Date41_fieldheader}
+</th>
+{END Date41_fieldheadercolumn}
+	{BEGIN Date42_fieldheadercolumn}
+<th class="runner-cc {$Date42_class}" {$Date42_style}>
+	{BEGIN Date42_fieldheader}
+	<b>{$label emptime Date42}</b>
+	{END Date42_fieldheader}
+</th>
+{END Date42_fieldheadercolumn}
+	{BEGIN Date43_fieldheadercolumn}
+<th class="runner-cc {$Date43_class}" {$Date43_style}>
+	{BEGIN Date43_fieldheader}
+	<b>{$label emptime Date43}</b>
+	{END Date43_fieldheader}
+</th>
+{END Date43_fieldheadercolumn}
+	{BEGIN Date44_fieldheadercolumn}
+<th class="runner-cc {$Date44_class}" {$Date44_style}>
+	{BEGIN Date44_fieldheader}
+	<b>{$label emptime Date44}</b>
+	{END Date44_fieldheader}
+</th>
+{END Date44_fieldheadercolumn}
+	{BEGIN Date45_fieldheadercolumn}
+<th class="runner-cc {$Date45_class}" {$Date45_style}>
+	{BEGIN Date45_fieldheader}
+	<b>{$label emptime Date45}</b>
+	{END Date45_fieldheader}
+</th>
+{END Date45_fieldheadercolumn}
+	{BEGIN Date46_fieldheadercolumn}
+<th class="runner-cc {$Date46_class}" {$Date46_style}>
+	{BEGIN Date46_fieldheader}
+	<b>{$label emptime Date46}</b>
+	{END Date46_fieldheader}
+</th>
+{END Date46_fieldheadercolumn}
+	{BEGIN Date47_fieldheadercolumn}
+<th class="runner-cc {$Date47_class}" {$Date47_style}>
+	{BEGIN Date47_fieldheader}
+	<b>{$label emptime Date47}</b>
+	{END Date47_fieldheader}
+</th>
+{END Date47_fieldheadercolumn}
+	{BEGIN Date48_fieldheadercolumn}
+<th class="runner-cc {$Date48_class}" {$Date48_style}>
+	{BEGIN Date48_fieldheader}
+	<b>{$label emptime Date48}</b>
+	{END Date48_fieldheader}
+</th>
+{END Date48_fieldheadercolumn}
+	{BEGIN Date49_fieldheadercolumn}
+<th class="runner-cc {$Date49_class}" {$Date49_style}>
+	{BEGIN Date49_fieldheader}
+	<b>{$label emptime Date49}</b>
+	{END Date49_fieldheader}
+</th>
+{END Date49_fieldheadercolumn}
+	{BEGIN Date50_fieldheadercolumn}
+<th class="runner-cc {$Date50_class}" {$Date50_style}>
+	{BEGIN Date50_fieldheader}
+	<b>{$label emptime Date50}</b>
+	{END Date50_fieldheader}
+</th>
+{END Date50_fieldheadercolumn}
+	{BEGIN Date51_fieldheadercolumn}
+<th class="runner-cc {$Date51_class}" {$Date51_style}>
+	{BEGIN Date51_fieldheader}
+	<b>{$label emptime Date51}</b>
+	{END Date51_fieldheader}
+</th>
+{END Date51_fieldheadercolumn}
+	{BEGIN Date52_fieldheadercolumn}
+<th class="runner-cc {$Date52_class}" {$Date52_style}>
+	{BEGIN Date52_fieldheader}
+	<b>{$label emptime Date52}</b>
+	{END Date52_fieldheader}
+</th>
+{END Date52_fieldheadercolumn}
+	{BEGIN Date53_fieldheadercolumn}
+<th class="runner-cc {$Date53_class}" {$Date53_style}>
+	{BEGIN Date53_fieldheader}
+	<b>{$label emptime Date53}</b>
+	{END Date53_fieldheader}
+</th>
+{END Date53_fieldheadercolumn}
+		
+	<th class="rnr-edge">&nbsp;</th>
+	{BEGIN endrecordheader_block}
+	<th class="rnr-cs">&nbsp;</th>
+	{END endrecordheader_block}
+	{END record_header}
+</tr>
+{END grid_header}
+
+	</thead>
+	<tbody>	
+	{BEGIN grid_row}
+	<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+		{BEGIN grid_record}
+				{BEGIN FirstName_fieldcolumn}
+<td  class="runner-cc {$FirstName_class}" {$FirstName_style} {$recordattrs}>
+	{$FirstName_value}
+</td>
+{END FirstName_fieldcolumn}
+	{BEGIN LastName_fieldcolumn}
+<td  class="runner-cc {$LastName_class}" {$LastName_style} {$recordattrs}>
+	{$LastName_value}
+</td>
+{END LastName_fieldcolumn}
+	{BEGIN SupervisorName_fieldcolumn}
+<td  class="runner-cc {$SupervisorName_class}" {$SupervisorName_style} {$recordattrs}>
+	{$SupervisorName_value}
+</td>
+{END SupervisorName_fieldcolumn}
+	{BEGIN EmployeeStatus_fieldcolumn}
+<td  class="runner-cc {$EmployeeStatus_class}" {$EmployeeStatus_style} {$recordattrs}>
+	{$EmployeeStatus_value}
+</td>
+{END EmployeeStatus_fieldcolumn}
+	{BEGIN Date1_fieldcolumn}
+<td  class="runner-cc {$Date1_class}" {$Date1_style} {$recordattrs}>
+	{$Date1_value}
+</td>
+{END Date1_fieldcolumn}
+	{BEGIN Date2_fieldcolumn}
+<td  class="runner-cc {$Date2_class}" {$Date2_style} {$recordattrs}>
+	{$Date2_value}
+</td>
+{END Date2_fieldcolumn}
+	{BEGIN Date3_fieldcolumn}
+<td  class="runner-cc {$Date3_class}" {$Date3_style} {$recordattrs}>
+	{$Date3_value}
+</td>
+{END Date3_fieldcolumn}
+	{BEGIN Date4_fieldcolumn}
+<td  class="runner-cc {$Date4_class}" {$Date4_style} {$recordattrs}>
+	{$Date4_value}
+</td>
+{END Date4_fieldcolumn}
+	{BEGIN Date5_fieldcolumn}
+<td  class="runner-cc {$Date5_class}" {$Date5_style} {$recordattrs}>
+	{$Date5_value}
+</td>
+{END Date5_fieldcolumn}
+	{BEGIN Date6_fieldcolumn}
+<td  class="runner-cc {$Date6_class}" {$Date6_style} {$recordattrs}>
+	{$Date6_value}
+</td>
+{END Date6_fieldcolumn}
+	{BEGIN Date7_fieldcolumn}
+<td  class="runner-cc {$Date7_class}" {$Date7_style} {$recordattrs}>
+	{$Date7_value}
+</td>
+{END Date7_fieldcolumn}
+	{BEGIN Date8_fieldcolumn}
+<td  class="runner-cc {$Date8_class}" {$Date8_style} {$recordattrs}>
+	{$Date8_value}
+</td>
+{END Date8_fieldcolumn}
+	{BEGIN Date9_fieldcolumn}
+<td  class="runner-cc {$Date9_class}" {$Date9_style} {$recordattrs}>
+	{$Date9_value}
+</td>
+{END Date9_fieldcolumn}
+	{BEGIN Date10_fieldcolumn}
+<td  class="runner-cc {$Date10_class}" {$Date10_style} {$recordattrs}>
+	{$Date10_value}
+</td>
+{END Date10_fieldcolumn}
+	{BEGIN Date11_fieldcolumn}
+<td  class="runner-cc {$Date11_class}" {$Date11_style} {$recordattrs}>
+	{$Date11_value}
+</td>
+{END Date11_fieldcolumn}
+	{BEGIN Date12_fieldcolumn}
+<td  class="runner-cc {$Date12_class}" {$Date12_style} {$recordattrs}>
+	{$Date12_value}
+</td>
+{END Date12_fieldcolumn}
+	{BEGIN Date13_fieldcolumn}
+<td  class="runner-cc {$Date13_class}" {$Date13_style} {$recordattrs}>
+	{$Date13_value}
+</td>
+{END Date13_fieldcolumn}
+	{BEGIN Date14_fieldcolumn}
+<td  class="runner-cc {$Date14_class}" {$Date14_style} {$recordattrs}>
+	{$Date14_value}
+</td>
+{END Date14_fieldcolumn}
+	{BEGIN Date15_fieldcolumn}
+<td  class="runner-cc {$Date15_class}" {$Date15_style} {$recordattrs}>
+	{$Date15_value}
+</td>
+{END Date15_fieldcolumn}
+	{BEGIN Date16_fieldcolumn}
+<td  class="runner-cc {$Date16_class}" {$Date16_style} {$recordattrs}>
+	{$Date16_value}
+</td>
+{END Date16_fieldcolumn}
+	{BEGIN Date17_fieldcolumn}
+<td  class="runner-cc {$Date17_class}" {$Date17_style} {$recordattrs}>
+	{$Date17_value}
+</td>
+{END Date17_fieldcolumn}
+	{BEGIN Date18_fieldcolumn}
+<td  class="runner-cc {$Date18_class}" {$Date18_style} {$recordattrs}>
+	{$Date18_value}
+</td>
+{END Date18_fieldcolumn}
+	{BEGIN Date19_fieldcolumn}
+<td  class="runner-cc {$Date19_class}" {$Date19_style} {$recordattrs}>
+	{$Date19_value}
+</td>
+{END Date19_fieldcolumn}
+	{BEGIN Date20_fieldcolumn}
+<td  class="runner-cc {$Date20_class}" {$Date20_style} {$recordattrs}>
+	{$Date20_value}
+</td>
+{END Date20_fieldcolumn}
+	{BEGIN Date21_fieldcolumn}
+<td  class="runner-cc {$Date21_class}" {$Date21_style} {$recordattrs}>
+	{$Date21_value}
+</td>
+{END Date21_fieldcolumn}
+	{BEGIN Date22_fieldcolumn}
+<td  class="runner-cc {$Date22_class}" {$Date22_style} {$recordattrs}>
+	{$Date22_value}
+</td>
+{END Date22_fieldcolumn}
+	{BEGIN Date23_fieldcolumn}
+<td  class="runner-cc {$Date23_class}" {$Date23_style} {$recordattrs}>
+	{$Date23_value}
+</td>
+{END Date23_fieldcolumn}
+	{BEGIN Date24_fieldcolumn}
+<td  class="runner-cc {$Date24_class}" {$Date24_style} {$recordattrs}>
+	{$Date24_value}
+</td>
+{END Date24_fieldcolumn}
+	{BEGIN Date25_fieldcolumn}
+<td  class="runner-cc {$Date25_class}" {$Date25_style} {$recordattrs}>
+	{$Date25_value}
+</td>
+{END Date25_fieldcolumn}
+	{BEGIN Date26_fieldcolumn}
+<td  class="runner-cc {$Date26_class}" {$Date26_style} {$recordattrs}>
+	{$Date26_value}
+</td>
+{END Date26_fieldcolumn}
+	{BEGIN Date27_fieldcolumn}
+<td  class="runner-cc {$Date27_class}" {$Date27_style} {$recordattrs}>
+	{$Date27_value}
+</td>
+{END Date27_fieldcolumn}
+	{BEGIN Date28_fieldcolumn}
+<td  class="runner-cc {$Date28_class}" {$Date28_style} {$recordattrs}>
+	{$Date28_value}
+</td>
+{END Date28_fieldcolumn}
+	{BEGIN Date29_fieldcolumn}
+<td  class="runner-cc {$Date29_class}" {$Date29_style} {$recordattrs}>
+	{$Date29_value}
+</td>
+{END Date29_fieldcolumn}
+	{BEGIN Date30_fieldcolumn}
+<td  class="runner-cc {$Date30_class}" {$Date30_style} {$recordattrs}>
+	{$Date30_value}
+</td>
+{END Date30_fieldcolumn}
+	{BEGIN Date31_fieldcolumn}
+<td  class="runner-cc {$Date31_class}" {$Date31_style} {$recordattrs}>
+	{$Date31_value}
+</td>
+{END Date31_fieldcolumn}
+	{BEGIN Date32_fieldcolumn}
+<td  class="runner-cc {$Date32_class}" {$Date32_style} {$recordattrs}>
+	{$Date32_value}
+</td>
+{END Date32_fieldcolumn}
+	{BEGIN Date33_fieldcolumn}
+<td  class="runner-cc {$Date33_class}" {$Date33_style} {$recordattrs}>
+	{$Date33_value}
+</td>
+{END Date33_fieldcolumn}
+	{BEGIN Date34_fieldcolumn}
+<td  class="runner-cc {$Date34_class}" {$Date34_style} {$recordattrs}>
+	{$Date34_value}
+</td>
+{END Date34_fieldcolumn}
+	{BEGIN Date35_fieldcolumn}
+<td  class="runner-cc {$Date35_class}" {$Date35_style} {$recordattrs}>
+	{$Date35_value}
+</td>
+{END Date35_fieldcolumn}
+	{BEGIN Date36_fieldcolumn}
+<td  class="runner-cc {$Date36_class}" {$Date36_style} {$recordattrs}>
+	{$Date36_value}
+</td>
+{END Date36_fieldcolumn}
+	{BEGIN Date37_fieldcolumn}
+<td  class="runner-cc {$Date37_class}" {$Date37_style} {$recordattrs}>
+	{$Date37_value}
+</td>
+{END Date37_fieldcolumn}
+	{BEGIN Date38_fieldcolumn}
+<td  class="runner-cc {$Date38_class}" {$Date38_style} {$recordattrs}>
+	{$Date38_value}
+</td>
+{END Date38_fieldcolumn}
+	{BEGIN Date39_fieldcolumn}
+<td  class="runner-cc {$Date39_class}" {$Date39_style} {$recordattrs}>
+	{$Date39_value}
+</td>
+{END Date39_fieldcolumn}
+	{BEGIN Date40_fieldcolumn}
+<td  class="runner-cc {$Date40_class}" {$Date40_style} {$recordattrs}>
+	{$Date40_value}
+</td>
+{END Date40_fieldcolumn}
+	{BEGIN Date41_fieldcolumn}
+<td  class="runner-cc {$Date41_class}" {$Date41_style} {$recordattrs}>
+	{$Date41_value}
+</td>
+{END Date41_fieldcolumn}
+	{BEGIN Date42_fieldcolumn}
+<td  class="runner-cc {$Date42_class}" {$Date42_style} {$recordattrs}>
+	{$Date42_value}
+</td>
+{END Date42_fieldcolumn}
+	{BEGIN Date43_fieldcolumn}
+<td  class="runner-cc {$Date43_class}" {$Date43_style} {$recordattrs}>
+	{$Date43_value}
+</td>
+{END Date43_fieldcolumn}
+	{BEGIN Date44_fieldcolumn}
+<td  class="runner-cc {$Date44_class}" {$Date44_style} {$recordattrs}>
+	{$Date44_value}
+</td>
+{END Date44_fieldcolumn}
+	{BEGIN Date45_fieldcolumn}
+<td  class="runner-cc {$Date45_class}" {$Date45_style} {$recordattrs}>
+	{$Date45_value}
+</td>
+{END Date45_fieldcolumn}
+	{BEGIN Date46_fieldcolumn}
+<td  class="runner-cc {$Date46_class}" {$Date46_style} {$recordattrs}>
+	{$Date46_value}
+</td>
+{END Date46_fieldcolumn}
+	{BEGIN Date47_fieldcolumn}
+<td  class="runner-cc {$Date47_class}" {$Date47_style} {$recordattrs}>
+	{$Date47_value}
+</td>
+{END Date47_fieldcolumn}
+	{BEGIN Date48_fieldcolumn}
+<td  class="runner-cc {$Date48_class}" {$Date48_style} {$recordattrs}>
+	{$Date48_value}
+</td>
+{END Date48_fieldcolumn}
+	{BEGIN Date49_fieldcolumn}
+<td  class="runner-cc {$Date49_class}" {$Date49_style} {$recordattrs}>
+	{$Date49_value}
+</td>
+{END Date49_fieldcolumn}
+	{BEGIN Date50_fieldcolumn}
+<td  class="runner-cc {$Date50_class}" {$Date50_style} {$recordattrs}>
+	{$Date50_value}
+</td>
+{END Date50_fieldcolumn}
+	{BEGIN Date51_fieldcolumn}
+<td  class="runner-cc {$Date51_class}" {$Date51_style} {$recordattrs}>
+	{$Date51_value}
+</td>
+{END Date51_fieldcolumn}
+	{BEGIN Date52_fieldcolumn}
+<td  class="runner-cc {$Date52_class}" {$Date52_style} {$recordattrs}>
+	{$Date52_value}
+</td>
+{END Date52_fieldcolumn}
+	{BEGIN Date53_fieldcolumn}
+<td  class="runner-cc {$Date53_class}" {$Date53_style} {$recordattrs}>
+	{$Date53_value}
+</td>
+{END Date53_fieldcolumn}
+
+		<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+		{BEGIN endrecord_block}
+		<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+		{END endrecord_block}
+										
+		{END grid_record}
+
+	</tr>
+	{END grid_row}
+
+
+	
+	</tbody>
+</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

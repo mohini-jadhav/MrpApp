@@ -1,0 +1,274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel View search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Alloc1}">
+	{BEGIN Alloc1_fieldblock}		
+	<td>
+		{$label View Alloc1}
+	</td>
+	<td>
+		<input type="checkbox" {$Alloc1_notbox}>
+	</td>
+	<td>
+		{$searchtype_Alloc1}
+	</td>
+	<td>
+		{$Alloc1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Alloc1_editcontrol1}&nbsp;
+	</td>
+{END Alloc1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Alloc2}">
+	{BEGIN Alloc2_fieldblock}		
+	<td>
+		{$label View Alloc2}
+	</td>
+	<td>
+		<input type="checkbox" {$Alloc2_notbox}>
+	</td>
+	<td>
+		{$searchtype_Alloc2}
+	</td>
+	<td>
+		{$Alloc2_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Alloc2_editcontrol1}&nbsp;
+	</td>
+{END Alloc2_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Alloc3}">
+	{BEGIN Alloc3_fieldblock}		
+	<td>
+		{$label View Alloc3}
+	</td>
+	<td>
+		<input type="checkbox" {$Alloc3_notbox}>
+	</td>
+	<td>
+		{$searchtype_Alloc3}
+	</td>
+	<td>
+		{$Alloc3_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Alloc3_editcontrol1}&nbsp;
+	</td>
+{END Alloc3_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Start1}">
+	{BEGIN Start1_fieldblock}		
+	<td>
+		{$label View Start1}
+	</td>
+	<td>
+		<input type="checkbox" {$Start1_notbox}>
+	</td>
+	<td>
+		{$searchtype_Start1}
+	</td>
+	<td>
+		{$Start1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Start1_editcontrol1}&nbsp;
+	</td>
+{END Start1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_End1}">
+	{BEGIN End1_fieldblock}		
+	<td>
+		{$label View End1}
+	</td>
+	<td>
+		<input type="checkbox" {$End1_notbox}>
+	</td>
+	<td>
+		{$searchtype_End1}
+	</td>
+	<td>
+		{$End1_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$End1_editcontrol1}&nbsp;
+	</td>
+{END End1_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Alloc}">
+	{BEGIN Alloc_fieldblock}		
+	<td>
+		{$label View Alloc}
+	</td>
+	<td>
+		<input type="checkbox" {$Alloc_notbox}>
+	</td>
+	<td>
+		{$searchtype_Alloc}
+	</td>
+	<td>
+		{$Alloc_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Alloc_editcontrol1}&nbsp;
+	</td>
+{END Alloc_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_RSAName}">
+	{BEGIN RSAName_fieldblock}		
+	<td>
+		{$label View RSAName}
+	</td>
+	<td>
+		<input type="checkbox" {$RSAName_notbox}>
+	</td>
+	<td>
+		{$searchtype_RSAName}
+	</td>
+	<td>
+		{$RSAName_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$RSAName_editcontrol1}&nbsp;
+	</td>
+{END RSAName_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Location}">
+	{BEGIN Location_fieldblock}		
+	<td>
+		{$label View Location}
+	</td>
+	<td>
+		<input type="checkbox" {$Location_notbox}>
+	</td>
+	<td>
+		{$searchtype_Location}
+	</td>
+	<td>
+		{$Location_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Location_editcontrol1}&nbsp;
+	</td>
+{END Location_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Supervisor}">
+	{BEGIN Supervisor_fieldblock}		
+	<td>
+		{$label View Supervisor}
+	</td>
+	<td>
+		<input type="checkbox" {$Supervisor_notbox}>
+	</td>
+	<td>
+		{$searchtype_Supervisor}
+	</td>
+	<td>
+		{$Supervisor_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Supervisor_editcontrol1}&nbsp;
+	</td>
+{END Supervisor_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

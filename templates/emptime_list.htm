@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18163">
+  </HEAD>
+  <BODY class="{$stylename} function-list" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_toplinks}
+            <DIV class="rnr-c rnr-ch rnr-c-toplinks">
+              {BEGIN security_block}
+                <DIV class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}">
+                  <DIV id="login_block{$id}">
+                    {BEGIN loggedas_message}
+                      <SPAN>
+                        Logged on as&nbsp;
+                        <B>
+                          {$username}
+                        </B>
+                        &nbsp;
+                      </SPAN>
+                    {END loggedas_message}
+                    {BEGIN guestloginbutton}
+                      <SPAN>
+                        <A class="rnr-button" href="#" {$guestloginlink_attrs}>
+                          Login
+                        </A>
+                      </SPAN>
+                    {END guestloginbutton}
+                    {BEGIN logoutbutton}
+                      <A class="rnr-button" href="#" {$logoutlink_attrs}>
+                        Log out
+                      </A>
+                    {END logoutbutton}
+                    {BEGIN adminarea_link}
+                      <A class="rnr-button" href="admin_rights_list.php" {$adminarealink_attrs}>
+                        Admin Area
+                      </A>
+                    {END adminarea_link}
+                    {BEGIN changepwd_link}
+                      <A class="rnr-button" href="#" {$changepwdlink_attrs}>
+                        Change password
+                      </A>
+                    {END changepwd_link}
+                  </DIV>
+                </DIV>
+              {END security_block}
+              {BEGIN prints_block}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_print {$brickclass_toplinks_print}">
+                  {BEGIN print_link}
+                    <A class="rnr-button" href="emptime_print.php" target="_blank" {$printlink_attrs}>
+                      Print this page
+                    </A>
+                  {END print_link}
+                  {BEGIN printall_link}
+                    <A class="rnr-button" href="emptime_print.php?all=1" target="_blank" {$printalllink_attrs}>
+                      Print all pages
+                    </A>
+                  {END printall_link}
+                </DIV>
+              {END prints_block}
+              {BEGIN asearch_link}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}">
+                  <A class="rnr-button" href="emptime_search.php" {$advsearchlink_attrs}>
+                    Advanced search
+                  </A>
+                </DIV>
+              {END asearch_link}
+              {BEGIN import_link}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_import {$brickclass_toplinks_import}">
+                  <A class="rnr-button" href="emptime_import.php?{$crosstable_attrs}" {$importlink_attrs}>
+                    Import
+                  </A>
+                </DIV>
+              {END import_link}
+              {BEGIN export_link}
+                <DIV class="style1 rnr-bl rnr-b-toplinks_export {$brickclass_toplinks_export}">
+                  <A class="rnr-button" href="emptime_export.php" target="_blank" {$exportlink_attrs}>
+                    Export results
+                  </A>
+                </DIV>
+              {END export_link}
+              <DIV class="rnr-hfiller">
+              </DIV>
+            </DIV>
+          {END container_toplinks}
+          {BEGIN container_hmenu}
+            <DIV class="rnr-c rnr-ch rnr-c-hmenu">
+              {BEGIN menu_block}
+                {$menu main horizontal}
+              {END menu_block}
+              <DIV class="rnr-hfiller">
+              </DIV>
+            </DIV>
+          {END container_hmenu}
+          {BEGIN container_search}
+            <DIV class="rnr-c rnr-ch rnr-c-search">
+              {BEGIN searchform_block}
+                <DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}">
+                  <SPAN>
+                    {BEGIN searchform_text}
+                      <INPUT type="text" size="25" {$searchfor_attrs}>
+                    {END searchform_text}
+                    {BEGIN searchform_search}
+                      <A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}>
+                      </A>
+                    {END searchform_search}
+                    {BEGIN searchform_showall}
+                      <A class="rnr-button" href="#" {$showAllCont_attrs} {$showallbutton_attrs}>
+                        Show all
+                      </A>
+                    {END searchform_showall}
+                  </SPAN>
+                </DIV>
+              {END searchform_block}
+              {BEGIN searchformbuttons_block}
+                <DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">
+                  {BEGIN searchPanelTopButtons}
+                    <SPAN>
+                      <A class="rnr-button img" id="showSrchWin{$id}" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}>
+                      </A>
+                      <A class="rnr-button img" id="showOptPanel{$id}" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}>
+                      </A>
+                    </SPAN>
+                  {END searchPanelTopButtons}
+                </DIV>
+              {END searchformbuttons_block}
+              {BEGIN searchsaving_block}
+                <DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}">
+                </DIV>
+              {END searchsaving_block}
+              <DIV class="rnr-hfiller">
+              </DIV>
+              {BEGIN details_block}
+                <DIV class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">
+                  <SPAN {$details_attrs}>
+                    Details found:
+                    <B>
+                      <SPAN class="rnr-details_found_count">
+                        {$records_found}
+                      </SPAN>
+                    </B>
+                  </SPAN>
+                </DIV>
+              {END details_block}
+              {BEGIN pages_block}
+                <DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">
+                  <SPAN {$pages_attrs}>
+                    Page
+                    <B>
+                      {$page}
+                    </B>
+                    of
+                    <B>
+                      {$maxpages}
+                    </B>
+                  </SPAN>
+                </DIV>
+              {END pages_block}
+              {BEGIN recordspp_block}
+                <DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">
+                  <SPAN id="recordspp_block{$id}" name="recordspp_block{$id}">
+                    Records Per Page:&nbsp;{$recsPerPage}
+                  </SPAN>
+                </DIV>
+              {END recordspp_block}
+            </DIV>
+          {END container_search}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+            {BEGIN container_left}
+              <DIV class="rnr-c rnr-cv rnr-c-left">
+                {BEGIN searchPanel}
+                  <DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+                    <DIV class="searchPanelContainer">
+                      <DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+                        <DIV class="srchCritTop" style="display: none;">
+                          Criteria:&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$all_checkbox}>&nbsp;
+                          {BEGIN all_checkbox_label}
+                            <SPAN>
+                              all
+                            </SPAN>
+                          {END all_checkbox_label}
+                          &nbsp;&nbsp;&nbsp;<INPUT name="srchType{$id}" class="rnr-radio-button" type="radio" {$any_checkbox}>&nbsp;
+                          {BEGIN any_checkbox_label}
+                            <SPAN>
+                              any
+                            </SPAN>
+                          {END any_checkbox_label}
+                        </DIV>
+                        <DIV class="addOption">
+                          <SPAN class="rnr-buttons-group">
+                            <A class="rnr-button" id="showHideControlChooseMenu{$id}" href="#" {$showHideCtrls_attrs}>
+                              Add field
+                            </A>
+                          </SPAN>
+                          <A class="rnr-button" id="showHideSearchType{$id}" href="#" {$showHideCtrlsOpt_attrs}>
+                            {$showHideOpt_mess}
+                          </A>
+                        </DIV>
+                        <TABLE class="controlsBlock {$controls_block_class}">
+                          {BEGIN searchCtrlBlock}
+                            <TBODY>
+                              <TR class="srchPanelRow" {$filterRow_attrs}>
+                                <TD class="srchPanelCell">
+                                  {$delCtrlButt}
+                                </TD>
+                                <TD class="srchPanelCell">
+                                  {$fLabel}
+                                  :&nbsp;
+                                </TD>
+                                <TD class="srchPanelCell srchPanelCell2">
+                                  <DIV class="rnr-searchtype">
+                                    {$searchtype}
+                                  </DIV>
+                                  <DIV class="rnr-searchcontrol">
+                                    {$searchcontrol}
+                                  </DIV>
+                                  <DIV class="rnr-searchcontrol">
+                                    {$searchcontrol1}
+                                  </DIV>
+                                </TD>
+                              </TR>
+                            </TBODY>
+                          {END searchCtrlBlock}
+                        </TABLE>
+                        <DIV align="left" class="bottomSearchButt" {$bottomSearchButt_attrs}>
+                          <A class="rnr-button" id="searchButton{$id}" href="#" {$searchbutton_attrs}>
+                            Search
+                          </A>
+                        </DIV>
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                {END searchPanel}
+              </DIV>
+            {END container_left}
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+            {BEGIN container_bigblock}
+              <DIV class="rnr-c rnr-cv rnr-c-bigblock">
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_recordcontrols} rnr-wrapper rnr-cbw-recordcontrols">
+                  <FONT 
+color="#000000"></FONT>
+                  {BEGIN container_recordcontrols}
+                    <FONT color="#000000"></FONT>
+                    <DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+                      {BEGIN newrecord_controls_block}
+                        <DIV class="style1 rnr-br rnr-b-newrecordcontrol {$brickclass_newrecordcontrol}">
+                          {BEGIN add_link}
+                            <A class="rnr-button" href="emptime_add.php" {$addlink_attrs}>
+                              Add
+                            </A>
+                          {END add_link}
+                          {BEGIN editselected_link}
+                            <A class="rnr-button" href="#" {$editselectedlink_attrs} {$editselectedlink_span}>
+                              Edit
+                            </A>
+                          {END editselected_link}
+                          {BEGIN saveall_link}
+                            <A class="rnr-button" href="#" {$savealllink_attrs} {$savealllink_span}>
+                              Save
+                            </A>
+                          {END saveall_link}
+                          {BEGIN cancelall_link}
+                            <A class="rnr-button" href="#" {$cancelalllink_attrs} {$cancelalllink_span}>
+                              Cancel
+                            </A>
+                          {END cancelall_link}
+                          {BEGIN deleteselected_link}
+                            <A class="rnr-button" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>
+                              Delete
+                            </A>
+                          {END deleteselected_link}
+                          {BEGIN exportselected_link}
+                            <A class="rnr-button" href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>
+                              Export
+                            </A>
+                          {END exportselected_link}
+                          {BEGIN printselected_link}
+                            <A class="rnr-button" href="#" {$printselectedlink_attrs} {$printselectedlink_span}>
+                              Print
+                            </A>
+                          {END printselected_link}
+                        </DIV>
+                      {END newrecord_controls_block}
+                    </DIV>
+                  {END container_recordcontrols}
+                </DIV>
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_message} rnr-wrapper rnr-cbw-message">
+                  {BEGIN container_message}
+                    <DIV class="rnr-c rnr-ch rnr-c-message">
+                      {BEGIN message_block}
+                        <DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+                          <DIV class="rnr-message">
+                            {$message}
+                          </DIV>
+                        </DIV>
+                      {END message_block}
+                    </DIV>
+                  {END container_message}
+                </DIV>
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_grid} rnr-wrapper rnr-cbw-grid">
+                  {BEGIN container_grid}
+                    {BEGIN grid_block}
+                      <TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" style="width: 6729px;" cellpadding="0">
+                        <THEAD>
+                          {BEGIN grid_header}
+                            <TR class="rnr-toprow style1 {$gridHeader_class}">
+                              {BEGIN record_header}
+                                {BEGIN checkbox_column}
+                                  <TH class="rnr-bc" style="width: 13px;">
+                                    <INPUT type="checkbox" {$checkboxheader_attrs}>
+                                  </TH>
+                                {END checkbox_column}
+                                {BEGIN FirstName_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$FirstName_class}">
+                                    {BEGIN FirstName_fieldheader}
+                                      <SPAN {$FirstName_orderlinkattrs}>
+                                        {$label emptime FirstName}
+                                      </SPAN>
+                                    {END FirstName_fieldheader}
+                                  </TH>
+                                {END FirstName_fieldheadercolumn}
+                                {BEGIN LastName_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$LastName_class}">
+                                    {BEGIN LastName_fieldheader}
+                                      <SPAN {$LastName_orderlinkattrs}>
+                                        {$label emptime LastName}
+                                      </SPAN>
+                                    {END LastName_fieldheader}
+                                  </TH>
+                                {END LastName_fieldheadercolumn}
+                                {BEGIN SupervisorName_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$SupervisorName_class}">
+                                    {BEGIN SupervisorName_fieldheader}
+                                      <SPAN {$SupervisorName_orderlinkattrs}>
+                                        {$label emptime SupervisorName}
+                                      </SPAN>
+                                    {END SupervisorName_fieldheader}
+                                  </TH>
+                                {END SupervisorName_fieldheadercolumn}
+                                {BEGIN EmployeeStatus_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$EmployeeStatus_class}">
+                                    {BEGIN EmployeeStatus_fieldheader}
+                                      <SPAN {$EmployeeStatus_orderlinkattrs}>
+                                        {$label emptime EmployeeStatus}
+                                      </SPAN>
+                                    {END EmployeeStatus_fieldheader}
+                                  </TH>
+                                {END EmployeeStatus_fieldheadercolumn}
+                                {BEGIN Date1_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date1_class}">
+                                    {BEGIN Date1_fieldheader}
+                                      <SPAN {$Date1_orderlinkattrs}>
+                                        {$label emptime Date1}
+                                      </SPAN>
+                                    {END Date1_fieldheader}
+                                  </TH>
+                                {END Date1_fieldheadercolumn}
+                                {BEGIN Date2_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date2_class}">
+                                    {BEGIN Date2_fieldheader}
+                                      <SPAN {$Date2_orderlinkattrs}>
+                                        {$label emptime Date2}
+                                      </SPAN>
+                                    {END Date2_fieldheader}
+                                  </TH>
+                                {END Date2_fieldheadercolumn}
+                                {BEGIN Date3_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date3_class}">
+                                    {BEGIN Date3_fieldheader}
+                                      <SPAN {$Date3_orderlinkattrs}>
+                                        {$label emptime Date3}
+                                      </SPAN>
+                                    {END Date3_fieldheader}
+                                  </TH>
+                                {END Date3_fieldheadercolumn}
+                                {BEGIN Date4_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date4_class}">
+                                    {BEGIN Date4_fieldheader}
+                                      <SPAN {$Date4_orderlinkattrs}>
+                                        {$label emptime Date4}
+                                      </SPAN>
+                                    {END Date4_fieldheader}
+                                  </TH>
+                                {END Date4_fieldheadercolumn}
+                                {BEGIN Date5_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date5_class}">
+                                    {BEGIN Date5_fieldheader}
+                                      <SPAN {$Date5_orderlinkattrs}>
+                                        {$label emptime Date5}
+                                      </SPAN>
+                                    {END Date5_fieldheader}
+                                  </TH>
+                                {END Date5_fieldheadercolumn}
+                                {BEGIN Date6_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date6_class}">
+                                    {BEGIN Date6_fieldheader}
+                                      <SPAN {$Date6_orderlinkattrs}>
+                                        {$label emptime Date6}
+                                      </SPAN>
+                                    {END Date6_fieldheader}
+                                  </TH>
+                                {END Date6_fieldheadercolumn}
+                                {BEGIN Date7_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date7_class}">
+                                    {BEGIN Date7_fieldheader}
+                                      <SPAN {$Date7_orderlinkattrs}>
+                                        {$label emptime Date7}
+                                      </SPAN>
+                                    {END Date7_fieldheader}
+                                  </TH>
+                                {END Date7_fieldheadercolumn}
+                                {BEGIN Date8_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date8_class}">
+                                    {BEGIN Date8_fieldheader}
+                                      <SPAN {$Date8_orderlinkattrs}>
+                                        {$label emptime Date8}
+                                      </SPAN>
+                                    {END Date8_fieldheader}
+                                  </TH>
+                                {END Date8_fieldheadercolumn}
+                                {BEGIN Date9_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date9_class}">
+                                    {BEGIN Date9_fieldheader}
+                                      <SPAN {$Date9_orderlinkattrs}>
+                                        {$label emptime Date9}
+                                      </SPAN>
+                                    {END Date9_fieldheader}
+                                  </TH>
+                                {END Date9_fieldheadercolumn}
+                                {BEGIN Date10_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date10_class}">
+                                    {BEGIN Date10_fieldheader}
+                                      <SPAN {$Date10_orderlinkattrs}>
+                                        {$label emptime Date10}
+                                      </SPAN>
+                                    {END Date10_fieldheader}
+                                  </TH>
+                                {END Date10_fieldheadercolumn}
+                                {BEGIN Date11_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date11_class}">
+                                    {BEGIN Date11_fieldheader}
+                                      <SPAN {$Date11_orderlinkattrs}>
+                                        {$label emptime Date11}
+                                      </SPAN>
+                                    {END Date11_fieldheader}
+                                  </TH>
+                                {END Date11_fieldheadercolumn}
+                                {BEGIN Date12_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date12_class}">
+                                    {BEGIN Date12_fieldheader}
+                                      <SPAN {$Date12_orderlinkattrs}>
+                                        {$label emptime Date12}
+                                      </SPAN>
+                                    {END Date12_fieldheader}
+                                  </TH>
+                                {END Date12_fieldheadercolumn}
+                                {BEGIN Date13_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date13_class}">
+                                    {BEGIN Date13_fieldheader}
+                                      <SPAN {$Date13_orderlinkattrs}>
+                                        {$label emptime Date13}
+                                      </SPAN>
+                                    {END Date13_fieldheader}
+                                  </TH>
+                                {END Date13_fieldheadercolumn}
+                                {BEGIN Date14_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date14_class}">
+                                    {BEGIN Date14_fieldheader}
+                                      <SPAN {$Date14_orderlinkattrs}>
+                                        {$label emptime Date14}
+                                      </SPAN>
+                                    {END Date14_fieldheader}
+                                  </TH>
+                                {END Date14_fieldheadercolumn}
+                                {BEGIN Date15_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date15_class}">
+                                    {BEGIN Date15_fieldheader}
+                                      <SPAN {$Date15_orderlinkattrs}>
+                                        {$label emptime Date15}
+                                      </SPAN>
+                                    {END Date15_fieldheader}
+                                  </TH>
+                                {END Date15_fieldheadercolumn}
+                                {BEGIN Date16_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date16_class}">
+                                    {BEGIN Date16_fieldheader}
+                                      <SPAN {$Date16_orderlinkattrs}>
+                                        {$label emptime Date16}
+                                      </SPAN>
+                                    {END Date16_fieldheader}
+                                  </TH>
+                                {END Date16_fieldheadercolumn}
+                                {BEGIN Date17_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date17_class}">
+                                    {BEGIN Date17_fieldheader}
+                                      <SPAN {$Date17_orderlinkattrs}>
+                                        {$label emptime Date17}
+                                      </SPAN>
+                                    {END Date17_fieldheader}
+                                  </TH>
+                                {END Date17_fieldheadercolumn}
+                                {BEGIN Date18_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date18_class}">
+                                    {BEGIN Date18_fieldheader}
+                                      <SPAN {$Date18_orderlinkattrs}>
+                                        {$label emptime Date18}
+                                      </SPAN>
+                                    {END Date18_fieldheader}
+                                  </TH>
+                                {END Date18_fieldheadercolumn}
+                                {BEGIN Date19_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date19_class}">
+                                    {BEGIN Date19_fieldheader}
+                                      <SPAN {$Date19_orderlinkattrs}>
+                                        {$label emptime Date19}
+                                      </SPAN>
+                                    {END Date19_fieldheader}
+                                  </TH>
+                                {END Date19_fieldheadercolumn}
+                                {BEGIN Date20_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date20_class}">
+                                    {BEGIN Date20_fieldheader}
+                                      <SPAN {$Date20_orderlinkattrs}>
+                                        {$label emptime Date20}
+                                      </SPAN>
+                                    {END Date20_fieldheader}
+                                  </TH>
+                                {END Date20_fieldheadercolumn}
+                                {BEGIN Date21_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date21_class}">
+                                    {BEGIN Date21_fieldheader}
+                                      <SPAN {$Date21_orderlinkattrs}>
+                                        {$label emptime Date21}
+                                      </SPAN>
+                                    {END Date21_fieldheader}
+                                  </TH>
+                                {END Date21_fieldheadercolumn}
+                                {BEGIN Date22_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date22_class}">
+                                    {BEGIN Date22_fieldheader}
+                                      <SPAN {$Date22_orderlinkattrs}>
+                                        {$label emptime Date22}
+                                      </SPAN>
+                                    {END Date22_fieldheader}
+                                  </TH>
+                                {END Date22_fieldheadercolumn}
+                                {BEGIN Date23_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date23_class}">
+                                    {BEGIN Date23_fieldheader}
+                                      <SPAN {$Date23_orderlinkattrs}>
+                                        {$label emptime Date23}
+                                      </SPAN>
+                                    {END Date23_fieldheader}
+                                  </TH>
+                                {END Date23_fieldheadercolumn}
+                                {BEGIN Date24_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date24_class}">
+                                    {BEGIN Date24_fieldheader}
+                                      <SPAN {$Date24_orderlinkattrs}>
+                                        {$label emptime Date24}
+                                      </SPAN>
+                                    {END Date24_fieldheader}
+                                  </TH>
+                                {END Date24_fieldheadercolumn}
+                                {BEGIN Date25_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date25_class}">
+                                    {BEGIN Date25_fieldheader}
+                                      <SPAN {$Date25_orderlinkattrs}>
+                                        {$label emptime Date25}
+                                      </SPAN>
+                                    {END Date25_fieldheader}
+                                  </TH>
+                                {END Date25_fieldheadercolumn}
+                                {BEGIN Date26_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date26_class}">
+                                    {BEGIN Date26_fieldheader}
+                                      <SPAN {$Date26_orderlinkattrs}>
+                                        {$label emptime Date26}
+                                      </SPAN>
+                                    {END Date26_fieldheader}
+                                  </TH>
+                                {END Date26_fieldheadercolumn}
+                                {BEGIN Date27_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date27_class}">
+                                    {BEGIN Date27_fieldheader}
+                                      <SPAN {$Date27_orderlinkattrs}>
+                                        {$label emptime Date27}
+                                      </SPAN>
+                                    {END Date27_fieldheader}
+                                  </TH>
+                                {END Date27_fieldheadercolumn}
+                                {BEGIN Date28_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date28_class}">
+                                    {BEGIN Date28_fieldheader}
+                                      <SPAN {$Date28_orderlinkattrs}>
+                                        {$label emptime Date28}
+                                      </SPAN>
+                                    {END Date28_fieldheader}
+                                  </TH>
+                                {END Date28_fieldheadercolumn}
+                                {BEGIN Date29_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date29_class}">
+                                    {BEGIN Date29_fieldheader}
+                                      <SPAN {$Date29_orderlinkattrs}>
+                                        {$label emptime Date29}
+                                      </SPAN>
+                                    {END Date29_fieldheader}
+                                  </TH>
+                                {END Date29_fieldheadercolumn}
+                                {BEGIN Date30_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date30_class}">
+                                    {BEGIN Date30_fieldheader}
+                                      <SPAN {$Date30_orderlinkattrs}>
+                                        {$label emptime Date30}
+                                      </SPAN>
+                                    {END Date30_fieldheader}
+                                  </TH>
+                                {END Date30_fieldheadercolumn}
+                                {BEGIN Date31_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date31_class}">
+                                    {BEGIN Date31_fieldheader}
+                                      <SPAN {$Date31_orderlinkattrs}>
+                                        {$label emptime Date31}
+                                      </SPAN>
+                                    {END Date31_fieldheader}
+                                  </TH>
+                                {END Date31_fieldheadercolumn}
+                                {BEGIN Date32_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date32_class}">
+                                    {BEGIN Date32_fieldheader}
+                                      <SPAN {$Date32_orderlinkattrs}>
+                                        {$label emptime Date32}
+                                      </SPAN>
+                                    {END Date32_fieldheader}
+                                  </TH>
+                                {END Date32_fieldheadercolumn}
+                                {BEGIN Date33_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date33_class}">
+                                    {BEGIN Date33_fieldheader}
+                                      <SPAN {$Date33_orderlinkattrs}>
+                                        {$label emptime Date33}
+                                      </SPAN>
+                                    {END Date33_fieldheader}
+                                  </TH>
+                                {END Date33_fieldheadercolumn}
+                                {BEGIN Date34_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date34_class}">
+                                    {BEGIN Date34_fieldheader}
+                                      <SPAN {$Date34_orderlinkattrs}>
+                                        {$label emptime Date34}
+                                      </SPAN>
+                                    {END Date34_fieldheader}
+                                  </TH>
+                                {END Date34_fieldheadercolumn}
+                                {BEGIN Date35_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date35_class}">
+                                    {BEGIN Date35_fieldheader}
+                                      <SPAN {$Date35_orderlinkattrs}>
+                                        {$label emptime Date35}
+                                      </SPAN>
+                                    {END Date35_fieldheader}
+                                  </TH>
+                                {END Date35_fieldheadercolumn}
+                                {BEGIN Date36_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date36_class}">
+                                    {BEGIN Date36_fieldheader}
+                                      <SPAN {$Date36_orderlinkattrs}>
+                                        {$label emptime Date36}
+                                      </SPAN>
+                                    {END Date36_fieldheader}
+                                  </TH>
+                                {END Date36_fieldheadercolumn}
+                                {BEGIN Date37_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date37_class}">
+                                    {BEGIN Date37_fieldheader}
+                                      <SPAN {$Date37_orderlinkattrs}>
+                                        {$label emptime Date37}
+                                      </SPAN>
+                                    {END Date37_fieldheader}
+                                  </TH>
+                                {END Date37_fieldheadercolumn}
+                                {BEGIN Date38_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date38_class}">
+                                    {BEGIN Date38_fieldheader}
+                                      <SPAN {$Date38_orderlinkattrs}>
+                                        {$label emptime Date38}
+                                      </SPAN>
+                                    {END Date38_fieldheader}
+                                  </TH>
+                                {END Date38_fieldheadercolumn}
+                                {BEGIN Date39_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date39_class}">
+                                    {BEGIN Date39_fieldheader}
+                                      <SPAN {$Date39_orderlinkattrs}>
+                                        {$label emptime Date39}
+                                      </SPAN>
+                                    {END Date39_fieldheader}
+                                  </TH>
+                                {END Date39_fieldheadercolumn}
+                                {BEGIN Date40_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date40_class}">
+                                    {BEGIN Date40_fieldheader}
+                                      <SPAN {$Date40_orderlinkattrs}>
+                                        {$label emptime Date40}
+                                      </SPAN>
+                                    {END Date40_fieldheader}
+                                  </TH>
+                                {END Date40_fieldheadercolumn}
+                                {BEGIN Date41_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date41_class}">
+                                    {BEGIN Date41_fieldheader}
+                                      <SPAN {$Date41_orderlinkattrs}>
+                                        {$label emptime Date41}
+                                      </SPAN>
+                                    {END Date41_fieldheader}
+                                  </TH>
+                                {END Date41_fieldheadercolumn}
+                                {BEGIN Date42_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date42_class}">
+                                    {BEGIN Date42_fieldheader}
+                                      <SPAN {$Date42_orderlinkattrs}>
+                                        {$label emptime Date42}
+                                      </SPAN>
+                                    {END Date42_fieldheader}
+                                  </TH>
+                                {END Date42_fieldheadercolumn}
+                                {BEGIN Date43_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date43_class}">
+                                    {BEGIN Date43_fieldheader}
+                                      <SPAN {$Date43_orderlinkattrs}>
+                                        {$label emptime Date43}
+                                      </SPAN>
+                                    {END Date43_fieldheader}
+                                  </TH>
+                                {END Date43_fieldheadercolumn}
+                                {BEGIN Date44_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date44_class}">
+                                    {BEGIN Date44_fieldheader}
+                                      <SPAN {$Date44_orderlinkattrs}>
+                                        {$label emptime Date44}
+                                      </SPAN>
+                                    {END Date44_fieldheader}
+                                  </TH>
+                                {END Date44_fieldheadercolumn}
+                                {BEGIN Date45_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date45_class}">
+                                    {BEGIN Date45_fieldheader}
+                                      <SPAN {$Date45_orderlinkattrs}>
+                                        {$label emptime Date45}
+                                      </SPAN>
+                                    {END Date45_fieldheader}
+                                  </TH>
+                                {END Date45_fieldheadercolumn}
+                                {BEGIN Date46_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date46_class}">
+                                    {BEGIN Date46_fieldheader}
+                                      <SPAN {$Date46_orderlinkattrs}>
+                                        {$label emptime Date46}
+                                      </SPAN>
+                                    {END Date46_fieldheader}
+                                  </TH>
+                                {END Date46_fieldheadercolumn}
+                                {BEGIN Date47_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date47_class}">
+                                    {BEGIN Date47_fieldheader}
+                                      <SPAN {$Date47_orderlinkattrs}>
+                                        {$label emptime Date47}
+                                      </SPAN>
+                                    {END Date47_fieldheader}
+                                  </TH>
+                                {END Date47_fieldheadercolumn}
+                                {BEGIN Date48_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date48_class}">
+                                    {BEGIN Date48_fieldheader}
+                                      <SPAN {$Date48_orderlinkattrs}>
+                                        {$label emptime Date48}
+                                      </SPAN>
+                                    {END Date48_fieldheader}
+                                  </TH>
+                                {END Date48_fieldheadercolumn}
+                                {BEGIN Date49_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date49_class}">
+                                    {BEGIN Date49_fieldheader}
+                                      <SPAN {$Date49_orderlinkattrs}>
+                                        {$label emptime Date49}
+                                      </SPAN>
+                                    {END Date49_fieldheader}
+                                  </TH>
+                                {END Date49_fieldheadercolumn}
+                                {BEGIN Date50_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date50_class}">
+                                    {BEGIN Date50_fieldheader}
+                                      <SPAN {$Date50_orderlinkattrs}>
+                                        {$label emptime Date50}
+                                      </SPAN>
+                                    {END Date50_fieldheader}
+                                  </TH>
+                                {END Date50_fieldheadercolumn}
+                                {BEGIN Date51_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date51_class}">
+                                    {BEGIN Date51_fieldheader}
+                                      <SPAN {$Date51_orderlinkattrs}>
+                                        {$label emptime Date51}
+                                      </SPAN>
+                                    {END Date51_fieldheader}
+                                  </TH>
+                                {END Date51_fieldheadercolumn}
+                                {BEGIN Date52_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date52_class}">
+                                    {BEGIN Date52_fieldheader}
+                                      <SPAN {$Date52_orderlinkattrs}>
+                                        {$label emptime Date52}
+                                      </SPAN>
+                                    {END Date52_fieldheader}
+                                  </TH>
+                                {END Date52_fieldheadercolumn}
+                                {BEGIN Date53_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$Date53_class}">
+                                    {BEGIN Date53_fieldheader}
+                                      <SPAN {$Date53_orderlinkattrs}>
+                                        {$label emptime Date53}
+                                      </SPAN>
+                                    {END Date53_fieldheader}
+                                  </TH>
+                                {END Date53_fieldheadercolumn}
+                                <TH class="rnr-edge" style="width: 3px;">
+                                  &nbsp;
+                                </TH>
+                                {BEGIN endrecordheader_block}
+                                  <TH class="rnr-cs" style="width: 3px;">
+                                    &nbsp;
+                                  </TH>
+                                {END endrecordheader_block}
+                              {END record_header}
+                            </TR>
+                          {END grid_header}
+                        </THEAD>
+                        <TBODY>
+                          {BEGIN grid_row}
+                            <TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+                              {BEGIN grid_record}
+                                {BEGIN checkbox_column}
+                                  <TD class="rnr-bc" style="width: 19px;" ieditcont="checkBox" {$rowstyle} {$recordattrs}>
+                                    {BEGIN checkbox}
+                                      <INPUT type="checkbox" {$checkbox_attrs}>
+                                    {END checkbox}
+                                  </TD>
+                                {END checkbox_column}
+                                {BEGIN FirstName_fieldcolumn}
+                                  <TD class="{$FirstName_class}" {$FirstName_style} {$recordattrs}>
+                                    <STRONG></STRONG><STRONG>{$FirstName_value}</STRONG>
+                                  </TD>
+                                {END FirstName_fieldcolumn}
+                                {BEGIN LastName_fieldcolumn}
+                                  <TD class="{$LastName_class}" {$LastName_style} {$recordattrs}>
+                                    <STRONG></STRONG><STRONG>{$LastName_value}</STRONG>
+                                  </TD>
+                                {END LastName_fieldcolumn}
+                                {BEGIN SupervisorName_fieldcolumn}
+                                  <TD class="{$SupervisorName_class}" {$SupervisorName_style} {$recordattrs}>
+                                    <STRONG></STRONG><STRONG>{$SupervisorName_value}</STRONG>
+                                  </TD>
+                                {END SupervisorName_fieldcolumn}
+                                {BEGIN EmployeeStatus_fieldcolumn}
+                                  <TD class="{$EmployeeStatus_class}" {$EmployeeStatus_style} {$recordattrs}>
+                                    <DIV align="center">
+                                      {$EmployeeStatus_value}
+                                    </DIV>
+                                  </TD>
+                                {END EmployeeStatus_fieldcolumn}
+                                {BEGIN Date1_fieldcolumn}
+                                  <TD class="{$Date1_class}" {$Date1_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT>
+                                    <DIV align="center">
+                                      <FONT color="#ffffff"></FONT><FONT color="#ffffff">{$Date1_value}</FONT><FONT color="#ffffff"></FONT>
+                                    </DIV>
+                                  </TD>
+                                {END Date1_fieldcolumn}
+                                {BEGIN Date2_fieldcolumn}
+                                  <TD class="{$Date2_class}" {$Date2_style} {$recordattrs}>
+                                    <DIV align="center">
+                                      <FONT color="#ffffff"></FONT><FONT color="#ffffff">{$Date2_value}</FONT><FONT color="#ffffff"></FONT>
+                                    </DIV>
+                                  </TD>
+                                {END Date2_fieldcolumn}
+                                {BEGIN Date3_fieldcolumn}
+                                  <TD class="{$Date3_class}" {$Date3_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT>
+                                    <DIV align="center">
+                                      <FONT color="#ffffff"></FONT><FONT color="#ffffff">{$Date3_value}</FONT><FONT color="#ffffff"></FONT>
+                                    </DIV>
+                                  </TD>
+                                {END Date3_fieldcolumn}
+                                {BEGIN Date4_fieldcolumn}
+                                  <TD class="{$Date4_class}" {$Date4_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date4_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date4_fieldcolumn}
+                                {BEGIN Date5_fieldcolumn}
+                                  <TD class="{$Date5_class}" {$Date5_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date5_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date5_fieldcolumn}
+                                {BEGIN Date6_fieldcolumn}
+                                  <TD class="{$Date6_class}" {$Date6_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date6_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date6_fieldcolumn}
+                                {BEGIN Date7_fieldcolumn}
+                                  <TD class="{$Date7_class}" {$Date7_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date7_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date7_fieldcolumn}
+                                {BEGIN Date8_fieldcolumn}
+                                  <TD class="{$Date8_class}" {$Date8_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date8_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date8_fieldcolumn}
+                                {BEGIN Date9_fieldcolumn}
+                                  <TD class="{$Date9_class}" {$Date9_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date9_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date9_fieldcolumn}
+                                {BEGIN Date10_fieldcolumn}
+                                  <TD class="{$Date10_class}" {$Date10_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date10_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date10_fieldcolumn}
+                                {BEGIN Date11_fieldcolumn}
+                                  <TD class="{$Date11_class}" {$Date11_style} {$recordattrs}>
+                                    <STRONG></STRONG><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date11_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date11_fieldcolumn}
+                                {BEGIN Date12_fieldcolumn}
+                                  <TD class="{$Date12_class}" {$Date12_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date12_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date12_fieldcolumn}
+                                {BEGIN Date13_fieldcolumn}
+                                  <TD class="{$Date13_class}" {$Date13_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">{$Date13_value}</FONT>
+                                  </TD>
+                                {END Date13_fieldcolumn}
+                                {BEGIN Date14_fieldcolumn}
+                                  <TD class="{$Date14_class}" {$Date14_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date14_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date14_fieldcolumn}
+                                {BEGIN Date15_fieldcolumn}
+                                  <TD class="{$Date15_class}" {$Date15_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date15_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date15_fieldcolumn}
+                                {BEGIN Date16_fieldcolumn}
+                                  <TD class="{$Date16_class}" {$Date16_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date16_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date16_fieldcolumn}
+                                {BEGIN Date17_fieldcolumn}
+                                  <TD class="{$Date17_class}" {$Date17_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date17_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date17_fieldcolumn}
+                                {BEGIN Date18_fieldcolumn}
+                                  <TD class="{$Date18_class}" {$Date18_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date18_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date18_fieldcolumn}
+                                {BEGIN Date19_fieldcolumn}
+                                  <TD class="{$Date19_class}" {$Date19_style} {$recordattrs}>
+                                    <STRONG></STRONG><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date19_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date19_fieldcolumn}
+                                {BEGIN Date20_fieldcolumn}
+                                  <TD class="{$Date20_class}" {$Date20_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date20_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date20_fieldcolumn}
+                                {BEGIN Date21_fieldcolumn}
+                                  <TD class="{$Date21_class}" {$Date21_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date21_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date21_fieldcolumn}
+                                {BEGIN Date22_fieldcolumn}
+                                  <TD class="{$Date22_class}" {$Date22_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date22_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date22_fieldcolumn}
+                                {BEGIN Date23_fieldcolumn}
+                                  <TD class="{$Date23_class}" {$Date23_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date23_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date23_fieldcolumn}
+                                {BEGIN Date24_fieldcolumn}
+                                  <TD class="{$Date24_class}" {$Date24_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date24_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date24_fieldcolumn}
+                                {BEGIN Date25_fieldcolumn}
+                                  <TD class="{$Date25_class}" {$Date25_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date25_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date25_fieldcolumn}
+                                {BEGIN Date26_fieldcolumn}
+                                  <TD class="{$Date26_class}" {$Date26_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date26_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date26_fieldcolumn}
+                                {BEGIN Date27_fieldcolumn}
+                                  <TD class="{$Date27_class}" {$Date27_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date27_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date27_fieldcolumn}
+                                {BEGIN Date28_fieldcolumn}
+                                  <TD class="{$Date28_class}" {$Date28_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date28_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date28_fieldcolumn}
+                                {BEGIN Date29_fieldcolumn}
+                                  <TD class="{$Date29_class}" {$Date29_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date29_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date29_fieldcolumn}
+                                {BEGIN Date30_fieldcolumn}
+                                  <TD class="{$Date30_class}" {$Date30_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date30_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date30_fieldcolumn}
+                                {BEGIN Date31_fieldcolumn}
+                                  <TD class="{$Date31_class}" {$Date31_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date31_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date31_fieldcolumn}
+                                {BEGIN Date32_fieldcolumn}
+                                  <TD class="{$Date32_class}" {$Date32_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date32_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date32_fieldcolumn}
+                                {BEGIN Date33_fieldcolumn}
+                                  <TD class="{$Date33_class}" {$Date33_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date33_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date33_fieldcolumn}
+                                {BEGIN Date34_fieldcolumn}
+                                  <TD class="{$Date34_class}" {$Date34_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date34_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date34_fieldcolumn}
+                                {BEGIN Date35_fieldcolumn}
+                                  <TD class="{$Date35_class}" {$Date35_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date35_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date35_fieldcolumn}
+                                {BEGIN Date36_fieldcolumn}
+                                  <TD class="{$Date36_class}" {$Date36_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date36_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date36_fieldcolumn}
+                                {BEGIN Date37_fieldcolumn}
+                                  <TD class="{$Date37_class}" {$Date37_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date37_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date37_fieldcolumn}
+                                {BEGIN Date38_fieldcolumn}
+                                  <TD class="{$Date38_class}" {$Date38_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date38_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date38_fieldcolumn}
+                                {BEGIN Date39_fieldcolumn}
+                                  <TD class="{$Date39_class}" {$Date39_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date39_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date39_fieldcolumn}
+                                {BEGIN Date40_fieldcolumn}
+                                  <TD class="{$Date40_class}" {$Date40_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date40_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date40_fieldcolumn}
+                                {BEGIN Date41_fieldcolumn}
+                                  <TD class="{$Date41_class}" {$Date41_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date41_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date41_fieldcolumn}
+                                {BEGIN Date42_fieldcolumn}
+                                  <TD class="{$Date42_class}" {$Date42_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV>
+                                    </DIV>
+                                    <DIV align="center">
+                                      {$Date42_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date42_fieldcolumn}
+                                {BEGIN Date43_fieldcolumn}
+                                  <TD class="{$Date43_class}" {$Date43_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date43_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date43_fieldcolumn}
+                                {BEGIN Date44_fieldcolumn}
+                                  <TD class="{$Date44_class}" {$Date44_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date44_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date44_fieldcolumn}
+                                {BEGIN Date45_fieldcolumn}
+                                  <TD class="{$Date45_class}" {$Date45_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date45_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date45_fieldcolumn}
+                                {BEGIN Date46_fieldcolumn}
+                                  <TD class="{$Date46_class}" {$Date46_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date46_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date46_fieldcolumn}
+                                {BEGIN Date47_fieldcolumn}
+                                  <TD class="{$Date47_class}" {$Date47_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date47_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date47_fieldcolumn}
+                                {BEGIN Date48_fieldcolumn}
+                                  <TD class="{$Date48_class}" {$Date48_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date48_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date48_fieldcolumn}
+                                {BEGIN Date49_fieldcolumn}
+                                  <TD class="{$Date49_class}" {$Date49_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date49_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date49_fieldcolumn}
+                                {BEGIN Date50_fieldcolumn}
+                                  <TD class="{$Date50_class}" {$Date50_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date50_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date50_fieldcolumn}
+                                {BEGIN Date51_fieldcolumn}
+                                  <TD class="{$Date51_class}" {$Date51_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date51_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date51_fieldcolumn}
+                                {BEGIN Date52_fieldcolumn}
+                                  <TD class="{$Date52_class}" {$Date52_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date52_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date52_fieldcolumn}
+                                {BEGIN Date53_fieldcolumn}
+                                  <TD class="{$Date53_class}" {$Date53_style} {$recordattrs}>
+                                    <FONT color="#ffffff"></FONT><FONT color="#ffffff">
+                                    <DIV align="center">
+                                      {$Date53_value}
+                                    </DIV>
+                                    </FONT>
+                                  </TD>
+                                {END Date53_fieldcolumn}
+                                <TD class="rnr-edge" style="width: 9px;" {$recordattrs}>
+                                  &nbsp;
+                                </TD>
+                                {BEGIN endrecord_block}
+                                  <TD class="rnr-cs" style="width: 3px;" {$endrecordblock_attrs}>
+                                    &nbsp;
+                                  </TD>
+                                {END endrecord_block}
+                              {END grid_record}
+                            </TR>
+                          {END grid_row}
+                        </TBODY>
+                      </TABLE>
+                    {END grid_block}
+                  {END container_grid}
+                </DIV>
+                <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_pagination} rnr-wrapper rnr-cbw-pagination">
+                  {BEGIN container_pagination}
+                    <DIV class="rnr-c rnr-ch rnr-c-pagination">
+                      {BEGIN pagination_block}
+                        <DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+                          {$pagination}
+                        </DIV>
+                      {END pagination_block}
+                    </DIV>
+                  {END container_pagination}
+                </DIV>
+              </DIV>
+            {END container_bigblock}
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

@@ -1,0 +1,42 @@
+<?php
+$dalTablecustomer_header = array();
+$dalTablecustomer_header["AutoOracleID"] = array("type"=>3,"varname"=>"AutoOracleID");
+$dalTablecustomer_header["OracIeID"] = array("type"=>3,"varname"=>"OracIeID");
+$dalTablecustomer_header["Name"] = array("type"=>200,"varname"=>"Name");
+$dalTablecustomer_header["Contract_Status"] = array("type"=>200,"varname"=>"Contract_Status");
+$dalTablecustomer_header["Size"] = array("type"=>200,"varname"=>"Size");
+$dalTablecustomer_header["Stage"] = array("type"=>200,"varname"=>"Stage");
+$dalTablecustomer_header["Temperature"] = array("type"=>200,"varname"=>"Temperature");
+$dalTablecustomer_header["Sales_SVP"] = array("type"=>200,"varname"=>"Sales_SVP");
+$dalTablecustomer_header["Contract_Start"] = array("type"=>7,"varname"=>"Contract_Start");
+$dalTablecustomer_header["SteadyState"] = array("type"=>7,"varname"=>"SteadyState");
+$dalTablecustomer_header["Contract_end"] = array("type"=>7,"varname"=>"Contract_end");
+$dalTablecustomer_header["Recovery_Center"] = array("type"=>200,"varname"=>"Recovery_Center");
+$dalTablecustomer_header["Total_MRR"] = array("type"=>200,"varname"=>"Total_MRR");
+$dalTablecustomer_header["MRP_MRR"] = array("type"=>200,"varname"=>"MRP_MRR");
+$dalTablecustomer_header["ARS_MRR"] = array("type"=>200,"varname"=>"ARS_MRR");
+$dalTablecustomer_header["MS_MRR"] = array("type"=>200,"varname"=>"MS_MRR");
+$dalTablecustomer_header["CS_MRR"] = array("type"=>200,"varname"=>"CS_MRR");
+$dalTablecustomer_header["OTHER_MRR"] = array("type"=>200,"varname"=>"OTHER_MRR");
+$dalTablecustomer_header["SME"] = array("type"=>200,"varname"=>"SME");
+$dalTablecustomer_header["RSAName"] = array("type"=>200,"varname"=>"RSAName");
+$dalTablecustomer_header["Overall_Temp"] = array("type"=>200,"varname"=>"Overall_Temp");
+$dalTablecustomer_header["Engagement_status"] = array("type"=>200,"varname"=>"Engagement_status");
+$dalTablecustomer_header["created_by"] = array("type"=>200,"varname"=>"created_by");
+$dalTablecustomer_header["Created_date"] = array("type"=>135,"varname"=>"Created_date");
+$dalTablecustomer_header["Updated_by"] = array("type"=>200,"varname"=>"Updated_by");
+$dalTablecustomer_header["Updated_date"] = array("type"=>135,"varname"=>"Updated_date");
+$dalTablecustomer_header["Comments"] = array("type"=>200,"varname"=>"Comments");
+$dalTablecustomer_header["EmployeeID"] = array("type"=>3,"varname"=>"EmployeeID");
+$dalTablecustomer_header["Compre_String"] = array("type"=>200,"varname"=>"Compre_String");
+$dalTablecustomer_header["Address"] = array("type"=>200,"varname"=>"Address");
+$dalTablecustomer_header["PrimaryTimeZone"] = array("type"=>200,"varname"=>"PrimaryTimeZone");
+$dalTablecustomer_header["Onshore Support"] = array("type"=>16,"varname"=>"Onshore_Support");
+$dalTablecustomer_header["TransStartDate"] = array("type"=>7,"varname"=>"TransStartDate");
+$dalTablecustomer_header["TransEndDate"] = array("type"=>7,"varname"=>"TransEndDate");
+$dalTablecustomer_header["Supervisor"] = array("type"=>200,"varname"=>"Supervisor");
+$dalTablecustomer_header["TAM"] = array("type"=>200,"varname"=>"TAM");
+	$dalTablecustomer_header["OracIeID"]["key"]=true;
+
+$dal_info["Tables__customer_header"] = &$dalTablecustomer_header;
+?>

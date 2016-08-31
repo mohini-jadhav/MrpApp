@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18163">
+  </HEAD>
+  <BODY class="{$stylename} function-view" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_all}
+            <DIV class="rnr-c rnr-cv rnr-c-all">
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+                {BEGIN container_main}
+                  <DIV class="rnr-c rnr-cv rnr-c-main">
+                    <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+                      {BEGIN container_view}
+                        <DIV class="rnr-c rnr-cv rnr-c-view">
+                          {BEGIN viewheader}
+                            <DIV class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}">
+                              <SPAN>
+                                <H1>
+                                  {$pagetitlelabel skillstable view}
+                                </H1>
+                              </SPAN>
+                            </DIV>
+                          {END viewheader}
+                          <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                            {BEGIN container_fields}
+                              <DIV class="rnr-c rnr-cv rnr-c-fields">
+                                <DIV class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}">
+                                  <TABLE class="fieldGrid">
+                                    <TBODY>
+                                      {BEGIN PlatformType_fieldblock}
+                                        <TR class="{$fielddispclass_PlatformType}" data-fieldname="PlatformType">
+                                          <TD class="rnr-label">
+                                            {$label skillstable PlatformType}
+                                          </TD>
+                                          <TD class="rnr-control style3">
+                                            {$PlatformType_value}
+                                            &nbsp;
+                                          </TD>
+                                        </TR>
+                                      {END PlatformType_fieldblock}
+                                      {BEGIN CategoryID_fieldblock}
+                                        <TR class="{$fielddispclass_CategoryID}" data-fieldname="CategoryID">
+                                          <TD class="rnr-label">
+                                            {$label skillstable CategoryID}
+                                          </TD>
+                                          <TD class="rnr-control style3">
+                                            {$CategoryID_value}
+                                            &nbsp;
+                                          </TD>
+                                        </TR>
+                                      {END CategoryID_fieldblock}
+                                      {BEGIN PlatformName_fieldblock}
+                                        <TR class="{$fielddispclass_PlatformName}" data-fieldname="PlatformName">
+                                          <TD class="rnr-label">
+                                            {$label skillstable PlatformName}
+                                          </TD>
+                                          <TD class="rnr-control style3">
+                                            {$PlatformName_value}
+                                            &nbsp;
+                                          </TD>
+                                        </TR>
+                                      {END PlatformName_fieldblock}
+                                      {BEGIN PlatformID_fieldblock}
+                                        <TR class="{$fielddispclass_PlatformID}" data-fieldname="PlatformID">
+                                          <TD class="rnr-label">
+                                            {$label skillstable PlatformID}
+                                          </TD>
+                                          <TD class="rnr-control style3">
+                                            {$PlatformID_value}
+                                            &nbsp;
+                                          </TD>
+                                        </TR>
+                                      {END PlatformID_fieldblock}
+                                    </TBODY>
+                                  </TABLE>
+                                </DIV>
+                                {BEGIN viewbuttons}
+                                  <DIV class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}">
+                                    <DIV class="rnr-buttons-left">
+                                      {BEGIN back_button}
+                                        <A class="rnr-button" href="#" {$backbutton_attrs}>
+                                          Cancel
+                                        </A>
+                                      {END back_button}
+                                      {BEGIN edit_page_button}
+                                        <A class="rnr-button" href="#" {$edit_page_button_attrs}>
+                                          Edit
+                                        </A>
+                                      {END edit_page_button}
+                                    </DIV>
+                                  </DIV>
+                                {END viewbuttons}
+                              </DIV>
+                            {END container_fields}
+                          </DIV>
+                        </DIV>
+                      {END container_view}
+                    </DIV>
+                  </DIV>
+                {END container_main}
+              </DIV>
+            </DIV>
+          {END container_all}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

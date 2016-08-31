@@ -1,0 +1,274 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel lookup search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Lookup_ID}">
+	{BEGIN Lookup_ID_fieldblock}		
+	<td>
+		{$label lookup Lookup_ID}
+	</td>
+	<td>
+		<input type="checkbox" {$Lookup_ID_notbox}>
+	</td>
+	<td>
+		{$searchtype_Lookup_ID}
+	</td>
+	<td>
+		{$Lookup_ID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Lookup_ID_editcontrol1}&nbsp;
+	</td>
+{END Lookup_ID_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Category}">
+	{BEGIN Category_fieldblock}		
+	<td>
+		{$label lookup Category}
+	</td>
+	<td>
+		<input type="checkbox" {$Category_notbox}>
+	</td>
+	<td>
+		{$searchtype_Category}
+	</td>
+	<td>
+		{$Category_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Category_editcontrol1}&nbsp;
+	</td>
+{END Category_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Lookup_code}">
+	{BEGIN Lookup_code_fieldblock}		
+	<td>
+		{$label lookup Lookup_code}
+	</td>
+	<td>
+		<input type="checkbox" {$Lookup_code_notbox}>
+	</td>
+	<td>
+		{$searchtype_Lookup_code}
+	</td>
+	<td>
+		{$Lookup_code_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Lookup_code_editcontrol1}&nbsp;
+	</td>
+{END Lookup_code_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Lookup_value}">
+	{BEGIN Lookup_value_fieldblock}		
+	<td>
+		{$label lookup Lookup_value}
+	</td>
+	<td>
+		<input type="checkbox" {$Lookup_value_notbox}>
+	</td>
+	<td>
+		{$searchtype_Lookup_value}
+	</td>
+	<td>
+		{$Lookup_value_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Lookup_value_editcontrol1}&nbsp;
+	</td>
+{END Lookup_value_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_created_by}">
+	{BEGIN created_by_fieldblock}		
+	<td>
+		{$label lookup created_by}
+	</td>
+	<td>
+		<input type="checkbox" {$created_by_notbox}>
+	</td>
+	<td>
+		{$searchtype_created_by}
+	</td>
+	<td>
+		{$created_by_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$created_by_editcontrol1}&nbsp;
+	</td>
+{END created_by_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_created_date}">
+	{BEGIN created_date_fieldblock}		
+	<td>
+		{$label lookup created_date}
+	</td>
+	<td>
+		<input type="checkbox" {$created_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_created_date}
+	</td>
+	<td>
+		{$created_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$created_date_editcontrol1}&nbsp;
+	</td>
+{END created_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_updated_by}">
+	{BEGIN updated_by_fieldblock}		
+	<td>
+		{$label lookup updated_by}
+	</td>
+	<td>
+		<input type="checkbox" {$updated_by_notbox}>
+	</td>
+	<td>
+		{$searchtype_updated_by}
+	</td>
+	<td>
+		{$updated_by_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$updated_by_editcontrol1}&nbsp;
+	</td>
+{END updated_by_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_updated_date}">
+	{BEGIN updated_date_fieldblock}		
+	<td>
+		{$label lookup updated_date}
+	</td>
+	<td>
+		<input type="checkbox" {$updated_date_notbox}>
+	</td>
+	<td>
+		{$searchtype_updated_date}
+	</td>
+	<td>
+		{$updated_date_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$updated_date_editcontrol1}&nbsp;
+	</td>
+{END updated_date_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Remarks}">
+	{BEGIN Remarks_fieldblock}		
+	<td>
+		{$label lookup Remarks}
+	</td>
+	<td>
+		<input type="checkbox" {$Remarks_notbox}>
+	</td>
+	<td>
+		{$searchtype_Remarks}
+	</td>
+	<td>
+		{$Remarks_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Remarks_editcontrol1}&nbsp;
+	</td>
+{END Remarks_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

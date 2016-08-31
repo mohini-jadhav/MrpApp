@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18163">
+  </HEAD>
+  <BODY class="{$stylename} function-edit" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_all}
+            <DIV class="rnr-c rnr-cv rnr-c-all">
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+                {BEGIN container_edit}
+                  <DIV class="rnr-c rnr-cv rnr-c-edit">
+                    {BEGIN editheader}
+                      <DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}">
+                        <SPAN>
+                          <H1>
+                            {$pagetitlelabel emptime edit}
+                          </H1>
+                        </SPAN>
+                      </DIV>
+                    {END editheader}
+                    {BEGIN message_block}
+                      <DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+                        <DIV class="rnr-message">
+                          {$message}
+                        </DIV>
+                      </DIV>
+                    {END message_block}
+                    <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                      {BEGIN container_fields}
+                        <DIV class="rnr-c rnr-cv rnr-c-fields">
+                          <DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+                            <TABLE class="fieldGrid">
+                              <TBODY>
+                                {BEGIN FirstName_fieldblock}
+                                  <TR class="{$fielddispclass_FirstName}" data-fieldname="FirstName">
+                                    <TD class="rnr-label">
+                                      {BEGIN FirstName_label}
+                                        {$label emptime FirstName}
+                                      {END FirstName_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$FirstName_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END FirstName_fieldblock}
+                                {BEGIN LastName_fieldblock}
+                                  <TR class="{$fielddispclass_LastName}" data-fieldname="LastName">
+                                    <TD class="rnr-label">
+                                      {BEGIN LastName_label}
+                                        {$label emptime LastName}
+                                      {END LastName_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$LastName_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END LastName_fieldblock}
+                                {BEGIN SupervisorName_fieldblock}
+                                  <TR class="{$fielddispclass_SupervisorName}" data-fieldname="SupervisorName">
+                                    <TD class="rnr-label">
+                                      {BEGIN SupervisorName_label}
+                                        {$label emptime SupervisorName}
+                                      {END SupervisorName_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$SupervisorName_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END SupervisorName_fieldblock}
+                                {BEGIN EmployeeStatus_fieldblock}
+                                  <TR class="{$fielddispclass_EmployeeStatus}" data-fieldname="EmployeeStatus">
+                                    <TD class="rnr-label">
+                                      {BEGIN EmployeeStatus_label}
+                                        {$label emptime EmployeeStatus}
+                                      {END EmployeeStatus_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$EmployeeStatus_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END EmployeeStatus_fieldblock}
+                                {BEGIN Date1_fieldblock}
+                                  <TR class="{$fielddispclass_Date1}" data-fieldname="Date1">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date1_label}
+                                        {$label emptime Date1}
+                                      {END Date1_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date1_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date1_fieldblock}
+                                {BEGIN Date2_fieldblock}
+                                  <TR class="{$fielddispclass_Date2}" data-fieldname="Date2">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date2_label}
+                                        {$label emptime Date2}
+                                      {END Date2_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date2_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date2_fieldblock}
+                                {BEGIN Date3_fieldblock}
+                                  <TR class="{$fielddispclass_Date3}" data-fieldname="Date3">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date3_label}
+                                        {$label emptime Date3}
+                                      {END Date3_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date3_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date3_fieldblock}
+                                {BEGIN Date4_fieldblock}
+                                  <TR class="{$fielddispclass_Date4}" data-fieldname="Date4">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date4_label}
+                                        {$label emptime Date4}
+                                      {END Date4_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date4_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date4_fieldblock}
+                                {BEGIN Date5_fieldblock}
+                                  <TR class="{$fielddispclass_Date5}" data-fieldname="Date5">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date5_label}
+                                        {$label emptime Date5}
+                                      {END Date5_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date5_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date5_fieldblock}
+                                {BEGIN Date6_fieldblock}
+                                  <TR class="{$fielddispclass_Date6}" data-fieldname="Date6">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date6_label}
+                                        {$label emptime Date6}
+                                      {END Date6_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date6_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date6_fieldblock}
+                                {BEGIN Date7_fieldblock}
+                                  <TR class="{$fielddispclass_Date7}" data-fieldname="Date7">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date7_label}
+                                        {$label emptime Date7}
+                                      {END Date7_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date7_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date7_fieldblock}
+                                {BEGIN Date8_fieldblock}
+                                  <TR class="{$fielddispclass_Date8}" data-fieldname="Date8">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date8_label}
+                                        {$label emptime Date8}
+                                      {END Date8_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date8_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date8_fieldblock}
+                                {BEGIN Date9_fieldblock}
+                                  <TR class="{$fielddispclass_Date9}" data-fieldname="Date9">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date9_label}
+                                        {$label emptime Date9}
+                                      {END Date9_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date9_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date9_fieldblock}
+                                {BEGIN Date10_fieldblock}
+                                  <TR class="{$fielddispclass_Date10}" data-fieldname="Date10">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date10_label}
+                                        {$label emptime Date10}
+                                      {END Date10_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date10_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date10_fieldblock}
+                                {BEGIN Date11_fieldblock}
+                                  <TR class="{$fielddispclass_Date11}" data-fieldname="Date11">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date11_label}
+                                        {$label emptime Date11}
+                                      {END Date11_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date11_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date11_fieldblock}
+                                {BEGIN Date12_fieldblock}
+                                  <TR class="{$fielddispclass_Date12}" data-fieldname="Date12">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date12_label}
+                                        {$label emptime Date12}
+                                      {END Date12_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date12_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date12_fieldblock}
+                                {BEGIN Date13_fieldblock}
+                                  <TR class="{$fielddispclass_Date13}" data-fieldname="Date13">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date13_label}
+                                        {$label emptime Date13}
+                                      {END Date13_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date13_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date13_fieldblock}
+                                {BEGIN Date14_fieldblock}
+                                  <TR class="{$fielddispclass_Date14}" data-fieldname="Date14">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date14_label}
+                                        {$label emptime Date14}
+                                      {END Date14_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date14_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date14_fieldblock}
+                                {BEGIN Date15_fieldblock}
+                                  <TR class="{$fielddispclass_Date15}" data-fieldname="Date15">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date15_label}
+                                        {$label emptime Date15}
+                                      {END Date15_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date15_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date15_fieldblock}
+                                {BEGIN Date16_fieldblock}
+                                  <TR class="{$fielddispclass_Date16}" data-fieldname="Date16">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date16_label}
+                                        {$label emptime Date16}
+                                      {END Date16_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date16_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date16_fieldblock}
+                                {BEGIN Date17_fieldblock}
+                                  <TR class="{$fielddispclass_Date17}" data-fieldname="Date17">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date17_label}
+                                        {$label emptime Date17}
+                                      {END Date17_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date17_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date17_fieldblock}
+                                {BEGIN Date18_fieldblock}
+                                  <TR class="{$fielddispclass_Date18}" data-fieldname="Date18">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date18_label}
+                                        {$label emptime Date18}
+                                      {END Date18_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date18_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date18_fieldblock}
+                                {BEGIN Date19_fieldblock}
+                                  <TR class="{$fielddispclass_Date19}" data-fieldname="Date19">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date19_label}
+                                        {$label emptime Date19}
+                                      {END Date19_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date19_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date19_fieldblock}
+                                {BEGIN Date20_fieldblock}
+                                  <TR class="{$fielddispclass_Date20}" data-fieldname="Date20">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date20_label}
+                                        {$label emptime Date20}
+                                      {END Date20_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date20_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date20_fieldblock}
+                                {BEGIN Date21_fieldblock}
+                                  <TR class="{$fielddispclass_Date21}" data-fieldname="Date21">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date21_label}
+                                        {$label emptime Date21}
+                                      {END Date21_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date21_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date21_fieldblock}
+                                {BEGIN Date22_fieldblock}
+                                  <TR class="{$fielddispclass_Date22}" data-fieldname="Date22">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date22_label}
+                                        {$label emptime Date22}
+                                      {END Date22_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date22_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date22_fieldblock}
+                                {BEGIN Date23_fieldblock}
+                                  <TR class="{$fielddispclass_Date23}" data-fieldname="Date23">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date23_label}
+                                        {$label emptime Date23}
+                                      {END Date23_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date23_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date23_fieldblock}
+                                {BEGIN Date24_fieldblock}
+                                  <TR class="{$fielddispclass_Date24}" data-fieldname="Date24">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date24_label}
+                                        {$label emptime Date24}
+                                      {END Date24_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date24_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date24_fieldblock}
+                                {BEGIN Date25_fieldblock}
+                                  <TR class="{$fielddispclass_Date25}" data-fieldname="Date25">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date25_label}
+                                        {$label emptime Date25}
+                                      {END Date25_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date25_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date25_fieldblock}
+                                {BEGIN Date26_fieldblock}
+                                  <TR class="{$fielddispclass_Date26}" data-fieldname="Date26">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date26_label}
+                                        {$label emptime Date26}
+                                      {END Date26_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date26_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date26_fieldblock}
+                                {BEGIN Date27_fieldblock}
+                                  <TR class="{$fielddispclass_Date27}" data-fieldname="Date27">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date27_label}
+                                        {$label emptime Date27}
+                                      {END Date27_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date27_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date27_fieldblock}
+                                {BEGIN Date28_fieldblock}
+                                  <TR class="{$fielddispclass_Date28}" data-fieldname="Date28">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date28_label}
+                                        {$label emptime Date28}
+                                      {END Date28_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date28_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date28_fieldblock}
+                                {BEGIN Date29_fieldblock}
+                                  <TR class="{$fielddispclass_Date29}" data-fieldname="Date29">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date29_label}
+                                        {$label emptime Date29}
+                                      {END Date29_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date29_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date29_fieldblock}
+                                {BEGIN Date30_fieldblock}
+                                  <TR class="{$fielddispclass_Date30}" data-fieldname="Date30">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date30_label}
+                                        {$label emptime Date30}
+                                      {END Date30_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date30_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date30_fieldblock}
+                                {BEGIN Date31_fieldblock}
+                                  <TR class="{$fielddispclass_Date31}" data-fieldname="Date31">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date31_label}
+                                        {$label emptime Date31}
+                                      {END Date31_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date31_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date31_fieldblock}
+                                {BEGIN Date32_fieldblock}
+                                  <TR class="{$fielddispclass_Date32}" data-fieldname="Date32">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date32_label}
+                                        {$label emptime Date32}
+                                      {END Date32_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date32_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date32_fieldblock}
+                                {BEGIN Date33_fieldblock}
+                                  <TR class="{$fielddispclass_Date33}" data-fieldname="Date33">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date33_label}
+                                        {$label emptime Date33}
+                                      {END Date33_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date33_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date33_fieldblock}
+                                {BEGIN Date34_fieldblock}
+                                  <TR class="{$fielddispclass_Date34}" data-fieldname="Date34">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date34_label}
+                                        {$label emptime Date34}
+                                      {END Date34_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date34_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date34_fieldblock}
+                                {BEGIN Date35_fieldblock}
+                                  <TR class="{$fielddispclass_Date35}" data-fieldname="Date35">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date35_label}
+                                        {$label emptime Date35}
+                                      {END Date35_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date35_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date35_fieldblock}
+                                {BEGIN Date36_fieldblock}
+                                  <TR class="{$fielddispclass_Date36}" data-fieldname="Date36">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date36_label}
+                                        {$label emptime Date36}
+                                      {END Date36_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date36_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date36_fieldblock}
+                                {BEGIN Date37_fieldblock}
+                                  <TR class="{$fielddispclass_Date37}" data-fieldname="Date37">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date37_label}
+                                        {$label emptime Date37}
+                                      {END Date37_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date37_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date37_fieldblock}
+                                {BEGIN Date38_fieldblock}
+                                  <TR class="{$fielddispclass_Date38}" data-fieldname="Date38">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date38_label}
+                                        {$label emptime Date38}
+                                      {END Date38_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date38_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date38_fieldblock}
+                                {BEGIN Date39_fieldblock}
+                                  <TR class="{$fielddispclass_Date39}" data-fieldname="Date39">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date39_label}
+                                        {$label emptime Date39}
+                                      {END Date39_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date39_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date39_fieldblock}
+                                {BEGIN Date40_fieldblock}
+                                  <TR class="{$fielddispclass_Date40}" data-fieldname="Date40">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date40_label}
+                                        {$label emptime Date40}
+                                      {END Date40_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date40_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date40_fieldblock}
+                                {BEGIN Date41_fieldblock}
+                                  <TR class="{$fielddispclass_Date41}" data-fieldname="Date41">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date41_label}
+                                        {$label emptime Date41}
+                                      {END Date41_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date41_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date41_fieldblock}
+                                {BEGIN Date42_fieldblock}
+                                  <TR class="{$fielddispclass_Date42}" data-fieldname="Date42">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date42_label}
+                                        {$label emptime Date42}
+                                      {END Date42_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date42_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date42_fieldblock}
+                                {BEGIN Date43_fieldblock}
+                                  <TR class="{$fielddispclass_Date43}" data-fieldname="Date43">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date43_label}
+                                        {$label emptime Date43}
+                                      {END Date43_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date43_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date43_fieldblock}
+                                {BEGIN Date44_fieldblock}
+                                  <TR class="{$fielddispclass_Date44}" data-fieldname="Date44">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date44_label}
+                                        {$label emptime Date44}
+                                      {END Date44_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date44_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date44_fieldblock}
+                                {BEGIN Date45_fieldblock}
+                                  <TR class="{$fielddispclass_Date45}" data-fieldname="Date45">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date45_label}
+                                        {$label emptime Date45}
+                                      {END Date45_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date45_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date45_fieldblock}
+                                {BEGIN Date46_fieldblock}
+                                  <TR class="{$fielddispclass_Date46}" data-fieldname="Date46">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date46_label}
+                                        {$label emptime Date46}
+                                      {END Date46_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date46_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date46_fieldblock}
+                                {BEGIN Date47_fieldblock}
+                                  <TR class="{$fielddispclass_Date47}" data-fieldname="Date47">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date47_label}
+                                        {$label emptime Date47}
+                                      {END Date47_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date47_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date47_fieldblock}
+                                {BEGIN Date48_fieldblock}
+                                  <TR class="{$fielddispclass_Date48}" data-fieldname="Date48">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date48_label}
+                                        {$label emptime Date48}
+                                      {END Date48_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date48_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date48_fieldblock}
+                                {BEGIN Date49_fieldblock}
+                                  <TR class="{$fielddispclass_Date49}" data-fieldname="Date49">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date49_label}
+                                        {$label emptime Date49}
+                                      {END Date49_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date49_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date49_fieldblock}
+                                {BEGIN Date50_fieldblock}
+                                  <TR class="{$fielddispclass_Date50}" data-fieldname="Date50">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date50_label}
+                                        {$label emptime Date50}
+                                      {END Date50_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date50_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date50_fieldblock}
+                                {BEGIN Date51_fieldblock}
+                                  <TR class="{$fielddispclass_Date51}" data-fieldname="Date51">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date51_label}
+                                        {$label emptime Date51}
+                                      {END Date51_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date51_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date51_fieldblock}
+                                {BEGIN Date52_fieldblock}
+                                  <TR class="{$fielddispclass_Date52}" data-fieldname="Date52">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date52_label}
+                                        {$label emptime Date52}
+                                      {END Date52_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date52_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date52_fieldblock}
+                                {BEGIN Date53_fieldblock}
+                                  <TR class="{$fielddispclass_Date53}" data-fieldname="Date53">
+                                    <TD class="rnr-label">
+                                      {BEGIN Date53_label}
+                                        {$label emptime Date53}
+                                      {END Date53_label}
+                                    </TD>
+                                    <TD class="rnr-control style3">
+                                      {$Date53_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                  </TR>
+                                {END Date53_fieldblock}
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          {BEGIN editbuttons}
+                            <DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+                              <DIV class="rnr-buttons-left">
+                                {BEGIN save_button}
+                                  <A class="rnr-button main" href="#" {$savebutton_attrs}>
+                                    Save
+                                  </A>
+                                {END save_button}
+                                {BEGIN back_button}
+                                  <A class="rnr-button" href="#" {$backbutton_attrs}>
+                                    Cancel
+                                  </A>
+                                {END back_button}
+                              </DIV>
+                            </DIV>
+                          {END editbuttons}
+                        </DIV>
+                      {END container_fields}
+                    </DIV>
+                  </DIV>
+                {END container_edit}
+              </DIV>
+            </DIV>
+          {END container_all}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+          <!--%%bottom%%-->
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

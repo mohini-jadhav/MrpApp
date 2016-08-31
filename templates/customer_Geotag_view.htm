@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD> 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> <TITLE>{$pagetitle} </TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<LINK href="styles/default.css" rel="stylesheet" type="text/css"> {BEGIN rtlCSS}<LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">{END rtlCSS} {BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel="stylesheet" type="text/css">{END styleCSSFiles} {BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">{END pageCSSFiles} 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18163"> </HEAD> 
+<BODY class="{$stylename} function-view" {$bodyattrs}>{BEGIN body}
+
+{$header} 
+<DIV class="rnr-page">
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+{BEGIN container_main}
+<DIV class="rnr-c rnr-cv rnr-c-main">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+{BEGIN container_view}
+<DIV class="rnr-c rnr-cv rnr-c-view">
+{BEGIN viewheader}<DIV class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><SPAN>
+<H1>
+{$pagetitlelabel customer_Geotag view} 
+</H1></SPAN> </DIV>
+{END viewheader}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}">
+<TABLE class="fieldGrid">
+  <TBODY>
+  {BEGIN OracIeID_fieldblock}<TR class="{$fielddispclass_OracIeID}" data-fieldname="OracIeID">
+    <TD class="rnr-label">
+      {$label customer_Geotag OracIeID} </TD>
+    <TD class="rnr-control style3">
+      {$OracIeID_value} &nbsp;</TD></TR>
+  {END OracIeID_fieldblock}{BEGIN Name_fieldblock}<TR class="{$fielddispclass_Name}" data-fieldname="Name">
+    <TD class="rnr-label">
+      {$label customer_Geotag Name} </TD>
+    <TD class="rnr-control style3">
+      {$Name_value} 
+      &nbsp;</TD></TR>
+  {END Name_fieldblock}{BEGIN Recovery_Center_fieldblock}<TR class="{$fielddispclass_Recovery_Center}" data-fieldname="Recovery_Center">
+    <TD class="rnr-label">
+      {$label customer_Geotag Recovery_Center} </TD>
+    <TD class="rnr-control style3">
+      {$Recovery_Center_value} &nbsp;</TD></TR>
+  {END Recovery_Center_fieldblock}{BEGIN Address_fieldblock}<TR class="{$fielddispclass_Address}" data-fieldname="Address">
+    <TD class="rnr-label">
+      {$label customer_Geotag Address} </TD>
+    <TD class="rnr-control style3">
+      {$Address_value} &nbsp;</TD></TR>{END Address_fieldblock}</TBODY></TABLE> 
+</DIV>
+{BEGIN viewbuttons}<DIV class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}">
+<DIV class="rnr-buttons-left">{BEGIN back_button}<A class="rnr-button" href="#" {$backbutton_attrs}> Cancel </A> 
+{END back_button}</DIV></DIV>{END viewbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_view}</DIV></DIV> {END container_main}</DIV></DIV> 
+{END container_all}</DIV>
+<DIV class="rnr-middle">
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--> </DIV></DIV>
+{$footer}{END body} </BODY></HTML>

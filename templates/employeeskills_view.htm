@@ -1,0 +1,166 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel employeeskills view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	<TBODY>
+  {BEGIN AutEskillID_fieldblock}<tr class="{$fielddispclass_AutEskillID}" data-fieldname="AutEskillID">
+	<td class="rnr-label">
+		{$label employeeskills AutEskillID}
+	</td>
+	<td class="rnr-control style3">
+		{$AutEskillID_value}&nbsp;
+	</td>
+</tr>
+{END AutEskillID_fieldblock}
+	{BEGIN PlatformType_fieldblock}<tr class="{$fielddispclass_PlatformType}" data-fieldname="PlatformType">
+	<td class="rnr-label">
+		{$label employeeskills PlatformType}
+	</td>
+	<td class="rnr-control style3">
+		{$PlatformType_value}&nbsp;
+	</td>
+</tr>
+{END PlatformType_fieldblock}
+	{BEGIN PlatformName_fieldblock}<tr class="{$fielddispclass_PlatformName}" data-fieldname="PlatformName">
+	<td class="rnr-label">
+		{$label employeeskills PlatformName}
+	</td>
+	<td class="rnr-control style3">
+		{$PlatformName_value}&nbsp;
+	</td>
+</tr>
+{END PlatformName_fieldblock}
+	{BEGIN SkillLevel_fieldblock}<tr class="{$fielddispclass_SkillLevel}" data-fieldname="SkillLevel">
+	<td class="rnr-label">
+		{$label employeeskills SkillLevel}
+	</td>
+	<td class="rnr-control style3">
+		{$SkillLevel_value}&nbsp;
+	</td>
+</tr>
+{END SkillLevel_fieldblock}
+	{BEGIN Certificate_fieldblock}<tr class="{$fielddispclass_Certificate}" data-fieldname="Certificate">
+	<td class="rnr-label">
+		{$label employeeskills Certificate}
+	</td>
+	<td class="rnr-control style3">
+		{$Certificate_value}&nbsp;
+	</td>
+</tr>
+{END Certificate_fieldblock}
+	{BEGIN Comments_fieldblock}<tr class="{$fielddispclass_Comments}" data-fieldname="Comments">
+	<td class="rnr-label">
+		{$label employeeskills Comments}
+	</td>
+	<td class="rnr-control style3">
+		{$Comments_value}&nbsp;
+	</td>
+</tr>
+{END Comments_fieldblock}
+	{BEGIN CategoryID_fieldblock}<tr class="{$fielddispclass_CategoryID}" data-fieldname="CategoryID">
+	<td class="rnr-label">
+		{$label employeeskills CategoryID}
+	</td>
+	<td class="rnr-control style3">
+		{$CategoryID_value}&nbsp;
+	</td>
+</tr>
+{END CategoryID_fieldblock}
+</TBODY></table></div>
+
+
+{BEGIN viewbuttons}<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-left">
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}> Cancel </a>
+{END back_button}
+{BEGIN edit_page_button}<a href="#" class="rnr-button" {$edit_page_button_attrs}>Edit</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

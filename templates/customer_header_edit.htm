@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK href="{$pagestylepath}" rel="stylesheet" type="text/css">
+    {END pageCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.9600.18283">
+  </HEAD>
+  <BODY class="{$stylename} function-edit" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <DIV class="rnr-page">
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_all}
+            <DIV class="rnr-c rnr-cv rnr-c-all">
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+                {BEGIN container_edit}
+                  <DIV class="rnr-c rnr-cv rnr-c-edit">
+                    {BEGIN editheader}
+                      <DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}">
+                        <SPAN>
+                          <H1>
+                            {$pagetitlelabel customer_header edit}
+                          </H1>
+                        </SPAN>
+                      </DIV>
+                    {END editheader}
+                    {BEGIN message_block}
+                      <DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+                        <DIV class="rnr-message">
+                          {$message}
+                        </DIV>
+                      </DIV>
+                    {END message_block}
+                    <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+                      {BEGIN container_fields}
+                        <DIV class="rnr-c rnr-cv rnr-c-fields">
+                          <DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+                            <TABLE class="fieldGrid" style="width: 900px;">
+                              <TBODY>
+                                {BEGIN OracIeID_fieldblock}
+                                  <TR class="{$fielddispclass_OracIeID}" data-fieldname="OracIeID">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN OracIeID_label}
+                                        {$label customer_header OracIeID}
+                                      {END OracIeID_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$OracIeID_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                      <STRONG></STRONG><STRONG>{$label customer_header Name}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 400px;" rowspan="1" colspan="3">
+                                      {$Name_editcontrol}
+                                    </TD>
+                                  </TR>
+                                {END OracIeID_fieldblock}
+                                {BEGIN Name_fieldblock}
+                                  <TR class="{$fielddispclass_Name}" data-fieldname="Name">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN Name_label}
+                                        <EM></EM>{$label customer_header Engagement_status}
+                                      {END Name_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Engagement_status_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header Overall_Temp}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Overall_Temp_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                      <STRONG><BR></STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                    </TD>
+                                  </TR>
+                                {END Name_fieldblock}
+                                {BEGIN PrimaryTimeZone_fieldblock}
+                                  <TR class="{$fielddispclass_PrimaryTimeZone}" data-fieldname="PrimaryTimeZone">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN PrimaryTimeZone_label}
+                                        {$label customer_header PrimaryTimeZone}
+                                      {END PrimaryTimeZone_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$PrimaryTimeZone_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                      <STRONG></STRONG><STRONG>Primary Data Ctr</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Recovery_Center_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 120px;" rowspan="1" colspan="1">
+                                      <STRONG></STRONG><STRONG>{$label customer_header Address}</STRONG>
+                                    </TD>
+                                    <TD title="Use comma separator for multivalue." class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                      {$Address_editcontrol}
+                                    </TD>
+                                  </TR>
+                                {END PrimaryTimeZone_fieldblock}
+                                {BEGIN Size_fieldblock}
+                                  <TR class="{$fielddispclass_Size}" data-fieldname="Size">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN Size_label}
+                                        {$label customer_header Size}
+                                      {END Size_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Size_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                      <STRONG></STRONG><STRONG>{$label customer_header Stage}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Stage_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header Onshore_Support}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                      {$Onshore_Support_editcontrol}
+                                    </TD>
+                                  </TR>
+                                {END Size_fieldblock}
+                                {BEGIN Onshore_Support_fieldblock}
+                                  <TR class="{$fielddispclass_Onshore_Support}" data-fieldname="Onshore_Support">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN Onshore_Support_label}
+                                        {$label customer_header Contract_Start}
+                                      {END Onshore_Support_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Contract_Start_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                      <STRONG></STRONG><STRONG>{$label customer_header Contract_end}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$Contract_end_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                     
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                      
+                                    </TD>
+                                  </TR>
+                                {END Onshore_Support_fieldblock}
+                                {BEGIN Stage_fieldblock}
+                                  <TR class="{$fielddispclass_Stage}" data-fieldname="Stage">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN Stage_label}
+                                        <EM></EM> {$label customer_header TransStartDate}
+                                      {END Stage_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$TransStartDate_editcontrol} 
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header TransEndDate}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                      {$TransEndDate_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                     <STRONG>Steady State Start Date</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                    {$SteadyState_editcontrol}
+                                    </TD>
+                                  </TR>
+                                {END Stage_fieldblock}
+                                {BEGIN Overall_Temp_fieldblock}
+                                  <TR class="{$fielddispclass_Overall_Temp}" data-fieldname="Overall_Temp">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN Overall_Temp_label}
+                                        <EM></EM>
+                                      {END Overall_Temp_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                    </TD>
+                                  </TR>
+                                {END Overall_Temp_fieldblock}
+                                {BEGIN RS_MRR_fieldblock}
+                                  <TR class="{$fielddispclass_RS_MRR}" data-fieldname="RS_MRR">
+                                    <TD class="rnr-label" style="width: 133px; white-space: nowrap; background-image: none; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {BEGIN RS_MRR_label}
+                                        {$label customer_header RS_MRR}
+                                      {END RS_MRR_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px; white-space: nowrap; background-image: none; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$RS_MRR_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px; white-space: nowrap; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header MRP_MRR}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px; white-space: nowrap; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$MRP_MRR_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px; white-space: nowrap; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header ARS_MRR}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px; white-space: nowrap; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$ARS_MRR_editcontrol}
+                                    </TD>
+                                  </TR>
+                                {END RS_MRR_fieldblock}
+                                {BEGIN MRP_MRR_fieldblock}
+                                  <TR class="{$fielddispclass_MRP_MRR}" data-fieldname="MRP_MRR">
+                                    <TD class="rnr-label" style="width: 133px; white-space: normal; background-image: none; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {BEGIN MRP_MRR_label}
+                                        <EM></EM>{$label customer_header MS_MRR}
+                                      {END MRP_MRR_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$MS_MRR_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header CS_MRR}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$CS_MRR_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      <STRONG>{$label customer_header OTHER_MRR}</STRONG>
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$OTHER_MRR_editcontrol}
+                                    </TD>
+                                  </TR>
+                                {END MRP_MRR_fieldblock}
+                                {BEGIN MS_MRR_fieldblock}
+                                  <TR class="{$fielddispclass_MS_MRR}" data-fieldname="MS_MRR">
+                                    <TD class="rnr-label" style="width: 133px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$label customer_header Total_MRR}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                      {$Total_MRR_editcontrol}
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px; white-space: normal; background-color: rgb(192, 192, 192);" rowspan="1" colspan="1">
+                                    </TD>
+                                  </TR>
+                                {END MS_MRR_fieldblock}
+								{BEGIN MS_MRR_fieldblock}
+                                  <TR class="{$fielddispclass_MS_MRR}" data-fieldname="MS_MRR">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                     
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                    </TD>
+                                  </TR>
+                                {END MS_MRR_fieldblock}
+                                {BEGIN Comments_fieldblock}
+                                  <TR class="{$fielddispclass_Comments}" data-fieldname="Comments">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                      {BEGIN Comments_label}
+                                        {$label customer_header Comments}
+                                      {END Comments_label}
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 673px;" rowspan="1" colspan="4">
+                                      {$Comments_editcontrol}
+                                      &nbsp;
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                    </TD>
+                                  </TR>
+                                {END Comments_fieldblock}
+                                {BEGIN Address_fieldblock}
+                                  <TR class="{$fielddispclass_Address}" style="height: 30px;">
+                                    <TD class="rnr-label" style="width: 133px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3" style="width: 212px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 96px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 212px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 104px;" rowspan="1" colspan="1">
+                                    </TD>
+                                    <TD class="rnr-control style3 runner-cc" style="width: 175px;" rowspan="1" colspan="1">
+                                    </TD>
+                                  </TR>
+                                {END Address_fieldblock}
+                              </TBODY>
+                            </TABLE>
+                          </DIV>
+                          {BEGIN editbuttons}
+                            <DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+                              {BEGIN save_button}
+                                <A class="rnr-button main" id="saveButton{$id}" href="#">
+                                  Save
+                                </A>
+                              {END save_button}
+                              {BEGIN cancel_button}
+                                <A class="rnr-button" id="cancelButton{$id}" href="#">
+                                  Cancel
+                                </A>
+                              {END cancel_button}
+                              {BEGIN back_button}
+                                <A class="rnr-button" id="backButton{$id}" href="#">
+                                  Cancel
+                                </A>
+                              {END back_button}
+                            </DIV>
+                          {END editbuttons}
+                        </DIV>
+                      {END container_fields}
+                    </DIV>
+                  </DIV>
+                {END container_edit}
+              </DIV>
+              <DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+                {BEGIN container_details}
+                  <DIV class="rnr-c rnr-cv rnr-c-details">
+                    {BEGIN detail_tables}
+                      {BEGIN details_customertechnology}
+                        <DIV class="rnr-cw-detailscustomertechnology rnr-s-empty aslinks {$pageStyleName}">
+                          <DIV class="rnr-c rnr-cv rnr-c-detailscustomertechnology rnr-c-details">
+                            <DIV class="rnr-brickcontents style1 rnr-b-adddetailscustomertechnology rnr-b-adddetails">
+                              <DIV class="rnr-dcaption">
+                                Customer<FONT 
+face="Tahoma">T</FONT>echnology
+                              </DIV>
+                              {$displayDetailTable_customertechnology}
+                            </DIV>
+                          </DIV>
+                        </DIV>
+                      {END details_customertechnology}
+                    {END detail_tables}
+                  </DIV>
+                {END container_details}
+              </DIV>
+            </DIV>
+          {END container_all}
+        </DIV>
+        <DIV class="rnr-middle">
+          <DIV class="rnr-left {$blockclass_left}">
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

@@ -1,0 +1,10 @@
+Import into customer_header
+08/23/16 1:10:23 PM
+
+280 out of 281 records processed successfully.
+2 records added.
+278 records updated.
+1 records processed with errors:
+
+Column 'OracIeID' cannot be null
+"","HCL AMERICA INC. - Becton Dickson","1","2","2","","","","","","","","","","","","","","Venkatesh Iyer","Green","","","SITA0199",""
