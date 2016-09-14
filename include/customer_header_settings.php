@@ -353,7 +353,6 @@ $tdatacustomer_header [".arrGroupsPerPage"] = $arrGPP;
 
 $tableKeyscustomer_header = array ();
 $tableKeyscustomer_header [] = "OracIeID";
-//$tableKeyscustomer_header [] = "AutoOracleID";
 $tdatacustomer_header [".Keys"] = $tableKeyscustomer_header;
 
 $tdatacustomer_header [".listFields"] = array ();
@@ -498,7 +497,6 @@ $tdatacustomer_header [".exportFields"] [] = "OTHER_MRR";
 $tdatacustomer_header [".exportFields"] [] = "Comments";
 $tdatacustomer_header [".exportFields"] [] = "TransStartDate";
 $tdatacustomer_header [".exportFields"] [] = "TransEndDate";
-$tdatacustomer_header [".exportFields"] [] = "AutoOracleID";
 
 $tdatacustomer_header [".importFields"] = array ();
 
@@ -567,7 +565,7 @@ $tdatacustomer_header [".printFields"] [] = "TransEndDate";
 // OracIeID
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 2;
+$fdata ["Index"] = 1;
 $fdata ["strName"] = "OracIeID";
 $fdata ["GoodName"] = "OracIeID";
 $fdata ["ownerTable"] = "customer_header";
@@ -693,7 +691,7 @@ $tdatacustomer_header ["OracIeID"] = $fdata;
 // Name
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 3;
+$fdata ["Index"] = 2;
 $fdata ["strName"] = "Name";
 $fdata ["GoodName"] = "Name";
 $fdata ["ownerTable"] = "customer_header";
@@ -814,7 +812,7 @@ $tdatacustomer_header ["Name"] = $fdata;
 // Size
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 4;
+$fdata ["Index"] = 3;
 $fdata ["strName"] = "Size";
 $fdata ["GoodName"] = "Size";
 $fdata ["ownerTable"] = "customer_header";
@@ -951,7 +949,7 @@ $tdatacustomer_header ["Size"] = $fdata;
 // Temperature
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 5;
+$fdata ["Index"] = 4;
 $fdata ["strName"] = "Temperature";
 $fdata ["GoodName"] = "Temperature";
 $fdata ["ownerTable"] = "customer_header";
@@ -1087,7 +1085,7 @@ $tdatacustomer_header ["Temperature"] = $fdata;
 // Contract_Start
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 6;
+$fdata ["Index"] = 5;
 $fdata ["strName"] = "Contract_Start";
 $fdata ["GoodName"] = "Contract_Start";
 $fdata ["ownerTable"] = "customer_header";
@@ -1190,7 +1188,7 @@ $tdatacustomer_header ["Contract_Start"] = $fdata;
 // Contract_end
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 7;
+$fdata ["Index"] = 6;
 $fdata ["strName"] = "Contract_end";
 $fdata ["GoodName"] = "Contract_end";
 $fdata ["ownerTable"] = "customer_header";
@@ -1292,7 +1290,7 @@ $tdatacustomer_header ["Contract_end"] = $fdata;
 // Recovery_Center
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 8;
+$fdata ["Index"] = 7;
 $fdata ["strName"] = "Recovery_Center";
 $fdata ["GoodName"] = "Recovery_Center";
 $fdata ["ownerTable"] = "customer_header";
@@ -1449,7 +1447,7 @@ $tdatacustomer_header ["Recovery_Center"] = $fdata;
 // Total_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 9;
+$fdata ["Index"] = 8;
 $fdata ["strName"] = "Total_MRR";
 $fdata ["GoodName"] = "Total_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -1552,7 +1550,7 @@ $tdatacustomer_header ["Total_MRR"] = $fdata;
 // MRP_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 10;
+$fdata ["Index"] = 9;
 $fdata ["strName"] = "MRP_MRR";
 $fdata ["GoodName"] = "MRP_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -1655,7 +1653,7 @@ $tdatacustomer_header ["MRP_MRR"] = $fdata;
 // ARS_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 11;
+$fdata ["Index"] = 10;
 $fdata ["strName"] = "ARS_MRR";
 $fdata ["GoodName"] = "ARS_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -1766,7 +1764,7 @@ $tdatacustomer_header ["ARS_MRR"] = $fdata;
 // RS_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 12;
+$fdata ["Index"] = 11;
 $fdata ["strName"] = "RS_MRR";
 $fdata ["GoodName"] = "RS_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -1885,7 +1883,7 @@ $tdatacustomer_header ["RS_MRR"] = $fdata;
 // MS_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 13;
+$fdata ["Index"] = 12;
 $fdata ["strName"] = "MS_MRR";
 $fdata ["GoodName"] = "MS_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -1984,7 +1982,7 @@ $tdatacustomer_header ["MS_MRR"] = $fdata;
 // CS_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 14;
+$fdata ["Index"] = 13;
 $fdata ["strName"] = "CS_MRR";
 $fdata ["GoodName"] = "CS_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -2079,7 +2077,7 @@ $tdatacustomer_header ["CS_MRR"] = $fdata;
 // OTHER_MRR
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 15;
+$fdata ["Index"] = 14;
 $fdata ["strName"] = "OTHER_MRR";
 $fdata ["GoodName"] = "OTHER_MRR";
 $fdata ["ownerTable"] = "customer_header";
@@ -2173,7 +2171,7 @@ $tdatacustomer_header ["OTHER_MRR"] = $fdata;
 // Engagement_status
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 16;
+$fdata ["Index"] = 15;
 $fdata ["strName"] = "Engagement_status";
 $fdata ["GoodName"] = "Engagement_status";
 $fdata ["ownerTable"] = "customer_header";
@@ -2452,7 +2450,7 @@ $tdatacustomer_header ["Engagement_status"] = $fdata;
 // created_by
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 17;
+$fdata ["Index"] = 16;
 $fdata ["strName"] = "created_by";
 $fdata ["GoodName"] = "created_by";
 $fdata ["ownerTable"] = "customer_header";
@@ -2578,7 +2576,7 @@ $tdatacustomer_header ["created_by"] = $fdata;
 // Compre_String
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 18;
+$fdata ["Index"] = 17;
 $fdata ["strName"] = "Compre_String";
 $fdata ["GoodName"] = "Compre_String";
 $fdata ["ownerTable"] = "";
@@ -2625,7 +2623,7 @@ $tdatacustomer_header ["Compre_String"] = $fdata;
 // Created_date
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 19;
+$fdata ["Index"] = 18;
 $fdata ["strName"] = "Created_date";
 $fdata ["GoodName"] = "Created_date";
 $fdata ["ownerTable"] = "customer_header";
@@ -2722,7 +2720,7 @@ $tdatacustomer_header ["Created_date"] = $fdata;
 // Updated_by
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 20;
+$fdata ["Index"] = 19;
 $fdata ["strName"] = "Updated_by";
 $fdata ["GoodName"] = "Updated_by";
 $fdata ["ownerTable"] = "customer_header";
@@ -2862,7 +2860,7 @@ $tdatacustomer_header ["Updated_by"] = $fdata;
 // Updated_date
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 21;
+$fdata ["Index"] = 20;
 $fdata ["strName"] = "Updated_date";
 $fdata ["GoodName"] = "Updated_date";
 $fdata ["ownerTable"] = "customer_header";
@@ -2968,7 +2966,7 @@ $tdatacustomer_header ["Updated_date"] = $fdata;
 // Comments
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 22;
+$fdata ["Index"] = 21;
 $fdata ["strName"] = "Comments";
 $fdata ["GoodName"] = "Comments";
 $fdata ["ownerTable"] = "customer_header";
@@ -3034,7 +3032,7 @@ $tdatacustomer_header ["Comments"] = $fdata;
 // EmployeeID
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 23;
+$fdata ["Index"] = 22;
 $fdata ["strName"] = "EmployeeID";
 $fdata ["GoodName"] = "EmployeeID";
 $fdata ["ownerTable"] = "customer_header";
@@ -3098,7 +3096,7 @@ $tdatacustomer_header ["EmployeeID"] = $fdata;
 // Stage
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 24;
+$fdata ["Index"] = 23;
 $fdata ["strName"] = "Stage";
 $fdata ["GoodName"] = "Stage";
 $fdata ["ownerTable"] = "customer_header";
@@ -3341,7 +3339,7 @@ $tdatacustomer_header ["Stage"] = $fdata;
 // Overall_Temp
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 25;
+$fdata ["Index"] = 24;
 $fdata ["strName"] = "Overall_Temp";
 $fdata ["GoodName"] = "Overall_Temp";
 $fdata ["ownerTable"] = "customer_header";
@@ -3527,7 +3525,7 @@ $tdatacustomer_header ["Overall_Temp"] = $fdata;
 // Address
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 26;
+$fdata ["Index"] = 25;
 $fdata ["strName"] = "Address";
 $fdata ["GoodName"] = "Address";
 $fdata ["ownerTable"] = "customer_header";
@@ -3595,7 +3593,7 @@ $tdatacustomer_header ["Address"] = $fdata;
 // SteadyState
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 27;
+$fdata ["Index"] = 26;
 $fdata ["strName"] = "SteadyState";
 $fdata ["GoodName"] = "SteadyState";
 $fdata ["ownerTable"] = "customer_header";
@@ -3676,7 +3674,7 @@ $tdatacustomer_header ["SteadyState"] = $fdata;
 // PrimaryTimeZone
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 28;
+$fdata ["Index"] = 27;
 $fdata ["strName"] = "PrimaryTimeZone";
 $fdata ["GoodName"] = "PrimaryTimeZone";
 $fdata ["ownerTable"] = "customer_header";
@@ -3801,7 +3799,7 @@ $tdatacustomer_header ["PrimaryTimeZone"] = $fdata;
 // Onshore Support
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 29;
+$fdata ["Index"] = 28;
 $fdata ["strName"] = "Onshore Support";
 $fdata ["GoodName"] = "Onshore_Support";
 $fdata ["ownerTable"] = "customer_header";
@@ -3879,7 +3877,7 @@ $tdatacustomer_header ["Onshore Support"] = $fdata;
 // TransStartDate
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 30;
+$fdata ["Index"] = 29;
 $fdata ["strName"] = "TransStartDate";
 $fdata ["GoodName"] = "TransStartDate";
 $fdata ["ownerTable"] = "customer_header";
@@ -3961,7 +3959,7 @@ $tdatacustomer_header ["TransStartDate"] = $fdata;
 // TransEndDate
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 31;
+$fdata ["Index"] = 30;
 $fdata ["strName"] = "TransEndDate";
 $fdata ["GoodName"] = "TransEndDate";
 $fdata ["ownerTable"] = "customer_header";
@@ -4071,7 +4069,7 @@ $tdatacustomer_header ["TransEndDate"] = $fdata;
 // Contract_Status
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 32;
+$fdata ["Index"] = 31;
 $fdata ["strName"] = "Contract_Status";
 $fdata ["GoodName"] = "Contract_Status";
 $fdata ["ownerTable"] = "customer_header";
@@ -4149,7 +4147,7 @@ $tdatacustomer_header ["Contract_Status"] = $fdata;
 // Supervisor
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 33;
+$fdata ["Index"] = 32;
 $fdata ["strName"] = "Supervisor";
 $fdata ["GoodName"] = "Supervisor";
 $fdata ["ownerTable"] = "customer_header";
@@ -4245,7 +4243,7 @@ $tdatacustomer_header ["Supervisor"] = $fdata;
 // TAM
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 34;
+$fdata ["Index"] = 33;
 $fdata ["strName"] = "TAM";
 $fdata ["GoodName"] = "TAM";
 $fdata ["ownerTable"] = "customer_header";
@@ -4343,7 +4341,7 @@ $tdatacustomer_header ["TAM"] = $fdata;
 // SME
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 35;
+$fdata ["Index"] = 34;
 $fdata ["strName"] = "SME";
 $fdata ["GoodName"] = "SME";
 $fdata ["ownerTable"] = "customer_header";
@@ -4433,7 +4431,7 @@ $tdatacustomer_header ["SME"] = $fdata;
 // RSAName
 // Custom field settings
 $fdata = array ();
-$fdata ["Index"] = 36;
+$fdata ["Index"] = 35;
 $fdata ["strName"] = "RSAName";
 $fdata ["GoodName"] = "RSAName";
 $fdata ["ownerTable"] = "customer_header";
