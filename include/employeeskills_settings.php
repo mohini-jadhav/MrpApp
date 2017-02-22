@@ -1104,19 +1104,31 @@ function createSqlQuery_employeeskills() {
 	$proto3 ["m_strTail"] = "";
 	$proto3 ["cipherer"] = null;
 	$proto4 = array ();
-	if( !IsAdmin() && '5' == $groupID ) {
+	/* if( !IsAdmin() && '5' == $groupID ) {
 		$proto4 ["m_sql"] = "";
 		$proto4 ["m_uniontype"] = "SQLL_UNKNOWN";
 		$obj = new SQLNonParsed ( array (
 				"m_sql" => ""
 		) );
-	} elseif( !IsAdmin() && ( '6' == $groupID || '7' == $groupID ) ) {
+	} elseif( !IsAdmin() && '6' == $groupID ) {
+		global $conn;
+		$sql = "SELECT `EmployeeID` from employee_header where concat(`FirstName`, ' ', `LastName`) = '" . $userName . "'";
+		$rs = db_query($sql, $conn);
+		while( $data = db_fetch_array( $rs ) )
+			$EmployeeID = $data["EmployeeID"];
+		$proto2 ["m_sql"] = " employee_header.EmployeeID = '" . $EmployeeID . "' OR employee_header.SupervisorID IN ( SELECT EmployeeID from employee_header WHERE SupervisorID = '" . $EmployeeID . "' || EmployeeID = '" . $EmployeeID . "' )";
+		$proto2 ["m_uniontype"] = "SQLL_UNKNOWN";
+		$obj = new SQLNonParsed ( array (
+				"m_sql" => "employee_header.EmployeeID = '" . $EmployeeID . "' OR employee_header.SupervisorID IN ( SELECT EmployeeID from employee_header WHERE SupervisorID = '" . $EmployeeID . "' || EmployeeID = '" . $EmployeeID . "' )"
+		) );
+	} elseif( !IsAdmin() && '7' == $groupID ) {	
 		$proto4 ["m_sql"] = "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."' OR employee_header.SupervisorName = '" . $userName . "'";
 		$proto4 ["m_uniontype"] = "SQLL_OR";
 		$obj = new SQLNonParsed ( array (
 				"m_sql" => "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."' OR employee_header.SupervisorName = '" . $userName . "'"
 		) );
-	} elseif ( !IsAdmin() && '1' == $groupID ) {
+	} else */
+	if ( !IsAdmin() && '1' == $groupID ) {
 		$proto4 ["m_sql"] = "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."'";
 		$proto4 ["m_uniontype"] = "SQLL_UNKNOWN";
 		$obj = new SQLNonParsed ( array (

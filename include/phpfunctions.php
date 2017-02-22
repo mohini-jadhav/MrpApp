@@ -1820,7 +1820,7 @@ function runner_mail_smtp($params) {
 	
 	$from = isset ( $params ['from'] ) ? $params ['from'] : "";
 	if (! $from) {
-		$from = "Codis.sungardas.com";
+		$from = "mohini.jadhav@sungardas.com";
 	}
 	$to = isset ( $params ['to'] ) ? $params ['to'] : "";
 	$body = isset ( $params ['body'] ) ? $params ['body'] : "";

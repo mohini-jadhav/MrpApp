@@ -12,7 +12,7 @@ class eventclass_employeeskills extends eventsBase {
 	function BeforeAdd(&$values, &$message, $inline, &$pageObject) {
 		// Place event code here.
 		// Use "Add Action" button to add code snippets.
-		if( !IsAdmin() ) {
+		/* if( !IsAdmin() ) {
 			if( false == is_null( $_SESSION['UserName'] ) ) {
 				$strUserName = $_SESSION['UserName'];
 			}
@@ -28,14 +28,14 @@ class eventclass_employeeskills extends eventsBase {
 			$strUserID = $data['EmployeeID'];
 			$values['EmployeeID'] = $strUserID;
 		}
-		 
+ */		 
 		return true;
 		;
 	} // function BeforeAdd
 	
 	// Before record updated
 	function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, &$pageObject) {
-		if( !IsAdmin() ) {
+		/* if( !IsAdmin() ) {
 			if( false == is_null( $_SESSION['UserName'] ) ) {
 				$strUserName = $_SESSION['UserName'];
 			}
@@ -51,7 +51,7 @@ class eventclass_employeeskills extends eventsBase {
 			$strUserID = $data['EmployeeID'];
 			$values['EmployeeID'] = $strUserID;
 		}
-	
+ */	
 		// Place event code here.
 		// Use "Add Action" button to add code snippets.
 	

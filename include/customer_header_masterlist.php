@@ -363,8 +363,8 @@ function DisplayMasterTableInfo_customer_header($params)
 		$class = ' rnr-field-number';
 		
 	$xt->assign("TAM_class", $class); // add class for field header as field value
-	$xt->assign("SME_mastervalue", $viewControls->showDBValue("SME", $data, $keylink));
-	$format = $settings->getViewFormat("SME");
+	$xt->assign("AE_mastervalue", $viewControls->showDBValue("AE", $data, $keylink));
+	$format = $settings->getViewFormat("AE");
 	$class = " rnr-field-text";
 	if($format == FORMAT_FILE) 
 		$class = ' rnr-field-file'; 
@@ -372,10 +372,10 @@ function DisplayMasterTableInfo_customer_header($params)
 		$class = ' rnr-field-audio';
 	if($format == FORMAT_CHECKBOX)
 		$class = ' rnr-field-checkbox';
-	if($format == FORMAT_NUMBER || IsNumberType($settings->getFieldType("SME")))
+	if($format == FORMAT_NUMBER || IsNumberType($settings->getFieldType("AE")))
 		$class = ' rnr-field-number';
 		
-	$xt->assign("SME_class", $class); // add class for field header as field value
+	$xt->assign("AE_class", $class); // add class for field header as field value
 	$xt->assign("RSAName_mastervalue", $viewControls->showDBValue("RSAName", $data, $keylink));
 	$format = $settings->getViewFormat("RSAName");
 	$class = " rnr-field-text";

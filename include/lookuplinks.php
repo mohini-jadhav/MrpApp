@@ -134,9 +134,9 @@ function InitLookupLinks() {
 			"field" => "TAM",
 			"page" => "edit" 
 	);
-	$lookupTableLinks ["tbl_sme"] ["customer_header.SME"] ["edit"] = array (
+	$lookupTableLinks ["tbl_sme"] ["customer_header.AE"] ["edit"] = array (
 			"table" => "customer_header",
-			"field" => "SME",
+			"field" => "AE",
 			"page" => "edit" 
 	);
 	$lookupTableLinks ["employee_header"] ["customer_header.RSAName"] ["edit"] = array (

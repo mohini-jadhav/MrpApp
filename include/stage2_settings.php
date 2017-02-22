@@ -495,7 +495,7 @@ $edata ["maxNumberOfFiles"] = 1;
 $edata ["HTML5InuptType"] = "text";
 
 $edata ["EditParams"] = "";
-$edata ["EditParams"] .= " maxlength=2";
+//$edata ["EditParams"] .= " maxlength=2";
 
 $edata ["controlWidth"] = 200;
 
@@ -587,7 +587,7 @@ $edata ["maxNumberOfFiles"] = 1;
 $edata ["HTML5InuptType"] = "text";
 
 $edata ["EditParams"] = "";
-$edata ["EditParams"] .= " maxlength=13";
+//$edata ["EditParams"] .= " maxlength=13";
 
 $edata ["controlWidth"] = 200;
 

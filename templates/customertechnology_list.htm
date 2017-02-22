@@ -356,11 +356,10 @@
                               Cancel
                             </A>
                           {END cancelall_link}
-                          {BEGIN deleteselected_link}
-                            <A class="rnr-button" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>
-                              Delete
-                            </A>
-                          {END deleteselected_link}
+                          {BEGIN deleteselected_link}<a href="#" class="rnr-button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</a>
+	{END deleteselected_link}
+                          
+                          
                           {BEGIN exportselected_link}
                             <A class="rnr-button" href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>
                               Export

@@ -263,7 +263,7 @@
                       {END newrecord_controls_block}
                       {BEGIN record_controls_block}
                         <DIV class="style1 rnr-br rnr-b-recordcontrol {$brickclass_recordcontrol}">
-                          
+                          <A id="view_customer" class="rnr-button" href="#"> View </A>
                           {BEGIN exportselected_link}
                             <A class="rnr-button" href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}>
                               Export
@@ -478,9 +478,7 @@
                                     {END OTHER_MRR_fieldheader}
                                   </TH>
                                 {END OTHER_MRR_fieldheadercolumn}
-                                <TH class="rnr-edge" rowspan="1" colspan="1">
-                                  &nbsp;
-                                </TH>
+                               
                                 {BEGIN endrecordheader_block}
                                   <TH class="rnr-cs" rowspan="1" colspan="1">
                                     &nbsp;
@@ -498,10 +496,15 @@
                                   <TD class="rnr-cc rnr-bc rnr-icons" style="display: none;" ieditcont="all" {$rowstyle} {$recordattrs}>
                                     {BEGIN edit_column}
                                       {BEGIN edit_link}
-                                        <A title="Edit" class="rnr-button-img" href="customer_header_edit.php" data-icon="edit" {$editlink_attrs}>
+                                        <A title="Edit" class="rnr-button-img edit-customer" href="customer_header_edit.php" data-icon="edit" {$editlink_attrs}>
                                         </A>
                                       {END edit_link}
                                     {END edit_column}
+                                    {BEGIN view_column}
+										{BEGIN view_link}
+											<a class="rnr-button-img view-customer" {$viewlink_attrs} data-icon="view" title="View"></a>
+										{END view_link}
+									{END view_column}
                                   </TD>
                                 {END listIcons_column}
                                 {BEGIN checkbox_column}
@@ -650,9 +653,7 @@
                                     {$OTHER_MRR_value}
                                   </TD>
                                 {END OTHER_MRR_fieldcolumn}
-                                <TD class="rnr-edge" rowspan="1" colspan="1" {$recordattrs}>
-                                  &nbsp;
-                                </TD>
+                                
                                 {BEGIN endrecord_block}
                                   <TD class="rnr-cs" rowspan="1" colspan="1" {$endrecordblock_attrs}>
                                     &nbsp;

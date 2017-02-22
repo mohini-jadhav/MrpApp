@@ -250,7 +250,7 @@
                       <FONT color="#000000"></FONT>
                       <DIV class="rnr-hfiller" style="width: 93.33%; height: 34px;">
                         <FONT color="#000000"><STRONG>Filter By Supervisor Name</STRONG>:</FONT>{$event employee_header_snippet2}";
-                        <STRONG><FONT color="#000000">Filter By Employee Active:{$event employee_header_snippet}</FONT></STRONG>&nbsp;<STRONG><FONT 
+                        <STRONG><FONT color="#000000">Filter By Employee Status:{$event employee_header_snippet}</FONT></STRONG>&nbsp;<STRONG><FONT 
 color="#000000">Filter By Role:{$event employee_header_snippet1}</FONT></STRONG>
                       </DIV>
                       {BEGIN newrecord_controls_block}
@@ -402,16 +402,7 @@ color="#000000">Filter By Role:{$event employee_header_snippet1}</FONT></STRONG>
                                       </SPAN>
                                     {END SupervisorName_fieldheader}
                                   </TH>
-                                {END SupervisorName_fieldheadercolumn}
-                                {BEGIN InactiveDate_fieldheadercolumn}
-                                  <TH class="rnr-gridfieldlabel {$InactiveDate_class}">
-                                    {BEGIN InactiveDate_fieldheader}
-                                      <SPAN {$InactiveDate_orderlinkattrs}>
-                                        <STRONG></STRONG>{$label employee_header InactiveDate}<STRONG></STRONG>
-                                      </SPAN>
-                                    {END InactiveDate_fieldheader}
-                                  </TH>
-                                {END InactiveDate_fieldheadercolumn}
+                                {END SupervisorName_fieldheadercolumn}                                
                                 {BEGIN StartDate_fieldheadercolumn}
                                   <TH class="rnr-gridfieldlabel {$StartDate_class}">
                                     {BEGIN StartDate_fieldheader}
@@ -421,6 +412,15 @@ color="#000000">Filter By Role:{$event employee_header_snippet1}</FONT></STRONG>
                                     {END StartDate_fieldheader}
                                   </TH>
                                 {END StartDate_fieldheadercolumn}
+                                {BEGIN InactiveDate_fieldheadercolumn}
+                                  <TH class="rnr-gridfieldlabel {$InactiveDate_class}">
+                                    {BEGIN InactiveDate_fieldheader}
+                                      <SPAN {$InactiveDate_orderlinkattrs}>
+                                        <STRONG></STRONG>{$label employee_header InactiveDate}<STRONG></STRONG>
+                                      </SPAN>
+                                    {END InactiveDate_fieldheader}
+                                  </TH>
+                                {END InactiveDate_fieldheadercolumn}
                                 {BEGIN EmployeeStatus_fieldheadercolumn}
                                   <TH class="rnr-gridfieldlabel {$EmployeeStatus_class}">
                                     {BEGIN EmployeeStatus_fieldheader}
@@ -546,17 +546,17 @@ color="#000000">Filter By Role:{$event employee_header_snippet1}</FONT></STRONG>
                                   <TD class="{$SupervisorName_class}" {$SupervisorName_style} {$recordattrs}>
                                     {$SupervisorName_value}
                                   </TD>
-                                {END SupervisorName_fieldcolumn}
-                                {BEGIN InactiveDate_fieldcolumn}
-                                  <TD class="{$InactiveDate_class}" {$InactiveDate_style} {$recordattrs}>
-                                    {$InactiveDate_value}
-                                  </TD>
-                                {END InactiveDate_fieldcolumn}
+                                {END SupervisorName_fieldcolumn}                                
                                 {BEGIN StartDate_fieldcolumn}
                                   <TD class="{$StartDate_class}" {$StartDate_style} {$recordattrs}>
                                     {$StartDate_value}
                                   </TD>
                                 {END StartDate_fieldcolumn}
+                                {BEGIN InactiveDate_fieldcolumn}
+                                  <TD class="{$InactiveDate_class}" {$InactiveDate_style} {$recordattrs}>
+                                    {$InactiveDate_value}
+                                  </TD>
+                                {END InactiveDate_fieldcolumn}
                                 {BEGIN EmployeeStatus_fieldcolumn}
                                   <TD class="{$EmployeeStatus_class}" {$EmployeeStatus_style} {$recordattrs}>
                                     <DIV align="center">

@@ -8,7 +8,18 @@ Runner.pages.PageSettings.addPageEvent(	"customer_header", Runner.pages.constant
 			alert("Single record can be edit");
 		} else {
 			var checkedId = checked[0].id;
-			$("#"+checkedId).parent('td').prev().children('a').click();
+			$("#"+checkedId).parent('td').prev().children('.edit-customer').click();
+		}
+	} );
+	$("#view_customer").on( 'click', function(){
+		var checked = document.querySelectorAll('[name="selection[]"]:checked');
+		if( checked.length == 0 ) {
+			alert("Select atleast one record to view.");
+		} else if( checked.length > 1 ) {
+			alert("Single record can be viewed");
+		} else {
+			var checkedId = checked[0].id;
+			$("#"+checkedId).parent('td').prev().children('.view-customer').click();
 		}
 	} );
 	$('a[id^="master_customerallocation"]').click(function(){ $(this).removeAttr('href') });

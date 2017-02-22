@@ -223,6 +223,8 @@ color="#000000">Filter by Resource Name:{$event customerallocation_snippet3}&nbs
 
 {BEGIN record_controls_block}<div  class="style1 rnr-br rnr-b-recordcontrol {$brickclass_recordcontrol}">	
 	<A id="view_allocation" class="rnr-button" href="#"> View </A>
+{BEGIN deleteselected_link}<a href="#" class="rnr-button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete</a>
+	{END deleteselected_link}
  {BEGIN exportselected_link}
  <a href="#" class="rnr-button" {$exportselectedlink_attrs} {$exportselectedlink_span}>
      Export
@@ -609,17 +611,18 @@ color="#000000">Filter by Resource Name:{$event customerallocation_snippet3}&nbs
 	{BEGIN StartDate_fieldfootercolumn}<td class="{$StartDate_class}" rowspan="1" colspan="1">
 </td>
 {END StartDate_fieldfootercolumn}
-	{BEGIN EndDate_fieldfootercolumn}<td class="{$EndDate_class}" rowspan="1" colspan="1"> Total:
+	{BEGIN EndDate_fieldfootercolumn}<td class="{$EndDate_class}" rowspan="1" colspan="1"> 
 </td>
 {END EndDate_fieldfootercolumn}
 	{BEGIN Allocation_fieldfootercolumn}<td class="{$Allocation_class}" rowspan="1" colspan="1">
-	{BEGIN Allocation_showtotal}
-			
-	{$Allocation_total}
-	{END Allocation_showtotal}
+	Total:
 </td>
 {END Allocation_fieldfootercolumn}
 	{BEGIN Override_fieldfootercolumn}<td class="{$Override_class}" rowspan="1" colspan="1">
+	{BEGIN Override_showtotal}
+			
+	{$Override_total}
+	{END Override_showtotal}
 </td>
 {END Override_fieldfootercolumn}
 

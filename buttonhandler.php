@@ -39,17 +39,18 @@ function loadAllocationData($startDate, $endDate) {
 		$groupID = $_SESSION["UserRights"][$userID][".Groups"][0];
 	}
 
-	if( !IsAdmin() && ( '5' == $groupID || '6' == $groupID ) ) {
+	/* if( !IsAdmin() && ( '5' == $groupID || '6' == $groupID ) ) {
 		$booIsAdmin = 1;
 	} elseif(!IsAdmin() && '7' == $groupID ) {
 		$booIsAdmin = 2;
-	} elseif( !IsAdmin() && '1' == $groupID ) {
+	} else */
+	if( !IsAdmin() && '1' == $groupID ) {
 		$booIsAdmin = 0;
 	} else {
 		$booIsAdmin = 1;
 	}
 	
-	$result = DBLookup("CALL Allocation_dashboard21('" . $startDate . "', '" . $endDate . "', " . $booIsAdmin . ", '" . $userName . "', @AllocDetails )");
+	$result = DBLookup("CALL Allocation_dashboard30('" . $startDate . "', '" . $endDate . "', " . $booIsAdmin . ", '" . $userName . "', @AllocDetails )");
 	$query = "SELECT @AllocDetails;";
 	$result1 = mysqli_query($connectionObj, $query);
 	if( false == is_null( $result1 ) ) {
@@ -91,17 +92,18 @@ function buttonHandler_Show_Allocation3($params) {
 		$groupID = $_SESSION["UserRights"][$userID][".Groups"][0];
 	}
 
-	if( !IsAdmin() && ( '5' == $groupID || '6' == $groupID ) ) {
+	/* if( !IsAdmin() && ( '5' == $groupID || '6' == $groupID ) ) {
 		$booIsAdmin = 1;
 	} elseif(!IsAdmin() && '7' == $groupID ) {
 		$booIsAdmin = 2;
-	} elseif( !IsAdmin() && '1' == $groupID ) {
+	} else */
+	if( !IsAdmin() && '1' == $groupID ) {
 		$booIsAdmin = 0;
 	} else {
 		$booIsAdmin = 1;
 	}
 
-	$result = DBLookup("CALL Allocation_dashboard21('" . $params["startDate"] . "', '" . $params["endDate"] . "', " . $booIsAdmin . ", '" . $userName . "', @AllocDetails )");
+	$result = DBLookup("CALL Allocation_dashboard30('" . $params["startDate"] . "', '" . $params["endDate"] . "', " . $booIsAdmin . ", '" . $userName . "', @AllocDetails )");
 	$query = "SELECT @AllocDetails;";
 	$result1 = mysqli_query($connectionObj, $query);
 

@@ -43,7 +43,7 @@ if (mlang_getcurrentlang () == "English") {
 	$fieldToolTipsemployee_header ["English"] ["FullName"] = "";
 	$fieldLabelsemployee_header ["English"] ["StartDate"] = "Start Date";
 	$fieldToolTipsemployee_header ["English"] ["StartDate"] = "";
-	$fieldLabelsemployee_header ["English"] ["EmployeeStatus"] = "Emp Active";
+	$fieldLabelsemployee_header ["English"] ["EmployeeStatus"] = "Employee Status";
 	$fieldToolTipsemployee_header ["English"] ["EmployeeStatus"] = "";
 	$fieldLabelsemployee_header ["English"] ["Country"] = "Country";
 	$fieldToolTipsemployee_header ["English"] ["Country"] = "";
@@ -364,6 +364,21 @@ $tdataemployee_header [".exportFields"] [] = "JobTitle";
 
 $tdataemployee_header [".importFields"] = array ();
 $tdataemployee_header [".importFields"] [] = "Address";
+$tdataemployee_header [".importFields"] [] = "EmployeeID";
+$tdataemployee_header [".importFields"] [] = "FirstName";
+$tdataemployee_header [".importFields"] [] = "LastName";
+$tdataemployee_header [".importFields"] [] = "SupervisorTitle";
+$tdataemployee_header [".importFields"] [] = "emailID";
+$tdataemployee_header [".importFields"] [] = "Role";
+$tdataemployee_header [".importFields"] [] = "Type";
+$tdataemployee_header [".importFields"] [] = "Location";
+$tdataemployee_header [".importFields"] [] = "SupervisorName";
+$tdataemployee_header [".importFields"] [] = "InactiveDate";
+$tdataemployee_header [".importFields"] [] = "StartDate";
+$tdataemployee_header [".importFields"] [] = "EmployeeStatus";
+$tdataemployee_header [".importFields"] [] = "Country";
+$tdataemployee_header [".importFields"] [] = "JobTitle";
+
 
 $tdataemployee_header [".printFields"] = array ();
 
@@ -2151,17 +2166,17 @@ $edata = array (
 
 // Begin Lookup settings
 $edata ["LookupType"] = 1;
-$edata ["LookupTable"] = "contractstat";
+$edata ["LookupTable"] = "yesno";
 $edata ["LookupConnId"] = "Tables";
 $edata ["autoCompleteFieldsOnEdit"] = 0;
 $edata ["autoCompleteFields"] = array ();
-$edata ["LCType"] = 0;
-
-$edata ["LinkField"] = "ContractStatus";
+$edata ["LCType"] = 4;
+$edata ["HorizontalLookup"] = true;
+$edata ["LinkField"] = "Answer";
 $edata ["LinkFieldType"] = 200;
-$edata ["DisplayField"] = "ContractStatus";
+$edata ["DisplayField"] = "Answer";
 
-$edata ["LookupOrderBy"] = "ContractStatus";
+$edata ["LookupOrderBy"] = "Answer";
 
 $edata ["SimpleAdd"] = true;
 
@@ -2175,7 +2190,7 @@ $edata ["acceptFileTypes"] = ".+$";
 
 $edata ["maxNumberOfFiles"] = 1;
 
-$edata ["controlWidth"] = 143;
+$edata ["controlWidth"] = 110;
 
 // Begin validation
 $edata ["validateAs"] = array ();
@@ -2846,29 +2861,42 @@ function createSqlQuery_employee_header() {
 	$proto1 ["m_strTail"] = "";
 	$proto1 ["cipherer"] = null;
 	$proto2 = array ();
-	if( !IsAdmin() && '5' == $groupID ) {
+	/* if( !IsAdmin() && '5' == $groupID ) {
 		$proto2 ["m_sql"] = "";
 		$proto2 ["m_uniontype"] = "SQLL_UNKNOWN";
 		$obj = new SQLNonParsed ( array (
 				"m_sql" => ""
 		) );
-	} elseif( !IsAdmin() && ( '6' == $groupID || '7' == $groupID ) ) {
+	} elseif( !IsAdmin() && '6' == $groupID ) {
+		
+		global $conn;
+		$sql = "SELECT `EmployeeID` from employee_header where concat(`FirstName`, ' ', `LastName`) = '" . $userName . "'";
+		$rs = db_query($sql, $conn);
+		while( $data = db_fetch_array( $rs ) )
+		$EmployeeID = $data["EmployeeID"];
+		$proto2 ["m_sql"] = " employee_header.EmployeeID = '" . $EmployeeID . "' OR employee_header.SupervisorID IN ( SELECT EmployeeID from employee_header WHERE SupervisorID = '" . $EmployeeID . "' OR EmployeeID = '" . $EmployeeID . "' )";
+		$proto2 ["m_uniontype"] = "SQLL_UNKNOWN";
+		$obj = new SQLNonParsed ( array (
+				"m_sql" => "employee_header.EmployeeID = '" . $EmployeeID . "' OR employee_header.SupervisorID IN ( SELECT EmployeeID from employee_header WHERE SupervisorID = '" . $EmployeeID . "' OR EmployeeID = '" . $EmployeeID . "' )"
+		) );
+	} elseif( !IsAdmin() && '7' == $groupID ) {
 		$proto2 ["m_sql"] = "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."' OR employee_header.SupervisorName = '" . $userName . "'";
 		$proto2 ["m_uniontype"] = "SQLL_OR";
 		$obj = new SQLNonParsed ( array (
-				"m_sql" => "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."' OR employee_header.SupervisorName = '" . $userName . "'"
+		 	"m_sql" => "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."' OR employee_header.SupervisorName = '" . $userName . "'"
 		) );
-	} elseif( !IsAdmin() && '1' == $groupID ) {
-		$proto2 ["m_sql"] = "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."'";
+	}else */
+	if( !IsAdmin() && '1' == $groupID ) {
+		$proto2 ["m_sql"] = "employee_header.`EmployeeStatus` <> 'No'AND concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."'";
 		$proto2 ["m_uniontype"] = "SQLL_AND";
 		$obj = new SQLNonParsed ( array (
-				"m_sql" => "concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."'"
+				"m_sql" => "employee_header.`EmployeeStatus` <> 'No' AND concat(employee_header.`FirstName`, ' ', employee_header.`LastName`) = '" . $userName ."'"
 		) );
 	} else {
-		$proto2 ["m_sql"] = "";
+		$proto2 ["m_sql"] = "employee_header.`EmployeeStatus` <> 'No'";
 		$proto2 ["m_uniontype"] = "SQLL_UNKNOWN";
 		$obj = new SQLNonParsed ( array (
-				"m_sql" => ""
+				"m_sql" => "employee_header.`EmployeeStatus` <> 'No'"
 		) );
 	}
 	

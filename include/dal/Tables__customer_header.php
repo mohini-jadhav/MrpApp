@@ -18,7 +18,7 @@ $dalTablecustomer_header["ARS_MRR"] = array("type"=>200,"varname"=>"ARS_MRR");
 $dalTablecustomer_header["MS_MRR"] = array("type"=>200,"varname"=>"MS_MRR");
 $dalTablecustomer_header["CS_MRR"] = array("type"=>200,"varname"=>"CS_MRR");
 $dalTablecustomer_header["OTHER_MRR"] = array("type"=>200,"varname"=>"OTHER_MRR");
-$dalTablecustomer_header["SME"] = array("type"=>200,"varname"=>"SME");
+$dalTablecustomer_header["AE"] = array("type"=>200,"varname"=>"AE");
 $dalTablecustomer_header["RSAName"] = array("type"=>200,"varname"=>"RSAName");
 $dalTablecustomer_header["Overall_Temp"] = array("type"=>200,"varname"=>"Overall_Temp");
 $dalTablecustomer_header["Engagement_status"] = array("type"=>200,"varname"=>"Engagement_status");

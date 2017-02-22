@@ -20,6 +20,9 @@ Runner.pages.PageSettings.addPageEvent("employee_header",
 				proxy, pageid, inlineRow, inlineObject) {
 			var ctrlCountry = Runner.getControl(pageid, 'Location');
 			var ctrlState = Runner.getControl(pageid, 'State');
+			
+			$(".rnr-b-recordcontrols_new").show();
+			$("#edit_selected"+pageid).show();
 			ctrlCountry.on('change', function(e) {
 				if (this.getValue() == 'NA') {
 					ctrlState.show();
@@ -49,4 +52,7 @@ Runner.pages.PageSettings.addPageEvent("employee_header",
 			}
 			ctrlEmployeeStatus.on('click', func);
 			ctrlEmployeeStatus.on('keyup', func);
+			
+			$(".rnr-b-recordcontrols_new").show();
+			$("#edit_selected"+pageid).show();
 		});

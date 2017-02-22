@@ -31,7 +31,7 @@ class eventclass_customer_header extends eventsBase {
 		if ($data["Temperature"]=="Black")
 		$record["Temperature_style"]='style="background:Black"';
 		
-		if ($data["Contract_Status"]=="Terminated")
+		if ($data["Engagement_status"]=="Terminated")
 		$row["rowstyle"]='style="background:lightblue"';
 		
 		if ($data["PlaybookVersion"]=="")
@@ -74,19 +74,11 @@ class eventclass_customer_header extends eventsBase {
 	// function BeforeMoveNextList
 	// Before record added
 	function BeforeAdd(&$values, &$message, $inline, &$pageObject) {
-		//var_dump($values); exit;
-		// adding 14 days to the contract start date to get the trans start date
-		 $arr = db2time($values["Contract_Start"]);
-		 // construct time
-		 $t = mktime($arr[3],$arr[4],$arr[5],$arr[1],$arr[2],$arr[0]);
-		 // construct new date
-		 $values["TransStartDate"] = date("Y-m-d",$t + 60*60*24*14);
-		// adding 1 days after the trans end date is reach for Steady State
-		 $arr = db2time($values["TransEndDate"]);
-		 // construct time
-		 $t = mktime($arr[3],$arr[4],$arr[5],$arr[1],$arr[2],$arr[0]);
-		 // construct new date
-		$values["SteadyState"] = date("Y-m-d",$t + 60*60*24*1);
+		
+		 if( true == isset($values["TransEndDate"]) && false == empty($values["TransEndDate"] )) {
+		 	$values ["SteadyState"] = date ( "Y-m-d", strtotime ( $values ["TransEndDate"] . ' +1 Weekday' ) );
+		 }
+	
 		$values ["Created_date"] = now ();
 		$values ["created_by"] = $_SESSION ["UserID"];
 		$values ["Updated_date"] = now ();
@@ -98,24 +90,14 @@ class eventclass_customer_header extends eventsBase {
 	} // function BeforeAdd
 	// Before record updated
 	function BeforeEdit(&$values, $where, &$oldvalues, &$keys, &$message, $inline, &$pageObject) {		
-		// adding 14 days to the contract start date to get the trans start date
-		 $arr = db2time($values["Contract_Start"]);
-		 // construct time
-		 $t = mktime($arr[3],$arr[4],$arr[5],$arr[1],$arr[2],$arr[0]);
-		 // construct new date
-		 $values["TransStartDate"] = date("Y-m-d",$t + 60*60*24*14);
-		// adding 1 days after the trans end date is reach for Steady State 
-		$values ["SteadyState"] = date ( "Y-m-d", strtotime ( $values ["TransEndDate"] . ' +1 Weekday' ) );
+		
+		if( true == isset($values["TransEndDate"]) && false == empty($values["TransEndDate"] ) ) {
+			$values ["SteadyState"] = date ( "Y-m-d", strtotime ( $values ["TransEndDate"] . ' +1 Weekday' ) );
+		}
+		
 		$values ["Updated_date"] = now ();
 		$values ["Updated_by"] = $_SESSION ["UserID"];
 		
-		// adding 1 days after the trans end date is reach for Steady State
-		//$arr = db2time($values["TransEndDate"]);
-		// construct time
-		//$t = mktime($arr[3],$arr[4],$arr[5],$arr[1],$arr[2],$arr[0]);
-		// construct new date
-		//$values["SteadyState"] = date("Y-m-d",$t . ' +2 Weekday');
-	
 		// Place event code here.
 		// Use "Add Action" button to add code snippets.
 		return true;
@@ -166,6 +148,7 @@ class eventclass_customer_header extends eventsBase {
 		//select values from database 
 		
 		global $conn;
+		/*
 		$strSQL1 = "SELECT DISTINCT td.SupervisorID, td.FullName FROM customerallocation ca JOIN tbl_director td ON( ca.Supervisor = td.SupervisorID ) WHERE td.FullName = '" . $userName . "'";
 		$rs = db_query($strSQL1,$conn);
 		while ($data = db_fetch_array($rs))
@@ -180,8 +163,8 @@ class eventclass_customer_header extends eventsBase {
 		} else {
 			$strSQL = "select DISTINCT td.SupervisorID, td.FullName from customer_header ch LEFT JOIN tbl_director td ON( ch.Supervisor = td.SupervisorID ) order by Supervisor";
 		}
-		
-		//$strSQL = "select DISTINCT td.SupervisorID, td.FullName from customer_header ch LEFT JOIN tbl_director td ON( ch.Supervisor = td.SupervisorID ) order by Supervisor";
+		 */
+		$strSQL = "select DISTINCT td.SupervisorID, td.FullName from customer_header ch LEFT JOIN tbl_director td ON( ch.Supervisor = td.SupervisorID ) order by Supervisor";
 
 		$rs = db_query($strSQL,$conn);
 		

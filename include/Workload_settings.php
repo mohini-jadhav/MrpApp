@@ -1074,6 +1074,16 @@ $masterTablesData ["Workload"] = array ();
 
 require_once (getabspath ( "classes/sql.php" ));
 function createSqlQuery_Workload() {
+	
+	if( false == is_null( $_SESSION['UserName'] ) ) {
+		$userName = $_SESSION['UserName'];
+	}
+	
+	if( false == is_null( $_SESSION['UserID']) ) {
+		$userID = $_SESSION["UserID"];
+		$groupID = $_SESSION["UserRights"][$userID][".Groups"][0];
+	}
+
 	$proto0 = array ();
 	$proto0 ["m_strHead"] = "Select";
 	$proto0 ["m_strFieldList"] = "RSAName,  Supervisor,  COUNT(Allocation) AS `COUNT(Allocation)`,  AutCustID,  StartDate,  EndDate,  SUM(Allocation)*100 AS PercentValue";
@@ -1135,12 +1145,37 @@ function createSqlQuery_Workload() {
 	
 	$proto0 ["m_where"] = $obj;
 	$proto7 = array ();
-	$proto7 ["m_sql"] = "";
-	$proto7 ["m_uniontype"] = "SQLL_UNKNOWN";
-	$obj = new SQLNonParsed ( array (
-			"m_sql" => "" 
-	) );
-	
+	if( !IsAdmin() && '5' == $groupID ) {
+		$proto7 ["m_sql"] = "";
+		$proto7 ["m_uniontype"] = "SQLL_UNKNOWN";
+		$obj = new SQLNonParsed ( array (
+				"m_sql" => ""
+		) );
+	} elseif( !IsAdmin() && ( '6' == $groupID || '7' == $groupID ) ) {
+		global $conn;
+		$strSQL = "SELECT DISTINCT td.SupervisorID, td.FullName FROM customerallocation ca JOIN tbl_director td ON( ca.Supervisor = td.SupervisorID ) WHERE td.FullName = '" . $userName . "'";
+		$rs = db_query($strSQL,$conn);
+		while ($data = db_fetch_array($rs))
+			$supervisorID = $data['SupervisorID'];
+			$proto7 ["m_sql"] = "RSAName = '". $userName ."' OR Supervisor = '" . $supervisorID . "'";
+			$proto7 ["m_uniontype"] = "SQLL_UNKNOWN";
+			$obj = new SQLNonParsed ( array (
+					"m_sql" => "RSAName = '". $userName ."' OR Supervisor = '" . $supervisorID . "'"
+			) );
+	} elseif( !IsAdmin() ) {
+		$proto7 ["m_sql"] = "RSAName = '". $userName ."'";
+		$proto7 ["m_uniontype"] = "SQLL_UNKNOWN";
+		$obj = new SQLNonParsed ( array (
+				"m_sql" => "RSAName = '". $userName ."'"
+		) );
+	} else {
+		$proto7 ["m_sql"] = "";
+		$proto7 ["m_uniontype"] = "SQLL_UNKNOWN";
+		$obj = new SQLNonParsed ( array (
+				"m_sql" => ""
+		) );
+	}
+
 	$proto7 ["m_column"] = $obj;
 	$proto7 ["m_contained"] = array ();
 	$proto7 ["m_strCase"] = "";

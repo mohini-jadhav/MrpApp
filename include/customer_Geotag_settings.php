@@ -696,7 +696,7 @@ function createSqlQuery_customer_Geotag() {
 	$proto14 ["m_columns"] [] = "MS_MRR";
 	$proto14 ["m_columns"] [] = "CS_MRR";
 	$proto14 ["m_columns"] [] = "OTHER_MRR";
-	$proto14 ["m_columns"] [] = "SME";
+	$proto14 ["m_columns"] [] = "AE";
 	$proto14 ["m_columns"] [] = "RSAName";
 	$proto14 ["m_columns"] [] = "Overall_Temp";
 	$proto14 ["m_columns"] [] = "Engagement_status";

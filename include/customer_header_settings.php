@@ -29,7 +29,7 @@ if (mlang_getcurrentlang () == "English") {
 	$fieldToolTipscustomer_header ["English"] ["Contract_Start"] = "";
 	$fieldLabelscustomer_header ["English"] ["Contract_end"] = "Contract End";
 	$fieldToolTipscustomer_header ["English"] ["Contract_end"] = "";
-	$fieldLabelscustomer_header ["English"] ["Recovery_Center"] = "Rec Ctr";
+	$fieldLabelscustomer_header ["English"] ["Recovery_Center"] = "Primary DC";
 	$fieldToolTipscustomer_header ["English"] ["Recovery_Center"] = "";
 	$fieldLabelscustomer_header ["English"] ["Total_MRR"] = "Total \$";
 	$fieldToolTipscustomer_header ["English"] ["Total_MRR"] = "";
@@ -83,8 +83,8 @@ if (mlang_getcurrentlang () == "English") {
 	$fieldToolTipscustomer_header ["English"] ["Supervisor"] = "";
 	$fieldLabelscustomer_header ["English"] ["TAM"] = "TAM";
 	$fieldToolTipscustomer_header ["English"] ["TAM"] = "";
-	$fieldLabelscustomer_header ["English"] ["SME"] = "SME";
-	$fieldToolTipscustomer_header ["English"] ["SME"] = "";
+	$fieldLabelscustomer_header ["English"] ["AE"] = "AE";
+	$fieldToolTipscustomer_header ["English"] ["AE"] = "";
 	$fieldLabelscustomer_header ["English"] ["RSAName"] = "Resource";
 	$fieldToolTipscustomer_header ["English"] ["RSAName"] = "";
 	$fieldLabelscustomer_header ["English"] ["RS_MRR"] = "RS \$";
@@ -116,8 +116,8 @@ if (mlang_getcurrentlang () == "") {
 	$fieldToolTipscustomer_header [""] ["Supervisor"] = "";
 	$fieldLabelscustomer_header [""] ["TAM"] = "TAM";
 	$fieldToolTipscustomer_header [""] ["TAM"] = "";
-	$fieldLabelscustomer_header [""] ["SME"] = "SME";
-	$fieldToolTipscustomer_header [""] ["SME"] = "";
+	$fieldLabelscustomer_header [""] ["AE"] = "AE";
+	$fieldToolTipscustomer_header [""] ["AE"] = "";
 	$fieldLabelscustomer_header [""] ["RSAName"] = "RSAName";
 	$fieldToolTipscustomer_header [""] ["RSAName"] = "";
 	$fieldLabelscustomer_header [""] ["RS_MRR"] = "RS MRR";
@@ -145,7 +145,7 @@ $tdatacustomer_header [".showAddInPopup"] = true;
 
 $tdatacustomer_header [".showEditInPopup"] = true;
 
-$tdatacustomer_header [".showViewInPopup"] = false;
+$tdatacustomer_header [".showViewInPopup"] = true;
 
 // page's base css files names
 $popupPagesLayoutNames = array ();
@@ -155,6 +155,7 @@ $popupPagesLayoutNames ["add"] = "add2";
 
 ;
 $popupPagesLayoutNames ["edit"] = "edit2";
+$popupPagesLayoutNames ["view"] = "view2";
 $tdatacustomer_header [".popupPagesLayoutNames"] = $popupPagesLayoutNames;
 
 $tdatacustomer_header [".fieldsForRegister"] = array ();
@@ -176,7 +177,7 @@ $tdatacustomer_header [".closePopupAfterAdd"] = 1;
 $tdatacustomer_header [".afterAddActionDetTable"] = "customertechnology";
 
 $tdatacustomer_header [".list"] = true;
-
+$tdatacustomer_header [".view"] = true;
 $tdatacustomer_header [".import"] = true;
 
 $tdatacustomer_header [".exportTo"] = true;
@@ -212,7 +213,7 @@ $tdatacustomer_header [".requiredSearchFields"] = array ();
 
 $tdatacustomer_header [".allSearchFields"] [] = "Supervisor";
 $tdatacustomer_header [".allSearchFields"] [] = "TAM";
-$tdatacustomer_header [".allSearchFields"] [] = "SME";
+$tdatacustomer_header [".allSearchFields"] [] = "AE";
 $tdatacustomer_header [".allSearchFields"] [] = "RSAName";
 $tdatacustomer_header [".allSearchFields"] [] = "OracIeID";
 $tdatacustomer_header [".allSearchFields"] [] = "Name";
@@ -263,13 +264,13 @@ $tdatacustomer_header [".googleLikeFields"] [] = "TransEndDate";
 $tdatacustomer_header [".googleLikeFields"] [] = "Contract_Status";
 $tdatacustomer_header [".googleLikeFields"] [] = "Supervisor";
 $tdatacustomer_header [".googleLikeFields"] [] = "TAM";
-$tdatacustomer_header [".googleLikeFields"] [] = "SME";
+$tdatacustomer_header [".googleLikeFields"] [] = "AE";
 $tdatacustomer_header [".googleLikeFields"] [] = "RSAName";
 
 $tdatacustomer_header [".advSearchFields"] = array ();
 $tdatacustomer_header [".advSearchFields"] [] = "Supervisor";
 $tdatacustomer_header [".advSearchFields"] [] = "TAM";
-$tdatacustomer_header [".advSearchFields"] [] = "SME";
+$tdatacustomer_header [".advSearchFields"] [] = "AE";
 $tdatacustomer_header [".advSearchFields"] [] = "RSAName";
 $tdatacustomer_header [".advSearchFields"] [] = "OracIeID";
 $tdatacustomer_header [".advSearchFields"] [] = "Name";
@@ -324,7 +325,7 @@ $tdatacustomer_header [".orderindexes"] [] = array (
 		"Name" 
 );
 
-$tdatacustomer_header [".sqlHead"] = "SELECT OracIeID,  Name,  `Size`,  Temperature,  Contract_Start,  Contract_end,  Recovery_Center,  Total_MRR,  MRP_MRR,  ARS_MRR,  RS_MRR,  MS_MRR,  CS_MRR,  OTHER_MRR,  Engagement_status,  created_by,  concat(`Size`, '-', `Stage`) AS Compre_String,  Created_date,  Updated_by,  Updated_date,  Comments,  EmployeeID,  Stage,  Overall_Temp,  Address,  SteadyState,  PrimaryTimeZone,  `Onshore Support`,  TransStartDate,  TransEndDate,  Contract_Status,  Supervisor,  TAM,  SME,  RSAName, Sales_SVP";
+$tdatacustomer_header [".sqlHead"] = "SELECT customer_header.OracIeID,  customer_header.Name,  customer_header.`Size`,  customer_header.Temperature,  customer_header.Contract_Start,  customer_header.Contract_end,  customer_header.Recovery_Center,  customer_header.Total_MRR,  customer_header.MRP_MRR,  customer_header.ARS_MRR,  customer_header.RS_MRR,  customer_header.MS_MRR,  customer_header.CS_MRR,  customer_header.OTHER_MRR,  customer_header.Engagement_status,  customer_header.created_by,  concat(`Size`, '-', `Stage`) AS Compre_String,  Created_date,  Updated_by,  Updated_date,  Comments,  EmployeeID,  Stage,  Overall_Temp,  Address,  SteadyState,  PrimaryTimeZone,  `Onshore Support`,  TransStartDate,  TransEndDate,  Contract_Status,  customer_header.Supervisor,  customer_header.TAM,  customer_header.AE,  customer_header.RSAName, Sales_SVP";
 $tdatacustomer_header [".sqlFrom"] = "FROM customer_header";
 $tdatacustomer_header [".sqlWhereExpr"] = "";
 $tdatacustomer_header [".sqlTail"] = "";
@@ -378,6 +379,33 @@ $tdatacustomer_header [".listFields"] [] = "OTHER_MRR";
 $tdatacustomer_header [".hideMobileList"] = array ();
 
 $tdatacustomer_header [".viewFields"] = array ();
+$tdatacustomer_header [".viewFields"] [] = "OracIeID";
+$tdatacustomer_header [".viewFields"] [] = "Name";
+$tdatacustomer_header [".viewFields"] [] = "PrimaryTimeZone";
+$tdatacustomer_header [".viewFields"] [] = "Size";
+$tdatacustomer_header [".viewFields"] [] = "Onshore Support";
+$tdatacustomer_header [".viewFields"] [] = "Stage";
+$tdatacustomer_header [".viewFields"] [] = "Overall_Temp";
+$tdatacustomer_header [".viewFields"] [] = "Engagement_status";
+$tdatacustomer_header [".viewFields"] [] = "Contract_Start";
+$tdatacustomer_header [".viewFields"] [] = "SteadyState";
+$tdatacustomer_header [".viewFields"] [] = "Contract_end";
+$tdatacustomer_header [".viewFields"] [] = "Recovery_Center";
+$tdatacustomer_header [".viewFields"] [] = "Total_MRR";
+$tdatacustomer_header [".viewFields"] [] = "MRP_MRR";
+$tdatacustomer_header [".viewFields"] [] = "ARS_MRR";
+$tdatacustomer_header [".viewFields"] [] = "RS_MRR";
+$tdatacustomer_header [".viewFields"] [] = "MS_MRR";
+$tdatacustomer_header [".viewFields"] [] = "CS_MRR";
+$tdatacustomer_header [".viewFields"] [] = "OTHER_MRR";
+$tdatacustomer_header [".viewFields"] [] = "Comments";
+$tdatacustomer_header [".viewFields"] [] = "Address";
+$tdatacustomer_header [".viewFields"] [] = "TransStartDate";
+$tdatacustomer_header [".viewFields"] [] = "TransEndDate";
+$tdatacustomer_header [".viewFields"] [] = "RSAName";
+$tdatacustomer_header [".viewFields"] [] = "Supervisor";
+$tdatacustomer_header [".viewFields"] [] = "TAM";
+$tdatacustomer_header [".viewFields"] [] = "AE";
 
 $tdatacustomer_header [".addFields"] = array ();
 $tdatacustomer_header [".addFields"] [] = "OracIeID";
@@ -406,12 +434,12 @@ $tdatacustomer_header [".addFields"] [] = "TransEndDate";
 $tdatacustomer_header [".addFields"] [] = "RSAName";
 $tdatacustomer_header [".addFields"] [] = "Supervisor";
 $tdatacustomer_header [".addFields"] [] = "TAM";
-$tdatacustomer_header [".addFields"] [] = "SME";
+$tdatacustomer_header [".addFields"] [] = "AE";
 
 $tdatacustomer_header [".masterListFields"] = array ();
 $tdatacustomer_header [".masterListFields"] [] = "Supervisor";
 $tdatacustomer_header [".masterListFields"] [] = "TAM";
-$tdatacustomer_header [".masterListFields"] [] = "SME";
+$tdatacustomer_header [".masterListFields"] [] = "AE";
 $tdatacustomer_header [".masterListFields"] [] = "RSAName";
 $tdatacustomer_header [".masterListFields"] [] = "OracIeID";
 $tdatacustomer_header [".masterListFields"] [] = "Name";
@@ -466,14 +494,14 @@ $tdatacustomer_header [".editFields"] [] = "TransEndDate";
 $tdatacustomer_header [".editFields"] [] = "RSAName";
 $tdatacustomer_header [".editFields"] [] = "Supervisor";
 $tdatacustomer_header [".editFields"] [] = "TAM";
-$tdatacustomer_header [".editFields"] [] = "SME";
+$tdatacustomer_header [".editFields"] [] = "AE";
 
 $tdatacustomer_header [".inlineEditFields"] = array ();
 
 $tdatacustomer_header [".exportFields"] = array ();
 $tdatacustomer_header [".exportFields"] [] = "Supervisor";
 $tdatacustomer_header [".exportFields"] [] = "TAM";
-$tdatacustomer_header [".exportFields"] [] = "SME";
+$tdatacustomer_header [".exportFields"] [] = "AE";
 $tdatacustomer_header [".exportFields"] [] = "RSAName";
 $tdatacustomer_header [".exportFields"] [] = "OracIeID";
 $tdatacustomer_header [".exportFields"] [] = "Name";
@@ -518,7 +546,7 @@ $tdatacustomer_header [".importFields"] [] = "RS_MRR";
 $tdatacustomer_header [".importFields"] [] = "MS_MRR";
 $tdatacustomer_header [".importFields"] [] = "CS_MRR";
 $tdatacustomer_header [".importFields"] [] = "OTHER_MRR";
-$tdatacustomer_header [".importFields"] [] = "SME";
+$tdatacustomer_header [".importFields"] [] = "AE";
 $tdatacustomer_header [".importFields"] [] = "RSAName";
 $tdatacustomer_header [".importFields"] [] = "Overall_Temp";
 $tdatacustomer_header [".importFields"] [] = "Engagement_status";
@@ -570,10 +598,11 @@ $fdata ["strName"] = "OracIeID";
 $fdata ["GoodName"] = "OracIeID";
 $fdata ["ownerTable"] = "customer_header";
 $fdata ["Label"] = GetFieldLabel ( "customer_header", "OracIeID" );
-$fdata ["FieldType"] = 3;
+$fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -649,7 +678,7 @@ $edata ["acceptFileTypes"] = ".+$";
 $edata ["maxNumberOfFiles"] = 1;
 $edata ["HTML5InuptType"] = "text";
 $edata ["EditParams"] = "";
-$edata ["EditParams"] .= " maxlength=9";
+//$edata ["EditParams"] .= " maxlength=9";
 $edata ["controlWidth"] = 143;
 
 // Begin validation
@@ -660,7 +689,7 @@ $edata ["validateAs"] ["basicValidate"] [] = getJsValidatorName ( "Number" );
 $edata ["validateAs"] ["basicValidate"] [] = "IsRequired";
 $edata ["validateAs"] ["basicValidate"] [] = "DenyDuplicated";
 $edata ["validateAs"] ["customMessages"] ["DenyDuplicated"] = array (
-		"message" => "Value %value% Oracle ID already exists",
+		"message" => "Value %value% Oracle ID already exists. Please add suffix A,B,C,D,etc infront of it. If it is a new customer.",
 		"messageType" => "Text" 
 );
 // End validation
@@ -700,6 +729,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -821,6 +851,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1094,6 +1125,7 @@ $fdata ["FieldType"] = 7;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1135,10 +1167,13 @@ $fdata ["ViewFormats"] ["masterprint"] = $vdata;
 // Begin Edit Formats
 $fdata ["EditFormats"] = array ();
 $edata = array (
-		"EditFormat" => "Readonly" 
+		"EditFormat" => "Date" 
 );
 $edata ["acceptFileTypes"] = ".+$";
 $edata ["maxNumberOfFiles"] = 1;
+$edata ["DateEditType"] = 11;
+$edata ["InitialYearFactor"] = 100;
+$edata ["LastYearFactor"] = 10;
 $edata ["controlWidth"] = 143;
 // Begin validation
 $edata ["validateAs"] = array ();
@@ -1197,6 +1232,7 @@ $fdata ["FieldType"] = 7;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1238,10 +1274,13 @@ $fdata ["ViewFormats"] ["masterprint"] = $vdata;
 // Begin Edit Formats
 $fdata ["EditFormats"] = array ();
 $edata = array (
-		"EditFormat" => "Readonly" 
+		"EditFormat" => "Date" 
 );
 $edata ["acceptFileTypes"] = ".+$";
 $edata ["maxNumberOfFiles"] = 1;
+$edata ["DateEditType"] = 11;
+$edata ["InitialYearFactor"] = 100;
+$edata ["LastYearFactor"] = 10;
 $edata ["controlWidth"] = 143;
 // Begin validation
 $edata ["validateAs"] = array ();
@@ -1299,6 +1338,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1456,6 +1496,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1559,6 +1600,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1776,7 +1818,7 @@ $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1892,6 +1934,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -1991,6 +2034,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -2086,6 +2130,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -2180,6 +2225,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -2976,6 +3022,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 
 $fdata ["bPrinterPage"] = true;
 
@@ -3108,7 +3155,7 @@ $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -3351,7 +3398,7 @@ $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -3535,7 +3582,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bPrinterPage"] = true;
 
 $fdata ["strField"] = "Address";
@@ -3605,7 +3652,7 @@ $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -3684,7 +3731,7 @@ $fdata ["FieldType"] = 200;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -3808,6 +3855,7 @@ $fdata ["FieldType"] = 16;
 $fdata ["bListPage"] = true;
 $fdata ["bAddPage"] = true;
 $fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -3887,7 +3935,7 @@ $fdata ["FieldType"] = 7;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -3969,7 +4017,7 @@ $fdata ["FieldType"] = 7;
 $fdata ["bAddPage"] = true;
 
 $fdata ["bEditPage"] = true;
-
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bPrinterPage"] = true;
@@ -4153,8 +4201,9 @@ $fdata ["GoodName"] = "Supervisor";
 $fdata ["ownerTable"] = "customer_header";
 $fdata ["Label"] = GetFieldLabel ( "customer_header", "Supervisor" );
 $fdata ["FieldType"] = 200;
-
-
+$fdata ["bAddPage"] = true;
+$fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bExportPage"] = true;
@@ -4250,7 +4299,9 @@ $fdata ["ownerTable"] = "customer_header";
 $fdata ["Label"] = GetFieldLabel ( "customer_header", "TAM" );
 $fdata ["FieldType"] = 200;
 
-
+$fdata ["bAddPage"] = true;
+$fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bExportPage"] = true;
@@ -4338,25 +4389,27 @@ $fdata ["searchOptionsList"] = array (
 // the end of search options settings
 
 $tdatacustomer_header ["TAM"] = $fdata;
-// SME
+// AE
 // Custom field settings
 $fdata = array ();
 $fdata ["Index"] = 34;
-$fdata ["strName"] = "SME";
-$fdata ["GoodName"] = "SME";
+$fdata ["strName"] = "AE";
+$fdata ["GoodName"] = "AE";
 $fdata ["ownerTable"] = "customer_header";
-$fdata ["Label"] = GetFieldLabel ( "customer_header", "SME" );
+$fdata ["Label"] = GetFieldLabel ( "customer_header", "AE" );
 $fdata ["FieldType"] = 200;
-
+$fdata ["bAddPage"] = true;
+$fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 
 $fdata ["bAdvancedSearch"] = true;
 
 $fdata ["bExportPage"] = true;
 
-$fdata ["strField"] = "SME";
+$fdata ["strField"] = "AE";
 
 $fdata ["isSQLExpression"] = true;
-$fdata ["FullName"] = "SME";
+$fdata ["FullName"] = "AE";
 
 $fdata ["FieldPermissions"] = true;
 
@@ -4378,10 +4431,12 @@ $fdata ["ViewFormats"] ["view"] = $vdata;
 $fdata ["EditFormats"] = array ();
 
 $edata = array (
-		"EditFormat" => "Lookup wizard" 
+		"EditFormat" => "Readonly" 
 );
 
-// Begin Lookup settings
+// Begin validation
+
+/* // Begin Lookup settings
 $edata ["LookupType"] = 2;
 $edata ["LookupTable"] = "tbl_sme";
 $edata ["autoCompleteFieldsOnEdit"] = 0;
@@ -4395,13 +4450,13 @@ $edata ["DisplayField"] = "FullName";
 $edata ["LookupOrderBy"] = "FirstName";
 
 $edata ["SelectSize"] = 1;
-
+ */
 // End Lookup Settings
 
 $edata ["acceptFileTypes"] = ".+$";
 
 $edata ["maxNumberOfFiles"] = 1;
-
+// $edata ["HTML5InuptType"] = "text";
 $edata ["controlWidth"] = 200;
 
 // Begin validation
@@ -4414,6 +4469,21 @@ $edata ["validateAs"] ["customMessages"] = array ();
 $fdata ["EditFormats"] ["edit"] = $edata;
 // End Edit Formats
 
+$edata = array (
+		"EditFormat" => "Text field"
+);
+$edata ["acceptFileTypes"] = ".+$";
+$edata ["maxNumberOfFiles"] = 1;
+$edata ["HTML5InuptType"] = "text";
+$edata ["EditParams"] = "";
+$edata ["controlWidth"] = 200;
+$edata ["IsRequired"] = false;
+// Begin validation
+$edata ["validateAs"] = array ();
+$edata ["validateAs"] ["basicValidate"] = array ();
+$edata ["validateAs"] ["customMessages"] = array ();
+// End validation
+$fdata ["EditFormats"] ["add"] = $edata;
 $fdata ["isSeparate"] = false;
 
 // the field's search options settings
@@ -4427,7 +4497,7 @@ $fdata ["searchOptionsList"] = array (
 );
 // the end of search options settings
 
-$tdatacustomer_header ["SME"] = $fdata;
+$tdatacustomer_header ["AE"] = $fdata;
 // RSAName
 // Custom field settings
 $fdata = array ();
@@ -4438,7 +4508,9 @@ $fdata ["ownerTable"] = "customer_header";
 $fdata ["Label"] = GetFieldLabel ( "customer_header", "RSAName" );
 $fdata ["FieldType"] = 200;
 $fdata ["bAdvancedSearch"] = true;
-
+$fdata ["bAddPage"] = true;
+$fdata ["bEditPage"] = true;
+$fdata ["bViewPage"] = true;
 $fdata ["bExportPage"] = true;
 
 $fdata ["strField"] = "RSAName";
@@ -4594,6 +4666,7 @@ $masterTablesData ["customer_header"] = array ();
 
 require_once (getabspath ( "classes/sql.php" ));
 function createSqlQuery_customer_header() {
+	global $conn;
 	if( false == is_null( $_SESSION['UserName'] ) ) {
 		$userName = $_SESSION['UserName'];
 	}
@@ -4605,21 +4678,30 @@ function createSqlQuery_customer_header() {
 
 	$proto2 = array ();
 	$proto2 ["m_strHead"] = "SELECT";
-	$proto2 ["m_strFieldList"] = "customer_header.OracIeID,  customer_header.Name, customer_header.`Size`,  customer_header.Temperature,  customer_header.Contract_Start,  customer_header.Contract_end,  customer_header.Recovery_Center,  customer_header.Total_MRR,  customer_header.MRP_MRR,  customer_header.ARS_MRR,  customer_header.RS_MRR,  customer_header.MS_MRR,  customer_header.CS_MRR,  customer_header.OTHER_MRR,  customer_header.Engagement_status,  customer_header.created_by,  concat(customer_header.`Size`, '-', customer_header.`Stage`) AS Compre_String,  customer_header.Created_date,  customer_header.Updated_by,  customer_header.Updated_date,  customer_header.Comments,  customer_header.EmployeeID,  customer_header.Stage,  customer_header.Overall_Temp,  customer_header.Address,  customer_header.SteadyState,  customer_header.PrimaryTimeZone,  customer_header.`Onshore Support`,  customer_header.TransStartDate,  customer_header.TransEndDate,  customer_header.Contract_Status,  customer_header.Supervisor,  customer_header.TAM,  customer_header.SME,  customer_header.RSAName";
+	$proto2 ["m_strFieldList"] = "customer_header.OracIeID,  customer_header.Name, customer_header.`Size`,  customer_header.Temperature,  customer_header.Contract_Start,  customer_header.Contract_end,  customer_header.Recovery_Center,  customer_header.Total_MRR,  customer_header.MRP_MRR,  customer_header.ARS_MRR,  customer_header.RS_MRR,  customer_header.MS_MRR,  customer_header.CS_MRR,  customer_header.OTHER_MRR,  customer_header.Engagement_status,  customer_header.created_by,  concat(customer_header.`Size`, '-', customer_header.`Stage`) AS Compre_String,  customer_header.Created_date,  customer_header.Updated_by,  customer_header.Updated_date,  customer_header.Comments,  customer_header.EmployeeID,  customer_header.Stage,  customer_header.Overall_Temp,  customer_header.Address,  customer_header.SteadyState,  customer_header.PrimaryTimeZone,  customer_header.`Onshore Support`,  customer_header.TransStartDate,  customer_header.TransEndDate,  customer_header.Contract_Status,  customer_header.Supervisor,  customer_header.TAM,  customer_header.AE,  customer_header.RSAName";
 	$proto2 ["m_strFrom"] = "FROM customer_header";
-	$proto2 ["m_strWhere"] = "customer_header.Engagement_status <> 'Terminated'";
+	$proto2 ["m_strWhere"] = "";
 	$proto2 ["m_strOrderBy"] = "ORDER BY customer_header.Name";
 	$proto2 ["m_strTail"] = "";
 	$proto2 ["cipherer"] = null;
 	$proto3 = array ();
-	if( !IsAdmin() && ( '5' == $groupID || '7' == $groupID )) {
+	/* if( !IsAdmin() && '5' == $groupID ) {
 		$proto3 ["m_sql"] = "customer_header.Engagement_status <> 'Terminated'";
 		$proto3 ["m_uniontype"] = "SQLL_AND";
 		$obj = new SQLNonParsed ( array (
 				"m_sql" => "customer_header.Engagement_status <> 'Terminated'"
 		) );
 	} elseif( !IsAdmin() && '6' == $groupID  ) {
-		global $conn;
+		$strSQL = "SELECT DISTINCT td.SupervisorID, td.FullName FROM customer_header ch JOIN tbl_director td ON( ch.Supervisor = td.SupervisorID ) WHERE td.FullName = '" . $userName . "'";
+		$rs = db_query($strSQL,$conn);
+		while ($data = db_fetch_array($rs))
+		$supervisorID = $data['SupervisorID'];
+		$proto3 ["m_sql"] = "customer_header.Engagement_status <> 'Terminated' AND customer_header.Supervisor = '" . $supervisorID ."' OR customer_header.Supervisor IN ( SELECT EmployeeID FROM employee_header eh where eh.SupervisorID = '" . $supervisorID . "' ) " ;
+		$proto3 ["m_uniontype"] = "SQLL_AND";
+		$obj = new SQLNonParsed ( array (
+				"m_sql" => "customer_header.Engagement_status <> 'Terminated' AND customer_header.Supervisor = '" . $supervisorID . "' OR customer_header.Supervisor IN ( SELECT EmployeeID FROM employee_header eh where eh.SupervisorID = '" . $supervisorID . "' )"
+		) );
+	} elseif( !IsAdmin() && '7' == $groupID  ) {
 		$strSQL = "SELECT DISTINCT td.SupervisorID, td.FullName FROM customer_header ch JOIN tbl_director td ON( ch.Supervisor = td.SupervisorID ) WHERE td.FullName = '" . $userName . "'";
 		$rs = db_query($strSQL,$conn);
 		while ($data = db_fetch_array($rs))
@@ -4629,17 +4711,18 @@ function createSqlQuery_customer_header() {
 		$obj = new SQLNonParsed ( array (
 				"m_sql" => "customer_header.Engagement_status <> 'Terminated' AND customer_header.Supervisor = '" . $supervisorID . "'"
 		) );
-	} elseif( !IsAdmin() && '1' == $groupID ) {
-		$proto3 ["m_sql"] = "customer_header.Engagement_status <> 'Terminated' AND customerallocation.RSAName = '" . $userName . "'";
+	} else */
+	if( !IsAdmin() && '1' == $groupID ) {
+		$proto3 ["m_sql"] = "( customer_header.RSAName = '" . $userName . "' OR customerallocation.RSAName = '" . $userName . "')";
 		$proto3 ["m_uniontype"] = "SQLL_AND";
 		$obj = new SQLNonParsed ( array (
-				"m_sql" => "customer_header.Engagement_status <> 'Terminated' AND customerallocation.RSAName = '" . $userName . "'"
+				"m_sql" => "( customer_header.RSAName = '" . $userName . "' OR customerallocation.RSAName = '" . $userName . "')"
 		) );
 	} else {
-		$proto3 ["m_sql"] = "customer_header.Engagement_status <> 'Terminated'";
+		$proto3 ["m_sql"] = "";
 		$proto3 ["m_uniontype"] = "SQLL_AND";
 		$obj = new SQLNonParsed ( array (
-				"m_sql" => "customer_header.Engagement_status <> 'Terminated'"
+				"m_sql" => ""
 		) );
 	}
 
@@ -5148,12 +5231,12 @@ function createSqlQuery_customer_header() {
 	$proto2 ["m_fieldlist"] [] = $obj;
 	$proto76 = array ();
 	$obj = new SQLField ( array (
-			"m_strName" => "SME",
+			"m_strName" => "AE",
 			"m_strTable" => "customer_header",
 			"m_srcTableName" => "customer_header" 
 	) );
 	
-	$proto76 ["m_sql"] = "SME";
+	$proto76 ["m_sql"] = "AE";
 	$proto76 ["m_srcTableName"] = "customer_header";
 	$proto76 ["m_expr"] = $obj;
 	$proto76 ["m_alias"] = "";
@@ -5167,7 +5250,7 @@ function createSqlQuery_customer_header() {
 			"m_srcTableName" => "customer_header" 
 	) );
 	
-	$proto78 ["m_sql"] = "RSAName";
+	$proto78 ["m_sql"] = "customer_header.RSAName";
 	$proto78 ["m_srcTableName"] = "customer_header";
 	$proto78 ["m_expr"] = $obj;
 	$proto78 ["m_alias"] = "";
@@ -5200,7 +5283,7 @@ function createSqlQuery_customer_header() {
 	$proto81 ["m_columns"] [] = "MS_MRR";
 	$proto81 ["m_columns"] [] = "CS_MRR";
 	$proto81 ["m_columns"] [] = "OTHER_MRR";
-	$proto81 ["m_columns"] [] = "SME";
+	$proto81 ["m_columns"] [] = "AE";
 	$proto81 ["m_columns"] [] = "RSAName";
 	$proto81 ["m_columns"] [] = "Overall_Temp";
 	$proto81 ["m_columns"] [] = "Engagement_status";
@@ -5259,7 +5342,7 @@ function createSqlQuery_customer_header() {
 		$obj = new SQLOrderByItem ( $proto84 );
 	} elseif( !IsAdmin() && '1' == $groupID ) {
 		$proto84 = array ();
-		$proto84 ["m_link"] = "SQLL_LEFTJOIN";
+		$proto84 ["m_link"] = "SQLL_INNERJOIN";
 		$proto85 = array ();
 		$proto85 ["m_strName"] = "customerallocation";
 		$proto85 ["m_srcTableName"] = "customer_header";
@@ -5290,7 +5373,7 @@ function createSqlQuery_customer_header() {
 		$obj = new SQLTable ( $proto85 );
 		
 		$proto84 ["m_table"] = $obj;
-		$proto84 ["m_sql"] = "LEFT JOIN customerallocation ON customer_header.OracIeID = customerallocation.OracleID";
+		$proto84 ["m_sql"] = "INNER JOIN customerallocation ON customer_header.OracIeID = customerallocation.OracleID";
 		$proto84 ["m_alias"] = "";
 		$proto84 ["m_srcTableName"] = "customer_header";
 		$proto86 = array ();
@@ -5318,12 +5401,15 @@ function createSqlQuery_customer_header() {
 		$proto2 ["m_orderby"] = array ();
 		$proto88 = array ();
 		$obj = new SQLField ( array (
-				"m_strName" => "Name",
+				"m_strName" => "OracIeID",
 				"m_strTable" => "customer_header",
 				"m_srcTableName" => "customer_header" 
 		) );
 		
 		$proto88 ["m_column"] = $obj;
+		$obj = new SQLGroupByItem ( $proto88 );
+		
+		$proto2 ["m_groupby"] [] = $obj;
 		$proto88 ["m_bAsc"] = 1;
 		$proto88 ["m_nColumn"] = 0;
 		$obj = new SQLOrderByItem ( $proto88 );

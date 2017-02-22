@@ -85,7 +85,7 @@ $tdatacustomertechnology [".list"] = true;
 $tdatacustomertechnology [".inlineEdit"] = true;
 $tdatacustomertechnology [".inlineAdd"] = true;
 $tdatacustomertechnology [".view"] = true;
-
+$tdatacustomertechnology [".delete"] = true;
 $tdatacustomertechnology [".import"] = true;
 
 $tdatacustomertechnology [".exportTo"] = true;
@@ -121,7 +121,9 @@ $tdatacustomertechnology [".allSearchFields"] [] = "Name";
 $tdatacustomertechnology [".allSearchFields"] [] = "Category";
 $tdatacustomertechnology [".allSearchFields"] [] = "Platform";
 $tdatacustomertechnology [".allSearchFields"] [] = "Quantity";
+$tdatacustomertechnology [".allSearchFields"] [] = "CategoryID";
 $tdatacustomertechnology [".allSearchFields"] [] = "Comment";
+
 
 $tdatacustomertechnology [".googleLikeFields"] = array ();
 $tdatacustomertechnology [".googleLikeFields"] [] = "AutCusTechID";
@@ -137,6 +139,7 @@ $tdatacustomertechnology [".advSearchFields"] [] = "Name";
 $tdatacustomertechnology [".advSearchFields"] [] = "Category";
 $tdatacustomertechnology [".advSearchFields"] [] = "Platform";
 $tdatacustomertechnology [".advSearchFields"] [] = "Quantity";
+$tdatacustomertechnology [".advSearchFields"] [] = "CategoryID";
 $tdatacustomertechnology [".advSearchFields"] [] = "Comment";
 
 $tdatacustomertechnology [".tableType"] = "list";
@@ -654,7 +657,7 @@ $fdata ["strName"] = "CategoryID";
 $fdata ["GoodName"] = "CategoryID";
 $fdata ["ownerTable"] = "customertechnology";
 $fdata ["Label"] = GetFieldLabel ( "customertechnology", "CategoryID" );
-$fdata ["FieldType"] = 3;
+$fdata ["FieldType"] = 200;
 
 $fdata ["strField"] = "CategoryID";
 
@@ -686,7 +689,7 @@ $edata ["acceptFileTypes"] = ".+$";
 
 $edata ["maxNumberOfFiles"] = 1;
 
-$edata ["HTML5InuptType"] = "number";
+$edata ["HTML5InuptType"] = "text";
 
 $edata ["EditParams"] = "";
 
@@ -696,7 +699,7 @@ $edata ["controlWidth"] = 200;
 $edata ["validateAs"] = array ();
 $edata ["validateAs"] ["basicValidate"] = array ();
 $edata ["validateAs"] ["customMessages"] = array ();
-$edata ["validateAs"] ["basicValidate"] [] = getJsValidatorName ( "Number" );
+//$edata ["validateAs"] ["basicValidate"] [] = getJsValidatorName ( "Number" );
 
 // End validation
 
@@ -937,25 +940,26 @@ function createSqlQuery_customertechnology() {
 	$proto1 ["m_strTail"] = "";
 	$proto1 ["cipherer"] = null;
 	$proto2 = array ();
-	if( !IsAdmin() && ( '5' == $groupID || '7' == $groupID ) ) {
+	/* if( !IsAdmin() && ( '5' == $groupID || '6' == $groupID ) ) {
 		$proto2 ["m_sql"] = "";
 		$proto2 ["m_uniontype"] = "SQLL_UNKNOWN";
 		$obj = new SQLNonParsed ( array (
 				"m_sql" => ""
 		) );
-	} elseif( !IsAdmin() && '6' == $groupID ) {
+	} elseif( !IsAdmin() && '7' == $groupID ) {
 		global $conn;
 		$strSQL = "SELECT DISTINCT td.SupervisorID, td.FullName FROM customer_header ch JOIN tbl_director td ON( ch.Supervisor = td.SupervisorID ) WHERE td.FullName = '" . $userName . "'";
 		$rs = db_query($strSQL,$conn);
 		while ($data = db_fetch_array($rs))
 		$supervisorID = $data['SupervisorID'];
-		$proto2 ["m_sql"] = "customer_header.Supervisor = " . $supervisorID;
+		$proto2 ["m_sql"] = " customer_header.RSAName = '" . $userName . "' OR customer_header.Supervisor = '" . $supervisorID . "'";
 		$proto2 ["m_uniontype"] = "SQLL_AND";
 		$obj = new SQLNonParsed ( array (
-				"m_sql" => "customer_header.Supervisor = '" . $supervisorID . "'"
+				"m_sql" => " customer_header.RSAName = '" . $userName . "' OR customer_header.Supervisor = '" . $supervisorID . "'"
 		) );
 		
-	} elseif( !IsAdmin() && '1' == $groupID ) {
+	} else*/
+	if( !IsAdmin() && '1' == $groupID ) {
 		$proto2 ["m_sql"] = " customer_header.RSAName = '" . $userName . "' ";
 		$proto2 ["m_uniontype"] = "SQLL_UNKNOWN";
 		$obj = new SQLNonParsed ( array (
@@ -1155,7 +1159,7 @@ function createSqlQuery_customertechnology() {
 	$proto25 ["m_columns"] [] = "MS_MRR";
 	$proto25 ["m_columns"] [] = "CS_MRR";
 	$proto25 ["m_columns"] [] = "OTHER_MRR";
-	$proto25 ["m_columns"] [] = "SME";
+	$proto25 ["m_columns"] [] = "AE";
 	$proto25 ["m_columns"] [] = "RSAName";
 	$proto25 ["m_columns"] [] = "Overall_Temp";
 	$proto25 ["m_columns"] [] = "Engagement_status";

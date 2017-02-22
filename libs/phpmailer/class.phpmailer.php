@@ -221,7 +221,7 @@ class PHPMailer
      * Hosts will be tried in order.
      * @type string
      */
-    public $Host = 'localhost';
+    public $Host = '192.168.167.26';
 
     /**
      * The default SMTP server port.

@@ -14,7 +14,8 @@ Runner.pages.PageSettings.addPageEvent("employeeskills",
 Runner.pages.PageSettings.addPageEvent("employeeskills",
 		Runner.pages.constants.PAGE_LIST, "afterPageReady", function(pageObj,
 				proxy, pageid, inlineRow, inlineObject) {
-
+	$(".rnr-b-recordcontrols_new").hide();
+	$("#edit_selected"+pageid).hide();
 	$("#view_empskills").on( 'click', function(){
 		var checked = document.querySelectorAll('[name="selection[]"]:checked');
 		if( checked.length == 0 ) {

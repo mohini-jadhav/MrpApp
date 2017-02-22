@@ -13,7 +13,7 @@ $locale_info["LOCALE_IDATE"]="0";
 $locale_info["LOCALE_ILDATE"]="0";
 $locale_info["LOCALE_SDATE"]="/";
 $locale_info["LOCALE_SLONGDATE"]="dddd, MMMM dd, yyyy";
-$locale_info["LOCALE_SSHORTDATE"]="MM/dd/yy";
+$locale_info["LOCALE_SSHORTDATE"]="dd-MMM-yy";
 //	weekday names
 $locale_info["LOCALE_IFIRSTDAYOFWEEK"]="6";
 $locale_info["LOCALE_SDAYNAME1"]="Monday";
