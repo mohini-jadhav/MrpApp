@@ -1,0 +1,357 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel customer_header view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	<TBODY>
+      {BEGIN OracIeID_fieldblock}
+      	<tr class="{$fielddispclass_OracIeID}" data-fieldname="OracIeID">
+			<td class="rnr-label">
+				{$label customer_header OracIeID}
+			</td>
+			<td class="rnr-control style3">
+				{$OracIeID_value}&nbsp;
+			</td>
+		</tr>
+		{END OracIeID_fieldblock}
+		{BEGIN Name_fieldblock}
+			<tr class="{$fielddispclass_Name}" data-fieldname="Name">
+				<td class="rnr-label">
+					{$label customer_header Name}
+				</td>
+				<td class="rnr-control style3">
+					{$Name_value}&nbsp;
+				</td>
+			</tr>
+		{END Name_fieldblock}
+		{BEGIN Size_fieldblock}
+			<tr class="{$fielddispclass_Size}" data-fieldname="Size">
+				<td class="rnr-label">
+					{$label customer_header Size}
+				</td>
+				<td class="rnr-control style3">
+					{$Size_value}&nbsp;
+				</td>
+			</tr>
+		{END Size_fieldblock}
+		{BEGIN Stage_fieldblock}
+			<tr class="{$fielddispclass_Stage}" data-fieldname="Stage">
+				<td class="rnr-label">
+					{$label customer_header Stage}
+				</td>
+				<td class="rnr-control style3">
+					{$Stage_value}&nbsp;
+				</td>
+			</tr>
+		{END Stage_fieldblock}
+		{BEGIN Overall_Temp_fieldblock}
+			<tr class="{$fielddispclass_Overall_Temp}" data-fieldname="Overall_Temp">
+				<td class="rnr-label">
+					{$label customer_header Overall_Temp}
+				</td>
+				<td class="rnr-control style3">
+					{$Overall_Temp_value}&nbsp;
+				</td>
+			</tr>
+		{END Overall_Temp_fieldblock}
+		{BEGIN Engagement_status_fieldblock}
+			<tr class="{$fielddispclass_Engagement_status}" data-fieldname="Engagement_status">
+				<td class="rnr-label">
+					{$label customer_header Engagement_status}
+				</td>
+				<td class="rnr-control style3">
+					{$Engagement_status_value}&nbsp;
+				</td>
+			</tr>
+		{END Engagement_status_fieldblock}
+		{BEGIN PrimaryTimeZone_fieldblock}
+			<tr class="{$fielddispclass_PrimaryTimeZone}" data-fieldname="PrimaryTimeZone">
+				<td class="rnr-label">
+					{$label customer_header PrimaryTimeZone}
+				</td>
+				<td class="rnr-control style3">
+					{$PrimaryTimeZone_value}&nbsp;
+				</td>
+			</tr>
+		{END PrimaryTimeZone_fieldblock}
+		{BEGIN Recovery_Center_fieldblock}
+			<tr class="{$fielddispclass_PrimaryTimeZone}" data-fieldname="PrimaryTimeZone">
+				<td class="rnr-label">
+					Primary Data Ctr
+				</td>
+				<td class="rnr-control style3">
+					{$Recovery_Center_value}&nbsp;
+				</td>
+			</tr>
+		{END Recovery_Center_fieldblock}
+		{BEGIN Contract_Start_fieldblock}
+		<tr class="{$fielddispclass_Contract_Start}" data-fieldname="Contract_Start">
+			<td class="rnr-label">
+				{$label customer_header Contract_Start}
+			</td>
+			<td class="rnr-control style3">
+				{$Contract_Start_value}&nbsp;
+			</td>
+		</tr>
+		{END Contract_Start_fieldblock}
+		{BEGIN SteadyState_fieldblock}
+		<tr class="{$fielddispclass_SteadyState}" data-fieldname="SteadyState">
+			<td class="rnr-label">
+				{$label customer_header SteadyState}
+			</td>
+			<td class="rnr-control style3">
+				{$SteadyState_value}&nbsp;
+			</td>
+		</tr>
+		{END SteadyState_fieldblock}
+		{BEGIN Contract_end_fieldblock}
+			<tr class="{$fielddispclass_Contract_end}" data-fieldname="Contract_end">
+				<td class="rnr-label">
+					{$label customer_header Contract_end}
+				</td>
+				<td class="rnr-control style3">
+					{$Contract_end_value}&nbsp;
+				</td>
+			</tr>
+		{END Contract_end_fieldblock}
+		{BEGIN TransStartDate_fieldblock}
+			<tr class="{$fielddispclass_TransStartDate}" data-fieldname="TransStartDate">
+				<td class="rnr-label">
+					{$label customer_header TransStartDate}
+				</td>
+				<td class="rnr-control style3">
+					{$TransStartDate_value}&nbsp;
+				</td>
+			</tr>
+		{END TransStartDate_fieldblock}
+		{BEGIN TransEndDate_fieldblock}
+			<tr class="{$fielddispclass_TransEndDate}" data-fieldname="TransEndDate">
+				<td class="rnr-label">
+					{$label customer_header TransEndDate}
+				</td>
+				<td class="rnr-control style3">
+					{$TransEndDate_value}&nbsp;
+				</td>
+			</tr>
+		{END TransEndDate_fieldblock}
+		{BEGIN Onshore_Support_fieldblock}
+			<tr class="{$fielddispclass_Onshore_Support}" data-fieldname="Onshore_Support">
+				<td class="rnr-label">
+					{$label customer_header Onshore_Support}
+				</td>
+				<td class="rnr-control style3">
+					{$Onshore_Support_value}&nbsp;
+				</td>
+			</tr>
+		{END Onshore_Support_fieldblock}
+		<!-- {BEGIN Supervisor_fieldblock}
+		<tr class="{$fielddispclass_Supervisor}" data-fieldname="Supervisor">
+		<td class="rnr-label">
+			{$label customer_header Supervisor}
+		</td>
+		<td class="rnr-control style3">
+			{$Supervisor_value}&nbsp;
+		</td>
+		</tr>
+	{END Supervisor_fieldblock}
+	{BEGIN RSAName_fieldblock}<tr class="{$fielddispclass_RSAName}" data-fieldname="RSAName">
+	<td class="rnr-label">
+		{$label customer_header RSAName}
+	</td>
+	<td class="rnr-control style3">
+		{$RSAName_value}&nbsp;
+	</td>
+</tr>
+{END RSAName_fieldblock}
+	{BEGIN TAM_fieldblock}<tr class="{$fielddispclass_TAM}" data-fieldname="TAM">
+	<td class="rnr-label">
+		{$label customer_header TAM}
+	</td>
+	<td class="rnr-control style3">
+		{$TAM_value}&nbsp;
+	</td>
+</tr>
+{END TAM_fieldblock}
+                                     
+    {BEGIN AE_fieldblock}<tr class="{$fielddispclass_AE}" data-fieldname="AE">
+	<td class="rnr-label">
+		{$label customer_header AE}
+	</td>
+	<td class="rnr-control style3">
+		{$AE_value}&nbsp;
+	</td>
+</tr>
+{END AE_fieldblock} -->
+	{BEGIN Total_MRR_fieldblock}<tr class="{$fielddispclass_Total_MRR}" data-fieldname="Total_MRR">
+	<td class="rnr-label">
+		{$label customer_header Total_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$Total_MRR_value}&nbsp;
+	</td>
+</tr>
+{END Total_MRR_fieldblock}
+	{BEGIN MRP_MRR_fieldblock}<tr class="{$fielddispclass_MRP_MRR}" data-fieldname="MRP_MRR">
+	<td class="rnr-label">
+		{$label customer_header MRP_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$MRP_MRR_value}&nbsp;
+	</td>
+</tr>
+{END MRP_MRR_fieldblock}
+	{BEGIN ARS_MRR_fieldblock}<tr class="{$fielddispclass_ARS_MRR}" data-fieldname="ARS_MRR">
+	<td class="rnr-label">
+		{$label customer_header ARS_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$ARS_MRR_value}&nbsp;
+	</td>
+</tr>
+{END ARS_MRR_fieldblock}
+	{BEGIN RS_MRR_fieldblock}<tr class="{$fielddispclass_RS_MRR}" data-fieldname="RS_MRR">
+	<td class="rnr-label">
+		{$label customer_header RS_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$RS_MRR_value}&nbsp;
+	</td>
+</tr>
+{END RS_MRR_fieldblock}
+{BEGIN MS_MRR_fieldblock}<tr class="{$fielddispclass_MS_MRR}" data-fieldname="MS_MRR">
+	<td class="rnr-label">
+		{$label customer_header MS_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$MS_MRR_value}&nbsp;
+	</td>
+</tr>
+{END MS_MRR_fieldblock}
+{BEGIN CS_MRR_fieldblock}<tr class="{$fielddispclass_CS_MRR}" data-fieldname="CS_MRR">
+	<td class="rnr-label">
+		{$label customer_header CS_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$CS_MRR_value}&nbsp;
+	</td>
+</tr>
+{END CS_MRR_fieldblock}
+{BEGIN OTHER_MRR_fieldblock}<tr class="{$fielddispclass_OTHER_MRR}" data-fieldname="OTHER_MRR">
+	<td class="rnr-label">
+		{$label customer_header OTHER_MRR}
+	</td>
+	<td class="rnr-control style3">
+		{$OTHER_MRR_value}&nbsp;
+	</td>
+</tr>
+{END OTHER_MRR_fieldblock}
+{BEGIN Comments_fieldblock}<tr class="{$fielddispclass_Comments}" data-fieldname="Comments">
+	<td class="rnr-label">
+		{$label customer_header Comments}
+	</td>
+	<td class="rnr-control style3">
+		{$Comments_value}&nbsp;
+	</td>
+</tr>
+{END Comments_fieldblock}
+</TBODY>
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-left">
+{BEGIN cancel_button}
+<A class="rnr-button" href="#" {$cancelbutton_attrs}>
+  Cancel
+</A>
+{END cancel_button}
+
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>
